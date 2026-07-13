@@ -1,0 +1,70 @@
+/* Pretendard for English */
+
+@font-face {
+	font-family: "Pretendard";
+	font-weight: 800;
+	font-display: swap;
+	src: local("Pretendard"), url("/fonts/Pretendard-ExtraBold.otf") format("opentype");
+}
+@font-face {
+	font-family: "Pretendard";
+	font-weight: 700;
+	font-display: swap;
+	src: local("Pretendard"), url("/fonts/Pretendard-Bold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Pretendard";
+	font-weight: 600;
+	font-display: swap;
+	src: local("Pretendard"), url("/fonts/Pretendard-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Pretendard";
+	font-weight: 500;
+	font-display: swap;
+	src: local("Pretendard"), url("/fonts/Pretendard-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Pretendard";
+	font-weight: 400;
+	font-display: swap;
+	src: local("Pretendard"), url("/fonts/Pretendard-Light.otf") format("opentype");
+} 
+
+/* Hanuman For Khmer */
+
+@font-face {
+	font-family: "Hanuman";
+	font-weight: 700;
+	font-style: normal;
+	src: local("Hanuman Bold"), url("/fonts/Hanuman-Bold.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Hanuman";
+	font-weight: 600;
+	font-style: normal;
+	src: local("Hanuman Regular"), url("/fonts/Hanuman-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Hanuman";
+	font-weight: 400;
+	font-style: normal;
+	src: local("Hanuman Light"), url("/fonts/Hanuman-Light.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Hanuman";
+	font-weight: 300;
+	font-style: normal;
+	src: local("Hanuman Light"), url("/fonts/Hanuman-Thin.ttf") format("truetype");
+}
+
+/* Nunito Sans For KHQR*/
+
+@font-face { 
+	font-family: "Nunito Sans";
+	font-display: swap;
+	src: local("NunitoSans"), url("/fonts/NunitoSans.ttf") format("truetype");
+}

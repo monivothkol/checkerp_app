@@ -1,0 +1,61 @@
+{
+  "name": "checkerp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode sit",
+    "sit": "vite --mode sit",
+    "prod": "vite --mode prod",
+    "build": "vue-tsc && vite build --mode sit",
+    "build:sit": "vue-tsc && vite build --mode sit",
+    "build:prod": "vue-tsc && vite build --mode prod",
+    "preview": "vite preview --mode sit",
+    "typecheck": "vue-tsc --noEmit",
+    "test": "vitest run",
+    "test:unit": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "dependencies": {
+    "@ionic/vue": "^8.8.13",
+    "@ionic/vue-router": "^8.8.13",
+    "bakong-khqr": "^1.0.20",
+    "chart.js": "^4.5.1",
+    "chartjs-plugin-annotation": "^3.1.0",
+    "chartjs-plugin-datalabels": "^2.2.0",
+    "crypto-js": "^4.2.0",
+    "dayjs": "^1.11.21",
+    "dompurify": "^3.4.12",
+    "gsap": "^3.15.0",
+    "ionicons": "^8.0.13",
+    "lodash.debounce": "^4.0.8",
+    "otpauth": "^9.5.1",
+    "pinia": "^3.0.4",
+    "qrcode": "^1.5.4",
+    "vue": "^3.5.39",
+    "vue-chartjs": "^5.3.4",
+    "vue-i18n": "^11.4.6",
+    "vue-router": "^4.6.4"
+  },
+  "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
+    "@types/lodash.debounce": "^4.0.9",
+    "@types/node": "^24.13.2",
+    "@types/qrcode": "^1.5.6",
+    "@vitejs/plugin-vue": "^6.0.7",
+    "@vitest/coverage-v8": "^4.1.10",
+    "@vue/test-utils": "^2.4.11",
+    "jsdom": "^29.1.1",
+    "sass-embedded": "^1.100.0",
+    "typescript": "~5.6.2",
+    "vite": "^8.1.1",
+    "vitest": "^4.1.10",
+    "vue-tsc": "^2.2.12"
+  },
+  "overrides": {
+    "bakong-khqr": {
+      "axios": "^1.18.1"
+    }
+  }
+}

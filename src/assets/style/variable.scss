@@ -1,0 +1,189 @@
+:root {
+
+	/* Column */
+	--colGap2: 2px;
+	--colGap4: 4px;
+	--colGap6: 6px;
+	--colGap8: 8px;
+	--colGap12: 12px;
+	--colGap16: 16px;
+	--colGap20: 20px;
+	--colGap24: 24px;
+	--colGap32: 32px;
+	--colGap40: 40px;
+	--colGap48: 48px;
+
+	--rowGap2: 2px;
+	--rowGap4: 4px;
+	--rowGap6: 6px;
+	--rowGap8: 8px;
+	--rowGap12: 12px;
+	--rowGap16: 16px;
+	--rowGap20: 20px;
+	--rowGap24: 24px;
+	--rowGap32: 32px;
+	--rowGap40: 40px;
+	--rowGap48: 48px;
+
+	--radius4: 4px;
+	--radius8: 8px;
+	--radius16: 16px;
+	--radius24: 24px;
+
+	--marTop0: 0;
+	--marTop2: 2px;
+	--marTop4: 4px;
+	--marTop6: 6px;
+	--marTop8: 8px;
+	--marTop12: 12px;
+	--marTop16: 16px;
+	--marTop20: 20px;
+	--marTop24: 24px;
+	--marTop32: 32px;
+	--marTop40: 40px;
+	--marTop48: 48px;
+
+	--marBottom0: 0;
+	--marBottom2: 2px;
+	--marBottom4: 4px;
+	--marBottom6: 6px;
+	--marBottom8: 8px;
+	--marBottom12: 12px;
+	--marBottom16: 16px;
+	--marBottom20: 20px;
+	--marBottom24: 24px;
+	--marBottom32: 32px;
+	--marBottom40: 40px;
+	--marBottom48: 48px;
+
+	--marLeft0: 0;
+	--marLeft2: 2px;
+	--marLeft4: 4px;
+	--marLeft6: 6px;
+	--marLeft8: 8px;
+	--marLeft12: 12px;
+	--marLeft16: 16px;
+	--marLeft20: 20px;
+	--marLeft24: 24px;
+	--marLeft32: 32px;
+	--marLeft40: 40px;
+	--marLeft48: 48px;
+
+	--marRight0: 0;
+	--marRight2: 2px;
+	--marRight4: 4px;
+	--marRight6: 6px;
+	--marRight8: 8px;
+	--marRight12: 12px;
+	--marRight16: 16px;
+	--marRight20: 20px;
+	--marRight24: 24px;
+	--marRight32: 32px;
+	--marRight40: 40px;
+	--marRight48: 48px;
+
+	--padTop0: 0;
+	--padTop2: 2px;
+	--padTop4: 4px;
+	--padTop6: 6px;
+	--padTop8: 8px;
+	--padTop12: 12px;
+	--padTop16: 16px;
+	--padTop20: 20px;
+	--padTop24: 24px;
+	--padTop32: 32px;
+	--padTop40: 40px;
+	--padTop48: 48px;
+
+	--padBottom0: 0;
+	--padBottom2: 2px;
+	--padBottom4: 4px;
+	--padBottom6: 6px;
+	--padBottom8: 8px;
+	--padBottom12: 12px;
+	--padBottom16: 16px;
+	--padBottom20: 20px;
+	--padBottom24: 24px;
+	--padBottom32: 32px;
+	--padBottom40: 40px;
+	--padBottom48: 48px;
+
+	--padLeft0: 0;
+	--padLeft2: 2px;
+	--padLeft4: 4px;
+	--padLeft6: 6px;
+	--padLeft8: 8px;
+	--padLeft12: 12px;
+	--padLeft16: 16px;
+	--padLeft20: 20px;
+	--padLeft24: 24px;
+	--padLeft32: 32px;
+	--padLeft40: 40px;
+	--padLeft48: 48px;
+
+	--padRight0: 0;
+	--padRight2: 2px;
+	--padRight4: 4px;
+	--padRight6: 6px;
+	--padRight8: 8px;
+	--padRight12: 12px;
+	--padRight16: 16px;
+	--padRight20: 20px;
+	--padRight24: 24px;
+	--padRight32: 32px;
+	--padRight40: 40px;
+	--padRight48: 48px;
+
+	/* Font Size */
+	--font8: 0.5rem;
+	--font12: 0.75rem;
+	--font14: 0.875rem;
+	--font16: 1rem;
+	--font18: 1.125rem;
+	--font20: 1.25rem;
+	--font22: 1.375rem;
+	--font24: 1.5rem;
+	--font32: 2rem;
+
+	--lineHeight12: 18px;
+	--lineHeight14: 20px;
+	--lineHeight16: 22px;
+	--lineHeight18: 24px;
+	--lineHeight20: 26px;
+	--lineHeight22: 28px;
+	--lineHeight24: 32px;
+	--lineHeight32: 40px;
+
+	/* Font Color */
+	--fontColor01: #111111;
+	--fontColor02: #333333;
+	--fontColor03: #666666;
+	--fontColor04: #999999;
+	--fontColor05: #CCCCCC;
+	--fontColor06: #DDDDDD;
+	--fontColor07: #FFFFFF;
+
+	--colorPrimary: #2859C5; /* MCNC Color */
+	/* --colorPrimary: #0F9147; */ /* ARDB Color */
+	/* --colorPrimary: #194b60; */ /* Kongkea Color */
+
+	--ion-color-primary: var(--colorPrimary);
+	--ion-color-primary-shade: var(--colorPrimary);
+	--ion-color-primary-tint: var(--colorPrimary);
+
+	--ion-color-success: #5FD14C;
+	--ion-color-danger: #EC3444;
+	--ion-color-warning: #FFD339;
+
+	--color-activated: none;
+
+	--line: #E9EBF0;
+
+	--borderinput: #D9D9D9;
+
+	--logo-bank: url("../images/logo_los.svg");
+	--logo-bank-white: url("../images/logo_los_w.svg");
+
+	--colorPrimaryActive: #DDDDDD;
+	--opacitytIcon: 1;
+}

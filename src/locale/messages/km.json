@@ -1,0 +1,3496 @@
+{
+	"COMMON": {
+		"WELCOME": "សូមស្វាគមន៍មកកាន់កម្មវិធីរបស់យើង!",
+		"GOODBYE": "សូមអរគុណសម្រាប់ការប្រើប្រាស់កម្មវិធីរបស់យើង!",
+		"BUTTON": {
+			"CONFIRM": "យល់ព្រម",
+			"CLOSE": "បិទ",
+			"NEXT": "បន្ទាប់",
+			"CANCEL": "បោះបង់",
+			"SUBMIT": "ដាក់ស្នើ",
+			"SEARCH": "ស្វែងរក",
+			"VIEW_MORE": "មើលបន្ថែម",
+			"DOWNLOAD": "ទាញយក",
+			"BACK": "ត្រឡប់ក្រោយ",
+			"CALL": "ខលហៅ",
+			"OK": "យល់ព្រម"
+		},
+		"LABEL": {
+			"FIRST_NAME": "នាមខ្លួន",
+			"LAST_NAME": "នាមត្រកូល",
+			"GENDER": "ភេទ",
+			"DATE_OF_BIRTH": "ថ្ងៃខែឆ្នាំកំណើត",
+			"NATIONALITY": "សញ្ជាតិ",
+			"PASSPORT_NO": "លេខលិខិតឆ្លងដែន",
+			"EXPIRY_DATE": "កាលបរិច្ឆេទផុតកំណត់",
+			"PHONE": "ទូរស័ព្ទ",
+			"ADDRESS": "អាសយដ្ឋាន",
+			"EMAIL": "អ៊ីមែល",
+			"ACCOUNT_NO": "លេខគណនី",
+			"ACCOUNT_TYPE": "ប្រភេទគណនី",
+			"BALANCE": "សមតុល្យ",
+			"CURRENCY": "រូបិយប័ណ្ណ",
+			"STATUS": "ស្ថានភាព",
+			"BRANCH": "សាខា",
+			"CO": "CO",
+			"REQUESTED": "ស្វែងរក",
+			"APPROVAL": "តាមដាន",
+			"RETURNED": "ត្រឡប់",
+			"REJECTED": "បិទ",
+			"TODAY": "ថ្ងៃនេះ",
+			"DAYS": "ថ្ងៃ",
+			"THIS_MONTH": "ខែនេះ",
+			"LAST_MONTH": "ខែមុន",
+			"THIS_YEAR": "ឆ្នាំនេះ",
+			"LAST_YEAR": "ឆ្នាំមុន",
+			"THIS_WEEK": "សប្តាហ៍នេះ",
+			"LAST_WEEK": "សប្តាហ៍មុន",
+			"THIS_DAY": "ថ្ងៃនេះ",
+			"LAST_DAY": "ថ្ងៃមុន"
+		},
+		"BM_ERROR": {
+			"TITLE": "មានកំហុសបណ្តោយកើតឡើងជាបណ្តោះអាសន្ន។",
+			"MESSAGE": "មានកំហុសដែលមិនបានរំពឹងទុកកើតឡើងក្នុងសេវាកម្មមួយចំនួន។ យើងសុំអភ័យទោសចំពោះភាពមិនងាយស្រួល និងសូមអ្នកព្យាយាមម្តងទៀតក្នុងពេលឆាប់ៗនេះ។",
+			"REPORT_BUG": "រាយការណ៍កំហុស",
+			"OKAY": "យល់ព្រម"
+		},
+		"BM_DIALOG": {
+			"TITLE": "សេចក្តីជូនដំណឹង",
+			"MESSAGE": "នេះគឺជាសារ"
+		},
+		"BM_SELECT_MENU": {
+			"TITLE": "ម៉ឺនុយធ្លាក់ចុះ",
+			"MESSAGE": "សូមជ្រើសរើសជម្រើសខាងក្រោម៖"
+		},
+		"BM_SELECT_BOX": {
+			"PLACEHOLDER": "ស្វែងរក ឬជ្រើសរើស",
+			"TITLE": "ម៉ឺនុយជ្រើសរើស",
+			"MESSAGE": "សូមជ្រើសរើសជម្រើសខាងក្រោម៖",
+			"BUTTON_LABEL": "ប្រអប់ជ្រើសរើស",
+			"CLEAR": "សំអាត"
+		},
+		"BM_SELECT_ACCOUNT_LIST": {
+			"TITLE": "ជ្រើសរើសគណនី",
+			"CLOSE": "បិទ",
+			"END_DATE": "កាលបរិច្ឆេទផុតកំណត់",
+			"TOAST_ACCOUNT_COPIED": "ចម្លងលេខគណនីទៅក្តារតម្បៀតរួចរាល់ហើយ",
+			"CURRENT_ACCOUNT": "គណនីបច្ចុប្បន្ន",
+			"LOAN_AGAINST_DEPOSIT": "ប្រាក់កម្ចីធានាដោយប្រាក់បញ្ញើ",
+			"SAVING_ACCOUNT": "គណនីអចលនទ្រព្យ",
+			"HOUSING_LOAN": "ប្រាក់កម្ចីផ្ទះ",
+			"AUTO_LOAN": "ប្រាក់កម្ចីរថយន្ត"
+		},
+		"BM_MONTH_YEAR_PICKER": {
+			"MONTH": "ខែ",
+			"YEAR": "ឆ្នាំ"
+		},
+		"BM_QUARTER_PICKER": {
+			"MONTH": "ខែ",
+			"YEAR": "ឆ្នាំ",
+			"TITLE": "ជ្រើសរើសត្រីមាស",
+			"QUARTER_1": "ត្រីមាសទី 1",
+			"QUARTER_2": "ត្រីមាសទី 2",
+			"QUARTER_3": "ត្រីមាសទី 3",
+			"QUARTER_4": "ត្រីមាសទី 4"
+		},
+		"BM_QUARTER_SELECT": {
+			"PLACEHOLDER": "ជ្រើសរើសត្រីមាស",
+			"TITLE": "ជ្រើសរើសត្រីមាស",
+			"MESSAGE": "សូមជ្រើសរើសជម្រើសខាងក្រោម៖",
+			"BUTTON_LABEL": "ប្រអប់ជ្រើសរើស"
+		},
+		"BM_SEMESTER_PICKER": {
+			"MONTH": "ខែ",
+			"YEAR": "ឆ្នាំ",
+			"TITLE": "ជ្រើសរើសឆមាស",
+			"SEMESTER_1": "ឆមាសទី 1",
+			"SEMESTER_2": "ឆមាសទី 2"
+		},
+		"BM_TIME_PICKER": {
+			"HOUR": "ម៉ោង",
+			"MINUTE": "នាទី"
+		},
+		"BM_YEAR_PICKER": {
+			"YEAR": "ឆ្នាំ"
+		},
+		"BM_YEAR_SELECT": {
+			"PLACEHOLDER": "ស្វែងរក ឬជ្រើសរើស",
+			"TITLE": "ជ្រើសរើសឆ្នាំ",
+			"MESSAGE": "សូមជ្រើសរើសជម្រើសខាងក្រោម៖",
+			"BUTTON_LABEL": "ប្រអប់ជ្រើសរើស"
+		},
+		"BM_MONTHLY_SELECT": {
+			"TITLE": "ជ្រើសរើសខែ",
+			"PLACEHOLDER": "ស្វែងរក ឬជ្រើសរើស",
+			"MESSAGE": "សូមជ្រើសរើសជម្រើសខាងក្រោម៖",
+			"BUTTON_LABEL": "ប្រអប់ជ្រើសរើស",
+			"MONTH_01": "មករា",
+			"MONTH_02": "កុម្ភៈ",
+			"MONTH_03": "មីនា",
+			"MONTH_04": "មេសា",
+			"MONTH_05": "ឧសភា",
+			"MONTH_06": "មិថុនា",
+			"MONTH_07": "កក្កដា",
+			"MONTH_08": "សីហា",
+			"MONTH_09": "កញ្ញា",
+			"MONTH_10": "តុលា",
+			"MONTH_11": "វិច្ឆិកា",
+			"MONTH_12": "ធ្នូ"
+		},
+		"BM_SEMESTER_SELECT": {
+			"PLACEHOLDER": "ស្វែងរក ឬជ្រើសរើស",
+			"TITLE": "ជ្រើសរើសឆមាស",
+			"MESSAGE": "សូមជ្រើសរើសជម្រើសខាងក្រោម៖",
+			"BUTTON_LABEL": "ប្រអប់ជ្រើសរើស"
+		},
+		"BM_UPLOAD_IMAGE": {
+			"REMOVE": "ដកចេញ",
+			"UPLOAD": "បញ្ជូល"
+		},
+		"BM_ADDRESS_SELECT": {
+			"SELECT_ADDRESS": "ជ្រើសរើសអាសយដ្ឋាន",
+			"SELECT_ADDRESS_BUTTON": "ជ្រើសរើសអាសយដ្ឋាន"
+		},
+		"BM_ADDRESS_SELECTION_DETAIL": {
+			"SEARCH_ADDRESS": "ស្វែងរកអាសយដ្ឋាន",
+			"KINDLY_PROVIDE_YOUR_ADDRESS_INFORMATION": "សូមផ្តល់ព័ត៌មានអាសយដ្ឋានរបស់អ្នក។",
+			"CITY_DISTRICT_OR_POSTAL_CODE": "កម្ពុជា, ការិត ឬលេខសំគាល់",
+			"TYPE_A_KEYWORD_TO_SEARCH_ADDRESS": "វាយបញ្ចូលពាក្យគន្លឹះដើម្បីស្វែងរកអាសយដ្ឋាន",
+			"NO_RESULTS_FOUND": "គ្មានលទ្ធផលស្របព័ន្ធ",
+			"CANCEL": "បោះបង់",
+			"CONFIRM": "យល់ព្រម"
+		},
+		"BM_CONTENT": {
+			"OFFLINE_TITLE": "គ្មានការភ្ជាប់",
+			"OFFLINE_MESSAGE": "សូមពិនិត្យការភ្ជាប់អ៊ីនធឺណិតរបស់អ្នក ឬផ្លាស់ទៅរបៀបអុហ្វឡាញ។",
+			"CONNECTING_TITLE": "កំពុងភ្ជាប់...",
+			"CONNECTING_MESSAGE": "សូមរងចាំខណៈយើងភ្ជាប់ទៅអ៊ីនធឺណិត។",
+			"CONNECTED_TITLE": "ភ្ជាប់រួច",
+			"CONNECTED_MESSAGE": "អ្នកបានភ្ជាប់អ៊ីនធឺណិតរួចរាល់ហើយ។",
+			"SWITCH_TO_OFFLINE": "ផ្លាស់ទៅរបៀបអុហ្វឡាញ"
+		},
+		"BM_DATE_PICKER": {
+			"FROM": "ចាប់ពីថ្ងៃទី",
+			"TO": "ដល់ថ្ងៃទី",
+			"SUNDAY": "អាទិត្យ",
+			"MONDAY": "ច័ន្ទ",
+			"TUESDAY": "អង្គារ",
+			"WEDNESDAY": "ពុធ",
+			"THURSDAY": "ព្រហស្បតិ៍",
+			"FRIDAY": "សុក្រ",
+			"SATURDAY": "សៅរ៍"
+		},
+		"BM_TEXTAREA": {
+			"PLACEHOLDER_ENTER_DESCRIPTION": "បញ្ចូលការពិពណ៌នានៅទីនេះ..."
+		},
+		"BM_DATE_RANGE_SELECT": {
+			"SELECT_DATE_RANGE": "ជ្រើសរើសចាប់ពីថ្ងៃទីដល់ថ្ងៃទី",
+			"CLEAR": "សំអាត",
+			"DATE_PICKER": "ជ្រើសរើសថ្ងៃទី"
+		},
+		"BM_FILTER_DATE": {
+			"FILTER_DATE": "ជ្រើសរើសថ្ងៃទី",
+			"DATE_RANGE": "ជ្រើសរើសចាប់ពីថ្ងៃទីដល់ថ្ងៃទី",
+			"1_WEEK": "1 សប្តាហ៍",
+			"1_MONTH": "1 ខែ",
+			"3_MONTHS": "3 ខែ",
+			"6_MONTHS": "6 ខែ"
+		}
+	},
+	"LOG1000000": {
+		"LABEL": {
+			"COMPANY_ID": "លេខសំគាល់ក្រុមហ៊ុន",
+			"USER_ID": "លេខសំគាល់អ្នកប្រើប្រាស់",
+			"PASSWORD": "ពាក្យសម្ងាត់",
+			"LOGIN": "ចូល",
+			"REMEMBER_ID": "ជម្រើសកាត់សញ្ជាតិ"
+		},
+		"BUTTON": {
+			"FORGOT_PASSWORD": "ភ្លេចពាក្យសម្ងាត់?",
+			"FORGET_ID_OR_PASSWORD": "ភ្លេចលេខសំគាល់ ឬពាក្យសម្ងាត់?",
+			"BIOMETRIC": "ជីវមាត្រ",
+			"LOGIN_WITH_FINGERPRINT": "ចូលដំណើរការជាមួយស្នាមក្រយៅដៃ",
+			"TERMS_AND_CONDITIONS": "លក្ខខណ្ឌ និងលក្ខន្តិកា",
+			"PRIVACY_POLICY": "គោលការណ៍និងទម្រង់ពិសោធន៍",
+			"BY_LOGIN_YOU_ARE_AGREEING_OUR_TERM_AND_PRIVACY_POLICY": "ដំណើរការចូលគ្នាជាមួយនឹងលក្ខខណ្ឌ និងទម្រង់ពិសោធន៍របស់យើង"
+		},
+		"MESSAGE": {
+			"LOGIN_ERROR": "សូមបញ្ចូលលេខសំគាល់អ្នកប្រើប្រាស់, ពាក្យសម្ងាត់, និងលេខសំគាល់ក្រុមហ៊ុន។",
+			"LOGIN_SUCCESS": "ដំណើរការចូលបានជោគជ័យ",
+			"LOGIN_FAILED": "ដំណើរការចូលបានបរាជ័យ",
+			"LOGIN_WITH_BIOMETRIC": "ចូលដំណើរការជាមួយជីវមាត្រ",
+			"LOGIN_WITH_FINGERPRINT": "ចូលដំណើរការជាមួយស្នាមក្រយៅដៃ",
+			"LOGIN_WITH_FACE_ID": "ចូលដំណើរការជាមួយការសម្គាល់មុខ"
+		}
+	},
+	"LOG1100000": {
+		"TITLE": "ការផ្ទៀងផ្ទាត់ OTP",
+		"OPTION": {
+			"PIN": "លេខសម្ងាត់",
+			"EMAIL": "អ៉ីមែល",
+			"SMS": "សារ SMS"
+		},
+		"LABEL": {
+			"OTP_ENTER_DESC": "បញ្ចូលពាក្យសម្ងាត់មួយដងពីអ្នកគ្រប់គ្រងរបស់អ្នកដើម្បីបន្ត។",
+			"OTP_SENT_DESC": "OTP របស់អ្នកនឹងផ្ញើទៅ {0} ក្រោយពីអ្នកចុច \"{1}\"។",
+			"REQUEST_VERIFICATION_CODE": "ស្នើសុំកូដផ្ទៀងផ្ទាត់",
+			"INFO_PIN": "ប្រសិនបើអ្នកមិនបានទទួល OTP សូមទាក់ទងអ្នកគ្រប់គ្រងរបស់អ្នក។",
+			"ERROR_EXPIRED": "OTP ផុតកំណត់ហើយ។",
+			"OTP_EXPIRED_IN": "OTP ផុតកំណត់ហើយពេល",
+			"RESEND_OTP": "ស្នើសុំកូដផ្ទៀងផ្ទាត់",
+			"RESEND_OTP_DESC": "ស្នើសុំកូដផ្ទៀងផ្ទាត់ {0} ក្រោយពីអ្នកចុច \"{1}\"។"
+		},
+		"BUTTON": {
+			"CONFIRM": "យល់ព្រម"
+		}
+	},
+	"LOG1200000": {
+		"TITLE": "ផ្លាស់ប្តូរពាក្យសម្ងាត់",
+		"SECURITY_TITLE": "ដើម្បីសុវត្ថិភាពរបស់អ្នក!",
+		"SECURITY_SUBTITLE": "សូមផ្លាស់ប្តូរពាក្យសម្ងាត់របស់អ្នក",
+		"LABEL": {
+			"CURRENT_PASSWORD": "ពាក្យសម្ងាត់បច្ចុប្បន្ន",
+			"NEW_PASSWORD": "ពាក្យសម្ងាត់ថ្មី",
+			"CONFIRM_PASSWORD": "បញ្ជាក់ពាក្យសម្ងាត់"
+		},
+		"PLACEHOLDER": {
+			"ENTER_CURRENT_PASSWORD": "បញ្ចូលពាក្យសម្ងាត់បច្ចុប្បន្ន",
+			"ENTER_NEW_PASSWORD": "បញ្ចូលពាក្យសម្ងាត់ថ្មី",
+			"ENTER_CONFIRM_PASSWORD": "បញ្ចូលពាក្យសម្ងាត់បញ្ជាក់"
+		},
+		"PASSWORD_RULE": "សូមផ្តល់ពាក្យសម្ងាត់ចន្លោះ 8 ទៅ 12 តួអក្សរ ដែលមានទាំងអក្សរអង់គ្លេស និងលេខ។",
+		"BUTTON": {
+			"CONFIRM": "យល់ព្រម"
+		},
+		"ERROR": {
+			"SAME_AS_CURRENT": "ពាក្យសម្ងាត់ថ្មីមិនអាចដូចគ្នានឹងពាក្យសម្ងាត់បច្ចុប្បន្នទេ",
+			"PASSWORDS_NOT_MATCH": "ពាក្យសម្ងាត់មិនដូចគ្នាទេ"
+		},
+		"REQUIREMENT": {
+			"LENGTH": "ចន្លោះ {min} - {max} តួអក្សរ",
+			"NUMBER": "មានលេខយ៉ាងហោចមួយ",
+			"UPPERCASE": "មានអក្សរធំ",
+			"LOWERCASE": "មានអក្សរតូច",
+			"SPECIAL_CHARACTER": "មានតួអក្សរពិសេស",
+			"NO_REPEATED": "គ្មានតួអក្សរដដែល",
+			"NO_SEQUENTIAL": "គ្មានតួអក្សរតាមលំដាប់"
+		}
+	},
+	"NEW1000000": {
+		"TITLE": "ព័ត៌មាន និងព្រឹត្តិការណ៍",
+		"PLACEHOLDER": {
+			"SEARCH": "ស្វែងរកព័ត៌មាន និងព្រឹត្តិការណ៍"
+		},
+		"OPTION": {
+			"ALL": "ទាំងអស់"
+		},
+		"MESSAGE": {
+			"NO_DETAIL": "គ្មានព័ត៌មានលម្អិតព័ត៌មាន និងព្រឹត្តិការណ៍"
+		}
+	},
+	"NEW1100000": {
+		"TITLE": "ព័ត៌មានលម្អិតព័ត៌មាន និងព្រឹត្តិការណ៍",
+		"PAGE_TITLE_FALLBACK": "ព័ត៌មានលម្អិតព័ត៌មាន និងព្រឹត្តិការណ៍",
+		"PDF_PREVIEW_TITLE": "មើល PDF",
+		"BUTTON": {
+			"VIEW": "មើល",
+			"DOWNLOAD": "ទាញយក"
+		},
+		"MESSAGE": {
+			"DOWNLOAD_FAILED": "ទាញយកឯកសារមិនបានជោគជ័យទេ។",
+			"PDF_SHARE_FINISHED": "ទាញយកដោយជោគជ័យ {0}"
+		}
+	},
+	"PIO1000000": {
+		"TITLE": "ព័ត៌មានផលិតផល",
+		"OPTION": {
+			"ALL": "ទាំងអស់"
+		}
+	},
+	"PIO1100000": {
+		"TITLE": "ព័ត៌មានលម្អិតផលិតផល",
+		"SHARE_FILE_TITLE": "ឯកសារភ្ជាប់",
+		"BUTTON": {
+			"VIEW_MORE_DETAIL": "មើលព័ត៌មានលម្អិតបន្ថែម",
+			"DOWNLOAD": "ទាញយក"
+		},
+		"MESSAGE": {
+			"DOWNLOAD_FAILED": "ទាញយកឯកសារមិនបានជោគជ័យទេ។"
+		}
+	},
+	"PRM1000000": {
+		"TITLE": "ផ្សព្វផ្សាយ",
+		"PLACEHOLDER": {
+			"SEARCH": "ស្វែងរកផ្សព្វផ្សាយដែលអ្នកចង់បាន"
+		}
+	},
+	"PRM1100000": {
+		"TITLE": "ព័ត៌មានលម្អិតផ្សព្វផ្សាយ"
+	},
+	"DAS1000000": {
+		"TAB": {
+			"HOME": "ទំព័រដើម",
+			"APPROVAL": "អនុម័ត",
+			"CAMERA": "កាមេរ៉ា",
+			"DEBTOR": "កូនបំណុល",
+			"MENU": "ម៉ឺនុយ"
+		}
+	},
+	"DAS1100000": {
+		"LABEL": {
+			"WELCOME_TO_THE_APP": "សូមស្វាគមន៍មកកាន់កម្មវិធីរបស់យើង!",
+			"GOOD_MORNING": "អរុណសួស្តី",
+			"GOOD_AFTERNOON": "ទិវាសួស្ដី",
+			"GOOD_EVENING": "សាយ័ណ្ហសួស្ដី",
+			"ONLINE": "អនឡាញ",
+			"OFFLINE": "អហ្វឡាញ",
+			"APPROVAL_STATUS": "ស្ថានភាពការតាមដាន",
+			"MY_TODO_LIST": "បញ្ជីការតាមដានរបស់ខ្ញុំ",
+			"GOAL_OF_DEBTOR": "ការតាមដានកូនបំណុល",
+			"VISITED_DEBTOR": "ការតាមដានកូនបំណុលចុះជួប",
+			"GOAL_OF_AMOUNT": "ការតាមដានចំនួនទឹកប្រាក់",
+			"PAYMENT_PLAN_REPORT": "ការតាមដានផែនការបង់ប្រាក់",
+			"TOTAL_PAYMENT_PLAN_REPORT": "ការតាមដានផែនការបង់ប្រាក់ទាំងអស់",
+			"MY_TO_AUTH_LIST": "បញ្ជីផ្ទៀងផ្ទាត់របស់ខ្ញុំ",
+			"MY_TO_DO_AUTH_HISTORY": "ប្រវត្តិការអនុញ្ញាតរបស់ខ្ញុំ",
+			"NEED_MY_APPROVAL": "ត្រូវការអនុម័តរបស់ខ្ញុំ",
+			"MY_APPROVED": "អនុម័តរបស់ខ្ញុំ",
+			"APPROVED": "អនុម័ត",
+			"WAITING": "រង់ចាំ",
+			"RETURNED": "ត្រឡប់",
+			"REJECTED": "បដិសេធ",
+			"TODAY": "ថ្ងៃនេះ",
+			"THIS_WEEK": "សប្តាហ៍នេះ",
+			"THIS_MONTH": "ខែនេះ",
+			"PEOPLE": "នាក់",
+			"PAYMENT_PLAN_REPORT_COUNT": "ចំនួនរបាយការណ៍ផែនការបង់ប្រាក់",
+			"VIEW": "មើល"
+		},
+		"BUTTON": {
+			"ADD": "បន្ថែម",
+			"NOTIFICATION": "ការជូនដំណឹង",
+			"CONFIRM": "យល់ព្រម"
+		},
+		"TEXT": {
+			"SECURITY_REACTIVATE": "សូមធ្វើឱ្យគណនីរបស់អ្នកសកម្មម្តងទៀត",
+			"SECURITY_HEADER": "សុវត្ថិភាព"
+		}
+	},
+	"DAS2100000": {
+		"TITLE": "ម៉ឺនុយទាំងអស់",
+		"PLACEHOLDER": {
+			"FIND_INFO": "ស្វែងរកព័ត៌មានរបស់អ្នក"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក"
+		},
+		"MENU": {
+			"PERFORMANCE": "ការអនុវត្ត",
+			"MY_KPI": "KPI របស់ខ្ញុំ",
+			"TEAM_KPI": "KPI ក្រុម",
+			"TEAM_MONITORING": "ការតាមដានក្រុម",
+			"COLLECTION": "ការប្រមូល",
+			"CONTACT_HISTORY": "ប្រវត្តិទំនាក់ទំនង",
+			"PAYMENT_PLAN_REPORT": "របាយការណ៍ផែនការបង់ប្រាក់",
+			"VISIT_REPORT": "របាយការណ៍ចុះជួប",
+			"LOAN_OVERDUE_FOLLOW_UP": "បញ្ជីតាមដានឥណទានយឺត",
+			"LOAN_COLLECTION_LIST": "បញ្ជីប្រមូលឥណទាន",
+			"LOAN_FOLLOW_UP_LIST": "បញ្ជីតាមដានឥណទាន",
+			"LOAN_RESCHEDULE": "ការរៀបចំឡើងវិញឥណទាន",
+			"LOAN_PAY_OFF": "បិទឥណទាន",
+			"LOAN_WRITE_OFF": "លុបចោលឥណទាន",
+			"LOAN_LIST": "បញ្ជីឥណទាន",
+			"SALE": "ការលក់",
+			"CONSULTATION": "ការពិគ្រោះយោបល់",
+			"LOAN_SIMULATION": "ការធ្វើគំរូឥណទាន",
+			"CUSTOMER_INQUIRY": "ស្វែងរកអតិថិជន",
+			"LOAN_APPLICATION": "ពាក្យស្នើឥណទាន",
+			"OPEN_DEPOSIT_ACCOUNT": "បើកគណនីដាក់ប្រាក់",
+			"CARD_REQUEST": "ស្នើសុំកាត",
+			"HOUSE_CHECK_WITHDRAWAL": "ស្នើសុំដកប្រាក់តាមមូលប្បទានប័ត្រ",
+			"BANCASSURANCE_REQUEST": "ស្នើសុំធានារ៉ាប់រងធនាគារ",
+			"SERVICE": "សេវាកម្ម",
+			"SYNC_TRANSACTION": "ធ្វើសមកាលកម្មប្រតិបត្តិការ",
+			"PRODUCT_INFORMATION": "ព័ត៌មានផលិតផល",
+			"PROMOTION": "បញ្ចុះតម្លៃ",
+			"NEWS_AND_EVENTS": "ព័ត៌មាន និងព្រឹត្តិការណ៍",
+			"BRANCH_LOCATION": "ទីតាំងសាខា",
+			"FAQ": "សំណួរចម្លើយ",
+			"SETTINGS": "ការកំណត់",
+			"LOGOUT": "ចាកចេញ"
+		},
+		"DIALOG": {
+			"LOGOUT": "ចាកចេញ",
+			"LOGOUT_CONFIRM": "តើអ្នកប្រាកដថាចង់ចាកចេញឬ?"
+		}
+	},
+	"DAS3000000": {
+		"TITLE": "ការជូនដំណឹង",
+		"BUTTON": {
+			"SEE_MORE": "មើលបន្ថែម"
+		}
+	},
+	"DAS3100000": {
+		"LABEL": {
+			"NOTIFICATION_DETAIL": "ព័ត៌មានលម្អិតការជូនដំណឹង"
+		}
+	},
+	"DAS4000000": {
+		"TITLE": "ប្រវត្តិរូបរបស់អ្នក",
+		"LABEL": {
+			"USER_ID": "លេខសម្គាល់អ្នកប្រើប្រាស់",
+			"ROLE": "តួនាទី",
+			"MOBILE_NUMBER": "លេខទូរស័ព្ទ",
+			"EMAIL_ADDRESS": "អ៊ីមែល",
+			"BRANCH_CODE": "កូដសាខា",
+			"BRANCH_NAME": "ឈ្មោះសាខា",
+			"TEAM": "ក្រុម",
+			"HOME_ADDRESS": "អាសយដ្ឋានផ្ទះ"
+		},
+		"BUTTON": {
+			"EDIT": "កែប្រែ"
+		},
+		"TEXT": {
+			"NA": "មិនមានទិន្នន័យ",
+			"PROFILE_UPDATED": "បានធ្វើបច្ចុប្បន្នភាពប្រវត្តិរូបដោយជោគជ័យ"
+		}
+	},
+	"DAS4110000": {
+		"TITLE": "ជ្រើសរើសជម្រើស",
+		"OPTION": {
+			"TAKE_PHOTO": "ថតរូប",
+			"UPLOAD_FROM_GALLERY": "ផ្ទុកពីវិចិត្រសិល្បៈ"
+		}
+	},
+	"DAS5000000": {
+		"TITLE": "ការផ្ទៀងផ្ទាត់",
+		"LABEL": {
+			"AUTH_CODE": "កូដផ្ទៀងផ្ទាត់",
+			"EXPIRE_IN": "ផុតកំណត់ក្នុង:"
+		},
+		"TEXT": {
+			"USE_CODE_DESC": "អ្នកអាចប្រើកូដខាងក្រោមដើម្បីចូលប្រើវ៉ែប។",
+			"KEEP_SAFE": "សូមរក្សាកូដនេះឱ្យមានសុវត្ថិភាព និងកុំចែករំលែកជាមួយអ្នកដទៃ។"
+		}
+	},
+	"FAQ1000000": {
+		"TITLE": "សំណួរចម្លើយ",
+		"PLACEHOLDER": {
+			"SEARCH_FAQ": "ស្វែងរកសំណួរចម្លើយ"
+		},
+		"OPTION": {
+			"ALL": "ទាំងអស់"
+		}
+	},
+	"FAQ1100000": {
+		"TITLE": "ព័ត៌មានលម្អិតសំណួរចម្លើយ",
+		"SHARE_FILE_TITLE": "ឯកសារភ្ជាប់",
+		"BUTTON": {
+			"DOWNLOAD": "ទាញយក"
+		},
+		"MESSAGE": {
+			"DOWNLOAD_FAILED": "ទាញយកឯកសារមិនបានជោគជ័យទេ។"
+		}
+	},
+	"FTR1000000": {
+		"TITLE": "បញ្ជីជំនួញធ្វើសមកាលកម្ម",
+		"BUTTON": {
+			"SYNC_TRANSACTION": "ធ្វើសមកាលកម្មជំនួញ",
+			"SYNCING": "កំពុងធ្វើសមកាលកម្ម..."
+		},
+		"STATUS": {
+			"FAILED": "បរាជ័យ",
+			"PROCESSING": "កំពុងដំណើរការ",
+			"REGISTERED": "បានចុះឈ្មោះ"
+		}
+	},
+	"KPI1000000": {
+		"TITLE": "KPI របស់ខ្ញុំ",
+		"OPTION": {
+			"COLLECTION_AMOUNT": "ចំនួនប្រមូល",
+			"COLLECTION_POINT": "ពិន្ទុប្រមូល",
+			"PPR_AMOUNT": "ចំនួន PPR",
+			"PPR_COUNT": "ចំនួន PPR",
+			"PPR_AMOUNT_USER": "ចំនួន PPR"
+		},
+		"DURATION": {
+			"TODAY": "ថ្ងៃនេះ",
+			"WEEKLY": "ប្រចាំសប្តាហ៍",
+			"MONTHLY": "ប្រចាំខែ",
+			"QUARTER": "ប្រចាំត្រីមាស",
+			"SEMI_ANNUALLY": "ប្រចាំឆមាស",
+			"ANNUALLY": "ប្រចាំឆ្នាំ"
+		}
+	},
+	"KPI2000000": {
+		"TITLE": "KPI ក្រុម"
+	},
+	"SAL3000000": {
+		"TITLE": "ការពិគ្រោះយោបល់",
+		"PLACEHOLDER": {
+			"SEARCH_TYPE": "ប្រភេទស្វែងរក",
+			"ENTER_KEYWORD": "បញ្ចូលពាក្យគន្លឹះ"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក",
+			"CALL": "ខលហៅ ({0})"
+		},
+		"SEARCH_TYPE": {
+			"ALL": "ទាំងអស់",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"PHONE_NUMBER": "លេខទូរស័ព្ទ"
+		},
+		"CONSULTATION_TYPE": {
+			"REQUEST_LOAN": "ស្នើសុំឥណទាន",
+			"DEPOSIT": "ដាក់ប្រាក់",
+			"WITHDRAWAL": "ដកប្រាក់"
+		},
+		"INTEREST": {
+			"INTERESTED": "ចាប់អារម្មណ៍",
+			"NOT_INTERESTED": "មិនចាប់អារម្មណ៍"
+		},
+		"STATUS": {
+			"REGISTERED": "បានចុះឈ្មោះ",
+			"COMPLETED": "បានបញ្ចប់"
+		},
+		"PRIORITY": {
+			"HIGH": "ខ្ពស់",
+			"MEDIUM": "មធ្យម",
+			"LOW": "ទាប"
+		}
+	},
+	"SAL3100000": {
+		"TITLE": "ចុះឈ្មោះការពិគ្រោះយោបល់",
+		"LABEL": {
+			"CONSULTATION_DETAIL": "ព័ត៌មានលម្អិតការពិគ្រោះយោបល់",
+			"ENTER_KEYWORD": "បញ្ចូលពាក្យគន្លឹះ",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"LAST_CONSULT_DATE": "កាលបរិច្ឆេទពិគ្រោះចុងក្រោយ",
+			"NEXT_SCHEDULE_DATE": "កាលបរិច្ឆេទពិគ្រោះបន្ទាប់",
+			"CUSTOMER_ADDRESS": "អាសយដ្ឋានអតិថិជន",
+			"PRIORITY_CODE": "កូដអាទិភាព",
+			"CUSTOMER_INFORMATION": "ព័ត៌មានអតិថិជន",
+			"CONSULTATION_INFORMATION": "ព័ត៌មានការពិគ្រោះយោបល់",
+			"CONTACT_AND_LOCATION": "ទំនាក់ទំនង និងទីតាំង",
+			"FIRST_NAME_EN": "នាម (អង់គ្លេស)",
+			"LAST_NAME_EN": "នាមគ្រួសារ (អង់គ្លេស)",
+			"FIRST_NAME_KH": "នាម (ខ្មែរ)",
+			"LAST_NAME_KH": "នាមគ្រួសារ (ខ្មែរ)",
+			"PREFERRED_CALLING_TITLE": "ងារហៅ",
+			"GENDER": "ភេទ",
+			"DATE_OF_BIRTH": "ថ្ងៃខែឆ្នាំកំណើត",
+			"MARITAL_STATUS": "ស្ថានភាពគ្រួសារ",
+			"CONSULT_DATE": "កាលបរិច្ឆេទពិគ្រោះ",
+			"CONSULTATION_STATUS": "ស្ថានភាពការពិគ្រោះ",
+			"CONSULTATION_TYPE": "ប្រភេទការពិគ្រោះ",
+			"CURRENCY": "រូបិយប័ណ្ណ",
+			"CUSTOMER_INTEREST": "ចាប់អារម្មណ៍អតិថិជន",
+			"NEXT_CONSULT_DATE_LABEL": "កាលបរិច្ឆេទពិគ្រោះបន្ទាប់",
+			"REMARK": "កំណត់សម្គាល់",
+			"PHONE_NUMBER": "លេខទូរស័ព្ទ",
+			"CONSULTATION_ADDRESS": "អាសយដ្ឋានពិគ្រោះ",
+			"STREET": "ផ្លូវ",
+			"HOUSE_NO": "ផ្ទះលេខ",
+			"ADDRESS_DETAIL_OPTIONAL": "ព័ត៌មានអាសយដ្ឋាន (ជម្រើស)",
+			"ATTACH_DOCUMENT": "ភ្ជាប់ឯកសារ"
+		},
+		"OPTION": {
+			"USD": "USD",
+			"KHR": "KHR",
+			"YES": "យល់ព្រម",
+			"NO": "មិន"
+		},
+		"BUTTON": {
+			"ADD_NEW_CONSULTATION": "បន្ថែមការពិគ្រោះថ្មី",
+			"SUBMIT": "ដាក់ស្នើ",
+			"CANCEL": "បោះបង់"
+		}
+	},
+	"SAL3200000": {
+		"TITLE": "ព័ត៌មានលម្អិតការពិគ្រោះយោបល់",
+		"SECTION": {
+			"CLIENT_IDENTITY": "អត្តសញ្ញាណអតិថិជន",
+			"CONSULTATION_DETAILS": "ព័ត៌មានការពិគ្រោះយោបល់",
+			"CONTACT_AND_LOCATION": "ទំនាក់ទំនង និងទីតាំង",
+			"SUPPORTING_MATERIAL": "ឯកសារគាំទ្រ"
+		},
+		"LABEL": {
+			"PREFERRED_TITLE": "ងារហៅ",
+			"GENDER": "ភេទ",
+			"DATE_OF_BIRTH": "ថ្ងៃខែឆ្នាំកំណើត",
+			"MARITAL_STATUS": "ស្ថានភាពគ្រួសារ",
+			"CONSULT_DATE": "កាលបរិច្ឆេទពិគ្រោះ",
+			"CONSULTATION_STATUS": "ស្ថានភាពការពិគ្រោះ",
+			"CONSULTATION_TYPE": "ប្រភេទការពិគ្រោះ",
+			"PURPOSE": "គោលបំណង",
+			"REQUEST_AMOUNT": "ចំនួនទឹកប្រាក់ស្នើសុំ",
+			"PRIORITY_CODE": "កូដអាទិភាព",
+			"CUSTOMER_INTEREST": "ចាប់អារម្មណ៍អតិថិជន",
+			"NEXT_ACTION": "សកម្មភាពបន្ទាប់",
+			"NEXT_CONSULT_DATE": "កាលបរិច្ឆេទពិគ្រោះបន្ទាប់",
+			"REMARK": "កំណត់សម្គាល់",
+			"PHONE_NUMBER": "លេខទូរស័ព្ទ",
+			"CLIENT_ADDRESS": "អាសយដ្ឋានអតិថិជន"
+		},
+		"BUTTON": {
+			"MODIFY": "កែប្រែ"
+		}
+	},
+	"SAL5000000": {
+		"TITLE": "ការធ្វើគំរូឥណទាន",
+		"LABEL": {
+			"LOAN_CURRENCY": "រូបិយប័ណ្ណឥណទាន",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"LOAN_TERM": "រយៈពេលឥណទាន",
+			"INTEREST_RATE_MONTHLY": "អត្រាការប្រាក់ (ប្រចាំខែ) %",
+			"REPAYMENT_MODE": "របៀបបង់ប្រាក់",
+			"MONTHLY_FEE_RATE": "អត្រាកម្រៃប្រចាំខែ %"
+		},
+		"OPTION": {
+			"USD": "USD",
+			"KHR": "KHR"
+		},
+		"BUTTON": {
+			"CALCULATE": "គណនា"
+		}
+	},
+	"SAL5100000": {
+		"TITLE": "ការធ្វើគំរូឥណទាន",
+		"SECTION": {
+			"LOAN_SUMMARY": "សង្ខេបឥណទាន",
+			"LOAN_TERM": "រយៈពេលឥណទាន"
+		},
+		"LABEL": {
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"PERIOD": "រយៈពេល",
+			"MONTHS": "ខែ",
+			"REPAYMENT_MODE": "របៀបបង់ប្រាក់",
+			"MONTHLY_INTEREST_RATE": "អត្រាការប្រាក់ប្រចាំខែ",
+			"MONTHLY_FEE_RATE": "អត្រាកម្រៃប្រចាំខែ",
+			"TOTAL_INTEREST": "ការប្រាក់សរុប",
+			"TOTAL_FEE": "កម្រៃសរុប",
+			"PRINCIPAL": "មូលធន",
+			"INTEREST": "ការប្រាក់",
+			"FEE": "កម្រៃ",
+			"TOTAL": "សរុប",
+			"MONTH": "ខែ"
+		},
+		"BUTTON": {
+			"DOWNLOAD_AS_EXCEL": "ទាញយកជា Excel"
+		},
+		"MESSAGE": {
+			"SUCCESS": "ជោគជ័យ",
+			"DOWNLOAD_SUCCESS": "របាយការណ៍គំរូឥណទានបានទាញយកដោយជោគជ័យ {0}",
+			"ERROR": "កំហុស",
+			"DOWNLOAD_FAILED": "ទាញយករបាយការណ៍គំរូឥណទានមិនបានជោគជ័យ {0}"
+		}
+	},
+	"SAL6000000": {
+		"TITLE": "បញ្ជីពាក្យស្នើឥណទាន",
+		"PLACEHOLDER": {
+			"PROGRESS_STATUS": "ស្ថានភាពដំណើរការពាក្យស្នើ",
+			"PRODUCT_CODE": "កូដផលិតផល",
+			"APPLICATION_NO": "លេខពាក្យស្នើ"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក",
+			"ADD_APPLICATION": "បន្ថែមពាក្យស្នើ"
+		},
+		"LABEL": {
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"LOAN_TYPE": "ប្រភេទឥណទាន",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"LOAN_TERM": "រយៈពេលឥណទាន",
+			"MONTHS": "ខែ",
+			"LOAN_HOPE_DATE": "កាលបរិច្ឆេទរំពឹងឥណទាន"
+		},
+		"MODAL": {
+			"SELECT_CUSTOMER": "ជ្រើសរើសអតិថិជន"
+		}
+	},
+	"SAL6100000": {
+		"TITLE_MODIFY": "កែប្រែពាក្យស្នើឥណទាន",
+		"TITLE_REGISTER": "ចុះឈ្មោះពាក្យស្នើឥណទាន",
+		"TITLE_SELECT_CUSTOMER": "ជ្រើសរើសអតិថិជន",
+		"STEP_APPLICATION_INFO": "ព័ត៌មានពាក្យស្នើ",
+		"SECTION": {
+			"BASIC_INFO": "ព័ត៌មានមូលដ្ឋាន",
+			"FEE_INFO": "ព័ត៌មានកម្រៃ",
+			"COLLATERAL_INFO": "ព័ត៌មានទ្រព្យបញ្ចាំ",
+			"CO_BORROWER_GUARANTOR": "អ្នកខ្ចីរួម និងអ្នកធានា",
+			"RISK_EVALUATION": "ហានិភ័យ និងការវាយតម្លៃ",
+			"REMARK": "ការកត់សម្គាល់"
+		},
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"GENDER": "ភេទ",
+			"BIRTH_DATE": "ថ្ងៃកំណើត",
+			"ID_CARD": "អត្តសញ្ញាណប័ណ្ណ",
+			"IDENTIFICATION_TYPE": "ប្រភេទអត្តសញ្ញាណ",
+			"PHONE_NUMBER": "លេខទូរស័ព្ទ",
+			"CREATED_DATE": "កាលបរិច្ឆេទបង្កើត",
+			"APPLICATION_NO": "លេខពាក្យស្នើ",
+			"APPLICATION_PROGRESS_STATUS": "ស្ថានភាពដំណើរការពាក្យស្នើ",
+			"APPLICATION_TYPE": "ប្រភេទពាក្យស្នើ",
+			"APPLICATION_KIND": "ប្រភេទពាក្យស្នើ",
+			"PRODUCT_NAME": "ឈ្មោះផលិតផល",
+			"APPLICATION_AMOUNT": "ចំនួនពាក្យស្នើ",
+			"FIRST_DISBURSEMENT_AMOUNT": "ចំនួនបង្កាត់ដំបូង",
+			"PRINCIPAL_REPAY_METHOD": "វិធីសងមូលធន",
+			"LOAN_TERM": "រយៈពេលឥណទាន",
+			"INTEREST_RATE": "អត្រាការប្រាក់ (%)",
+			"TARGET_DISBURSEMENT_DATE": "កាលបរិច្ឆេទបង្កាត់គោលដៅ",
+			"UTILIZATION_CODE": "កូដការប្រើប្រាស់",
+			"LOAN_PURPOSE": "គោលបំណងឥណទាន",
+			"LOAN_PURPOSE_CODE": "កូដគោលបំណងឥណទាន",
+			"LOAN_PURPOSE_AMOUNT": "ចំនួនគោលបំណងឥណទាន",
+			"TOTAL_USAGE_AMOUNT": "ចំនួនប្រើប្រាស់សរុប",
+			"COMMITMENT_FEE": "កម្រៃការប្តាក់ភ្ជាប់ (%)",
+			"PROCESSING_FEE": "កម្រៃដំណើរការ (%)",
+			"COLLATERAL": "ទ្រព្យបញ្ចាំ",
+			"COLLATERAL_CATEGORY_TYPE": "ប្រភេទចំណាត់ថ្នាក់ទ្រព្យបញ្ចាំ",
+			"COLLATERAL_TYPE": "ប្រភេទទ្រព្យបញ្ចាំ",
+			"COLLATERAL_DETAIL_TYPE": "ប្រភេទព័ត៌មានលម្អិតទ្រព្យបញ្ចាំ",
+			"AMOUNT": "ចំនួន",
+			"SELECT_DEPOSIT_ACCOUNT": "ជ្រើសរើសគណនីដាក់ប្រាក់",
+			"VEHICLE_PLATE_NO": "លេខផ្លាករថយន្ត",
+			"TOTAL_COLLATERAL_AMOUNT": "ចំនួនទ្រព្យបញ្ចាំសរុប",
+			"LTV": "LTV (%)",
+			"CRR_SCORE": "ពិន្ទុ CRR",
+			"CBC_SCORE": "ពិន្ទុ CBC",
+			"CBC_REFERENCE_NO": "លេខយោង CBC",
+			"DSCR": "DSCR",
+			"REMARK": "ការកត់សម្គាល់",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CO_BORROWER": "អ្នកខ្ចីរួម",
+			"GUARANTOR": "អ្នកធានា",
+			"CUSTOMER_RELATION_TYPE": "ប្រភេទទំនាក់ទំនងអតិថិជន"
+		},
+		"BUTTON": {
+			"REMOVE": "ដកចេញ",
+			"ADD_MORE_PURPOSE": "បន្ថែមគោលបំណង",
+			"ADD_MORE_COLLATERAL": "បន្ថែមទ្រព្យបញ្ចាំ",
+			"ADD_MORE_CO_BORROWER_GUARANTOR": "បន្ថែមអ្នកខ្ចីរួម និងអ្នកធានា",
+			"NEXT": "បន្ទាប់"
+		}
+	},
+	"SAL6110000": {
+		"TITLE": "ចុះឈ្មោះពាក្យស្នើឥណទាន",
+		"STEP_INCOME_INFO": "ព័ត៌មានចំណូល",
+		"SECTION": {
+			"EMPLOYMENT_DETAIL": "ព័ត៌មានការងារ",
+			"COMPANY_BUSINESS_INFO": "ព័ត៌មានក្រុមហ៊ុន/អាជីវកម្ម",
+			"INCOME_SOURCE": "ចំណូល និងប្រភព"
+		},
+		"LABEL": {
+			"EMPLOYEE_TYPE": "ប្រភេទបុគ្គលិក",
+			"EMPLOYMENT_STATUS": "ស្ថានភាពការងារ",
+			"EMPLOYMENT_DATE": "កាលបរិច្ឆេទចាប់ធ្វើការ",
+			"OCCUPATION_TYPE": "ប្រភេទមុខរបរ",
+			"COMPANY_BUSINESS_NAME": "ឈ្មោះក្រុមហ៊ុន/អាជីវកម្ម",
+			"COMPANY_ADDRESS": "អាសយដ្ឋានក្រុមហ៊ុន",
+			"STREET": "ផ្លូវ",
+			"HOUSE_NUMBER": "លេខផ្ទះ",
+			"CURRENCY": "រូបិយប័ណ្ណ",
+			"MONTHLY_SALARY_INCOME": "ប្រាក់ខែ/ចំណូលប្រចាំខែ",
+			"OTHER_INCOME": "ចំណូលផ្សេងទៀត",
+			"TOTAL_MONTHLY_INCOME": "ចំណូលប្រចាំខែសរុប",
+			"OUTSTANDING_LOAN_OTHER_BANKS": "ចំនួនឥណទានគង់នៅធនាគារផ្សេង"
+		},
+		"BUTTON": {
+			"CANCEL": "បោះបង់",
+			"PREVIOUS": "មុន",
+			"NEXT": "បន្ទាប់"
+		}
+	},
+	"SAL6120000": {
+		"TITLE": "ចុះឈ្មោះពាក្យស្នើឥណទាន",
+		"STEP_PREVIEW": "មើលការពិនិត្យពាក្យស្នើ",
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"GENDER": "ភេទ",
+			"BIRTH_DATE": "ថ្ងៃកំណើត",
+			"ID_CARD": "អត្តសញ្ញាណប័ណ្ណ",
+			"IDENTIFICATION_TYPE": "ប្រភេទអត្តសញ្ញាណ",
+			"PHONE_NUMBER": "លេខទូរស័ព្ទ",
+			"CREATED_DATE": "កាលបរិច្ឆេទបង្កើត",
+			"APPLICATION_TYPE": "ប្រភេទពាក្យស្នើ",
+			"LOAN_PRODUCT": "ផលិតផលឥណទាន",
+			"CURRENCY_CODE": "កូដរូបិយប័ណ្ណ",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"REPAYMENT_METHOD": "វិធីសងប្រាក់",
+			"TENOR_MONTHS": "រយៈពេល (ខែ)",
+			"MONTHS": "ខែ",
+			"MONTHLY_INTEREST_RATE": "អត្រាការប្រាក់ប្រចាំខែ",
+			"TARGET_DISBURSEMENT_DATE": "កាលបរិច្ឆេទបង្កាត់គោលដៅ",
+			"LOAN_PURPOSE": "គោលបំណងឥណទាន",
+			"LOAN_FUND_PURPOSE": "គោលបំណងមូលនិធិឥណទាន",
+			"MONTHLY_EXPENSE": "ចំណាយប្រចាំខែ",
+			"TOTAL_USAGE_AMOUNT": "ចំនួនប្រើប្រាស់សរុប",
+			"COMMITMENT_FEE": "កម្រៃសេវាប្តេជ្ញាចិត្ត (%)",
+			"PROCESSING_FEE": "កម្រៃដំណើរការ (%)",
+			"COLLATERAL_CATEGORY": "ចំណាត់ថ្នាក់ទ្រព្យបញ្ចាំ",
+			"COLLATERAL_TYPE": "ប្រភេទទ្រព្យបញ្ចាំ",
+			"COLLATERAL_DETAIL": "ព័ត៌មានលម្អិតទ្រព្យបញ្ចាំ",
+			"AMOUNT": "ចំនួន",
+			"TOTAL_COLLATERAL_AMOUNT": "ចំនួនទ្រព្យបញ្ចាំសរុប",
+			"LTV": "LTV (%)",
+			"CRR_SCORE": "ពិន្ទុ CRR",
+			"CBC_REFERENCE_NO": "លេខយោង CBC",
+			"CBC_SCORE": "ពិន្ទុ CBC",
+			"DSCR": "DSCR",
+			"REMARK": "ការកត់សម្គាល់",
+			"EMPLOYMENT_STATUS": "ស្ថានភាពការងារ",
+			"EMPLOYEE_TYPE": "ប្រភេទបុគ្គលិក",
+			"EMPLOYMENT_DATE": "កាលបរិច្ឆេទចាប់ធ្វើការ",
+			"OCCUPATION": "មុខរបរ",
+			"OCCUPATION_TYPE": "ប្រភេទមុខរបរ",
+			"COMPANY_BUSINESS_NAME": "ឈ្មោះក្រុមហ៊ុន/អាជីវកម្ម",
+			"ADDRESS": "អាសយដ្ឋាន",
+			"STREET": "ផ្លូវ",
+			"HOUSE_NUMBER": "លេខផ្ទះ",
+			"MONTHLY_SALARY_INCOME": "ប្រាក់ខែ/ចំណូលប្រចាំខែ",
+			"OTHER_INCOME": "ចំណូលផ្សេងទៀត",
+			"TOTAL_MONTHLY_INCOME": "ចំណូលប្រចាំខែសរុប",
+			"OUTSTANDING_LOAN_OTHER_BANKS": "ចំនួនឥណទានគង់នៅធនាគារផ្សេង"
+		},
+		"SECTION": {
+			"EMPLOYMENT_DETAILS": "ព័ត៌មានការងារ",
+			"COMPANY_BUSINESS_INFO": "ព័ត៌មានក្រុមហ៊ុន/អាជីវកម្ម",
+			"INCOME_SOURCE": "ចំណូល និងប្រភព",
+			"APPLICATION_INFO": "ព័ត៌មានពាក្យស្នើ",
+			"FEE_INFO": "ព័ត៌មានកម្រៃ",
+			"COLLATERAL_INFO": "ព័ត៌មានទ្រព្យបញ្ចាំ",
+			"RISK_EVALUATION": "ហានិភ័យ និងការវាយតម្លៃ",
+			"REMARK": "ការកត់សម្គាល់"
+		},
+		"BUTTON": {
+			"CANCEL": "បោះបង់",
+			"PREVIOUS": "មុន",
+			"SUBMIT": "ដាក់ស្នើ"
+		}
+	},
+	"SAL6200000": {
+		"TITLE": "ព័ត៌មានលម្អិតពាក្យស្នើឥណទាន",
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_TYPE": "ប្រភេទអតិថិជន",
+			"EMPLOYMENT_STATUS": "ស្ថានភាពការងារ",
+			"EMPLOYEE_TYPE": "ប្រភេទបុគ្គលិក",
+			"EMPLOYMENT_DATE": "កាលបរិច្ឆេទចាប់ធ្វើការ",
+			"COMPANY_BUSINESS_NAME": "ឈ្មោះក្រុមហ៊ុន/អាជីវកម្ម",
+			"ADDRESS": "អាសយដ្ឋាន",
+			"CURRENCY_CODE": "កូដរូបិយប័ណ្ណ",
+			"MONTHLY_SALARY_INCOME": "ប្រាក់ខែ/ចំណូលប្រចាំខែ",
+			"OTHER_INCOME": "ចំណូលផ្សេងទៀត",
+			"TOTAL_MONTHLY_INCOME": "ចំណូលប្រចាំខែសរុប",
+			"OUTSTANDING_LOAN_OTHER_BANKS": "ចំនួនឥណទានគង់នៅធនាគារផ្សេង",
+			"APPLICATION_TYPE": "ប្រភេទពាក្យស្នើ",
+			"APPLICATION_KIND": "ប្រភេទពាក្យស្នើ",
+			"APPLICATION_STATUS": "ស្ថានភាពពាក្យស្នើ",
+			"LOAN_PRODUCT": "ផលិតផលឥណទាន",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"REPAYMENT_METHOD": "វិធីសងប្រាក់",
+			"TENOR_MONTHS": "រយៈពេល (ខែ)",
+			"MONTHS": "ខែ",
+			"MONTHLY_INTEREST_RATE": "អត្រាការប្រាក់ប្រចាំខែ",
+			"TARGET_DISBURSEMENT_DATE": "កាលបរិច្ឆេទបង្កាត់គោលដៅ",
+			"LOAN_PURPOSE": "គោលបំណងឥណទាន",
+			"LOAN_FUND_PURPOSE": "គោលបំណងមូលនិធិឥណទាន",
+			"MONTHLY_EXPENSE": "ចំណាយប្រចាំខែ",
+			"TOTAL_USAGE_AMOUNT": "ចំនួនប្រើប្រាស់សរុប",
+			"COMMITMENT_FEE": "កម្រៃការប្តាក់ភ្ជាប់ (%)",
+			"PROCESSING_FEE": "កម្រៃដំណើរការ (%)",
+			"COLLATERAL_NO": "លេខទ្រព្យបញ្ចាំ",
+			"CUSTOMER_RELATION_TYPE": "ប្រភេទទូរទូលអតិថិជន",
+			"COBORROWER_YN": "មានជាមួយអតិថិជនជាមួយគ្នាឬមិនមានជាមួយគ្នា",
+			"COLLATERAL_CATEGORY": "ចំណាត់ថ្នាក់ទ្រព្យបញ្ចាំ",
+			"CATEGORY_TYPE": "ប្រភេទចំណាត់ថ្នាក់",
+			"DETAIL_TYPE": "ប្រភេទព័ត៌មានលម្អិត",
+			"AMOUNT": "ចំនួន",
+			"TOTAL_COLLATERAL_AMOUNT": "ចំនួនទ្រព្យបញ្ចាំសរុប",
+			"LTV": "សមាមាត្រឥណទានទៅតម្លៃ(%)",
+			"CRR_SCORE": "ពិន្ទុអ្នកបង្ហោះការវាយតម្លៃ(CRR)",
+			"CBC_SCORE": "ពិន្ទុ Credit Bureau Cambodia(CBC)",
+			"DSCR": "កិនានិចិត្តសងប្រាក់កាន់តាមរយៈពេលសង (DSCR)",
+			"REMARK": "ការកត់សម្គាល់"
+		},
+		"SECTION": {
+			"EMPLOYMENT_DETAILS": "ព័ត៌មានការងារ",
+			"COMPANY_BUSINESS_INFO": "ព័ត៌មានក្រុមហ៊ុន/អាជីវកម្ម",
+			"INCOME_SOURCE": "ចំណូល និងប្រភព",
+			"APPLICATION_INFO": "ព័ត៌មានពាក្យស្នើ",
+			"FEE_INFO": "ព័ត៌មានកម្រៃ",
+			"COLLATERAL_INFO": "ព័ត៌មានទ្រព្យបញ្ចាំ",
+			"RISK_EVALUATION": "ហានិភ័យ និងការវាយតម្លៃ",
+			"REMARK": "ការកត់សម្គាល់"
+		},
+		"BUTTON": {
+			"MODIFY": "កែប្រែ",
+			"REQUEST_PROCESSING": "ការស្នើរបស់អ្នកកំពុងដំណើរការ!",
+			"SETUP_APPROVAL": "កំណត់ការអនុម័ត"
+		},
+		"MESSAGE": {
+			"WARNING": "ការព្រមាន",
+			"ADD_COLLATERAL_BEFORE_APPROVAL": "សូមបន្ថែមព័ត៌មានទ្រព្យបញ្ចាំមុនកំណត់ការអនុម័ត",
+			"OK": "យល់ព្រម"
+		}
+	},
+	"SAL6210000": {
+		"TITLE": "កំណត់ការអនុម័តពាក្យស្នើឥណទាន",
+		"LABEL": {
+			"APPROVAL_SETUP": "កំណត់ការអនុម័ត",
+			"APPROVER": "អ្នកអនុម័ត"
+		},
+		"BUTTON": {
+			"SUBMIT": "ដាក់ស្នើ"
+		},
+		"MESSAGE": {
+			"SUBMIT_APPROVAL_HEADER": "ដាក់ស្នើបញ្ជីអនុម័ត",
+			"SUBMIT_APPROVAL_CONFIRM": "តើអ្នកប្រាកដថាចង់ដាក់ស្នើបញ្ជីអនុម័តឬ?"
+		}
+	},
+	"SAL7100000": {
+		"TITLE": "បើកគណនី",
+		"PRODUCT": {
+			"SAVING_ACCOUNT": "គណនីអចលនទ្រព្យ",
+			"FIXED_DEPOSIT": "ដាក់ប្រាក់រឹម",
+			"SAVING_ACCOUNT_DESC": "ការបើកគណនីអចលនទ្រព្យជាមួយ MCNC Bank គឺជាវិធីរក្សាប្រាក់របស់អ្នកឱ្យមានប្រសិទ្ធភាព និងរកប្រាក់បន្ថែមយ៉ាងងាយស្រួលជាមួយអត្រាការប្រាក់ 3%. អ្នកអាចដក ឬដាក់ប្រាក់តាមរយៈ ATM និងធ្វើប្រតិបត្តិការផ្សេងៗតាម CCU Mobile Banking App។",
+			"FIXED_DEPOSIT_DESC": "ការបើកដាក់ប្រាក់រឹមជាមួយ MCNC Bank គឺជាវិធីរក្សាប្រាក់របស់អ្នកឱ្យមានប្រសិទ្ធភាព និងរកប្រាក់បន្ថែមជាមួយអត្រាការប្រាក់។ អ្នកអាចគ្រប់គ្រងដាក់ប្រាក់រឹមតាម CCU Mobile Banking App។"
+		}
+	},
+	"SAL7110000": {
+		"TITLE": "ព័ត៌មានផលិតផល",
+		"LABEL": {
+			"ACCOUNT": "គណនី",
+			"FEATURE": "មុខងារ",
+			"SUITABILITY": "ភាពសមរម្យ",
+			"CURRENCY": "រូបិយប័ណ្ណ",
+			"INTEREST_RATE_PA": "អត្រាការប្រាក់ (ប្រចាំឆ្នាំ)",
+			"MIN_OPENING_BALANCE": "សមតុល្យបើកគណនីអប្បបរមា",
+			"ONGOING_BALANCE": "សមតុល្យបន្ត",
+			"ENTITLES": "សិទ្ធិ"
+		},
+		"ALT_PRODUCT_BANNER": "រូបផលិតផល"
+	},
+	"SAL7120000": {
+		"TITLE": "បើកគណនី",
+		"PLACEHOLDER": {
+			"SELECT_ID_TYPE": "ជ្រើសរើសប្រភេទអត្តសញ្ញាណ",
+			"ENTER_ID": "បញ្ចូលអត្តសញ្ញាណ",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក"
+		},
+		"LABEL": {
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"GENDER": "ភេទ",
+			"DATE_OF_BIRTH": "ថ្ងៃកំណើត",
+			"ID_CARD": "អត្តសញ្ញាណប័ណ្ណ",
+			"PHONE_NO": "លេខទូរស័ព្ទ"
+		}
+	},
+	"SAL7130000": {
+		"TITLE": "បើកគណនី",
+		"SECTION": {
+			"CUSTOMER_INFO": "ព័ត៌មានអតិថិជន"
+		},
+		"LABEL": {
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"DATE_OF_BIRTH": "ថ្ងៃកំណើត",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"CURRENCY": "រូបិយប័ណ្ណ"
+		},
+		"BUTTON": {
+			"NEXT": "បន្ទាប់"
+		}
+	},
+	"SAL7140000": {
+		"TITLE": "បើកគណនី",
+		"BUTTON": {
+			"CLOSE": "បិទ"
+		},
+		"MESSAGE": {
+			"CONFIRM_OPEN": "តើអ្នកចង់បើក",
+			"CONFIRM_OPEN_QUESTION": "?"
+		},
+		"LABEL": {
+			"PRODUCT": "ផលិតផល",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CURRENCY_TYPE": "ប្រភេទរូបិយប័ណ្ណ",
+			"INTEREST_RATE": "អត្រាការប្រាក់",
+			"INTEREST_RATE_PA": "% P.A"
+		}
+	},
+	"SAL7150000": {
+		"TITLE": "លទ្ធផលបើកគណនី",
+		"MESSAGE": {
+			"THANK_YOU_OPEN": "សូមអរគុណសម្រាប់ការបើក"
+		},
+		"LABEL": {
+			"PRODUCT": "ផលិតផល",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CURRENCY_TYPE": "ប្រភេទរូបិយប័ណ្ណ",
+			"INTEREST_RATE": "អត្រាការប្រាក់",
+			"INTEREST_RATE_PA": "% P.A",
+			"ACCOUNT_NUMBER": "លេខគណនី"
+		}
+	},
+	"SAL7160000": {
+		"TITLE": "បើកគណនី",
+		"SECTION": {
+			"CUSTOMER_INFO": "ព័ត៌មានអតិថិជន"
+		},
+		"LABEL": {
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"DATE_OF_BIRTH": "ថ្ងៃកំណើត",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"CURRENCY": "រូបិយប័ណ្ណ",
+			"SELECT_INTEREST_OPTIONS": "ជ្រើសរើសជម្រើសការប្រាក់",
+			"CHOOSE_TENOR": "ជ្រើសរើសរយៈពេល",
+			"MONTH": "ខែ",
+			"MONTHS": "ខែ",
+			"INTEREST_RATE": "អត្រាការប្រាក់",
+			"INTEREST_RATE_NOTE": "ការដកប្រាក់របស់អ្នកមានអត្រាការប្រាក់ខុសគ្នាប្រៀបធៀបនឹងចុងរយៈពេល",
+			"OPENING_AMOUNT": "ចំនួនបើកគណនី",
+			"ESTIMATE_END_DATE_PAYMENT": "កាលបរិច្ឆេទបង្គត់ប៉ាន់ស្មាន",
+			"WITHDRAWAL_ACCOUNT": "គណនីដកប្រាក់",
+			"SAVING_ACCOUNT": "គណនីអចលនទ្រព្យ",
+			"DEPOSIT_ROLLOVER_DIVIDE": "ការបន្តដាក់ប្រាក់រឹម",
+			"NOMINATE_ACCOUNT": "គណនីកំណត់"
+		},
+		"BUTTON": {
+			"NEXT": "បន្ទាប់"
+		},
+		"MESSAGE": {
+			"SELECT_WITHDRAWAL_ACCOUNT": "សូមជ្រើសរើសគណនីដកប្រាក់។",
+			"VALID_OPENING_AMOUNT": "សូមបញ្ចូលចំនួនបើកគណនីដែលត្រឹមត្រូវ។",
+			"AMOUNT_OUT_OF_RANGE": "ចំនួនក្រៅជួរ",
+			"AMOUNT_RANGE_BETWEEN": "ចំនួនបើកគណនីត្រូវរវាង {0} និង {1}។",
+			"INSUFFICIENT_FUNDS": "មូលនិធិមិនគ្រប់គ្រាន់",
+			"INSUFFICIENT_FUNDS_MSG": "គណនីដកប្រាក់ដែលជ្រើសរើសមិនមានសមតុល្យគ្រប់គ្រាន់សម្រាប់ចំនួនបើកគណនីនេះ។",
+			"SELECT_ROLLOVER_OPTION": "សូមជ្រើសរើសជម្រើសបន្តដាក់ប្រាក់រឹម។",
+			"SELECT_NOMINATE_ACCOUNT": "សូមជ្រើសរើសគណនីកំណត់។",
+			"SELECT_VALID_TENOR": "សូមជ្រើសរើសរយៈពេលដែលត្រឹមត្រូវ។",
+			"NO_DEPOSIT_ACCOUNT": "គ្មានគណនីដាក់ប្រាក់",
+			"NO_DEPOSIT_ACCOUNT_MSG": "មិនអាចបើកគណនីដាក់ប្រាក់រឹមបានព្រោះអតិថិជននេះគ្មានគណនីដាក់ប្រាក់។"
+		}
+	},
+	"SAL7161000": {
+		"BUTTON": {
+			"CLOSE": "បិទ",
+			"NO": "ទេ",
+			"YES": "យល់ព្រម"
+		},
+		"MESSAGE": {
+			"CONFIRM_OPEN": "តើអ្នកចង់បើក",
+			"FIXED_DEPOSIT_ACCOUNT": "គណនីដាក់ប្រាក់រឹម?"
+		},
+		"LABEL": {
+			"PRODUCT": "ផលិតផល",
+			"FIXED_DEPOSIT": "ដាក់ប្រាក់រឹម",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"ACCOUNT_NAME": "ឈ្មោះគណនី",
+			"CURRENCY_TYPE": "ប្រភេទរូបិយប័ណ្ណ",
+			"INTEREST_OPTION": "ជម្រើសការប្រាក់",
+			"TENOR": "រយៈពេល",
+			"MONTHS": "ខែ",
+			"OPENING_AMOUNT": "ចំនួនបើកគណនី",
+			"WITHDRAWAL_ACCOUNT": "គណនីដកប្រាក់",
+			"RECEIVE_ACCOUNT": "គណនីទទួល",
+			"END_DATE_PAYMENT": "កាលបរិច្ឆេទបង្គត់"
+		},
+		"INTEREST_OPTION": {
+			"MATURITY": "ការទូទាត់នៅចុងរយៈពេល",
+			"MONTHLY": "ការទូទាត់ការប្រាក់ (ប្រចាំខែ)"
+		}
+	},
+	"SAL7162000": {
+		"TITLE": "លទ្ធផលបើកគណនី",
+		"MESSAGE": {
+			"THANK_YOU_OPEN": "សូមអរគុណសម្រាប់ការបើក",
+			"FIXED_DEPOSIT": "ដាក់ប្រាក់រឹម"
+		},
+		"LABEL": {
+			"PRODUCT": "ផលិតផល",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CURRENCY_TYPE": "ប្រភេទរូបិយប័ណ្ណ",
+			"INTEREST_RATE": "អត្រាការប្រាក់",
+			"INTEREST_RATE_PA": "% P.A",
+			"ACCOUNT_NUMBER": "លេខគណនី",
+			"COPY": "ចម្លង"
+		},
+		"BUTTON": {
+			"OKAY": "យល់ព្រម"
+		}
+	},
+	"SAL9000000": {
+		"TITLE": "ស្នើសុំដកប្រាក់ឆែកផ្ទះ",
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក",
+			"ADD_NEW_BANK_CHEQUE": "បន្ថែមឆែកធនាគារថ្មី"
+		},
+		"LABEL": {
+			"REQUEST_DATE": "កាលបរិច្ឆេទស្នើ",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"ACCOUNT_NO": "លេខគណនី",
+			"ISSUES_AMOUNT": "ចំនួនចេញ"
+		},
+		"STATUS_NA": "មិនមានទិន្នន័យ"
+	},
+	"SAL9100000": {
+		"TITLE": "ព័ត៌មានលម្អិតស្នើសុំដកប្រាក់ឆែកផ្ទះ",
+		"LABEL": {
+			"CHEQUE_NO": "លេខឆែក",
+			"PHONE_NUMBER": "លេខទូរស័ព្ទ",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CHEQUE_AMOUNT": "ចំនួនឆែក",
+			"ACCOUNT_NO": "លេខគណនី",
+			"REQUEST_DATE": "កាលបរិច្ឆេទស្នើ",
+			"PURPOSE": "គោលបំណង",
+			"ATTACHMENT": "ឯកសារភ្ជាប់",
+			"STATUS": "ស្ថានភាព"
+		},
+		"STATUS_NA": "មិនមានទិន្នន័យ"
+	},
+	"SAL9110000": {
+		"TITLE": "ស្នើសុំឆែកធនាគារ",
+		"PLACEHOLDER": {
+			"ENTER_CHEQUE_NO": "បញ្ចូលលេខឆែក",
+			"ENTER_ACCOUNT_NO": "បញ្ចូលលេខគណនី",
+			"ENTER_PHONE_NUMBER": "បញ្ចូលលេខទូរស័ព្ទ",
+			"ENTER_PURPOSE": "បញ្ចូលគោលបំណង"
+		},
+		"LABEL": {
+			"CHEQUE_NO": "លេខឆែក",
+			"ACCOUNT_NO": "លេខគណនី",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"CURRENCY": "រូបិយប័ណ្ណ",
+			"CHEQUE_AMOUNT": "ចំនួនឆែក",
+			"PURPOSE": "គោលបំណង",
+			"ATTACHMENT": "ឯកសារភ្ជាប់"
+		},
+		"BUTTON": {
+			"NEXT": "បន្ទាប់"
+		}
+	},
+	"SAL9112000": {
+		"BUTTON": {
+			"CLOSE": "បិទ",
+			"NO": "ទេ",
+			"YES": "យល់ព្រម"
+		},
+		"MESSAGE": {
+			"CONFIRM_PROCESS": "តើអ្នកចង់ដំណើរការ",
+			"BANK_CHEQUE": "ឆែកធនាគារ?"
+		},
+		"LABEL": {
+			"CHEQUE_NO": "លេខឆែក",
+			"ACCOUNT_NO": "លេខគណនី",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"REQUEST_DATE": "កាលបរិច្ឆេទស្នើ",
+			"ISSUE_AMOUNT": "ចំនួនចេញ",
+			"PURPOSE": "គោលបំណង",
+			"ATTACHMENT": "ឯកសារភ្ជាប់"
+		}
+	},
+	"SAL9112100": {
+		"TITLE": "លទ្ធផលឆែកធនាគារ",
+		"MESSAGE": {
+			"THANK_YOU": "សូមអរគុណចំពោះការប្រើប្រាស់សេវាកម្មរបស់យើង។",
+			"BANK_CHEQUE": "ឆែកធនាគារ",
+			"NOTE_PROCESS_DAYS": "សូមកត់សម្គាល់ថាឆែកធនាគារត្រូវបានដំណើរការក្នុងរយៈពេល 3 ថ្ងៃធ្វើការ។"
+		},
+		"LABEL": {
+			"CHEQUE_NO": "លេខឆែក",
+			"ACCOUNT_NO": "លេខគណនី",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"PHONE_NUMBER": "លេខទូរស័ព្ទ",
+			"ISSUE_AMOUNT": "ចំនួនចេញ",
+			"REQUEST_DATE": "កាលបរិច្ឆេទស្នើ",
+			"PURPOSE": "គោលបំណង",
+			"ATTACHMENT": "ឯកសារភ្ជាប់"
+		},
+		"BUTTON": {
+			"NEXT": "បន្ទាប់"
+		}
+	},
+	"SALA000000": {
+		"TITLE": "បញ្ជីផលិតផលកាត",
+		"MODAL": {
+			"SELECT_CUSTOMER": "ជ្រើសរើសអតិថិជន"
+		},
+		"PRODUCT": {
+			"VISA_DEBIT_CLASSIC": "VISA Debit Classic [Individual]",
+			"VISA_DEBIT_GOLD": "VISA Debit Gold [Individual]",
+			"VISA_STAFF_DEBIT_CLASSIC": "VISA Staff Debit Classic [Individual]"
+		}
+	},
+	"SALA100000": {
+		"TITLE": "បញ្ជីស្នើសុំកាត",
+		"PLACEHOLDER": {
+			"ENTER_CUSTOMER_NAME": "បញ្ចូលឈ្មោះអតិថិជន",
+			"ENTER_PHONE_NUMBER": "បញ្ចូលលេខទូរស័ព្ទ"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក",
+			"REQUEST_NEW_CARD": "ស្នើសុំកាតថ្មី"
+		},
+		"LABEL": {
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"ACCOUNT_NO": "លេខគណនី",
+			"ISSUE_AMOUNT": "ចំនួនចេញ",
+			"REQUEST_DATE": "កាលបរិច្ឆេទស្នើ"
+		},
+		"STATUS_NA": "មិនមានទិន្នន័យ"
+	},
+	"SALA200000": {
+		"TITLE": "ទម្រង់ស្នើសុំកាត",
+		"PLACEHOLDER": {
+			"ENTER_VALUE": "បញ្ចូលតម្លៃ"
+		},
+		"LABEL": {
+			"PRODUCT": "ផលិតផល",
+			"CARD_HOLDER_NAME": "ឈ្មោះអ្នកកាន់កាត",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"SETTLEMENT_ACCOUNT": "គណនីទូទាត់",
+			"CURRENCY": "រូបិយប័ណ្ណ",
+			"DAILY_LIMIT_AMOUNT": "ចំនួនដែនកំណត់ប្រចាំថ្ងៃ",
+			"DAILY_PURCHASING_LIMIT": "ចំនួនដែនកំណត់ទិញប្រចាំថ្ងៃ",
+			"CARD_NICKNAME": "ឈ្មោះហៅកាត",
+			"CONTACT_NO": "លេខទំនាក់ទំនង",
+			"DELIVERY_OPTION": "ជម្រើសការចែកចាយ",
+			"DELIVERY_ADDRESS": "អាសយដ្ឋានចែកចាយ"
+		},
+		"BUTTON": {
+			"NEXT": "បន្ទាប់"
+		},
+		"SAVING_ACCOUNT": "គណនីអចលនទ្រព្យ"
+	},
+	"SALA300000": {
+		"BUTTON": {
+			"CLOSE": "បិទ",
+			"NO": "ទេ",
+			"YES": "យល់ព្រម"
+		},
+		"MESSAGE": {
+			"CONFIRM_CREATE": "តើអ្នកចង់បង្កើត",
+			"CONFIRM_QUESTION": "?"
+		},
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"PRODUCT": "ផលិតផល",
+			"SETTLEMENT_ACCOUNT": "គណនីទូទាត់",
+			"DAILY_LIMIT_AMOUNT": "ចំនួនដែនកំណត់ប្រចាំថ្ងៃ",
+			"DAILY_LIMIT_PER_DAY": "ចំនួនដែនកំណត់ប្រចាំថ្ងៃ",
+			"DELIVERY_OPTION": "ជម្រើសការចែកចាយ",
+			"ADDRESS": "អាសយដ្ឋាន",
+			"CONTACT_NO": "លេខទំនាក់ទំនង"
+		}
+	},
+	"SALA400000": {
+		"TITLE": "លទ្ធផលស្នើសុំកាត",
+		"MESSAGE": {
+			"THANK_YOU_OPEN": "សូមអរគុណសម្រាប់ការបើក"
+		},
+		"LABEL": {
+			"PRODUCT": "ផលិតផល",
+			"SETTLEMENT_ACCOUNT": "គណនីទូទាត់",
+			"CARD_HOLDER_NAME": "ឈ្មោះអ្នកកាន់កាត",
+			"CARD_NICK_NAME": "ឈ្មោះហៅកាត",
+			"DAILY_LIMIT_AMOUNT": "ចំនួនដែនកំណត់ប្រចាំថ្ងៃ",
+			"DAILY_LIMIT_PER_DAY": "ចំនួនដែនកំណត់ប្រចាំថ្ងៃ",
+			"TIME": "ដង",
+			"DELIVERY_OPTION": "ជម្រើសការចែកចាយ",
+			"ADDRESS": "អាសយដ្ឋាន",
+			"CONTACT_NO": "លេខទំនាក់ទំនង"
+		},
+		"BUTTON": {
+			"OK": "យល់ព្រម"
+		}
+	},
+	"SALA500000": {
+		"TITLE": "ព័ត៌មានលម្អិតស្នើសុំកាត",
+		"LABEL": {
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"CARD_TYPE": "ប្រភេទកាត",
+			"CARD_NO": "លេខកាត",
+			"CARD_NICKNAME": "ឈ្មោះហៅកាត",
+			"CARD_PRODUCT_NAME": "ឈ្មោះផលិតផលកាត",
+			"SETTLEMENT_ACCOUNT": "គណនីទូទាត់",
+			"DAILY_LIMIT_AMOUNT": "ចំនួនដែនកំណត់ប្រចាំថ្ងៃ",
+			"DAILY_PURCHASING_LIMIT": "ចំនួនដែនកំណត់ទិញប្រចាំថ្ងៃ",
+			"DELIVERY_OPTION": "ជម្រើសការចែកចាយ",
+			"DELIVERY_RECIPIENT_PHONE": "លេខទូរស័ព្ទអ្នកទទួល",
+			"DELIVERY_ADDRESS": "អាសយដ្ឋានចែកចាយ",
+			"REQUEST_DATE": "កាលបរិច្ឆេទស្នើ",
+			"RESULT": "លទ្ធផល"
+		}
+	},
+	"LAU20000000": {
+		"LABEL": {
+			"CHOOSE_LANGUAGE": "ជ្រើសរើសភាសា"
+		}
+	},
+	"LAU2000000": {
+		"TITLE": "ផ្លាស់ប្តូរភាសា",
+		"WELCOME_TO": "សូមស្វាគមន៍មកកាន់",
+		"LOS_1": "ឥណទាន",
+		"LOS_2": "ចាប់ដើម",
+		"LOS_3": "ប្រព័ន្ធ",
+		"SELECT_LANGUAGE": "សូមជ្រើសរើសភាសារបស់អ្នក",
+		"NOTE": "ចំណង់ភាសារបស់អ្នកអាចផ្លាស់ប្តូរបានគ្រប់ពេលក្នុង",
+		"SETTING": "ការកំណត់",
+		"BUTTON_CONFIRM": "យល់ព្រម",
+		"BUTTON_NEXT": "បន្ទាប់",
+		"LANG_KHMER": "ភាសាខ្មែរ",
+		"LANG_ENGLISH": "English"
+	},
+	"LAU3000000": {
+		"TITLE": "លក្ខខណ្ឌ និងលក្ខន្តិកា",
+		"AGREE_CHECKBOX": "យល់ព្រមតាមលក្ខខណ្ឌ និងលក្ខន្តិកាទាំងអស់",
+		"I_AGREE": "ខ្ញុំយល់ព្រម",
+		"TERMS_APP_TITLE": "កម្មវិធី Mobile C&C LOS - លក្ខខណ្ឌ និងលក្ខន្តិកា",
+		"TERMS_APP_INTRO": "កម្មវិធីនេះផ្តល់ដោយ Mobile C&C ក្នុងវិធីសាស្ត្រ SaaS LOS (ប្រព័ន្ធចាប់ដើមឥណទាន)។ ការចូល និងប្រើកម្មវិធីនេះ អ្នកយល់ព្រមតាមលក្ខខណ្ឌទាំងនេះ។",
+		"TERMS_1": "1. ការប្រើប្រាស់ដែលមានអាជ្ញារ\nកម្មវិធីអាចប្រើបានតែដោយបុគ្គលិកដែលមានអាជ្ញារនៃគ្រឹះស្ថានហិរញ្ញវត្ថុរបស់អ្នក។ អ្នកត្រូវរក្សាលេខសម្ងាត់ និងពាក្យសម្ងាត់របស់អ្នកជារឿយៗ។ កុំចែករំលែកឧបករណ៍ រូបថតអេក្រង ឬទិន្នន័យឥណទានជាមួយអ្នកដែលគ្មានអាជ្ញារ។",
+		"TERMS_2": "2. ទិន្នន័យ និងភាពឯកជន\nព័ត៌មានអតិថិជន និងទិន្នន័យឥណទានទាំងអស់ជាកម្មសិទ្ធិគ្រឹះស្ថានហិរញ្ញវត្ថុរបស់អ្នក។ កម្មវិធីរក្សាទិន្នន័យដោយសុវត្ថិភាព។ Mobile C&C មិនប្រើ ឬចែករំលែកទិន្នន័យរបស់អ្នក លើកលែងតែគាំទ្របច្ចេកទេស ឬតាមច្បាប់។",
+		"TERMS_3": "3. ច្បាប់ប្រើកម្មវិធី\nអ្នកយល់ព្រមមិន:\ni) បញ្ចូលព័ត៌មានអតិថិជនមិនពិត ឬមិនពេញលេញ\nii) កែប្រែ ចម្លង ឬចែករំលែកផ្នែកណាមួយនៃកម្មវិធី",
+		"TERMS_4": "4. ភាពអាចប្រើបាននៃសេវា\nកម្មវិធី LOS ផ្តល់តាមគំរូ SaaS ការរាយការណ៍។ ការរំខានអាចកើតឡើងដោយការថែទាំ បញ្ហាបណ្តាញ ឬប្រព័ន្ធភាគីទីបី។",
+		"TERMS_5": "5. សុវត្ថិភាព\nកម្មវិធីប្រើការផ្ទៀងផ្ទាត់អត្តសញ្ញាណ ការអ៊ិនគ្រីប និងការកត់ត្រាសកម្ម។ អ្នកត្រូវរាយការណ៍ភ្លាមអំពីឧបករណ៍ខាត សកម្មភាពគួរឱ្យសង្ស័យ ឬការចូលប្រើគ្មានអាជ្ញារ។",
+		"TERMS_6": "6. ការទទួលខុសត្រូវ\nការសម្រេចចិត្តឥណទាន និងភាពត្រឹមត្រូវនៃទិន្នន័យគឺជាការទទួលខុសត្រូវរបស់គ្រឹះស្ថានអ្នក។ Mobile C&C មិនទទួលខុសត្រូវចំពោះការខាតបង់ដោយការបញ្ចូលមិនត្រឹមត្រូវ កំហុសប្រតិបត្តិការ ឬបញ្ហាតាមច្បាប់។",
+		"TERMS_7": "7. ការបញ្ចប់ Mobile C&C អាចរឹតបន្តឹងការចូលប្រើបាន ប្រសិនបើ:\ni) ការរាយការណ៍ចប់សិន\nii) អ្នកប្រើរំលោចច្បាប់សុវត្ថិភាព ឬអនុល័ម្ភ ឬ\niii) ការប្រើប្រាស់បច្ចេកទេសមិនត្រឹមត្រូវ។"
+	},
+	"COL3100000": {
+		"TITLE": "របាយការណ៍ផែនការបង់ប្រាក់",
+		"LABEL": {
+			"PAYMENT_PLAN_REPORT": "របាយការណ៍ផែនការបង់ប្រាក់",
+			"INQUIRY_CONDITION": "លក្ខខណ្ឌស្វែងរក",
+			"ENTER_CUSTOMER_NAME": "បញ្ចូលឈ្មោះអតិថិជន",
+			"ALL": "ទាំងអស់",
+			"LATE": "យឺត",
+			"TODAY": "ថ្ងៃនេះ",
+			"UPCOMING": "ជិតមកដល់",
+			"SELECT_DATE": "ជ្រើសរើសកាលបរិច្ឆេទ",
+			"ADD_PAYMENT_PLAN_REPORT": "បន្ថែមរបាយការណ៍ផែនការបង់ប្រាក់",
+			"DATE": "កាលបរិច្ឆេទ",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"PAYMENT_PLAN_DATE": "កាលបរិច្ឆេទផែនការបង់ប្រាក់",
+			"SCHEDULE_DATE": "កាលបរិច្ឆេទកាលវិភាគ",
+			"PAYMENT_AMOUNT": "ចំនួនបង់ប្រាក់"
+		},
+		"PLACEHOLDER": {
+			"ENTER_DEBTOR_NAME": "បញ្ចូលឈ្មោះកូនបំណុល",
+			"ENTER_DEBTOR_PHONE_NO": "បញ្ចូលលេខទូរស័ព្ទកូនបំណុល"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក",
+			"CALL": "ខលហៅ"
+		}
+	},
+	"COL3110000": {
+		"TITLE": "ព័ត៌មានលម្អិតរបាយការណ៍ផែនការបង់ប្រាក់",
+		"LABEL": {
+			"PAYMENT_PLAN_REPORT": "របាយការណ៍ផែនការបង់ប្រាក់",
+			"PAYMENT_PLAN_REPORT_EDITOR": "កម្មវិធីកែសម្រួលរបាយការណ៍ផែនការបង់ប្រាក់",
+			"VISIT_REPORT": "របាយការណ៍ចុះជួប",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CUSTOMER_INFORMATION": "ព័ត៌មានអតិថិជន",
+			"LOAN_INFORMATION": "ព័ត៌មានឥណទាន",
+			"PAYMENT_PLAN_LOG": "កំណត់ហេតុផែនការបង់ប្រាក់",
+			"SCHEDULE_DATE": "កាលបរិច្ឆេទកាលវិភាគ",
+			"PRINCIPAL_AMOUNT": "ចំនួនដើមទុន",
+			"INTEREST_AMOUNT": "ចំនួនការប្រាក់",
+			"OVERDUE_AMOUNT": "ចំនួនបង់យឺត",
+			"GOAL_PAY_AMOUNT": "ចំនួនបង់គោលដៅ",
+			"FOLLOW_UP_DATE": "កាលបរិច្ឆេទតាមដាន",
+			"FOLLOW_UP_METHOD": "វិធីសាស្រ្តតាមដាន",
+			"MEETING_PERSON": "អ្នកជួប",
+			"PAYMENT_PLAN_METHOD": "វិធីផែនការបង់ប្រាក់",
+			"PAYMENT_PLAN_DATE": "កាលបរិច្ឆេទផែនការបង់ប្រាក់",
+			"PAYMENT_PLAN_AMOUNT": "ចំនួនផែនការបង់ប្រាក់",
+			"NEXT_FOLLOW_UP": "តាមដានបន្ទាប់",
+			"REMARK": "ការកត់សម្គាល់",
+			"ATTACHMENT": "ឯកសាភ្ជាប់",
+			"SPEAKING_TO": "និយាយជាមួយ",
+			"SELECT_SPEAKING_TO": "ជ្រើសរើសអ្នកនិយាយជាមួយ",
+			"PERSON_NAME": "ឈ្មោះបុគ្គល",
+			"SELECT_CUSTOMER_NO": "ជ្រើសរើសលេខអតិថិជន",
+			"ENTER_PERSON_NAME": "បញ្ចូលឈ្មោះបុគ្គល",
+			"REASON_OF_DELINQUENCY": "មូលហេតុនៃការបង់យឺត",
+			"SELECT_REASON_OF_DELINQUENCY": "ជ្រើសរើសមូលហេតុនៃការបង់យឺត",
+			"CONTACT_PLACE": "ទីតាំងទំនាក់ទំនង",
+			"SELECT_CONTACT_PLACE": "ជ្រើសរើសទីតាំងទំនាក់ទំនង",
+			"REMARKS": "សម្គាល់",
+			"ENTER_REMARKS": "បញ្ចូលសម្គាល់",
+			"EVIDENCE": "ភស្តុតាង",
+			"SELECT_EVIDENCE": "ជ្រើសរើសភស្តុតាង",
+			"PAYMENT_PLAN_REPORT_ACCOUNT_NO": "លេខគណនីរបាយការណ៍ផែនការបង់ប្រាក់",
+			"SELECT_PAYMENT_PLAN_REPORT_ACCOUNT_NO": "ជ្រើសរើសលេខគណនីរបាយការណ៍ផែនការបង់ប្រាក់",
+			"PAYMENT_PLAN_REPORT_DATE": "កាលបរិច្ឆេទរបាយការណ៍ផែនការបង់ប្រាក់",
+			"SELECT_PAYMENT_PLAN_REPORT_DATE": "ជ្រើសរើសកាលបរិច្ឆេទរបាយការណ៍ផែនការបង់ប្រាក់",
+			"PAYMENT_PLAN_REPORT_METHOD": "វិធីសាស្រ្តរបាយការណ៍ផែនការបង់ប្រាក់",
+			"SELECT_PAYMENT_PLAN_REPORT_METHOD": "ជ្រើសរើសវិធីសាស្រ្តរបាយការណ៍ផែនការបង់ប្រាក់",
+			"PAYMENT_PLAN_REPORT_AMOUNT": "ចំនួនទឹកប្រាក់ផែនការបង់ប្រាក់",
+			"ENTER_PAYMENT_PLAN_REPORT_AMOUNT": "បញ្ចូលចំនួនទឹកប្រាក់ផែនការបង់ប្រាក់",
+			"DELINQUENCY_AMOUNT": "ចំនួនទឹកប្រាក់បង់យឺត",
+			"ENTER_DELINQUENCY_AMOUNT": "បញ្ចូលចំនួនទឹកប្រាក់បង់យឺត"
+		},
+		"BUTTON": {
+			"VIEW_PPR_HISTORY": "មើលប្រវត្តិ PPR",
+			"CALL": "ខលហៅ",
+			"MODIFY": "កែប្រែ"
+		}
+	},
+	"COL3120000": {
+		"TITLE_EDITOR": "កម្មវិធីកែសម្រួលរបាយការណ៍ផែនការបង់ប្រាក់",
+		"TITLE_REGISTER": "ចុះឈ្មោះរបាយការណ៍ផែនការបង់ប្រាក់",
+		"LABEL": {
+			"VIEW_PPR_HISTORY": "មើលប្រវត្តិ PPR",
+			"CUSTOMER_INFORMATION": "ព័ត៌មានអតិថិជន",
+			"LOAN_INFORMATION": "ព័ត៌មានឥណទាន",
+			"PAYMENT_PLAN_LOG": "កំណត់ហេតុផែនការបង់ប្រាក់",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"SCHEDULE_DATE": "កាលបរិច្ឆេទកាលវិភាគ",
+			"PRINCIPAL_AMOUNT": "ចំនួនដើមទុន",
+			"INTEREST_AMOUNT": "ចំនួនការប្រាក់",
+			"OVERDUE_AMOUNT": "ចំនួនបង់យឺត",
+			"GOAL_PAY_AMOUNT": "ចំនួនបង់គោលដៅ",
+			"FOLLOW_UP_DATE": "កាលបរិច្ឆេទតាមដាន",
+			"FOLLOW_UP_METHOD": "វិធីសាស្រ្តតាមដាន",
+			"MEET_WITH": "ជួបជាមួយ",
+			"MEETING_PERSON": "អ្នកជួប",
+			"PAYMENT_PLAN_METHOD": "វិធីផែនការបង់ប្រាក់",
+			"PAYMENT_PLAN_DATE": "កាលបរិច្ឆេទផែនការបង់ប្រាក់",
+			"PAYMENT_PLAN_AMOUNT": "ចំនួនផែនការបង់ប្រាក់",
+			"FOLLOW_UP_RESULT": "លទ្ធផលតាមដាន",
+			"NEXT_FOLLOW_UP": "តាមដានបន្ទាប់",
+			"REMARK": "ការកត់សម្គាល់",
+			"ATTACHMENT": "ឯកសាភ្ជាប់"
+		},
+		"PLACEHOLDER": {
+			"INPUT_MEETING_PERSON": "បញ្ចូលអ្នកបានជួប",
+			"INPUT_AMOUNT": "បញ្ចូលចំនួនទឹកប្រាក់",
+			"SELECT_FOLLOW_UP_RESULT": "ជ្រើសរើសលទ្ធផលតាមដាន",
+			"INPUT_REMARK": "បញ្ចូលកំនត់សម្គាល់",
+			"SELECT_FOLLOW_UP_METHOD": "ជ្រើសរើសវិធីសាស្រ្តតាមដាន",
+			"SELECT_MEET_WITH": "ជ្រើសរើសអ្នកបានជួប",
+			"SELECT_PAYMENT_PLAN_METHOD": "ជ្រើសរើសផែនការបង់ប្រាក់"
+		},
+		"BUTTON": {
+			"CALL": "ខលហៅ",
+			"SUBMIT": "ដាក់ស្នើ"
+		},
+		"MESSAGE": {
+			"NEXT_FOLLOW_UP_AFTER_FOLLOW_UP": "កាលបរិច្ឆេទតាមដានបន្ទាប់ត្រូវតែក្រោយពីកាលបរិច្ឆេទតាមដាន។",
+			"FOLLOW_UP_ON_OR_AFTER_TODAY": "កាលបរិច្ឆេទតាមដានត្រូវតែនៅថ្ងៃនេះ ឬក្រោយថ្ងៃនេះ។",
+			"PAYMENT_PLAN_ON_OR_AFTER_TODAY": "កាលបរិច្ឆេទផែនការបង់ប្រាក់ត្រូវតែនៅថ្ងៃនេះ ឬក្រោយថ្ងៃនេះ។",
+			"NEXT_FOLLOW_UP_AFTER_TODAY": "កាលបរិច្ឆេទតាមដានបន្ទាប់ត្រូវតែក្រោយថ្ងៃនេះ។"
+		}
+	},
+	"COL3130000": {
+		"TITLE": "ប្រវត្តិរបាយការណ៍ផែនការបង់ប្រាក់",
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"PAYMENT_PLAN_DATE": "កាលបរិច្ឆេទផែនការបង់ប្រាក់",
+			"SCHEDULE_DATE": "កាលបរិច្ឆេទកាលវិភាគ",
+			"PAYMENT_AMOUNT": "ចំនួនបង់ប្រាក់"
+		},
+		"BUTTON": {
+			"CALL": "ខលហៅ"
+		}
+	},
+	"COL4000000": {
+		"TITLE": "របាយការណ៍ចុះជួប",
+		"LABEL": {
+			"VISIT_REPORT": "របាយការណ៍ចុះជួប",
+			"DEBTOR_NUMBER": "លេខកូនបំណុល",
+			"DEBTOR_NAME": "ឈ្មោះកូនបំណុល",
+			"VISIT_DATE": "កាលបរិច្ឆេទចុះជួប",
+			"NEXT_SCHEDULE": "កាលវិភាគបន្ទាប់",
+			"SPEAKING_TO": "និយាយជាមួយ",
+			"PERSON_NAME": "ឈ្មោះបុគ្គល",
+			"REASON_OF_DELINQUENCY": "មូលហេតុនៃការបង់យឺត",
+			"CONTACT_PLACE": "ទីតាំងទំនាក់ទំនង",
+			"DATE_TIME": "កាលបរិច្ឆេទ/ម៉ោង",
+			"REMARK": "សម្គាល់",
+			"EVIDENCE": "ភស្តុតាង",
+			"ADD_EVIDENCE_IMAGE": "បន្ថែមរូបភាពភស្តុតាង",
+			"REMOVE": "លុបចេញ",
+			"ONLINE": "អនឡាញ",
+			"OFFLINE": "អហ្វឡាញ",
+			"SELECT_SPEAKING_TO": "ជ្រើសរើសអ្នកនិយាយជាមួយ",
+			"ENTER_PERSON_NAME": "បញ្ចូលឈ្មោះបុគ្គល",
+			"SELECT_REASON_OF_DELINQUENCY": "ជ្រើសរើសមូលហេតុនៃការបង់យឺត",
+			"SELECT_CONTACT_PLACE": "ជ្រើសរើសទីតាំងទំនាក់ទំនង",
+			"SELECT_DATE_TIME": "ជ្រើសរើសកាលបរិច្ឆេទ/ម៉ោង",
+			"ENTER_REMARK": "បញ្ចូលសម្គាល់"
+		},
+		"PLACEHOLDER": {
+			"ENTER_DEBTOR_NUMBER": "បញ្ចូលលេខកូនបំណុល",
+			"ENTER_DEBTOR_NAME": "បញ្ចូលឈ្មោះកូនបំណុល"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក"
+		},
+		"SEGMENT": {
+			"ALL": "ទាំងអស់",
+			"MET": "ជួប",
+			"NOT_MET": "មិនជួប"
+		}
+	},
+	"COL4100000": {
+		"TITLE_UPDATE": "កែប្រែរបាយការណ៍ចុះជួប",
+		"TITLE_REGISTER": "ចុះឈ្មោះរបាយការណ៍ចុះជួប",
+		"LABEL": {
+			"SPEAKING_TO": "និយាយជាមួយ",
+			"PERSON_NAME": "ឈ្មោះបុគ្គល",
+			"VISIT_OUTCOME": "លទ្ធផលចុះជួប",
+			"ADDRESS_ON_MAP": "អាសយដ្ឋានលើផែនទី",
+			"VISIT_DATE": "កាលបរិច្ឆេទចុះជួប",
+			"VISIT_TIME": "ម៉ោងចុះជួប",
+			"NEXT_PLAN_DATE": "កាលបរិច្ឆេទផែនការបន្ទាប់",
+			"REMARK": "ការកត់សម្គាល់",
+			"EVIDENCE": "ភស្តុតាង",
+			"FOLLOW_UP_TYPE": "ប្រភេទការតាមដាន"
+		},
+		"OPTION": {
+			"PARENT": "ឪពុកម្ដាយ",
+			"SELF": "ខ្លួនឯង",
+			"OTHER": "ផ្សេងទៀត",
+			"MET": "ជួប",
+			"NOT_MET": "មិនជួប"
+		},
+		"BUTTON": {
+			"CANCEL": "បោះបង់",
+			"SUBMIT": "ដាក់ស្នើ"
+		}
+	},
+	"COL4200000": {
+		"TITLE": "ព័ត៌មានលម្អិតរបាយការណ៍ចុះជួប",
+		"LABEL": {
+			"VIEW_REPORT_HISTORY": "មើលប្រវត្តិរបាយការណ៍",
+			"DEBTOR_NUMBER": "លេខកូនបំណុល",
+			"DEBTOR_NAME": "ឈ្មោះកូនបំណុល",
+			"VISIT_OUTCOME": "លទ្ធផលចុះជួប",
+			"STAFF_NAME": "ឈ្មោះបុគ្គលិក",
+			"MEET_WITH_PERSON": "ជួបជាមួយ",
+			"VISIT_DATE": "កាលបរិច្ឆេទចុះជួប",
+			"VISIT_TIME": "ម៉ោងចុះជួប",
+			"NEXT_PLAN": "ផែនការបន្ទាប់",
+			"REMARK": "ការកត់សម្គាល់",
+			"EVIDENCE": "ភស្តុតាង"
+		},
+		"BUTTON": {
+			"CONTINUE_VISIT_REPORT": "បន្តរបាយការណ៍ចុះជួប"
+		},
+		"STATUS": {
+			"MET": "ជួប",
+			"NOT_MET": "មិនជួប"
+		}
+	},
+	"COL4210000": {
+		"TITLE": "ប្រវត្តិរបាយការណ៍ចុះជួប",
+		"LABEL": {
+			"DEBTOR_NAME": "ឈ្មោះកូនបំណុល",
+			"VISIT_DATE": "កាលបរិច្ឆេទចុះជួប",
+			"NEXT_SCHEDULE": "កាលវិភាគបន្ទាប់"
+		},
+		"STATUS": {
+			"MET": "ជួប",
+			"NOT_MET": "មិនជួប"
+		}
+	},
+	"COL5000000": {
+		"TITLE": "បញ្ជីតាមដានឥណទានបង់យឺត",
+		"LABEL": {
+			"CUSTOMER_INQUIRY": "ស្វែងរកអតិថិជន",
+			"LOAN_OVERDUE_LIST": "បញ្ជីឥណទានបង់យឺត",
+			"STAFF_NAME": "ឈ្មោះបុគ្គលិក",
+			"CO": "CO",
+			"INQUIRY_CONDITION": "លក្ខខណ្ឌស្វែងរក",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"ENTER_CUSTOMER_NAME": "បញ្ចូលឈ្មោះអតិថិជន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CONTACT_DATE": "កាលបរិច្ឆេទទំនាក់ទំនង",
+			"OVERDUE_AMOUNT": "ចំនួនទឹកប្រាក់បង់យឺត",
+			"CURRENCY": "រូបិយប័ណ្ណ",
+			"LOAN_BALANCE": "សមតុល្យឥណទាន",
+			"CUSTOMER_ADDRESS": "អាសយដ្ឋានអតិថិជន",
+			"PHONE_NUMBER": "លេខទូរស័ព្ទ",
+			"LOAN_TERM": "រយៈពេលឥណទាន",
+			"DAYS_OVERDUE": "ចំនួនថ្ងៃបង់យឺត",
+			"DAYS": "ថ្ងៃ"
+		},
+		"PLACEHOLDER": {
+			"OVERDUE_DAYS": "ថ្ងៃបង់យឺត",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CUSTOMER_PHONE_NUMBER": "លេខទូរស័ព្ទអតិថិជន"
+		},
+		"SEGMENT": {
+			"OVERDUE_FOLLOW_UP": "តាមដានការបង់យឺត",
+			"OVERDUE_FOLLOW_UP_LOG": "កំណត់ហេតុតាមដានការបង់យឺត"
+		},
+		"OPTION": {
+			"DAYS_30": "៣០ ថ្ងៃ",
+			"DAYS_60": "៦០ ថ្ងៃ",
+			"DAYS_90_PLUS": "៩០+ ថ្ងៃ"
+		},
+		"UNIT": {
+			"DAY": "ថ្ងៃ",
+			"DAYS": "ថ្ងៃ"
+		},
+		"BUTTON": {
+			"CALL": "ខលហៅ"
+		}
+	},
+	"COL5100000": {
+		"TITLE": "ព័ត៌មានលម្អិតតាមដានឥណទានបង់យឺត",
+		"LABEL": {
+			"DEBTOR_INFO": "ព័ត៌មានកូនបំណុល",
+			"LOAN_INFO": "ព័ត៌មានឥណទាន",
+			"ARREARS_SUMMARY": "សង្ខេបបំណុល",
+			"FOLLOW_UP_INTERACTION": "ទំនាក់ទំនងតាមដាន",
+			"REASON_RESOLUTION": "មូលហេតុ និង ដំណោះស្រាយ",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"LOAN_ACCOUNT_NO": "លេខគណនីឥណទាន",
+			"LOAN_BALANCE": "សមតុល្យឥណទាន",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"OVERDUE_DAYS": "ថ្ងៃបង់យឺត",
+			"OVERDUE_AMOUNT": "ចំនួនបង់យឺត",
+			"CONTACT_DATE": "កាលបរិច្ឆេទទំនាក់ទំនង",
+			"CONTACT_METHOD": "វិធីសាស្រ្តទំនាក់ទំនង",
+			"SUPPORT_BY_CODE": "លេខកូដគាំទ្រ",
+			"ACTION_CODE": "លេខកូដសកម្មភាព",
+			"RESULT_CODE": "លេខកូដលទ្ធផល",
+			"NEGOTIATION_CODE": "លេខកូដចរចា",
+			"PROMISE_CODE": "លេខកូដសន្យា",
+			"PROMISE_DATE": "កាលបរិច្ឆេទសន្យា",
+			"ARREARS_FOLLOW_UP_RESULT_CODE": "លេខកូដលទ្ធផលតាមដានបំណុល",
+			"ARREARS_REASON_CODE": "លេខកូដមូលហេតុបំណុល",
+			"FAMILY_ISSUE_CODE": "លេខកូដបញ្ហាគ្រួសារ",
+			"FINANCIAL_ISSUE_CODE": "លេខកូដបញ្ហាហិរញ្ញវត្ថុ",
+			"ARREARS_REASON": "មូលហេតុបំណុល",
+			"NEXT_SOLVING_PLAN": "ផែនការដោះស្រាយបន្ទាប់",
+			"NEXT_CONTACT_DATE": "កាលបរិច្ឆេទទំនាក់ទំនងបន្ទាប់",
+			"REMARK": "ការកត់សម្គាល់",
+			"ATTACHMENT": "ឯកសាភ្ជាប់"
+		},
+		"UNIT": {
+			"DAY": "ថ្ងៃ",
+			"DAYS": "ថ្ងៃ"
+		},
+		"BUTTON": {
+			"VIEW_HISTORY": "មើលប្រវត្តិ",
+			"CALL": "ខលហៅ"
+		}
+	},
+	"COL5110000": {
+		"TITLE": "ចុះឈ្មោះឥណទានបង់យឺត",
+		"LABEL": {
+			"DEBTOR_NUMBER": "លេខកូនបំណុល",
+			"DEBTOR_NAME": "ឈ្មោះកូនបំណុល",
+			"LOAN_ACCOUNT_NO": "លេខគណនីឥណទាន",
+			"LOAN_BALANCE": "សមតុល្យឥណទាន",
+			"OVERDUE_BALANCE": "សមតុល្យបង់យឺត",
+			"OVERDUE_DAYS": "ថ្ងៃបង់យឺត",
+			"OVERDUE_AMOUNT": "ចំនួនបង់យឺត",
+			"ARREARS_TEXT": "អក្សរបំណុល",
+			"FOLLOW_UP_INTERACTION": "ទំនាក់ទំនងតាមដាន",
+			"CONTACT_DATE": "កាលបរិច្ឆេទទំនាក់ទំនង",
+			"CONTACT_METHOD": "វិធីសាស្រ្តទំនាក់ទំនង",
+			"SUPPORT_BY": "គាំទ្រដោយ",
+			"ACTION_CODE": "លេខកូដសកម្មភាព",
+			"NEGOTIATION_CODE": "លេខកូដចរចា",
+			"PROMISE_CODE": "លេខកូដសន្យា",
+			"PROMISE_DATE": "កាលបរិច្ឆេទសន្យា",
+			"ARREARS_FOLLOW_UP_RESULT": "លទ្ធផលតាមដានបំណុល",
+			"REASON_AND_RESOLUTION": "មូលហេតុ និង ដំណោះស្រាយ",
+			"ARREARS_REASON_CODE": "លេខកូដមូលហេតុបំណុល",
+			"RESOLVE_REASON_CODE": "លេខកូដមូលហេតុដោះស្រាយ",
+			"FINANCIAL_ISSUE_CODE": "លេខកូដបញ្ហាហិរញ្ញវត្ថុ",
+			"ARREARS_REASON_REMARK": "សម្គាល់មូលហេតុបំណុល",
+			"NEXT_SOLVING_PLAN_CODE": "លេខកូដផែនការដោះស្រាយបន្ទាប់",
+			"NEXT_CONTACT_DATE": "កាលបរិច្ឆេទទំនាក់ទំនងបន្ទាប់",
+			"REMARK": "ការកត់សម្គាល់",
+			"ATTACHMENT": "ឯកសាភ្ជាប់",
+			"SELECT_CONTACT_METHOD": "ជ្រើសរើសវិធីសាស្រ្តទំនាក់ទំនង",
+			"SELECT_SUPPORT_BY": "ជ្រើសរើសគាំទ្រ",
+			"SELECT_ACTION": "ជ្រើសរើសសកម្មភាព",
+			"SELECT_RESULT": "ជ្រើសរើសលទ្ធផល",
+			"SELECT_NEGOTIATION": "ជ្រើសរើសចរចា",
+			"SELECT_PROMISE": "ជ្រើសរើសសន្យា",
+			"SELECT_PROMISE_DATE": "ជ្រើសរើសកាលបរិច្ឆេទសន្យា",
+			"SELECT_ARREARS_FOLLOW_UP_RESULT": "ជ្រើសរើសលទ្ធផលតាមដានបំណុល",
+			"SELECT_ARREARS_REASON": "ជ្រើសរើសមូលហេតុបំណុល",
+			"SELECT_FAMILY_ISSUE": "ជ្រើសរើសបញ្ហាគ្រួសារ",
+			"SELECT_FINANCIAL_ISSUE": "ជ្រើសរើសបញ្ហាហិរញ្ញវត្ថុ",
+			"SELECT_NEXT_SOLVING_PLAN": "ជ្រើសរើសផែនការដោះស្រាយបន្ទាប់",
+			"SELECT_DATE": "ជ្រើសរើសកាលបរិច្ឆេទ"
+		},
+		"PLACEHOLDER": {
+			"INPUT_ARREARS_REASON_REMARK": "បញ្ចូលសម្គាល់មូលហេតុបំណុល",
+			"INPUT_REMARK": "បញ្ចូលសម្គាល់"
+		},
+		"BUTTON": {
+			"SUBMIT": "ដាក់ស្នើ"
+		},
+		"UNIT": {
+			"DAY": "ថ្ងៃ",
+			"DAYS": "ថ្ងៃ"
+		},
+		"MESSAGE": {
+			"SUPPORT_BY_REQUIRED": "គាំទ្រដោយគឺត្រូវបានទាមទារ",
+			"ACTION_CODE_REQUIRED": "លេខកូដសកម្មភាពគឺត្រូវបានទាមទារ",
+			"RESULT_REQUIRED": "លទ្ធផលគឺត្រូវបានទាមទារ",
+			"NEGOTIATION_CODE_REQUIRED": "លេខកូដចរចាគឺត្រូវបានទាមទារ",
+			"PROMISE_CODE_REQUIRED": "លេខកូដសន្យាគឺត្រូវបានទាមទារ",
+			"PROMISE_DATE_REQUIRED": "កាលបរិច្ឆេទសន្យាគឺត្រូវបានទាមទារ",
+			"ARREARS_FOLLOW_UP_RESULT_REQUIRED": "លទ្ធផលតាមដានបំណុលគឺត្រូវបានទាមទារ",
+			"ARREARS_REASON_CODE_REQUIRED": "លេខកូដមូលហេតុបំណុលគឺត្រូវបានទាមទារ",
+			"RESOLVE_REASON_CODE_REQUIRED": "លេខកូដមូលហេតុដោះស្រាយគឺត្រូវបានទាមទារ",
+			"FINANCIAL_ISSUE_CODE_REQUIRED": "លេខកូដបញ្ហាហិរញ្ញវត្ថុគឺត្រូវបានទាមទារ",
+			"NEXT_SOLVING_PLAN_CODE_REQUIRED": "លេខកូដផែនការដោះស្រាយបន្ទាប់គឺត្រូវបានទាមទារ",
+			"NEXT_CONTACT_DATE_REQUIRED": "កាលបរិច្ឆេទទំនាក់ទំនងបន្ទាប់គឺត្រូវបានទាមទារ",
+			"CONTACT_METHOD_REQUIRED": "វិធីសាស្រ្តទំនាក់ទំនងគឺត្រូវបានទាមទារ"
+		}
+	},
+	"COL5120000": {
+		"TITLE": "ប្រវត្តិតាមដានឥណទានបង់យឺត",
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"OVERDUE_AMOUNT": "ចំនួនបង់យឺត",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"FOLLOW_UP_DATE": "កាលបរិច្ឆេទតាមដាន",
+			"LOAN_BALANCE": "សមតុល្យឥណទាន",
+			"ADDRESS": "អាសយដ្ឋាន"
+		},
+		"UNIT": {
+			"DAY": "ថ្ងៃ",
+			"DAYS": "ថ្ងៃ"
+		}
+	},
+	"COL6000000": {
+		"TITLE": "បញ្ជីប្រមូលផ្តុំឥណទាន",
+		"LABEL": {
+			"LOAN_COLLECTION_LIST": "បញ្ជីប្រមូលផ្តុំឥណទាន",
+			"BRANCH": "សាខា",
+			"CO": "CO",
+			"INQUIRY_CONDITION": "លក្ខខណ្ឌស្វែងរក",
+			"ENTER_CUSTOMER_NAME": "បញ្ចូលឈ្មោះអតិថិជន",
+			"DEBTOR": "កូនបំណុល",
+			"SELECT_DEBTOR": "ជ្រើសរើសកូនបំណុល",
+			"STATUS": "ស្ថានភាព",
+			"SELECT_STATUS": "ជ្រើសរើសស្ថានភាព",
+			"DATE_RANGE": "ជួរកាលបរិច្ឆេទ",
+			"SELECT_DATE_RANGE": "ជ្រើសរើសជួរកាលបរិច្ឆេទ",
+			"LOAN_ACCOUNT_NO": "លេខគណនីឥណទាន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"SCHEDULE_DATE": "កាលបរិច្ឆេទកាលវិភាគ",
+			"REPAY_SCHEDULE": "កាលវិភាគបង់ប្រាក់",
+			"PRINCIPLE_AMOUNT": "ចំនួនដើមទុន",
+			"PRINCIPAL": "ដើមទុន",
+			"INTEREST_AMOUNT": "ចំនួនការប្រាក់",
+			"INTEREST": "ការប្រាក់",
+			"CURRENCY": "រូបិយប័ណ្ណ",
+			"DEBTOR_TYPE": "ប្រភេទកូនបំណុល"
+		},
+		"PLACEHOLDER": {
+			"ENTER_DEBTOR_NAME": "បញ្ចូលឈ្មោះកូនបំណុល",
+			"ENTER_DEBTOR_PHONE_NO": "បញ្ចូលលេខទូរស័ព្ទកូនបំណុល"
+		},
+		"SEGMENT": {
+			"ALL": "ទាំងអស់",
+			"TO_BE_COLLECTED": "ត្រូវប្រមូល",
+			"COLLECTION_LOG": "កំណត់ហេតុប្រមូល"
+		},
+		"OPTION": {
+			"PENDING": "រងចាំ",
+			"COMPLETED": "បានបញ្ចប់",
+			"CLOSED": "បិទ"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក",
+			"CALL": "ខលហៅ"
+		},
+		"STATUS": {
+			"TODAY": "ថ្ងៃនេះ",
+			"UPCOMING": "ជិតមកដល់"
+		}
+	},
+	"COL6100000": {
+		"TITLE": "ព័ត៌មានលម្អិតប្រមូលផ្តុំឥណទាន",
+		"LABEL": {
+			"DEBTOR_INFORMATION": "ព័ត៌មានកូនបំណុល",
+			"DEBTOR_INFO": "ព័ត៌មានកូនបំណុល",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"LOAN_INFO": "ព័ត៌មានឥណទាន",
+			"LOAN_ACCOUNT_NO": "លេខគណនីឥណទាន",
+			"LOAN_BALANCE": "សមតុល្យឥណទាន",
+			"SCHEDULE_DATE": "កាលបរិច្ឆេទកាលវិភាគ",
+			"PRINCIPAL_AMOUNT": "ចំនួនដើមទុន",
+			"INTEREST_AMOUNT": "ចំនួនការប្រាក់",
+			"OVERDUE_AMOUNT": "ចំនួនបង់យឺត",
+			"TOTAL_REPAYMENT_AMOUNT": "ចំនួនសងសរុប",
+			"PAYMENT_PLAN_LOG": "កំណត់ហេតុផែនការបង់ប្រាក់",
+			"FOLLOW_UP_DATE": "កាលបរិច្ឆេទតាមដាន",
+			"FOLLOW_UP_METHOD": "វិធីសាស្រ្តតាមដាន",
+			"MEETING_PERSON": "អ្នកជួប",
+			"FOLLOW_UP_REMARK": "សម្គាល់តាមដាន",
+			"COLLECTION_ACTION_METHOD": "វិធីសាស្រ្តសកម្មភាពប្រមូល",
+			"COLLECTION_ACTION_REMARK": "សម្គាល់សកម្មភាពប្រមូល",
+			"FOLLOW_UP_RESULT": "លទ្ធផលតាមដាន",
+			"NEXT_FOLLOW_UP_DATE": "កាលបរិច្ឆេទតាមដានបន្ទាប់",
+			"REMARK": "ការកត់សម្គាល់",
+			"ATTACHMENT": "ឯកសាភ្ជាប់"
+		},
+		"BUTTON": {
+			"VIEW_PPR_HISTORY": "មើលប្រវត្តិ PPR",
+			"CALL": "ខលហៅ",
+			"REGISTER": "ចុះឈ្មោះ",
+			"MODIFY": "កែប្រែ"
+		}
+	},
+	"COL6110000": {
+		"LABEL": {
+			"LOAN_COLLECTION_REGISTER": "ចុះឈ្មោះប្រមូលផ្តុំឥណទាន",
+			"LOAN_COLLECTION_MODIFY": "កែប្រែប្រមូលផ្តុំឥណទាន",
+			"DEBTOR_INFO": "ព័ត៌មានកូនបំណុល",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"LOAN_INFO": "ព័ត៌មានឥណទាន",
+			"LOAN_ACCOUNT_NO": "លេខគណនីឥណទាន",
+			"LOAN_BALANCE": "សមតុល្យឥណទាន",
+			"SCHEDULE_DATE": "កាលបរិច្ឆេទកាលវិភាគ",
+			"PRINCIPAL_AMOUNT": "ចំនួនដើមទុន",
+			"INTEREST_AMOUNT": "ចំនួនការប្រាក់",
+			"OVERDUE_AMOUNT": "ចំនួនបង់យឺត",
+			"TOTAL_REPAY_AMOUNT": "ចំនួនសងសរុប",
+			"PAYMENT_PLAN_LOG": "កំណត់ហេតុផែនការបង់ប្រាក់",
+			"FOLLOW_UP_DATE": "កាលបរិច្ឆេទតាមដាន",
+			"FOLLOW_UP_METHOD": "វិធីសាស្រ្តតាមដាន",
+			"PAYMENT_CONFIRMATION_METHOD": "វិធីផ្ទៀងផ្ទាត់ការបង់ប្រាក់",
+			"FOLLOW_UP_REMARK": "សម្គាល់តាមដាន",
+			"COLLECTION_ACTION_METHOD": "វិធីសាស្រ្តសកម្មភាពប្រមូល",
+			"COLLECTION_ACTION_REMARK": "សម្គាល់សកម្មភាពប្រមូល",
+			"FOLLOW_UP_RESULT": "លទ្ធផលតាមដាន",
+			"NEXT_FOLLOW_UP_DATE": "កាលបរិច្ឆេទតាមដានបន្ទាប់",
+			"REMARK": "ការកត់សម្គាល់",
+			"ATTACHMENT": "ឯកសាភ្ជាប់",
+			"SELECT_FOLLOW_UP_METHOD": "ជ្រើសរើសវិធីសាស្រ្តតាមដាន",
+			"SELECT_PAYMENT_CONFIRM_METHOD": "ជ្រើសរើសវិធីផ្ទៀងផ្ទាត់ការបង់ប្រាក់",
+			"SELECT_COLLECTION_ACTION_METHOD": "ជ្រើសរើសវិធីសាស្រ្តសកម្មភាពប្រមូល",
+			"SELECT_FOLLOW_UP_RESULT": "ជ្រើសរើសលទ្ធផលតាមដាន",
+			"SELECT_NEXT_FOLLOW_UP_DATE": "ជ្រើសរើសកាលបរិច្ឆេទតាមដានបន្ទាប់",
+			"ENTER_REMARK": "បញ្ចូលសម្គាល់"
+		},
+		"PLACEHOLDER": {
+			"FOLLOW_UP_DATE": "កាលបរិច្ឆេទតាមដាន"
+		},
+		"BUTTON": {
+			"CALL": "ខលហៅ",
+			"SUBMIT": "ដាក់ស្នើ"
+		},
+		"MESSAGE": {
+			"NEXT_FOLLOW_UP_AFTER_FOLLOW_UP": "កាលបរិច្ឆេទតាមដានបន្ទាប់ត្រូវតែក្រោយពីកាលបរិច្ឆេទតាមដាន។",
+			"FOLLOW_UP_ON_OR_AFTER_TODAY": "កាលបរិច្ឆេទតាមដានត្រូវតែនៅថ្ងៃនេះ ឬក្រោយថ្ងៃនេះ។",
+			"NEXT_FOLLOW_UP_AFTER_TODAY": "កាលបរិច្ឆេទតាមដានបន្ទាប់ត្រូវតែក្រោយថ្ងៃនេះ។"
+		}
+	},
+	"COL6120000": {
+		"TITLE": "ប្រវត្តិប្រមូលផ្តុំឥណទាន",
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"SCHEDULE_DATE": "កាលបរិច្ឆេទកាលវិភាគ",
+			"PRINCIPLE_AMOUNT": "ចំនួនដើមទុន",
+			"INTEREST_AMOUNT": "ចំនួនការប្រាក់",
+			"FOLLOW_UP_DATE": "កាលបរិច្ឆេទតាមដាន",
+			"FOLLOW_UP_REMARK": "សម្គាល់តាមដាន"
+		},
+		"BUTTON": {
+			"CALL": "ខលហៅ"
+		}
+	},
+	"COL7000000": {
+		"TITLE": "បញ្ជីឥណទានត្រូវតាមដាន",
+		"LABEL": {
+			"LOAN_TO_BE_FOLLOW_UP_LIST": "បញ្ជីឥណទានត្រូវតាមដាន",
+			"BRANCH": "សាខា",
+			"CO": "CO",
+			"INQUIRY_CONDITION": "លក្ខខណ្ឌស្វែងរក",
+			"ENTER_LOAN_ACCOUNT": "បញ្ចូលគណនីឥណទាន",
+			"STATUS": "ស្ថានភាព",
+			"SELECT_STATUS": "ជ្រើសរើសស្ថានភាព",
+			"DATE": "កាលបរិច្ឆេទ",
+			"SELECT_DATE_RANGE": "ជ្រើសរើសជួរកាលបរិច្ឆេទ",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"LOAN_DATE": "កាលបរិច្ឆេទឥណទាន",
+			"LAST_FOLLOW_UP_DATE": "កាលបរិច្ឆេទតាមដានចុងក្រោយ",
+			"TOTAL_FOLLOW_UP": "ចំនួនតាមដានសរុប",
+			"DISBURSE_DATE": "កាលបរិច្ឆេទចេញប្រាក់",
+			"UPCOMING": "ជិតមកដល់",
+			"TODAY": "ថ្ងៃនេះ",
+			"LATE": "យឺត"
+		},
+		"PLACEHOLDER": {
+			"FOLLOW_UP_TYPE": "ប្រភេទតាមដាន",
+			"ENTER_LOAN_ACCOUNT": "បញ្ចូលគណនីឥណទាន"
+		},
+		"SEGMENT": {
+			"TO_BE_FOLLOW_UP": "ត្រូវតាមដាន",
+			"FOLLOWED_UP": "បានតាមដាន"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក"
+		},
+		"OPTION": {
+			"UPCOMING": "ជិតមកដល់",
+			"ON_FOLLOW_UP": "កំពុងតាមដាន",
+			"LATE_FOLLOW_UP": "តាមដានយឺត"
+		}
+	},
+	"COL7100000": {
+		"LABEL": {
+			"LOAN_TO_BE_FOLLOW_UP_DETAIL": "ព័ត៌មានលម្អិតឥណទានត្រូវតាមដាន",
+			"VIEW_HISTORY": "មើលប្រវត្តិ",
+			"INTERVIEWER": "អ្នកសម្ភាសន៍",
+			"FOLLOW_UP_INFORMATION": "ព័ត៌មានតាមដាន",
+			"FOLLOW_UP_INFO": "ព័ត៌មានតាមដាន",
+			"NAME": "ឈ្មោះ",
+			"BRANCH_NAME": "ឈ្មោះសាខា",
+			"FOLLOW_UP_DATE": "កាលបរិច្ឆេទតាមដាន",
+			"LOAN_ACCOUNT_NUMBER": "លេខគណនីឥណទាន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"USAGE_AMOUNT_RESULT": "លទ្ធផលចំនួនប្រើប្រាស់",
+			"USAGE_AMOUNT_REMARK": "សម្គាល់ចំនួនប្រើប្រាស់",
+			"INCOME_STATUS": "ស្ថានភាពចំណូល",
+			"INCOME_REMARK": "សម្គាល់ចំណូល",
+			"COLLATERAL_STATUS": "ស្ថានភាពទ្រព្យបញ្ចាំ",
+			"COLLATERAL_REMARK": "សម្គាល់ទ្រព្យបញ្ចាំ",
+			"INTERVIEWER_FEEDBACK": "មតិយោបល់អ្នកសម្ភាសន៍",
+			"FINAL_STATUS": "ស្ថានភាពចុងក្រោយ",
+			"NEXT_FOLLOW_UP_DATE": "កាលបរិច្ឆេទតាមដានបន្ទាប់",
+			"BRANCH": "សាខា",
+			"CO": "CO",
+			"STAFF_NAME": "ឈ្មោះបុគ្គលិក",
+			"STATUS": "ស្ថានភាព",
+			"DISBURSE_DATE": "កាលបរិច្ឆេទចេញប្រាក់",
+			"CUSTOMER_ID": "អត្តសញ្ញាណអតិថិជន",
+			"NID": "លេខអត្តសញ្ញាណ",
+			"NID_ISSUE_DATE": "កាលបរិច្ឆេទចេញអត្តសញ្ញាណប័ណ្ណ",
+			"DATE_OF_BIRTH": "ថ្ងៃខែឆ្នាំកំណើត",
+			"GENDER": "ភេទ",
+			"MARITAL": "ស្ថានភាពគ្រួសារ",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"CITY_PROVINCE": "រាជធានី/ខេត្ត",
+			"DISTRICT": "ស្រុក/ខណ្ឌ",
+			"COMMUNE": "ឃុំ/សង្កាត់",
+			"VILLAGE": "ភូមិ",
+			"ADDRESS": "អាសយដ្ឋាន",
+			"ASSESSMENT_DATE": "កាលបរិច្ឆេទវាយតម្លៃ",
+			"ASSESSMENT": "ការវាយតម្លៃ",
+			"NEXT_ACTION": "សកម្មភាពបន្ត",
+			"MODIFY": "កែប្រែ",
+			"ATTACHMENT": "ឯកសារភ្ជាប់"
+		}
+	},
+	"COL7110000": {
+		"LABEL": {
+			"LOAN_TO_BE_FOLLOW_UP_MODIFY": "កែប្រែតាមដានឥណទាន",
+			"LOAN_TO_BE_FOLLOW_UP_REGISTER": "ចុះឈ្មោះតាមដានឥណទាន",
+			"APPLICATION_INFORMATION": "ព័ត៌មានពាក្យសុំ",
+			"FOLLOW_UP_INFO": "ព័ត៌មានតាមដាន",
+			"LOAN_ACCOUNT_NUMBER": "លេខគណនីឥណទាន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"LOAN_BALANCE": "សមតុល្យឥណទាន",
+			"LOAN_DATE": "កាលបរិច្ឆេទឥណទាន",
+			"FOLLOW_UP_PURPOSE": "គោលបំណងតាមដាន",
+			"FOLLOW_UP_METHOD": "វិធីសាស្រ្តតាមដាន",
+			"FOLLOW_UP_RESULT": "លទ្ធផលតាមដាន",
+			"USAGE_AMOUNT_RESULT": "លទ្ធផលចំនួនប្រើប្រាស់",
+			"USAGE_REMARK": "សម្គាល់ប្រើប្រាស់",
+			"INCOME_STATUS": "ស្ថានភាពចំណូល",
+			"INCOME_REMARK": "សម្គាល់ចំណូល",
+			"COLLATERAL_STATUS": "ស្ថានភាពទ្រព្យបញ្ចាំ",
+			"COLLATERAL_REMARK": "សម្គាល់ទ្រព្យបញ្ចាំ",
+			"INTERVIEWER_FEEDBACK": "មតិយោបល់អ្នកសម្ភាសន៍",
+			"FINAL_STATUS": "ស្ថានភាពចុងក្រោយ",
+			"NEXT_FOLLOW_UP_DATE": "កាលបរិច្ឆេទតាមដានបន្ទាប់"
+		},
+		"PLACEHOLDER": {
+			"TEXT_INPUT": "បញ្ចូលអក្សរ",
+			"ENTER_VALUE": "បញ្ចូលតម្លៃ"
+		}
+	},
+	"COL7120000": {
+		"TITLE": "ប្រវត្តិតាមដានឥណទាន",
+		"LABEL": {
+			"FOLLOW_UP_DATE": "កាលបរិច្ឆេទតាមដាន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"LOAN_ACCOUNT_NUMBER": "លេខគណនីឥណទាន",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន"
+		}
+	},
+	"COL8100000": {
+		"LABEL": {
+			"LOAN_RESCHEDULE": "ការកំណត់ពេលវេលាឥណទានឡើងវិញ/រចនាសម្ព័ន្ធ",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"REQUEST_DATE": "កាលបរិច្ឆេទស្នើសុំ",
+			"RESCHEDULE_TYPE": "ប្រភេទកំណត់ពេលវេលាឡើងវិញ"
+		},
+		"PLACEHOLDER": {
+			"ENTER_LOAN_ACCOUNT": "បញ្ចូលគណនីឥណទាន"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក",
+			"ADD_REQUEST": "បន្ថែមស្នើសុំ"
+		},
+		"OPTION": {
+			"MATURITY_DATE": "កាលបរិច្ឆេទបរិបូណ៌",
+			"INTEREST_RATE": "អត្រាការប្រាក់",
+			"GRACE_PERIOD_YEAR": "រយៈពេលអនុគ្រោះ (ឆ្នាំ)",
+			"LOAN_REPAYMENT_PERIOD": "រយៈពេលសងឥណទាន",
+			"LOAN_NEGOTIATION_AMOUNT": "ចំនួនចរចាឥណទាន",
+			"COLLATERAL_LINK": "តំណភ្ជាប់ទ្រព្យបញ្ចាំ",
+			"REPAYMENT_DATE": "កាលបរិច្ឆេទសង",
+			"OTHER": "ផ្សេងៗ"
+		}
+	},
+	"COL8110000": {
+		"TITLE": "ស្នើសុំកំណត់ពេលវេលាឥណទានឡើងវិញ/រចនាសម្ព័ន្ធ",
+		"LABEL": {
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"LOAN_ACCOUNT": "គណនីឥណទាន",
+			"LOAN_PRODUCT": "ផលិតផលឥណទាន",
+			"LOAN_DATE": "កាលបរិច្ឆេទឥណទាន",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"LOAN_BALANCE": "សមតុល្យឥណទាន",
+			"INTEREST_RATE": "អត្រាការប្រាក់",
+			"LOAN_TERMS": "រយៈពេលឥណទាន",
+			"REPAYMENT_MODE": "របៀបសង",
+			"RESTRUCTURE_INFORMATION": "ព័ត៌មានរចនាសម្ព័ន្ធ",
+			"RESCHEDULE_DATE": "កាលបរិច្ឆេទកំណត់ឡើងវិញ",
+			"REQUEST_PURPOSE": "គោលបំណងស្នើសុំ",
+			"RESCHEDULE_TYPE": "ប្រភេទកំណត់ពេលវេលាឡើងវិញ",
+			"RESCHEDULE_DETAIL": "ព័ត៌មានលម្អិតកំណត់ឡើងវិញ",
+			"REMARK_OPTIONAL": "សម្គាល់ (ស្រេចចិត្ត)"
+		},
+		"OPTION": {
+			"RESCHEDULE": "កំណត់ពេលវេលាឡើងវិញ",
+			"RESTRUCTURE": "រចនាសម្ព័ន្ធ"
+		},
+		"BUTTON": {
+			"SUBMIT": "ដាក់ស្នើ"
+		}
+	},
+	"COL8111000": {
+		"TITLE": "តើអ្នកចង់ដំណើរការស្នើសុំកំណត់ពេលវេលាឥណទានឡើងវិញឬ?",
+		"LABEL": {
+			"LOAN_ACCOUNT": "គណនីឥណទាន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"LOAN_PRODUCT": "ផលិតផលឥណទាន",
+			"LOAN_DATE": "កាលបរិច្ឆេទឥណទាន",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"LOAN_BALANCE": "សមតុល្យឥណទាន",
+			"INTEREST_RATE": "អត្រាការប្រាក់",
+			"LOAN_TERMS": "រយៈពេលឥណទាន",
+			"REPAYMENT_MODE": "របៀបសង",
+			"REQUEST_DATE": "កាលបរិច្ឆេទស្នើសុំ",
+			"RESCHEDULE_TYPE": "ប្រភេទកំណត់ឡើងវិញ",
+			"RESCHEDULE_REMARK": "សម្គាល់កំណត់ឡើងវិញ"
+		},
+		"OPTION": {
+			"BULLET": "របារ",
+			"DECLINE": "មិនជាង",
+			"ANNUITY": "ការប្រាក់កាន់តាមរយៈពេលសង",
+			"NEGOTIABLE_PRINCIPLE": "ការប្រាក់កាន់តាមរយៈពេលសង"
+		},
+		"BUTTON": {
+			"CLOSE": "បិទ",
+			"NO": "ទេ",
+			"CONFIRM": "យល់ព្រម"
+		}
+	},
+	"COL8112000": {
+		"TITLE": "សូមអរគុណសម្រាប់ការប្រើប្រាស់សេវាកម្មរបស់យើង។ ស្នើសុំកំណត់ពេលវេលាឥណទានឡើងវិញ",
+		"MESSAGE": {
+			"BANK_WILL_CONTACT": "តំណាងធនាគារនឹងទាក់ទងអ្នកឆាប់ៗនេះចំពោះសំណើរបស់អ្នក។"
+		},
+		"LABEL": {
+			"LOAN_ACCOUNT": "គណនីឥណទាន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"LOAN_PRODUCT": "ផលិតផលឥណទាន",
+			"LOAN_DATE": "កាលបរិច្ឆេទឥណទាន",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"LOAN_BALANCE": "សមតុល្យឥណទាន",
+			"INTEREST_RATE": "អត្រាការប្រាក់",
+			"LOAN_TERMS": "រយៈពេលឥណទាន",
+			"REPAYMENT_MODE": "របៀបសង",
+			"REQUEST_DATE": "កាលបរិច្ឆេទស្នើសុំ",
+			"RESCHEDULE_TYPE": "ប្រភេទកំណត់ឡើងវិញ",
+			"RESCHEDULE_REMARK": "សម្គាល់កំណត់ឡើងវិញ"
+		},
+		"TITLE_UPDATE": "កែប្រែកំណត់ពេលវេលាឥណទានឡើងវិញ/រចនាសម្ព័ន្ធ",
+		"TITLE_REQUEST": "ស្នើសុំកំណត់ពេលវេលាឥណទានឡើងវិញ/រចនាសម្ព័ន្ធ"
+	},
+	"COL8200000": {
+		"LABEL": {
+			"LOAN_ACCOUNT": "គណនីឥណទាន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"LOAN_PRODUCT": "ផលិតផលឥណទាន",
+			"LOAN_DATE": "កាលបរិច្ឆេទឥណទាន",
+			"CURRENCY_CODE": "កូដរូបិយប័ណ្ណ",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"LOAN_BALANCE": "សមតុល្យឥណទាន",
+			"INTEREST_RATE": "អត្រាការប្រាក់",
+			"LOAN_TERM": "រយៈពេលឥណទាន",
+			"REPAYMENT_MODE": "របៀបសង",
+			"REQUEST_DATE": "កាលបរិច្ឆេទស្នើសុំ",
+			"RESCHEDULE_TYPE": "ប្រភេទកំណត់ឡើងវិញ",
+			"REMARK": "សម្គាល់",
+			"WORK_PROGRESS": "វឌ្ឍនភាពការងារ",
+			"NOTE": "កំណត់សម្គាល់"
+		},
+		"TITLE": {
+			"BASIC_INFO": "ព័ត៌មានមូលដ្ឋាន",
+			"RESCHEDULE_INFO": "ព័ត៌មានកំណត់ឡើងវិញ",
+			"LOAN_RESCHEDULE_RESTRUCTURE_DETAIL": "ព័ត៌មានលម្អិតកំណត់ពេលវេលាឥណទានឡើងវិញ/រចនាសម្ព័ន្ធ"
+		},
+		"STATUS": {
+			"APPLICATION_SUBMITTED": "បានដាក់ពាក្យ",
+			"SUBMITTED_DESCRIPTION": "ការដាក់ពាក្យរបស់អ្នកត្រូវបានដាក់ជូនដោយជោគជ័យ។",
+			"PROCESSING_APPLICATION": "កំពុងដំណើរការពាក្យសុំ",
+			"PROCESSING_DESCRIPTION": "ការដាក់ពាក្យរបស់អ្នកកំពុងដំណើរការ។ សូមអរគុណសម្រាប់ការរង់ចាំ។",
+			"REJECTED": "ច្រានចោល",
+			"REJECTED_DESCRIPTION": "ការដាក់ពាក្យរបស់អ្នកត្រូវបានច្រានចោល។",
+			"APPROVED": "អនុម័ត",
+			"APPROVED_DESCRIPTION": "ការដាក់ពាក្យរបស់អ្នកត្រូវបានអនុម័ត។",
+			"CANCELED": "បានលុបចោល",
+			"CANCELED_DESCRIPTION": "ការដាក់ពាក្យរបស់អ្នកត្រូវបានលុបចោល។"
+		},
+		"BUTTON": {
+			"MODIFY": "កែប្រែ"
+		}
+	},
+	"COL9100000": {
+		"TITLE": "ប្រវត្តិទំនាក់ទំនង",
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CONTACT_DATE": "កាលបរិច្ឆេទទំនាក់ទំនង",
+			"NEXT_SCHEDULE": "កាលវិភាគបន្ទាប់",
+			"CONTACT_RESULT": "លទ្ធផលទំនាក់ទំនង"
+		},
+		"PLACEHOLDER": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CUSTOMER_PHONE_NUMBER": "លេខទូរស័ព្ទអតិថិជន"
+		},
+		"SEGMENT": {
+			"ALL": "ទាំងអស់"
+		},
+		"BUTTON": {
+			"CALL": "ខលហៅ"
+		},
+		"OPTION": {
+			"PHONE_CALL": "ហៅទូរស័ព្ទ",
+			"EMAIL": "អ៉ីមែល",
+			"SOCIAL": "បណ្តាញសង្គម",
+			"VERY_URGENT": "បន្ទាន់ខ្លាំង",
+			"URGENT": "បន្ទាន់",
+			"NORMAL": "ធម្មតា",
+			"CONTACTED_SUCCESSFULLY": "ទំនាក់ទំនងជោគជ័យ",
+			"CAN_NOT_CONTACT": "មិនអាចទំនាក់ទំនង"
+		}
+	},
+	"COL9200000": {
+		"TITLE": "ព័ត៌មានលម្អិតប្រវត្តិទំនាក់ទំនង",
+		"LABEL": {
+			"URGENCY_LEVEL": "កម្រិតបន្ទាន់",
+			"CONTACT_DATE_TIME": "កាលបរិច្ឆេទ និង ពេលវេលាទំនាក់ទំនង",
+			"CONTACT_CHANNEL": "ឆានែលទំនាក់ទំនង",
+			"CHANNEL_REMARK": "សម្គាល់ឆានែល",
+			"CONTACT_RESULT": "លទ្ធផលទំនាក់ទំនង",
+			"NEXT_ACTION": "សកម្មភាពបន្ទាប់",
+			"CONTACT_REMARK": "សម្គាល់ទំនាក់ទំនង",
+			"ATTACHMENT": "ឯកសាភ្ជាប់"
+		},
+		"BUTTON": {
+			"EDIT_PROFILE": "កែប្រែប្រវត្តិ",
+			"MODIFY": "កែប្រែ"
+		}
+	},
+	"COL9300000": {
+		"LABEL": {
+			"CONTACT_DATE": "កាលបរិច្ឆេទទំនាក់ទំនង",
+			"CONTACT_TIME": "ពេលវេលាទំនាក់ទំនង",
+			"CONTACT_CHANNEL": "ឆានែលទំនាក់ទំនង",
+			"CHANNEL_REMARK": "សម្គាល់ឆានែល",
+			"URGENT_LEVEL": "កម្រិតបន្ទាន់",
+			"CONTACT_RESULT": "លទ្ធផលទំនាក់ទំនង",
+			"NEXT_ACTION": "សកម្មភាពបន្ទាប់",
+			"NEXT_CONTACT_DATE": "កាលបរិច្ឆេទទំនាក់ទំនងបន្ទាប់",
+			"CONTACT_LOG": "កំណត់ហេតុទំនាក់ទំនង",
+			"ATTACHMENT": "ឯកសាភ្ជាប់"
+		},
+		"TITLE": {
+			"REGISTER": "ចុះឈ្មោះប្រវត្តិទំនាក់ទំនង",
+			"UPDATE": "កែប្រែប្រវត្តិទំនាក់ទំនង"
+		},
+		"PLACEHOLDER": {
+			"SELECT_CONTACT_DATE": "ជ្រើសរើសកាលបរិច្ឆេទ",
+			"ENTER_CONTACT_CHANNEL_REMARK": "បញ្ចូលសម្គាល់ឆានែល",
+			"ENTER_NEXT_ACTION": "បញ្ចូលសកម្មភាពបន្ទាប់",
+			"SELECT_NEXT_CONTACT_DATE": "ជ្រើសរើសកាលបរិច្ឆេទទំនាក់ទំនងបន្ទាប់",
+			"ENTER_CONTACT_LOG": "បញ្ចូលកំណត់ហេតុទំនាក់ទំនង"
+		},
+		"BUTTON": {
+			"SUBMIT": "ដាក់ស្នើ"
+		},
+		"MESSAGE": {
+			"NEXT_CONTACT_AFTER_CONTACT": "កាលបរិច្ឆេទទំនាក់ទំនងបន្ទាប់ត្រូវតែក្រោយពីកាលបរិច្ឆេទទំនាក់ទំនង។",
+			"CONTACT_ON_OR_AFTER_TODAY": "កាលបរិច្ឆេទទំនាក់ទំនងត្រូវតែនៅថ្ងៃនេះ ឬក្រោយថ្ងៃនេះ។",
+			"NEXT_CONTACT_AFTER_TODAY": "កាលបរិច្ឆេទទំនាក់ទំនងបន្ទាប់ត្រូវតែក្រោយថ្ងៃនេះ។"
+		}
+	},
+	"FAQ10000000": {
+		"LABEL": {
+			"FAQ": "សំណួរញឹកញាប់",
+			"FAQ_TITLE": "សំណួរញឹកញាប់",
+			"SEARCH": "ស្វែងរក",
+			"ALL": "ទាំងអស់",
+			"LOAN": "ឥណទាន",
+			"DOCUMENTS": "ឯកសារ",
+			"WHAT_IS_LOAN": "តើឥណទានជាអ្វី?",
+			"KEY_FEATURES_OF_A_LOAN": "លក្ខណៈសំខាន់ៗនៃឥណទាន"
+		},
+		"TEXT": {
+			"1": "ដើមទុន – ចំនួនទឹកប្រាក់ដើមដែលបានខ្ចី។",
+			"2": "ការប្រាក់ – ថ្លៃឈ្នួលដែលគេគិតពីការខ្ចីប្រាក់ ជាភាគរយនៃដើមទុន។",
+			"3": "រយៈពេលសងប្រាក់ – រយៈពេលដែលអ្នកខ្ចីព្រមព្រៀងក្នុងការសងប្រាក់វិញ។",
+			"4": "ការបង់រំលោះ – ការបង់ប្រាក់ជាបន្តបន្ទាប់ (ប្រចាំខែ ប្រចាំពីរពីថ្ងៃ ជាដើម) ដើម្បីសងប្រាក់វិញ។",
+			"5": "បញ្ចាំ (ជាជម្រើស) – ទ្រព្យសម្បត្តិដែលអ្នកខ្ចីដាក់ធានា (ដូចជាប្រាសាទ ឬឡាន) ដែលអាចត្រូវបានដកយក ប្រសិនបើមិនសងប្រាក់វិញ។",
+			"DESCRIPTION": "ឥណទានគឺជាចំនួនទឹកប្រាក់ដែលភាគីមួយ (ជាធម្មតាជាអង្គភាពផ្តល់ប្រាក់កម្ចី ឬស្ថាប័នហិរញ្ញវត្ថុ) ផ្តល់ឱ្យភាគីមួយទៀត (អ្នកខ្ចី) ដោយមានការព្រមព្រៀងថាចំនួនទឹកប្រាក់នោះត្រូវសងវិញតាមពេលវេលា ជាធម្មតាជាមួយការប្រាក់។"
+		},
+		"LOAN_DETAIL": "ព័ត៌មានលម្អិតឥណទាន",
+		"BRANCH": "សាខា",
+		"CO": "CO",
+		"LOAN_ACCOUNT": "គណនីឥណទាន",
+		"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+		"SCHEDULE_DATE": "កាលបរិច្ឆេទកាលវិភាគ",
+		"PRINCIPAL": "ដើមទុន",
+		"INTEREST": "ការប្រាក់",
+		"OVERDUE_AMOUNT": "ចំនួនទឹកប្រាក់បង់យឺត",
+		"PAID_PRINCIPAL": "ប្រាក់ដើមដែលបានបង់",
+		"PAID_INTEREST": "ការប្រាក់ដែលបានបង់",
+		"PAID_FEE": "ថ្លៃសេវាដែលបានបង់",
+		"CONTACT_DATE": "កាលបរិច្ឆេទទំនាក់ទំនង",
+		"CONTACT_TYPE": "ប្រភេទទំនាក់ទំនង",
+		"FEED_BACK": "មតិយោបល់",
+		"NEXT_ACTION": "សកម្មភាពបន្ទាប់",
+		"STATUS": "ស្ថានភាព",
+		"GO_TO_CONTACT_HISTORY": "ទៅកាន់ប្រវត្តិទំនាក់ទំនង",
+		"MAIN_TASK": "ភារកិច្ចសំខាន់"
+	},
+	"PRM10000000": {
+		"LABEL": {
+			"SPECIAL_OFFERS": "ផ្តល់ជូនពិសេស",
+			"SEARCH": "ស្វែងរក",
+			"ALL_OFFERS": "ផ្តល់ជូនទាំងអស់",
+			"UPCOMING": "ជិតមកដល់",
+			"OFFER_EXPIRED": "ផ្តល់ជូនផុតកំណត់"
+		},
+		"TITLE": {
+			"EXCLUSIVE_LOAN_OPPORTUNITY": "ឱកាសឥណទានពិសេសសម្រាប់ក្រុម Zorax",
+			"CLAIM_YOUR_DRAGON_EGG": "ទាមទាររង្វាន់ពងដ្រាគុនរបស់អ្នក!"
+		},
+		"TEXT": {
+			"THIS_IS_A_UNIQUE_LOAN": "នេះជាផែនការផ្តល់ឥណទានពិសេសសម្រាប់ក្រុម Zorax លើភព Zorath ដែលពោរពេញដោយអត្រាការប្រាក់ប្រកួតប្រជែង ដំណើរការអនុម័តលឿន និងជម្រើសបង់សងដែលអាចបត់បែនតាមតម្រូវការ។",
+			"SECURE_A_LOAN": "ទទួលឥណទានតាមកម្មវិធីដ្រាគុន ហើយមានឱកាសឈ្នះពងដ្រាគុន! អ្នកឈ្នះនឹងប្រកាសនៅថ្ងៃចុះឈ្មោះ។ កុំខកខានឱកាសអស្ចារ្យនេះ!"
+		}
+	},
+	"PRM11000000": {
+		"LABEL": {
+			"EXCLUSIVE": "ពិសេស",
+			"PROMOTION": "បញ្ចុះតម្លៃ",
+			"DISCOUNT": "បញ្ចុះតម្លៃ"
+		}
+	},
+	"COLA000000": {
+		"TITLE": "បញ្ជីបិទគណនីឥណទាន",
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"PAY_OFF_AMOUNT": "ចំនួនបិទ",
+			"PAY_OFF_DATE": "កាលបរិច្ឆេទបិទ"
+		},
+		"PLACEHOLDER": {
+			"ENTER_CUSTOMER_NO": "បញ្ចូលលេខអតិថិជន",
+			"ENTER_LOAN_ACCOUNT": "បញ្ចូលគណនីឥណទាន"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក"
+		}
+	},
+	"COLA100000": {
+		"TITLE": "ព័ត៌មានលម្អិតបិទគណនីឥណទាន",
+		"LABEL": {
+			"LOAN_ACCOUNT_NO": "លេខគណនីឥណទាន",
+			"PAY_OFF_AMOUNT": "ចំនួនបិទ",
+			"PAY_OFF_DATE": "កាលបរិច្ឆេទបិទ",
+			"BRANCH_CODE": "កូដសាខា",
+			"BRANCH_NAME": "ឈ្មោះសាខា",
+			"LOAN_APPLICATION_NO": "លេខពាក្យស្នើឥណទាន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"SECURE_UNSECURE": "មាន/គ្មានធានា",
+			"APPLICATION_TYPE": "ប្រភេទពាក្យស្នើ",
+			"REPAYMENT_METHOD": "វិធីសាស្រ្តបង់ប្រាក់",
+			"CUSTOMER_ACCOUNT_NO": "លេខគណនីអតិថិជន",
+			"PRODUCT_ID": "លេខផលិតផល",
+			"PRODUCT_SHORT_NAME": "ឈ្មោះខ្លីផលិតផល",
+			"PRODUCT_NAME": "ឈ្មោះផលិតផល",
+			"LOAN_DATE": "កាលបរិច្ឆេទឥណទាន",
+			"MATURITY_DATE": "កាលបរិច្ឆេទផុតកំណត់",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"TENOR": "រយៈពេល"
+		},
+		"BUTTON": {
+			"VIEW_LOAN_DETAIL": "មើលព័ត៌មានឥណទាន"
+		},
+		"OPTION": {
+			"STATUS_REGISTER": "ចុះឈ្មោះ",
+			"STATUS_ACTIVE": "សកម្ម",
+			"STATUS_CLOSED": "បិទ",
+			"STATUS_WRITE_OFF": "លុបចោល",
+			"STATUS_CANCELLED": "បោះបង់",
+			"APP_NEW": "ពាក្យស្នើថ្មី",
+			"APP_EXTENSION": "ពន្យារឥណទាន",
+			"APP_CONDITION_CHANGE": "ផ្លាស់ប្ដូរលក្ខខណ្ឌ",
+			"REPAY_BULLET": "បង់មួយរយៈ",
+			"REPAY_DECLINE": "ថយចុះ",
+			"REPAY_ANNUITY": "បង់ប្រចាំឆ្នាំ",
+			"REPAY_NEGOTIABLE": "ដើមទុនអាចចរចា"
+		},
+		"UNIT": {
+			"MONTHS": "ខែ"
+		}
+	},
+	"COLB000000": {
+		"TITLE": "បញ្ជីលុបចោលឥណទាន",
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"OVERDUE_AMOUNT": "ចំនួនយឺត",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"ACCRUED_AMOUNT": "ចំនួនរួម"
+		},
+		"PLACEHOLDER": {
+			"ENTER_LOAN_ACCOUNT_NO": "បញ្ចូលលេខគណនីឥណទាន",
+			"ENTER_CUSTOMER_NO": "បញ្ចូលលេខអតិថិជន"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក"
+		}
+	},
+	"COLB100000": {
+		"TITLE": "ព័ត៌មានលម្អិតអំពីលុបចោលឥណទាន",
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"LOAN_ACCOUNT_NO": "លេខគណនីឥណទាន",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"LOAN_BALANCE": "ឥណទានដែលនៅសល់",
+			"ACCRUED_AMOUNT": "ចំនួនរួម",
+			"OVERDUE_AMOUNT": "ចំនួនបង់យឺត",
+			"PROVISION_AMOUNT": "ចំនួនបម្រុង",
+			"OVERDUE_DAYS": "ថ្ងៃបង់យឺត",
+			"BRANCH_CODE": "កូដសាខា",
+			"ASSET_QUALITY_CODE": "កូដគុណភាពទ្រព្យសម្បត្តិ"
+		},
+		"BUTTON": {
+			"VIEW_LOAN_DETAIL": "មើលព័ត៌មានឥណទាន"
+		},
+		"OPTION": {
+			"ASSET_STANDARD": "ស្តង់ដារ",
+			"ASSET_SPECIAL_MENTION": "ការកត់សម្គាល់ពិសេស",
+			"ASSET_SUB_STANDARD": "ក្រោមស្តង់ដារ",
+			"ASSET_DOUBTFUL": "គួរឱ្យសង្ស័យ",
+			"ASSET_LOSS": "ខាត"
+		}
+	},
+	"COLC000000": {
+		"TITLE": "បញ្ជីឥណទាន",
+		"LABEL": {
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"LOAN_DATE": "កាលបរិច្ឆេទឥណទាន",
+			"MATURITY_DATE": "កាលបរិច្ឆេទផុតកំណត់",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"LOAN_OUTSTANDING": "ឥណទានដែលនៅសល់"
+		},
+		"PLACEHOLDER": {
+			"ENTER_LOAN_STATUS_CODE": "បញ្ចូលកូដស្ថានភាពឥណទាន",
+			"ENTER_KEYWORD_TYPE": "បញ្ចូលប្រភេទពាក្យគន្លឹះ",
+			"ENTER_KEYWORD": "បញ្ចូលពាក្យគន្លឹះ"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក"
+		},
+		"OPTION": {
+			"KEYWORD_CUSTOMER_NO": "លេខអតិថិជន",
+			"KEYWORD_LOAN_ACCOUNT_NO": "លេខគណនីឥណទាន",
+			"STATUS_REGISTER": "ចុះឈ្មោះ",
+			"STATUS_ACTIVE": "សកម្ម",
+			"STATUS_CLOSED": "បិទ",
+			"STATUS_WRITE_OFF": "លុបចោល",
+			"STATUS_CANCELLED": "បោះបង់"
+		}
+	},
+	"COLC100000": {
+		"TITLE": "ព័ត៌មានលម្អិតឥណទាន",
+		"SECTION": {
+			"CUSTOMER_INFO": "ព័ត៌មានអតិថិជន",
+			"BASIC_INFO": "ព័ត៌មានមូលដ្ឋាន",
+			"DISBURSEMENT": "ការបង់ប្រាក់",
+			"COLLATERAL": "ទ្រព្យបញ្ចាំ",
+			"CO_BORROWER_GUARANTOR": "អ្នកខ្ចីរួម/អ្នកធានា",
+			"DOCUMENT": "ឯកសារ"
+		},
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"AREAS_YN": "យឺត Y/N",
+			"CUSTOMER_TYPE": "ប្រភេទអតិថិជន",
+			"LOAN_ACCOUNT_NO": "លេខគណនីឥណទាន",
+			"APPLICATION_NO": "លេខពាក្យស្នើ",
+			"APPLICATION_TYPE": "ប្រភេទពាក្យស្នើ",
+			"STATUS": "ស្ថានភាព",
+			"LOAN_PRODUCT": "ផលិតផលឥណទាន",
+			"APPLICATION_MODE": "របៀបពាក្យស្នើ",
+			"REPAYMENT_METHOD": "វិធីសាស្រ្តបង់ប្រាក់",
+			"INSTALLMENT": "ការបង់រំលោះ",
+			"LOAN_TERM_TYPE": "ប្រភេទរយៈពេលឥណទាន",
+			"PRINCIPAL_FREQUENCY": "ប្រេកង់ដើមទុន",
+			"GRACE_PERIOD": "រយៈពេលអនុគ្រោះ",
+			"INTEREST_EXEMPTION": "អាការការពន្ធលើការអនុញ្ញាត",
+			"FILE_LINK_NO": "លេខភ្ជាប់ឯកសារ",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"LOAN_BALANCE": "ឥណទានដែលនៅសល់",
+			"LOAN_PRINCIPAL": "ដើមទុនឥណទាន",
+			"LOAN_INTEREST": "ការប្រាក់ឥណទាន",
+			"NEGOTIATION_AMOUNT": "ចំនួនចរចា",
+			"TOTAL_REPAYMENT_PRINCIPAL_AMOUNT": "ចំនួនសរុបបង់ដើមទុន",
+			"PROCESSING_FEE": "ថ្លៃដំណើរការ",
+			"COMMITMENT_FEE": "ថ្លៃការប្តេជ្ញា",
+			"COLLATERAL_LOAN_YN": "ឥណទានទ្រព្យបញ្ចាំ Y/N",
+			"LTV": "សមាមាត្រឥណទានទៅតម្លៃ(%)",
+			"LOAN_CLASSIFICATION": "ការចាត់ថ្នាក់ឥណទាន",
+			"DISBURSEMENT_DATE": "កាលបរិច្ឆេទបង់ប្រាក់",
+			"DISBURSEMENT_AMOUNT": "ចំនួនបង់ប្រាក់",
+			"COLLATERAL_NO": "លេខទ្រព្យបញ្ចាំ",
+			"CATEGORY": "ប្រភេទ",
+			"COLLATERAL_TYPE": "ប្រភេទទ្រព្យបញ្ចាំ",
+			"DETAIL_TYPE": "ប្រភេទលម្អិត",
+			"ESTIMATION_PRICE": "តម្លៃប៉ាន់ស្មាន",
+			"RELATION_TYPE": "ប្រភេទទំនាក់ទំនង",
+			"DOCUMENT_NO": "លេខឯកសារ",
+			"DOCUMENT_NAME": "ឈ្មោះឯកសារ",
+			"DOCUMENT_TITLE": "ចំណងជើងឯកសារ",
+			"REGISTER_DATE": "កាលបរិច្ឆេទចុះឈ្មោះ",
+			"LOAN_DOCUMENT": "ឯកសារឥណទាន"
+		},
+		"OPTION": {
+			"PARTIAL_REGISTER": "ចុះឈ្មោះ",
+			"PARTIAL_ACTIVE": "សកម្ម",
+			"PARTIAL_CANCEL": "បោះបង់"
+		},
+		"UNIT": {
+			"MONTHS": "ខែ"
+		}
+	},
+	"COLC120000": {
+		"TITLE": "ព័ត៌មានទ្រព្យបញ្ចាំ",
+		"BUTTON": {
+			"ADD_NEW": "បន្ថែមថ្មី"
+		}
+	},
+	"COLC130000": {
+		"TITLE": "ឯកសារ",
+		"BUTTON": {
+			"ADD_NEW": "បន្ថែមថ្មី"
+		}
+	},
+	"COLC140000": {
+		"TITLE": "ព័ត៌មានកែតម្រូវ",
+		"BUTTON": {
+			"ADD_NEW": "បន្ថែមថ្មី"
+		}
+	},
+	"COLC150000": {
+		"TITLE": "អ្នកខ្ចីរួម/អ្នកធានា",
+		"BUTTON": {
+			"ADD_NEW": "បន្ថែមថ្មី"
+		}
+	},
+	"COM1000000": {
+		"TITLE": "ជ្រើសរើសអាសយដ្ឋាន",
+		"PLACEHOLDER": {
+			"SEARCH_ADDRESS": "ស្វែងរកអាសយដ្ឋាន"
+		},
+		"BUTTON": {
+			"CLOSE": "បិទ"
+		}
+	},
+	"COM1100000": {
+		"TITLE": "ជ្រើសរើសគណនីដាក់ប្រាក់",
+		"BUTTON": {
+			"CLOSE": "បិទ"
+		}
+	},
+	"COM2100000": {
+		"TITLE": "ជ្រើសរើសគោលបំណងមូលនិធិ",
+		"PLACEHOLDER": {
+			"SEARCH_FUND_PURPOSE": "ស្វែងរកគោលបំណងមូលនិធិ"
+		},
+		"BUTTON": {
+			"CLOSE": "បិទ"
+		}
+	},
+	"COM2200000": {
+		"TITLE": "ជ្រើសរើសប្រភេទឧស្សាហកម្ម",
+		"PLACEHOLDER": {
+			"SEARCH_INDUSTRY_CATEGORY": "ស្វែងរកឈ្មោះប្រភេទឧស្សាហកម្ម"
+		},
+		"BUTTON": {
+			"CLOSE": "បិទ",
+			"SEARCH": "ស្វែងរក"
+		}
+	},
+	"COM3000000": {
+		"TITLE": "ជ្រើសរើសផលិតផល",
+		"PLACEHOLDER": {
+			"SEARCH_PRODUCT_NAME": "ស្វែងរកឈ្មោះផលិតផល"
+		},
+		"BUTTON": {
+			"CLOSE": "បិទ"
+		}
+	},
+	"COM6000000": {
+		"TITLE": "ការផ្ទៀងផ្ទាត់លេខសម្ងាត់",
+		"LABEL": {
+			"ENTER_PASSWORD": "បញ្ចូលលេខសម្ងាត់",
+			"ENTER_VALUE": "បញ្ចូលតម្លៃ"
+		},
+		"TEXT": {
+			"BANNER_DESC": "ដើម្បីសុវត្ថិភាព សូមបញ្ចូលលេខសម្ងាត់បច្ចុប្បន្នរបស់អ្នកដើម្បីបន្ត។ ប្រសិនបើអ្នកភ្លេចលេខសម្ងាត់ សូមទាក់ទងអ្នកគ្រប់គ្រង។",
+			"FORGET_PASSWORD": "ភ្លេចលេខសម្ងាត់",
+			"FACE_ID": "ស្គេនផ្ទៃមុខ",
+			"FINGERPRINT": "ស្នាមក្រយៅដៃ",
+			"BIO_UNREGISTERED": "ការផ្ទៀងផ្ទាត់ជីវម៉ាស្ត្រត្រូវបានលុបចេញដោយជោគជ័យ។"
+		},
+		"BUTTON": {
+			"CONFIRM": "យល់ព្រម"
+		}
+	},
+	"COM7000000": {
+		"TITLE": "ចុះឈ្មោះផ្ទៀងផ្ទាត់ជីវម៉ាស្ត្រ",
+		"TEXT": {
+			"TITLE_QUESTION": "តើអ្នកចង់ប្រើ <br> ការផ្ទៀងផ្ទាត់ស្គេនផ្ទៃមុខ ឬ?",
+			"BANNER_DESC": "ដើម្បីចូលរហ័ស និងងាយស្រួល! <br> សូមបន្ថែមស្នាមក្រយៅដៃរបស់អ្នក",
+			"USE_FACE_ID": "ប្រើស្គេនផ្ទៃមុខ",
+			"USE_FINGERPRINT": "ប្រើស្នាមក្រយៅដៃ"
+		},
+		"BUTTON": {
+			"CANCEL": "បោះបង់",
+			"SKIP": "រំលង"
+		}
+	},
+	"COM8000000": {
+		"TITLE": "ភ្លេចលេខសម្ងាត់",
+		"TEXT": {
+			"BANNER_DESC": "ដោយសារតម្រូវការសុវត្ថិភាព ការផ្លាស់ប្ដូរលេខសម្ងាត់ត្រូវធ្វើដោយអ្នកគ្រប់គ្រងប្រព័ន្ធ។ សូមទាក់ទងពួកគេដើម្បីបន្ត។"
+		},
+		"BUTTON": {
+			"OKAY": "យល់ព្រម"
+		}
+	},
+	"COM9000000": {
+		"TITLE": "ជ្រើសរើសអតិថិជន",
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CUSTOMER_TYPE": "ប្រភេទអតិថិជន",
+			"GENDER": "ភេទ",
+			"ID_CARD": "អត្តសញ្ញាណប័ណ្ណ",
+			"DATE_OF_BIRTH": "ថ្ងៃខែឆ្នាំកំណើត"
+		},
+		"PLACEHOLDER": {
+			"SELECT_CARD_TYPE": "ជ្រើសរើសប្រភេទកាត",
+			"ENTER_KEYWORD": "បញ្ចូលពាក្យគន្លឹះ"
+		},
+		"BUTTON": {
+			"CLOSE": "បិទ",
+			"SEARCH": "ស្វែងរក",
+			"CANCEL": "បោះបង់",
+			"CONFIRM": "យល់ព្រម"
+		},
+		"OPTION": {
+			"SEARCH_ALL": "ទាំងអស់",
+			"SEARCH_CUSTOMER_NO": "លេខអតិថិជន",
+			"SEARCH_CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"SEARCH_PHONE": "លេខទូរស័ព្ទ",
+			"SEARCH_ID_CARD": "លេខអត្តសញ្ញាណ",
+			"TYPE_CORPORATE": "ក្រុមហ៊ុន",
+			"TYPE_INDIVIDUAL": "ផ្ទាល់ខ្លួន",
+			"GENDER_MALE": "ប្រុស",
+			"GENDER_FEMALE": "ស្រី",
+			"GENDER_OTHER": "ផ្សេងៗ"
+		}
+	},
+	"COM9100000": {
+		"TITLE": "ជ្រើសរើសអតិថិជន",
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CUSTOMER_TYPE": "ប្រភេទអតិថិជន",
+			"GENDER": "ភេទ",
+			"ID_CARD": "អត្តសញ្ញាណប័ណ្ណ",
+			"DATE_OF_BIRTH": "ថ្ងៃខែឆ្នាំកំណើត"
+		},
+		"PLACEHOLDER": {
+			"SELECT_CARD_TYPE": "ជ្រើសរើសប្រភេទកាត",
+			"ENTER_KEYWORD": "បញ្ចូលពាក្យគន្លឹះ"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក"
+		},
+		"OPTION": {
+			"SEARCH_ALL": "ទាំងអស់",
+			"SEARCH_CUSTOMER_NO": "លេខអតិថិជន",
+			"SEARCH_CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"SEARCH_PHONE": "លេខទូរស័ព្ទ",
+			"SEARCH_ID_CARD": "លេខអត្តសញ្ញាណ",
+			"TYPE_CORPORATE": "ក្រុមហ៊ុន",
+			"TYPE_INDIVIDUAL": "ផ្ទាល់ខ្លួន",
+			"GENDER_MALE": "ប្រុស",
+			"GENDER_FEMALE": "ស្រី",
+			"GENDER_OTHER": "ផ្សេងៗ"
+		}
+	},
+	"COMA000000": {
+		"TITLE": "ការផ្ទៀងផ្ទាត់",
+		"LABEL": {
+			"ENTER_PASSWORD": "បញ្ចូលលេខសម្ងាត់",
+			"ENTER_VALUE": "បញ្ចូលតម្លៃ"
+		},
+		"TEXT": {
+			"BANNER_DESC": "ដើម្បីបន្ត សូមបញ្ចូលលេខសម្ងាត់បច្ចុប្បន្នរបស់អ្នកខាងក្រោម។ ប្រសិនបើអ្នកភ្លេចលេខសម្ងាត់ សូមទាក់ទងអ្នកគ្រប់គ្រង។",
+			"FACE_ID": "ស្គេនផ្ទៃមុខ",
+			"FINGERPRINT": "ស្នាមក្រយៅដៃ"
+		},
+		"BUTTON": {
+			"CONFIRM": "យល់ព្រម"
+		}
+	},
+	"TMR1000000": {
+		"TITLE": "ការតាមដានក្រុម",
+		"LABEL": {
+			"TEAM_SUMMARY": "សង្ខេបក្រុម",
+			"VISITED_DEBTOR_VS_GOAL_USD": "កូនបំណុលដែលបានចុះជួប ធៀបនឹងគោលដៅ (USD)",
+			"VISITED_DEBTOR_VS_GOAL_KHR": "កូនបំណុលដែលបានចុះជួប ធៀបនឹងគោលដៅ (KHR)",
+			"PAYMENT_PLAN_REPORT_VS_GOAL_KHR": "របាយការណ៍ផែនការបង់ប្រាក់ ធៀបនឹងគោលដៅ (KHR)",
+			"PAYMENT_PLAN_REPORT_VS_GOAL_USD": "របាយការណ៍ផែនការបង់ប្រាក់ ធៀបនឹងគោលដៅ (USD)",
+			"VISITED_DEBTOR_VS_GOAL": "កូនបំណុលដែលបានចុះជួប ធៀបនឹងគោលដៅ",
+			"PAYMENT_PLAN_REPORT_VS_GOAL": "របាយការណ៍ផែនការបង់ប្រាក់ ធៀបនឹងគោលដៅ",
+			"PEOPLE": "នាក់",
+			"ROLE_01": "អ្នកប្រមូល",
+			"ROLE_02": "ការិយាល័យហៅ",
+			"ROLE_99": "អ្នកដឹកនាំក្រុម"
+		},
+		"BUTTON": {
+			"EDIT": "កែប្រែ"
+		}
+	},
+	"TMR2000000": {
+		"LABEL": {
+			"CALL": "ខលហៅ",
+			"PAYMENT_PLAN_REPORT": "របាយការណ៍ផែនការបង់ប្រាក់",
+			"VISIT_REPORT": "របាយការណ៍ចុះជួប"
+		}
+	},
+	"APV1000000": {
+		"TITLE": "បញ្ជីស្នើសុំអនុម័ត",
+		"LABEL": {
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"REQUEST_DATE": "កាលបរិច្ឆេទស្នើសុំ",
+			"PENDING_DURATION": "រយៈពេលរង់ចាំ",
+			"DAYS": "ថ្ងៃ",
+			"DAY": "ថ្ងៃ",
+			"LOAN_NAME": "ឈ្មោះឥណទាន",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"LOAN_TERM": "រយៈពេលឥណទាន",
+			"MONTHS": "ខែ"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក"
+		}
+	},
+	"APV1100000": {
+		"TITLE": "ព័ត៌មានលម្អិតពាក្យសុំ",
+		"SEGMENT": {
+			"APPLICATION_INFO": "ព័ត៌មានពាក្យសុំ",
+			"APPROVAL_LINE": "បន្ទាត់អនុម័ត"
+		},
+		"LABEL": {
+			"CUSTOMER_INFORMATION": "ព័ត៌មានអតិថិជន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"MONTHLY_SALARY": "ប្រាក់ខែប្រចាំខែ",
+			"OTHER_INCOME": "ប្រាក់ចំណូលផ្សេងទៀត",
+			"TOTAL_MONTHLY_INCOME": "ប្រាក់ចំណូលសរុបប្រចាំខែ",
+			"OUTSTANDING_LOAN_AMOUNT_OTHER_BANKS": "ចំនួនឥណទានជំពាក់ធនាគារផ្សេង",
+			"APPLICATION_INFORMATION": "ព័ត៌មានពាក្យសុំ",
+			"APPLICATION_NO": "លេខពាក្យសុំ",
+			"LOAN_ACCOUNT_NO": "លេខគណនីឥណទាន",
+			"LOAN_TYPE": "ប្រភេទឥណទាន",
+			"LOAN_PRODUCT": "ផលិតផលឥណទាន",
+			"CURRENCY_CODE": "កូដរូបិយប័ណ្ណ",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន",
+			"REPAYMENT_METHOD": "វិធីសងប្រាក់",
+			"TENOR_MONTHS": "រយៈពេល (ខែ)",
+			"MONTHLY_INTEREST_RATE": "អត្រាការប្រាក់ប្រចាំខែ",
+			"TARGET_DISBURSEMENT_DATE": "កាលបរិច្ឆេទបង្ហោះគោលដៅ",
+			"LOAN_PURPOSE": "គោលបំណងឥណទាន",
+			"LOAN_USAGE_AMOUNT": "ចំនួនប្រើប្រាស់ឥណទាន",
+			"FEE_INFORMATION": "ព័ត៌មានថ្លៃសេវា",
+			"COMMITMENT_FEE": "ថ្លៃធានា(%)",
+			"PROCESSING_FEE": "ថ្លៃដំណើរការ(%)",
+			"COLLATERAL_INFORMATION": "ព័ត៌មានទ្រព្យបញ្ចាំ",
+			"COLLATERAL_NO": "ទ្រព្យបញ្ចាំ #{{n}}",
+			"CATEGORY_TYPE": "ប្រភេទចំណាត់ថ្នាក់",
+			"AMOUNT": "ចំនួន",
+			"TOTAL_COLLATERAL_AMOUNT": "ចំនួនទ្រព្យបញ្ចាំសរុប",
+			"CO_BORROWER_GUARANTOR": "អ្នកខ្ចីរួម និងអ្នកធានា",
+			"NO": "លេខ #{{n}}",
+			"TYPE": "ប្រភេទ",
+			"TOTAL_AMOUNT": "ចំនួនសរុប",
+			"RISK_EVALUATION": "ហានិភ័យ និងការវាយតម្លៃ",
+			"LTV": "សមាមាត្រឥណទានទៅតម្លៃ(%)",
+			"CRR_SCORE": "ពិន្ទុអ្នកបង្ហោះការវាយតម្លៃ(CRR)",
+			"CBC_SCORE": "ពិន្ទុ Credit Bureau Cambodia(CBC)",
+			"DSCR": "កិនានិចិត្តសងប្រាក់កាន់តាមរយៈពេលសង (DSCR)",
+			"OPTIONAL": "(ស្រេចចិត្ត)",
+			"POSITION": "តួនាទី",
+			"REMARK": "ការកត់សម្គាល់",
+			"ENTER_REMARK": "បញ្ចូលការកត់សម្គាល់"
+		},
+		"BUTTON": {
+			"REJECT": "បដិសេធ",
+			"RETURN": "ត្រឡប់",
+			"APPROVE": "អនុម័ត",
+			"REQUEST_AMENDMENT": "ស្នើកែប្រែ",
+			"CANCEL_APPROVAL": "លុបចោលការអនុម័ត"
+		},
+		"STATUS": {
+			"REQUESTED": "បានស្នើសុំ",
+			"SKIPPED": "រំលង",
+			"APPROVING": "កំពុងអនុម័ត",
+			"WAITING": "រង់ចាំ",
+			"APPROVED": "បានអនុម័ត",
+			"FINAL_APPROVAL": "អនុម័តចុងក្រោយ",
+			"CANCEL": "លុបចោល",
+			"RETURN": "ត្រឡប់",
+			"REJECT": "បដិសេធ"
+		}
+	},
+	"BAC1000000": {
+		"TITLE": "បញ្ជីស្នើសុំទារព័ត៌មានធានារ៉ាប់រង",
+		"LABEL": {
+			"PRODUCT_CLAIM": "ផលិតផលទារព័ត៌មាន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"DEPOSIT_ACCOUNT": "គណនីដាក់ប្រាក់",
+			"CLAIM_AMOUNT": "ចំនួនទារព័ត៌មាន",
+			"CLAIM_PURPOSE": "គោលបំណងទារព័ត៌មាន",
+			"WORK_PROGRESS_STATUS": "ស្ថានភាពការងារ",
+			"ADDRESS": "អាសយដ្ឋាន",
+			"PRODUCT": "ផលិតផល"
+		},
+		"PLACEHOLDER": {
+			"ENTER_CUSTOMER_NO": "បញ្ចូលលេខអតិថិជន",
+			"DEPOSIT_ACCOUNT": "គណនីដាក់ប្រាក់"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក",
+			"CLAIM_NEW_APPLICATION": "ទារព័ត៌មានពាក្យសុំថ្មី"
+		},
+		"MODAL": {
+			"SELECT_CUSTOMER": "ជ្រើសរើសអតិថិជន"
+		}
+	},
+	"BAC1200000": {
+		"TITLE": "ទម្រង់ពាក្យសុំធានារ៉ាប់រង",
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"ID_CARD": "អត្តសញ្ញាណប័ណ្ណ",
+			"PRODUCT_CLAIM": "ផលិតផលទារព័ត៌មាន",
+			"CURRENCY_TYPE": "ប្រភេទរូបិយប័ណ្ណ",
+			"CLAIM_AMOUNT": "ចំនួនទារព័ត៌មាន",
+			"DEPOSIT_ACCOUNT": "គណនីដាក់ប្រាក់",
+			"WORK_PROGRESS_STATUS": "ស្ថានភាពការងារ",
+			"CLAIM_PURPOSE": "គោលបំណងទារព័ត៌មាន",
+			"ATTACHMENT": "ឯកសាភ្ជាប់"
+		},
+		"PLACEHOLDER": {
+			"ENTER_VALUE": "បញ្ចូលតម្លៃ"
+		},
+		"BUTTON": {
+			"SUBMIT": "ដាក់ស្នើ"
+		}
+	},
+	"BAC1300000": {
+		"TITLE": "តើអ្នកចង់ទារព័ត៌មាន <br> <strong>ធានារ៉ាប់រង</strong> ឬ?",
+		"LABEL": {
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"PRODUCT_CLAIM": "ផលិតផលទារព័ត៌មាន",
+			"CLAIM_AMOUNT": "ចំនួនទារព័ត៌មាន",
+			"DEPOSIT_ACCOUNT": "គណនីដាក់ប្រាក់",
+			"WORK_PROGRESS_STATUS": "ស្ថានភាពការងារ",
+			"CLAIM_PURPOSE": "គោលបំណងទារព័ត៌មាន",
+			"ATTACHMENT": "ឯកសាភ្ជាប់"
+		},
+		"BUTTON": {
+			"CLOSE": "បិទ",
+			"NO": "ទេ",
+			"YES": "យល់ព្រម"
+		}
+	},
+	"BAC1400000": {
+		"TITLE": "លទ្ធផលធានារ៉ាប់រង",
+		"MESSAGE": "សូមអរគុណសម្រាប់ការទារព័ត៌មាន <br> <em>ធានារ៉ាប់រង</em>",
+		"LABEL": {
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"PRODUCT_CLAIM": "ផលិតផលទារព័ត៌មាន",
+			"CLAIM_AMOUNT": "ចំនួនទារព័ត៌មាន",
+			"DEPOSIT_ACCOUNT": "គណនីដាក់ប្រាក់",
+			"WORK_PROGRESS_STATUS": "ស្ថានភាពការងារ",
+			"CLAIM_PURPOSE": "គោលបំណងទារព័ត៌មាន",
+			"ATTACHMENT": "ឯកសាភ្ជាប់"
+		},
+		"BUTTON": {
+			"OK": "យល់ព្រម"
+		}
+	},
+	"BAC2000000": {
+		"TITLE": "ព័ត៌មានលម្អិតទារព័ត៌មានធានារ៉ាប់រង",
+		"LABEL": {
+			"REQUEST_DATE": "កាលបរិច្ឆេទស្នើសុំ",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"PRODUCT_CLAIM": "ផលិតផលទារព័ត៌មាន",
+			"CLAIM_AMOUNT": "ចំនួនទារព័ត៌មាន",
+			"DEPOSIT_ACCOUNT": "គណនីដាក់ប្រាក់",
+			"WORK_PROGRESS_STATUS": "ស្ថានភាពការងារ",
+			"CLAIM_PURPOSE": "គោលបំណងទារព័ត៌មាន",
+			"ADDRESS": "អាសយដ្ឋាន",
+			"WORK_REMARK": "ការកត់សម្គាល់ការងារ",
+			"ATTACHMENT": "ឯកសាភ្ជាប់"
+		},
+		"BUTTON": {
+			"MODIFY": "កែប្រែ"
+		}
+	},
+	"BLO1000000": {
+		"TITLE": "សាខា និងទីតាំង",
+		"SEGMENT": {
+			"BRANCH": "សាខា",
+			"ATM": "អេធីអឹម"
+		}
+	},
+	"BLO1100000": {
+		"LABEL": {
+			"LOCATION": "ទីតាំង",
+			"DESCRIPTION": "ការពិពណ៌នា",
+			"WORKING_HOURS": "ម៉ោងធ្វើការ",
+			"CONTACT_INFORMATION": "ព័ត៌មានទំនាក់ទំនង",
+			"PHONE_NUMBER": "លេខទូរស័ព្ទ៖",
+			"FAX": "ទូរសារ៖"
+		},
+		"BUTTON": {
+			"CALL": "ខលហៅ",
+			"DIRECTION": "ទិសដៅ"
+		}
+	},
+	"CIF1000000": {
+		"TITLE": "បញ្ជីអតិថិជន",
+		"LABEL": {
+			"CUSTOMER_TYPE": "ប្រភេទអតិថិជន",
+			"CUSTOMER_ID": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CUSTOMER_ADDRESS": "អាសយដ្ឋានអតិថិជន"
+		},
+		"PLACEHOLDER": {
+			"ENTER_CUSTOMER_NO": "បញ្ចូលលេខអតិថិជន",
+			"ENTER_CUSTOMER_NAME": "បញ្ចូលឈ្មោះអតិថិជន",
+			"ID_NUMBER": "លេខអត្តសញ្ញាណ"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក",
+			"ADD_NEW_CUSTOMER": "បន្ថែមអតិថិជនថ្មី",
+			"CALL": "ខលហៅ"
+		}
+	},
+	"CIF2000000": {
+		"TITLE": "ព័ត៌មានលម្អិតអតិថិជន",
+		"LABEL": {
+			"VIEW_CHANGE_HISTORY": "មើលប្រវត្តិការផ្លាស់ប្ដូរ",
+			"EDIT": "កែប្រែ",
+			"ACCOUNT": "គណនី",
+			"LOAN": "ឥណទាន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"ENGLISH_NAME": "ឈ្មោះអង់គ្លេស",
+			"KHMER_NAME": "ឈ្មោះខ្មែរ",
+			"DATE_OF_BIRTH": "ថ្ងៃខែឆ្នាំកំណើត",
+			"GENDER": "ភេទ",
+			"MARITAL_STATUS": "ស្ថានភាពអាពាហ៍ពិពាហ៍",
+			"TITLE_CALLING": "ពាក្យហៅ",
+			"IDENTITY": "អត្តសញ្ញាណ",
+			"ID_TYPE": "ប្រភេទអត្តសញ្ញាណ",
+			"ID_NUMBER": "លេខអត្តសញ្ញាណ",
+			"ID_EXPIRY_DATE": "កាលបរិច្ឆេទផុតកំណត់",
+			"ATTACHMENT": "ឯកសាភ្ជាប់",
+			"RESIDENCY": "ទីលំនៅ",
+			"RESIDENT_TYPE": "ប្រភេទទីលំនៅ",
+			"HOUSE_OWN_TYPE": "ប្រភេទការកាន់កាប់ផ្ទះ",
+			"HOUSE_TYPE": "ប្រភេទផ្ទះ",
+			"NUMBER_OF_DEPENDENTS": "ចំនួនអាស្រ័យ",
+			"CONTACT_INFORMATION": "ព័ត៌មានទំនាក់ទំនង",
+			"CONTACT_1": "ទំនាក់ទំនង #1",
+			"PERMANENT_ADDRESS": "អាសយដ្ឋានអចិន្ត្រៃយ៍",
+			"CURRENT_ADDRESS": "អាសយដ្ឋានបច្ចុប្បន្ន",
+			"ADDRESS_DETAIL": "ព័ត៌មានអាសយដ្ឋាន",
+			"BACKGROUND": "ផ្ទៃខាងក្រោយ",
+			"EDUCATION": "ការអប់រំ",
+			"WORK_DURATION": "រយៈពេលធ្វើការ",
+			"SUPPORTING_MATERIAL": "ឯកសាគាំទ្រ",
+			"YEARS": "ឆ្នាំ"
+		},
+		"BUTTON": {
+			"MODIFY": "កែប្រែ"
+		}
+	},
+	"CIF2100000": {
+		"TITLE": "គណនី",
+		"BUTTON": {
+			"CLOSE": "បិទ"
+		}
+	},
+	"CIF2200000": {
+		"TITLE": "ឥណទាន",
+		"BUTTON": {
+			"CLOSE": "បិទ"
+		}
+	},
+	"CIF2300000": {
+		"TITLE": "ប្រវត្តិការផ្លាស់ប្ដូរអតិថិជន"
+	},
+	"CIF3000000": {
+		"TITLE": "ជ្រើសរើសប្រភេទអតិថិជនចុះឈ្មោះ",
+		"LABEL": {
+			"INDIVIDUAL": "ផ្ទាល់ខ្លួន",
+			"CORPORATE": "ក្រុមហ៊ុន"
+		},
+		"BUTTON": {
+			"CLOSE": "បិទ",
+			"CANCEL": "បោះបង់",
+			"CONFIRM": "យល់ព្រម"
+		}
+	},
+	"CIF3100000": {
+		"TITLE": "ចុះឈ្មោះអតិថិជន - ផ្ទាល់ខ្លួន",
+		"LABEL": {
+			"CUSTOMER_INFORMATION": "ព័ត៌មានអតិថិជន",
+			"FIRST_NAME_EN": "នាម (អង់គ្លេស)",
+			"LAST_NAME_EN": "នាមត្រកូល (អង់គ្លេស)",
+			"FIRST_NAME_KH": "នាម (ខ្មែរ)",
+			"LAST_NAME_KH": "នាមត្រកូល (ខ្មែរ)",
+			"GENDER": "ភេទ",
+			"PREFERRED_CALLING_TITLE": "ពាក្យហៅ",
+			"MARITAL_STATUS": "ស្ថានភាពអាពាហ៍ពិពាហ៍",
+			"DATE_OF_BIRTH": "ថ្ងៃខែឆ្នាំកំណើត",
+			"IDENTITY_CARD": "អត្តសញ្ញាណប័ណ្ណ",
+			"ID_TYPE": "ប្រភេទអត្តសញ្ញាណ",
+			"ID_NUMBER": "លេខអត្តសញ្ញាណ",
+			"ID_EXPIRY_DATE": "កាលបរិច្ឆេទផុតកំណត់ (លើសពី៣០ថ្ងៃ)",
+			"ID_PHOTO": "រូបអត្តសញ្ញាណ",
+			"RESIDENCY": "ទីលំនៅ",
+			"RESIDENCY_TYPE": "ប្រភេទទីលំនៅ",
+			"RESIDENT_ADDRESS": "អាសយដ្ឋានទីលំនៅ",
+			"HOUSE_OWN_TYPE": "ប្រភេទការកាន់កាប់ផ្ទះ",
+			"HOUSE_TYPE": "ប្រភេទផ្ទះ",
+			"NUMBER_OF_DEPENDENTS": "ចំនួនអាស្រ័យ",
+			"BACKGROUND": "ផ្ទៃខាងក្រោយ",
+			"EDUCATION": "ការអប់រំ",
+			"WORK_DURATION": "រយៈពេលធ្វើការ",
+			"CONTACT_INFORMATION": "ព័ត៌មានទំនាក់ទំនង",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"PERMANENT_ADDRESS": "អាសយដ្ឋានអចិន្ត្រៃយ៍",
+			"CURRENT_ADDRESS": "អាសយដ្ឋានបច្ចុប្បន្ន",
+			"STREET": "ផ្លូវ",
+			"HOUSE_NUMBER": "លេខផ្ទះ",
+			"ADDRESS_ON_MAP": "អាសយដ្ឋានលើផែនទី",
+			"CUSTOMER_PROFILE": "រូបភាពអតិថិជន",
+			"DOCUMENT": "ឯកសារ"
+		},
+		"PLACEHOLDER": {
+			"ENTER_FIRST_NAME_EN": "បញ្ចូលនាម (អង់គ្លេស)",
+			"ENTER_LAST_NAME_EN": "បញ្ចូលនាមត្រកូល (អង់គ្លេស)",
+			"ENTER_FIRST_NAME_KH": "បញ្ចូលនាម (ខ្មែរ)",
+			"ENTER_LAST_NAME_KH": "បញ្ចូលនាមត្រកូល (ខ្មែរ)",
+			"ENTER_ID_NUMBER": "បញ្ចូលលេខអត្តសញ្ញាណ",
+			"ENTER_RESIDENT_ADDRESS": "បញ្ចូលអាសយដ្ឋានទីលំនៅ",
+			"ENTER_NUMBER_OF_DEPENDENTS": "បញ្ចូលចំនួនអាស្រ័យ",
+			"SELECT_EDUCATION": "ជ្រើសរើសការអប់រំ",
+			"ENTER_WORK_DURATION": "បញ្ចូលរយៈពេលធ្វើការ",
+			"ENTER_PHONE_NO": "បញ្ចូលលេខទូរស័ព្ទ",
+			"PERMANENT_ADDRESS": "អាសយដ្ឋានអចិន្ត្រៃយ៍",
+			"CUSTOMER_ADDRESS": "អាសយដ្ឋានអតិថិជន",
+			"ENTER_STREET": "បញ្ចូលផ្លូវ",
+			"ENTER_HOUSE_NUMBER": "បញ្ចូលលេខផ្ទះ",
+			"ENTER_ADDRESS_ON_MAP": "បញ្ចូលអាសយដ្ឋានលើផែនទី"
+		},
+		"BUTTON": {
+			"NEXT": "បន្ទាប់"
+		}
+	},
+	"CIF3200000": {
+		"TITLE": "មើលការចុះឈ្មោះអតិថិជន",
+		"LABEL": {
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"ENGLISH_NAME": "ឈ្មោះអង់គ្លេស",
+			"KHMER_NAME": "ឈ្មោះខ្មែរ",
+			"DATE_OF_BIRTH": "ថ្ងៃខែឆ្នាំកំណើត",
+			"GENDER": "ភេទ",
+			"MARITAL_STATUS": "ស្ថានភាពអាពាហ៍ពិពាហ៍",
+			"TITLE_CALLING": "ពាក្យហៅ",
+			"IDENTITY": "អត្តសញ្ញាណ",
+			"ID_TYPE": "ប្រភេទអត្តសញ្ញាណ",
+			"ID_NUMBER": "លេខអត្តសញ្ញាណ",
+			"ID_EXPIRY_DATE": "កាលបរិច្ឆេទផុតកំណត់",
+			"ATTACHMENT": "ឯកសាភ្ជាប់",
+			"RESIDENCY": "ទីលំនៅ",
+			"RESIDENT_TYPE": "ប្រភេទទីលំនៅ",
+			"HOUSE_OWN_TYPE": "ប្រភេទការកាន់កាប់ផ្ទះ",
+			"HOUSE_TYPE": "ប្រភេទផ្ទះ",
+			"NUMBER_OF_DEPENDENTS": "ចំនួនអាស្រ័យ",
+			"CONTACT_INFORMATION": "ព័ត៌មានទំនាក់ទំនង",
+			"PHONE_NUMBER": "លេខទូរស័ព្ទ",
+			"CURRENT_ADDRESS": "អាសយដ្ឋានបច្ចុប្បន្ន",
+			"STREET": "ផ្លូវ",
+			"HOUSE_NUMBER": "លេខផ្ទះ",
+			"ADDRESS_ON_MAP": "អាសយដ្ឋានលើផែនទី",
+			"BACKGROUND": "ផ្ទៃខាងក្រោយ",
+			"EDUCATION": "ការអប់រំ",
+			"WORK_DURATION": "រយៈពេលធ្វើការ",
+			"SUPPORTING_MATERIAL": "ឯកសាគាំទ្រ",
+			"YEARS": "ឆ្នាំ"
+		},
+		"BUTTON": {
+			"CANCEL": "បោះបង់",
+			"SUBMIT": "ដាក់ស្នើ"
+		}
+	},
+	"CIF3310000": {
+		"TITLE": "ជ្រើសរើសអតិថិជន",
+		"LABEL": {
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"NATIONAL_ID": "អត្តសញ្ញាណប័ណ្ណ",
+			"DATE_OF_BIRTH": "ថ្ងៃខែឆ្នាំកំណើត"
+		},
+		"PLACEHOLDER": {
+			"SELECT_CARD_TYPE": "ជ្រើសរើសប្រភេទកាត",
+			"ENTER_KEYWORD": "បញ្ចូលពាក្យគន្លឹះ"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក",
+			"CANCEL": "បោះបង់",
+			"CONFIRM": "យល់ព្រម"
+		}
+	},
+	"CIF3400000": {
+		"TITLE": "ចុះឈ្មោះអតិថិជន - ក្រុមហ៊ុន",
+		"MODAL": {
+			"SELECT_REPRESENTATIVE_CUSTOMER": "ជ្រើសរើសអតិថិជនតំណាង"
+		},
+		"LABEL": {
+			"BASIC_INFO": "ព័ត៌មានមូលដ្ឋាន",
+			"COMPANY_NAME": "ឈ្មោះក្រុមហ៊ុន",
+			"ESTABLISHED_DATE": "កាលបរិច្ឆេទបង្កើត",
+			"ENTITY_TYPE": "ប្រភេទអង្គភាព",
+			"COMPANY_LOGO": "ឡូហ្គោក្រុមហ៊ុន",
+			"ID_TYPE": "ប្រភេទអត្តសញ្ញាណ",
+			"ID_NUMBER": "លេខអត្តសញ្ញាណ",
+			"EXPIRY_DATE": "កាលបរិច្ឆេទផុតកំណត់",
+			"ISSUE_DATE": "កាលបរិច្ឆេទចេញ",
+			"ID_ISSUED_BY": "ចេញដោយ",
+			"ADDITIONAL_INFO": "ព័ត៌មានបន្ថែម",
+			"LOCAL_NAME": "ឈ្មោះក្នុងស្រុក",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"EMAIL": "អ៊ីមែល",
+			"REPRESENTATIVE_ASSIGN_DATE": "កាលបរិច្ឆេទចាត់តាំងអ្នកតំណាង",
+			"REPRESENTATIVE_CUSTOMER": "អតិថិជនតំណាង",
+			"BUSINESS_CAPITAL": "ដើមទុនអាជីវកម្ម",
+			"INDUSTRY_CATEGORY": "ប្រភេទឧស្សាហកម្ម",
+			"COMPANY_ADDRESS": "អាសយដ្ឋានក្រុមហ៊ុន",
+			"STREET": "ផ្លូវ",
+			"RESIDENT_TYPE": "ប្រភេទទីលំនៅ",
+			"BUSINESS_ACTIVITY": "សកម្មភាពអាជីវកម្ម",
+			"ADDRESS_ON_MAP": "អាសយដ្ឋានលើផែនទី",
+			"DOCUMENT": "ឯកសារ",
+			"SHAREHOLDER": "អ្នកភាគហ៊ុន",
+			"POSITION": "តួនាទី",
+			"GENDER": "ភេទ",
+			"CORPORATE_DATE": "កាលបរិច្ឆេទក្រុមហ៊ុន",
+			"RELATION_TYPE": "ប្រភេទទំនាក់ទំនង",
+			"RELATION_ID_NUMBER": "លេខអត្តសញ្ញាណទំនាក់ទំនង",
+			"REMARK": "ការកត់សម្គាល់",
+			"ATTACHMENT": "ឯកសាភ្ជាប់"
+		},
+		"PLACEHOLDER": {
+			"ENTER_ID_NUMBER": "បញ្ចូលលេខអត្តសញ្ញាណ",
+			"ENTER_PHONE_NO": "បញ្ចូលលេខទូរស័ព្ទ",
+			"ENTER_EMAIL": "បញ្ចូលអ៊ីមែល",
+			"ENTER_BUSINESS_CAPITAL": "បញ្ចូលដើមទុនអាជីវកម្ម",
+			"ENTER_STREET": "បញ្ចូលផ្លូវ",
+			"ENTER_ADDRESS_ON_MAP": "បញ្ចូលអាសយដ្ឋានលើផែនទី",
+			"ENTER_SHAREHOLDER_NAME": "បញ្ចូលឈ្មោះអ្នកភាគហ៊ុន",
+			"ENTER_RELATION_ID_NUMBER": "បញ្ចូលលេខអត្តសញ្ញាណទំនាក់ទំនង",
+			"ENTER_REMARK": "បញ្ចូលការកត់សម្គាល់",
+			"ENTER_ID_ISSUED_BY": "បញ្ចូលចេញដោយ",
+			"COMPANY_ADDRESS": "អាសយដ្ឋានក្រុមហ៊ុន"
+		},
+		"BUTTON": {
+			"REMOVE": "ដកចេញ",
+			"ADD_MORE_PHONE_NO": "បន្ថែមលេខទូរស័ព្ទ",
+			"ADD_MORE_SHAREHOLDER": "បន្ថែមអ្នកភាគហ៊ុន",
+			"NEXT": "បន្ទាប់"
+		}
+	},
+	"CIF3500000": {
+		"TITLE": "មើលការចុះឈ្មោះក្រុមហ៊ុន",
+		"LABEL": {
+			"BASIC_INFO": "ព័ត៌មានមូលដ្ឋាន",
+			"COMPANY_NAME": "ឈ្មោះក្រុមហ៊ុន",
+			"ESTABLISHED_DATE": "កាលបរិច្ឆេទបង្កើត",
+			"ENTITY_TYPE": "ប្រភេទអង្គភាព",
+			"COMPANY_LOGO": "ឡូហ្គោក្រុមហ៊ុន",
+			"IDENTITY": "អត្តសញ្ញាណ",
+			"ID_TYPE": "ប្រភេទអត្តសញ្ញាណ",
+			"ID_NUMBER": "លេខអត្តសញ្ញាណ",
+			"ID_EXPIRY_DATE": "កាលបរិច្ឆេទផុតកំណត់",
+			"ID_ISSUE_DATE": "កាលបរិច្ឆេទចេញ",
+			"ID_ISSUED_BY": "ចេញដោយ",
+			"ATTACHMENT": "ឯកសាភ្ជាប់",
+			"ADDITIONAL_INFO": "ព័ត៌មានបន្ថែម",
+			"LOCAL_NAME": "ឈ្មោះក្នុងស្រុក",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"EMAIL": "អ៊ីមែល",
+			"REPRESENTATIVE_ASSIGN_DATE": "កាលបរិច្ឆេទចាត់តាំងអ្នកតំណាង",
+			"REPRESENTATIVE_CUSTOMER": "អតិថិជនតំណាង",
+			"BUSINESS_CAPITAL": "ដើមទុនអាជីវកម្ម",
+			"INDUSTRY_CATEGORY": "ប្រភេទឧស្សាហកម្ម",
+			"ADDRESS": "អាសយដ្ឋាន",
+			"BUSINESS_ACTIVITY": "សកម្មភាពអាជីវកម្ម",
+			"SHAREHOLDER": "អ្នកភាគហ៊ុន",
+			"POSITION": "តួនាទី",
+			"GENDER": "ភេទ",
+			"CORPORATE_DATE": "កាលបរិច្ឆេទក្រុមហ៊ុន",
+			"RELATION_TYPE": "ប្រភេទទំនាក់ទំនង",
+			"RELATION_ID_NUMBER": "លេខអត្តសញ្ញាណទំនាក់ទំនង",
+			"REMARK": "ការកត់សម្គាល់",
+			"DOCUMENT": "ឯកសារ"
+		},
+		"BUTTON": {
+			"CANCEL": "បោះបង់",
+			"BACK": "ត្រឡប់ក្រោយ",
+			"SUBMIT": "ដាក់ស្នើ"
+		}
+	},
+	"CIF4000000": {
+		"TITLE": "ព័ត៌មានលម្អិតអតិថិជនក្រុមហ៊ុន",
+		"LABEL": {
+			"VIEW_CHANGE_HISTORY": "មើលប្រវត្តិការផ្លាស់ប្ដូរ",
+			"EDIT": "កែប្រែ",
+			"ACCOUNT": "គណនី",
+			"LOAN": "ឥណទាន",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"COMPANY_NAME": "ឈ្មោះក្រុមហ៊ុន",
+			"COMPANY_LOCAL_NAME": "ឈ្មោះក្រុមហ៊ុនក្នុងស្រុក",
+			"ESTABLISHED_DATE": "កាលបរិច្ឆេទបង្កើត",
+			"ENTITY_TYPE": "ប្រភេទអង្គភាព",
+			"IDENTITY": "អត្តសញ្ញាណ",
+			"ID_TYPE": "ប្រភេទអត្តសញ្ញាណ",
+			"ID_NUMBER": "លេខអត្តសញ្ញាណ",
+			"ID_EXPIRY_DATE": "កាលបរិច្ឆេទផុតកំណត់",
+			"ID_ISSUE_DATE": "កាលបរិច្ឆេទចេញ",
+			"ID_ISSUED_BY": "ចេញដោយ",
+			"ATTACHMENT": "ឯកសាភ្ជាប់",
+			"ADDITIONAL_INFO": "ព័ត៌មានបន្ថែម",
+			"LOCAL_NAME": "ឈ្មោះក្នុងស្រុក",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"EMAIL": "អ៊ីមែល",
+			"REPRESENTATIVE_ASSIGN_DATE": "កាលបរិច្ឆេទចាត់តាំងអ្នកតំណាង",
+			"REPRESENTATIVE_CUSTOMER": "អតិថិជនតំណាង",
+			"BUSINESS_CAPITAL": "ដើមទុនអាជីវកម្ម",
+			"INDUSTRY_CATEGORY": "ប្រភេទឧស្សាហកម្ម",
+			"ADDRESS": "អាសយដ្ឋាន",
+			"BUSINESS_ACTIVITY": "សកម្មភាពអាជីវកម្ម",
+			"SHAREHOLDER": "អ្នកភាគហ៊ុន",
+			"POSITION": "តួនាទី",
+			"GENDER": "ភេទ",
+			"CORPORATE_DATE": "កាលបរិច្ឆេទក្រុមហ៊ុន",
+			"RELATION_TYPE": "ប្រភេទទំនាក់ទំនង",
+			"RELATION_ID_NUMBER": "លេខអត្តសញ្ញាណទំនាក់ទំនង",
+			"REMARK": "ការកត់សម្គាល់",
+			"DOCUMENT": "ឯកសារ"
+		},
+		"BUTTON": {
+			"MODIFY": "កែប្រែ"
+		}
+	},
+	"CIF4200000": {
+		"TITLE": "កែប្រែអតិថិជន",
+		"LABEL": {
+			"WHAT_MODIFY": "តើអ្នកចង់កែប្រែអ្វី?",
+			"MODIFY_TYPE": "ប្រភេទកែប្រែ",
+			"MODIFY_CATEGORY": "ចំណាត់ថ្នាក់កែប្រែ",
+			"CURRENT_VALUE": "តម្លៃបច្ចុប្បន្ន",
+			"NEW_VALUE": "តម្លៃថ្មី",
+			"GENDER": "ភេទ"
+		},
+		"PLACEHOLDER": {
+			"SELECT_MODIFY_TYPE": "ជ្រើសរើសប្រភេទកែប្រែ",
+			"SELECT_MODIFY_CATEGORY": "ជ្រើសរើសចំណាត់ថ្នាក់កែប្រែ",
+			"ENTER_CURRENT_VALUE": "បញ្ចូលតម្លៃបច្ចុប្បន្ន",
+			"ENTER_NEW_VALUE": "បញ្ចូលតម្លៃថ្មី",
+			"SELECT_GENDER": "ជ្រើសរើសភេទ",
+			"COMPANY_ADDRESS": "អាសយដ្ឋានក្រុមហ៊ុន",
+			"ENTER_ADDRESS_ON_MAP": "បញ្ចូលអាសយដ្ឋានលើផែនទី"
+		},
+		"BUTTON": {
+			"REMOVE": "ដកចេញ",
+			"ADD_MORE": "បន្ថែម",
+			"SUBMIT": "ដាក់ស្នើ"
+		}
+	},
+	"CIF4300000": {
+		"TITLE": "កែប្រែអតិថិជនក្រុមហ៊ុន",
+		"LABEL": {
+			"WHAT_MODIFY": "តើអ្នកចង់កែប្រែអ្វី?",
+			"MODIFY_TYPE": "ប្រភេទកែប្រែ",
+			"MODIFY_CATEGORY": "ចំណាត់ថ្នាក់កែប្រែ",
+			"CURRENT_VALUE": "តម្លៃបច្ចុប្បន្ន",
+			"NEW_VALUE": "តម្លៃថ្មី",
+			"OTHER_VALUE": "តម្លៃផ្សេង",
+			"PHONE_NUMBER": "លេខទូរស័ព្ទ"
+		},
+		"PLACEHOLDER": {
+			"SELECT_MODIFY_TYPE": "ជ្រើសរើសប្រភេទកែប្រែ",
+			"SELECT_MODIFY_CATEGORY": "ជ្រើសរើសចំណាត់ថ្នាក់កែប្រែ",
+			"CURRENT_VALUE": "តម្លៃបច្ចុប្បន្ន",
+			"ENTER_CURRENT_VALUE": "បញ្ចូលតម្លៃបច្ចុប្បន្ន",
+			"SELECT_PHONE_NUMBER": "ជ្រើសរើសលេខទូរស័ព្ទ",
+			"ENTER_NEW_VALUE": "បញ្ចូលតម្លៃថ្មី",
+			"ENTER_OTHER_VALUE": "បញ្ចូលតម្លៃផ្សេង",
+			"SELECT_NEW_VALUE": "ជ្រើសរើសតម្លៃថ្មី",
+			"COMPANY_ADDRESS": "អាសយដ្ឋានក្រុមហ៊ុន"
+		},
+		"BUTTON": {
+			"REMOVE": "ដកចេញ",
+			"ADD_MORE": "បន្ថែម",
+			"SUBMIT": "ដាក់ស្នើ"
+		}
+	},
+	"COL1100000": {
+		"TITLE": "កូនបំណុលថ្ងៃនេះ",
+		"LABEL": {
+			"TODAY_DEBTOR_LIST": "បញ្ជីកូនបំណុលថ្ងៃនេះ",
+			"NO_DEBTOR_LIST": "គ្មានបញ្ជីកូនបំណុលថ្ងៃនេះ",
+			"REAL_PAYMENT": "ការបង់ប្រាក់ជាក់ស្តែង",
+			"TYPE": "ប្រភេទ",
+			"AMOUNT": "ចំនួន",
+			"PAYMENT_PLAN_REPORT": "របាយការណ៍ផែនការបង់ប្រាក់",
+			"LEFT_DELINQUENCY": "បំណុលរយៈពេលយឺត"
+		},
+		"BUTTON": {
+			"CALL": "ខលហៅ",
+			"VIEW_MORE_DEBTOR": "មើលកូនបំណុលបន្ថែម"
+		}
+	},
+	"COL1110000": {
+		"TITLE": "បញ្ជីកូនបំណុល",
+		"PLACEHOLDER": {
+			"ENTER_DEBTOR_NAME": "បញ្ចូលឈ្មោះកូនបំណុល",
+			"ENTER_DEBTOR_PHONE_NO": "បញ្ចូលលេខទូរស័ព្ទកូនបំណុល"
+		},
+		"LABEL": {
+			"LOAN_ACCOUNT": "គណនីឥណទាន",
+			"LOAN_AMOUNT": "ចំនួនឥណទាន"
+		},
+		"BUTTON": {
+			"SEARCH": "ស្វែងរក",
+			"CALL": "ខលហៅ"
+		}
+	},
+	"COL2111100": {
+		"TITLE": "ព័ត៌មានលម្អិតកូនបំណុល",
+		"LABEL": {
+			"EDIT": "កែប្រែ",
+			"ADD_PPR": "បន្ថែម PPR",
+			"VISIT_REPORT": "របាយការណ៍ចុះជួប",
+			"CUSTOMER_NO": "លេខអតិថិជន",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"MOBILE_NUMBER": "លេខទូរស័ព្ទចល័ត",
+			"EMAIL_ADDRESS": "អាសយដ្ឋានអ៊ីមែល",
+			"HOME_ADDRESS": "អាសយដ្ឋានផ្ទះ",
+			"REPAYMENT": "ការសងប្រាក់",
+			"PAYMENT_HISTORY": "ប្រវត្តិការបង់ប្រាក់",
+			"CONTACT_HISTORY": "ប្រវត្តិទំនាក់ទំនង",
+			"PAYMENT_DATE": "កាលបរិច្ឆេទបង់ប្រាក់",
+			"LOAN_ACCOUNT_NO": "លេខគណនីឥណទាន",
+			"PAYMENT_AMOUNT": "ចំនួនបង់ប្រាក់",
+			"PAID": "បានបង់",
+			"ADD_NEW_CONTACT_HISTORY": "បន្ថែមប្រវត្តិទំនាក់ទំនងថ្មី",
+			"WHOS_CONTACT": "អ្នកទំនាក់ទំនង",
+			"PHONE_NO": "លេខទូរស័ព្ទ",
+			"CONTACT_DATE": "កាលបរិច្ឆេទទំនាក់ទំនង",
+			"CONTACT_STATUS": "ស្ថានភាពទំនាក់ទំនង",
+			"REMARK": "ការកត់សម្គាល់",
+			"NEXT_SCHEDULE": "កាលវិភាគបន្ទាប់៖"
+		}
+	},
+	"COL2111210": {
+		"TITLE": "ព័ត៌មានលម្អិតប្រវត្តិការបង់ប្រាក់",
+		"LABEL": {
+			"PAYMENT_HISTORY": "ប្រវត្តិការបង់ប្រាក់",
+			"CUSTOMER_NAME": "ឈ្មោះអតិថិជន",
+			"CUSTOMER_NUMBER": "លេខអតិថិជន",
+			"PHONE_NUMBER": "លេខទូរស័ព្ទ",
+			"ACCOUNT_NUMBER": "លេខគណនី",
+			"LOAN_BALANCE": "សមតុល្យឥណទាន",
+			"CURRENCY": "រូបិយប័ណ្ណ",
+			"REPAYMENT_SCHEDULE": "កាលវិភាគសងប្រាក់",
+			"PRINCIPAL_AMOUNT": "ចំនួនដើមទុន",
+			"INTEREST_AMOUNT": "ចំនួនការប្រាក់",
+			"OTHER_AMOUNT": "ចំនួនផ្សេងទៀត",
+			"ADJUSTMENT_AMOUNT": "ចំនួនកែតម្រូវ",
+			"FEE_AMOUNT": "ចំនួនថ្លៃសេវា"
+		}
+	},
+	"COL2111500": {
+		"TITLE": "ការបង់ប្រាក់ KHQR",
+		"LABEL": {
+			"SET_AMOUNT": "កំណត់ចំនួន",
+			"ADD_AMOUNT": "បន្ថែមចំនួន"
+		},
+		"BUTTON": {
+			"SET_AMOUNT": "កំណត់ចំនួន",
+			"ADD_AMOUNT": "បន្ថែមចំនួន"
+		}
+	},
+	"SET1100000": {
+		"TITLE": {
+			"SETTING": "ការកំណត់"
+		},
+		"LABEL": {
+			"PUSH_NOTIFICATION": "ការជូនដំណឹង",
+			"BIO_AUTHENTICATION": "ផ្ទៀងផ្ទាត់ភាពត្រឹមត្រូវ",
+			"LANGUAGE": "ភាសា",
+			"TERMS_AND_CONDITIONS": "លក្ខខណ្ឌ និងលក្ខន្តិកា",
+			"VERSION": "កំណត់សំគាល់",
+			"APP_VERSION": "កំណែកម្មវិធី",
+			"CHANGE_PASSWORD": "ផ្លាស់ប្ដូរពាក្យសម្ងាត់"
+		}
+	},
+	"MISC": {
+		"EMPTY_STATE": {
+			"NO_DATA": "មិនមានទិន្នន័យ"
+		},
+		"ACCORDION": {
+			"INQUIRY_CONDITION": "លក្ខខណ្ឌការស្វែងរក"
+		}
+	},
+	"SAL11000": {
+		"TITLE": "បញ្ជីសម្រង់តម្លៃ",
+		"LABEL": {},
+		"BUTTON": {},
+		"MESSAGE": {}
+	},
+	"SAL12000": {
+		"TITLE": "បង្កើតសម្រង់តម្លៃ",
+		"LABEL": {},
+		"BUTTON": {},
+		"MESSAGE": {}
+	},
+	"SAL13000": {
+		"TITLE": "បញ្ជាក់ការបង្កើតសម្រង់តម្លៃ",
+		"LABEL": {},
+		"BUTTON": {},
+		"MESSAGE": {}
+	},
+	"SAL14000": {
+		"TITLE": "លទ្ធផលបង្កើតសម្រង់តម្លៃ",
+		"LABEL": {},
+		"BUTTON": {},
+		"MESSAGE": {}
+	},
+	"SAL15000": {
+		"TITLE": "ព័ត៌មានលម្អិតសម្រង់តម្លៃ",
+		"LABEL": {},
+		"BUTTON": {},
+		"MESSAGE": {}
+	},
+	"AUT10000": {
+		"TITLE": "ចូលប្រើប្រាស់",
+		"LABEL": {
+			"WELCOME": "សូមស្វាគមន៍",
+			"COMPANY_ID": "លេខសម្គាល់ក្រុមហ៊ុន",
+			"USERNAME": "ឈ្មោះអ្នកប្រើប្រាស់",
+			"PASSWORD": "ពាក្យសម្ងាត់",
+			"FORGOT_PASSWORD": "ភ្លេចពាក្យសម្ងាត់?",
+			"OR": "ឬ"
+		},
+		"BUTTON": {
+			"LOGIN": "ចូលប្រើប្រាស់",
+			"CLICK_HERE": "ចុចទីនេះ",
+			"LOGIN_WITH_GOOGLE": "ចូលប្រើប្រាស់ជាមួយ Google"
+		},
+		"MESSAGE": {}
+	}
+}
