@@ -5,7 +5,6 @@ import { useRouter } from "vue-router";
 
 /**
  * Builds the slim CHECK ERP request header (correlation + audit fields).
- * Replaces the DBCS banking envelope (teller cash, approvals, branch codes).
  */
 export default class CheckErpHeader {
 	public getHeader(trCode: string): HeaderMessage {

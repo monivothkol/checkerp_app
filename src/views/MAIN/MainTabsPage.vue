@@ -33,10 +33,7 @@
  * ---------------------------------------------------------
  *
  * Component: MainTabsPage
- * Description: Main bottom-tab shell (Home / Invoice / Product / POS / Menu).
- *              Mirrors the DBCS DAS1000000 master page: ion-tabs wraps a nested
- *              router-outlet and a fixed ion-tab-bar. Child screens render inside
- *              the outlet and carry NO footer of their own.
+ * Description: #
  *
  * ---------------------------------------------------------
  * */

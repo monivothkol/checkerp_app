@@ -1,7 +1,6 @@
 import { RouteRecordRaw } from "vue-router";
 
 /**
- * Main bottom-tab shell. Mirrors the DBCS `/main/` parent: the shell
  * (MainTabsPage) owns the ion-tabs + ion-tab-bar; each tab is a child route
  * rendered inside the shell's nested router-outlet.
  */
