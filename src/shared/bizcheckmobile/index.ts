@@ -11,6 +11,7 @@
  *  uses (services/, modules/, utilities/) and delegates per call:
  *  native container present → native gateway, otherwise → web implementation.
  */
+import NATIVE, { isNativeShell } from "@/core/utilities/native-bridge";
 import NativeApp from "./bizcheckmobile-app";
 import NativeDatabase from "./bizcheckmobile-database";
 import NativeDevice from "./bizcheckmobile-device";
@@ -40,8 +41,14 @@ import WebAppConfig, {
 
 export type { HttpFetchParams, HttpHeaders, HttpOptions, HttpResponse, LoggerConfigOption, NetworkConfigOption } from "./web-core";
 
-/** True when running inside the native bizCheckMobile container. */
-export const isNativeContainer = (): boolean => typeof window !== "undefined" && !!window.bizCheckMobile;
+/**
+ * True only inside a LEGACY bizCheckMobile container that implements the gateway services
+ * (Network/Properties/System/...). The AppBuild shell (NivotMobiShell) also sets
+ * window.bizCheckMobile but only answers DeviceManager/ExtendsManager, so there the web
+ * implementations are used and native features go through window.NivotBridge (core/utilities/native-bridge).
+ */
+export const isNativeContainer = (): boolean => typeof window !== "undefined" && !!window.bizCheckMobile && !isNativeShell();
+export { isNativeShell };
 
 /* ============================== AppConfig (web only) ============================== */
 
@@ -71,8 +78,8 @@ const BizCheckMobileProperties = {
 const BizCheckMobileDevice = {
 	getInfo: (): any => (isNativeContainer() ? NativeDevice.getInfo() : WebDevice.getInfo()),
 	setInfo: (option: { key: string; value: any }): void => WebDevice.setInfo(option),
-	isApp: (): boolean => (isNativeContainer() ? NativeDevice.isApp() : false),
-	isWeb: (): boolean => !(isNativeContainer() && NativeDevice.isApp()),
+	isApp: (): boolean => (isNativeContainer() ? NativeDevice.isApp() : isNativeShell()),
+	isWeb: (): boolean => !BizCheckMobileDevice.isApp(),
 	isDesktop: (): boolean => WebDevice.isDesktop(),
 	isTablet: (): boolean => WebDevice.isTablet(),
 	isMobile: (): boolean => WebDevice.isMobile(),
@@ -425,6 +432,10 @@ const BizCheckMobileSystem = {
 	callBrowser(option: { url: string }): Promise<void> {
 		if (isNativeContainer()) {
 			NativeSystem.callBrowser(option.url);
+			return Promise.resolve();
+		}
+		if (isNativeShell()) {
+			NATIVE.openURL(option.url);
 			return Promise.resolve();
 		}
 		return WebSystem.callBrowser(option);

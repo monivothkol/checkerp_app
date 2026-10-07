@@ -1,0 +1,23 @@
+/* Shared phone styles for the ACT/AST/DBT screens (scoped per component via <style scoped src>). */
+.act_cards { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 8px 16px; }
+.act_card { border: 1px solid #e5e5ea; border-radius: 8px; padding: 8px 12px; min-width: 0; }
+.act_card_label { font-size: 12px; color: #6b6b76; }
+.act_card_value { font-size: 16px; font-weight: 700; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.act_card_hint { font-size: 10px; color: #6b6b76; }
+.act_badge { display: block; padding: 8px 16px 0; font-size: 12px; font-weight: 600; }
+.act_ok { color: #389e0d; }
+.act_bad { color: #cf1322; }
+.act_muted { color: #6b6b76; }
+.act_bold { font-weight: 700; }
+.act_mono { font-variant-numeric: tabular-nums; }
+.act_hint { display: block; padding: 8px 16px 0; font-size: 12px; color: #6b6b76; }
+.act_section { padding: 16px 16px 4px; font-size: 14px; font-weight: 700; }
+.act_amt { font-size: 14px; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.act_total { --background: #fafbfe; }
+.act_range { display: flex; gap: 8px; }
+.act_range ion-input { flex: 1; }
+.act_btns { display: flex; gap: 8px; padding: 16px; }
+.act_btns ion-button { flex: 1; }
+ion-label h2 { font-size: 14px; font-weight: 600; }
+ion-label h3 { font-size: 14px; }
+ion-label p { font-size: 12px; }

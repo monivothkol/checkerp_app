@@ -1,23 +1,27 @@
 <template>
     <ion-header :translucent="true">
         <ion-toolbar>
-            <ion-buttons v-if="props.backButton" slot="start" @click="onClickBack">
+            <ion-buttons v-if="showBack" slot="start" @click="onClickBack">
                 <bm-button :class="{'btn_head_back': props.backButton}"></bm-button>
             </ion-buttons>
             <ion-title v-if="props.title !== ''">{{ props.title }}</ion-title>
-            <ion-buttons v-if="props.cancelButton || $slots.btnEnd" slot="end">
+            <ion-buttons v-if="props.cancelButton || $slots.btnEnd || $slots.end" slot="end">
                 <slot name="btnEnd"></slot>
+                <slot name="end"></slot>
                 <bm-button v-if="props.cancelButton" class="btn_head_txt" text="Cancel" @click="onClickCancel"></bm-button>
             </ion-buttons>
             <slot name="custom"></slot>
         </ion-toolbar>
+        <slot name="bottom"></slot>
     </ion-header>
 </template>
 <script setup lang="ts">
 import RouterServices from "@/services/router-services";
 import DialogUtil from "@/utilities/dialog-util";
 import { BizCheckMobileApp, BizCheckMobileLogger } from "@/shared/bizcheckmobile";
-import { onMounted } from "vue";
+import { computed, onMounted } from "vue";
+import { useRoute } from "vue-router";
+import { useIonRouter } from "@ionic/vue";
 const routerService = new RouterServices();
 const props = defineProps({
     title: {
@@ -44,12 +48,27 @@ const props = defineProps({
         type: String,
         required: false,
         default: ""
+    },
+    /** Screen-id screens: plain history back, or this route on a deep link (no legacy RouterServices stack). */
+    defaultHref: {
+        type: String,
+        required: false,
+        default: ""
     }
 });
+const ionRouter = useIonRouter();
+const route = useRoute();
+// Bottom-tab roots (/main/*) render screen-id screens too; a tab root has nothing to go back to.
+const showBack = computed(() => props.backButton && !route.path.startsWith("/main/"));
 const emit = defineEmits(["onClickedBack", "onClickedCancel", "onClickIcon"]);
 
 const onClickBack = () => {
     emit("onClickedBack");
+    if (props.defaultHref) {
+        if (ionRouter.canGoBack()) ionRouter.back();
+        else ionRouter.navigate(props.defaultHref, "back", "replace");
+        return;
+    }
 
     if (DialogUtil.isModalOpen) {
         DialogUtil.closeModal({ role: "cancel" });

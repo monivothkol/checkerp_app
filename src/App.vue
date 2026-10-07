@@ -5,8 +5,10 @@
 </template>
 
 <script setup lang="ts">
+import { RouterView, useRoute } from "vue-router";
+
 defineOptions({
 	name: "App",
-	description: "App Component"
+	description: "App Component",
 });
 </script>

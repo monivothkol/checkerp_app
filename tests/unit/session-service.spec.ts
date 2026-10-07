@@ -2,7 +2,8 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 
 // --- mocks ---
 const refreshMock = vi.fn();
-vi.mock("@/modules/aut-module", () => ({
+// Refresh goes through the v2 network layer (AUT10000I02); it resolves true/false.
+vi.mock("@/services/http-network-service", () => ({
 	default: { getInstance: () => ({ refresh: refreshMock }) },
 }));
 
@@ -46,14 +47,14 @@ describe("session-service.ensureAuthenticated", () => {
 
 	it("silently refreshes an expired access token when a refresh token exists", async () => {
 		(getTokenSync as any).mockReturnValue({ accessToken: makeJwt(-10), refreshToken: "r1" });
-		refreshMock.mockImplementation((opts: any) => opts.onSuccess());
+		refreshMock.mockResolvedValue(true);
 		expect(await ensureAuthenticated()).toBe(true);
 		expect(refreshMock).toHaveBeenCalledOnce();
 	});
 
 	it("clears the session and returns false when refresh fails", async () => {
 		(getTokenSync as any).mockReturnValue({ accessToken: makeJwt(-10), refreshToken: "r1" });
-		refreshMock.mockImplementation((opts: any) => opts.onFailed());
+		refreshMock.mockResolvedValue(false);
 		expect(await ensureAuthenticated()).toBe(false);
 		expect(clearToken).toHaveBeenCalled();
 	});
@@ -67,7 +68,7 @@ describe("session-service.ensureAuthenticated", () => {
 
 	it("treats a malformed access token as expired and refreshes", async () => {
 		(getTokenSync as any).mockReturnValue({ accessToken: "not-a-jwt", refreshToken: "r1" });
-		refreshMock.mockImplementation((opts: any) => opts.onSuccess());
+		refreshMock.mockResolvedValue(true);
 		expect(await ensureAuthenticated()).toBe(true);
 		expect(refreshMock).toHaveBeenCalledOnce();
 	});
@@ -76,7 +77,7 @@ describe("session-service.ensureAuthenticated", () => {
 		const header = btoa(JSON.stringify({ alg: "HS256" }));
 		const payload = btoa(JSON.stringify({ sub: "u1" })); // no exp
 		(getTokenSync as any).mockReturnValue({ accessToken: `${header}.${payload}.sig`, refreshToken: "r1" });
-		refreshMock.mockImplementation((opts: any) => opts.onSuccess());
+		refreshMock.mockResolvedValue(true);
 		expect(await ensureAuthenticated()).toBe(true);
 		expect(refreshMock).toHaveBeenCalledOnce();
 	});

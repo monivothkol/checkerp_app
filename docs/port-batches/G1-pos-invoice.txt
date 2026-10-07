@@ -1,0 +1,15 @@
+views/POS/COMMON/InvoiceDocument.vue
+views/POS/COMMON/InvoiceModal.vue
+views/POS/COMMON/StatementDocument.vue
+views/POS/SAL/DeliveryAddressModal.vue
+views/POS/SAL/KhqrPaymentModal.vue
+views/POS/SAL/POS10000.vue
+views/POS/SAL/POS11000.vue
+views/POS/SAL/POS12000.vue
+views/POS/SIV/InvoicePayModal.vue
+views/POS/SIV/SIV10000.vue
+views/POS/SIV/SIV11000.vue
+views/POS/SIV/SIV12000.vue
+views/POS/SIV/SIV13000.vue
+views/POS/SIV/SIV14000.vue
+views/POS/SIV/SIV15000.vue

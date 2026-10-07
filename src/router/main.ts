@@ -16,22 +16,22 @@ const mainRoute: Array<RouteRecordRaw> = [
 			{
 				path: "home",
 				name: "MAIN_HOME",
-				component: () => import("@/views/DAS/DAS10000.vue")
+				component: () => import("@/views/COMMON/DAS10000.vue")
 			},
 			{
 				path: "invoice",
 				name: "MAIN_INVOICE",
-				component: () => import("@/views/INV/INV10000.vue")
+				component: () => import("@/views/POS/SIV/SIV10000.vue")
 			},
 			{
 				path: "product",
 				name: "MAIN_PRODUCT",
-				component: () => import("@/views/PRD/PRD10000.vue")
+				component: () => import("@/views/POS/PRD/PRD10000.vue")
 			},
 			{
 				path: "pos",
 				name: "MAIN_POS",
-				component: () => import("@/views/POS/POS10000.vue")
+				component: () => import("@/views/POS/SAL/POS10000.vue")
 			},
 			{
 				path: "menu",

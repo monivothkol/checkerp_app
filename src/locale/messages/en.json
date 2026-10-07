@@ -1,1301 +1,1349 @@
 {
-	"COMMON": {
-		"BM_MONTH_YEAR_PICKER": {
-			"MONTH": "Month",
-			"YEAR": "Year"
-		},
-		"BM_QUARTER_PICKER": {
-			"MONTH": "Month",
-			"YEAR": "Year",
-			"TITLE": "Select Quarter",
-			"QUARTER_1": "Quarter 1",
-			"QUARTER_2": "Quarter 2",
-			"QUARTER_3": "Quarter 3",
-			"QUARTER_4": "Quarter 4"
-		},
-		"BM_QUARTER_SELECT": {
-			"PLACEHOLDER": "Select quarter",
-			"TITLE": "Select Quarter",
-			"MESSAGE": "Please select an option below:",
-			"BUTTON_LABEL": "Select box"
-		},
-		"BM_SEMESTER_PICKER": {
-			"MONTH": "Month",
-			"YEAR": "Year",
-			"TITLE": "Select Semester",
-			"SEMESTER_1": "S 1",
-			"SEMESTER_2": "S 2"
-		},
-		"BM_TIME_PICKER": {
-			"HOUR": "Hour",
-			"MINUTE": "Minute"
-		},
-		"BM_YEAR_PICKER": {
-			"YEAR": "Year"
-		},
-		"BM_YEAR_SELECT": {
-			"PLACEHOLDER": "Search or select",
-			"TITLE": "Select Year",
-			"MESSAGE": "Please select an option below:",
-			"BUTTON_LABEL": "Select box"
-		},
-		"BM_WEEK_SELECT": {
-			"TITLE": "Select Week"
-		},
-		"BM_MONTHLY_SELECT": {
-			"TITLE": "Select Month",
-			"PLACEHOLDER": "Search or select",
-			"MESSAGE": "Please select an option below:",
-			"BUTTON_LABEL": "Select box",
-			"MONTH_01": "Jan",
-			"MONTH_02": "Feb",
-			"MONTH_03": "Mar",
-			"MONTH_04": "Apr",
-			"MONTH_05": "May",
-			"MONTH_06": "Jun",
-			"MONTH_07": "Jul",
-			"MONTH_08": "Aug",
-			"MONTH_09": "Sep",
-			"MONTH_10": "Oct",
-			"MONTH_11": "Nov",
-			"MONTH_12": "Dec"
-		},
-		"BM_SEMESTER_SELECT": {
-			"PLACEHOLDER": "Search or select",
-			"TITLE": "Select Semester",
-			"MESSAGE": "Please select an option below:",
-			"BUTTON_LABEL": "Select box"
-		},
-		"BM_UPLOAD_IMAGE": {
-			"REMOVE": "Remove",
-			"UPLOAD": "Upload"
-		},
-		"BM_ADDRESS_SELECT": {
-			"SELECT_ADDRESS": "Select Address",
-			"SELECT_ADDRESS_BUTTON": "Select Address"
-		},
-		"BM_ADDRESS_SELECTION_DETAIL": {
-			"SEARCH_ADDRESS": "Search Address",
-			"KINDLY_PROVIDE_YOUR_ADDRESS_INFORMATION": "Kindly provide your address information.",
-			"CITY_DISTRICT_OR_POSTAL_CODE": "City, District or Postal Code",
-			"TYPE_A_KEYWORD_TO_SEARCH_ADDRESS": "Type a keyword to search address",
-			"NO_RESULTS_FOUND": "No results found",
-			"CANCEL": "Cancel",
-			"CONFIRM": "Confirm"
-		},
-		"BM_PIN_ADDRESS": {
-			"PIN": "Pin"
-		},
-		"BUTTON": {
-			"CONFIRM": "Confirm",
-			"NEXT": "Next",
-			"CANCEL": "Cancel",
-			"SUBMIT": "Submit",
-			"SEARCH": "Search",
-			"VIEW_MORE": "View More",
-			"VIEW_DETAIL": "View Detail",
-			"DOWNLOAD": "Download",
-			"BACK": "Back",
-			"OK": "OK",
-			"YES": "Yes",
-			"RESET": "Reset",
-			"SELECT": "Select",
-			"MORE": "More",
-			"LESS": "Less",
-			"ALL": "All",
-			"NONE": "None",
-			"CLEAR": "Clear",
-			"CLOSE": "Close",
-			"OPEN": "Open",
-			"SAVE": "Save",
-			"DELETE": "Delete",
-			"NO": "No",
-			"APPLY": "Apply",
-			"REGISTER": "Register",
-			"MODIFY": "Modify",
-			"ADD_NEW": "Add New",
-			"CALL": "Call"
-		},
-		"LABEL": {
-			"FIRST_NAME": "First Name",
-			"LAST_NAME": "Last Name",
-			"GENDER": "Gender",
-			"DATE_OF_BIRTH": "Date of Birth",
-			"NATIONALITY": "Nationality",
-			"PASSPORT_NO": "Passport No",
-			"EXPIRY_DATE": "Expiry Date",
-			"PHONE": "Phone",
-			"ADDRESS": "Address",
-			"EMAIL": "Email",
-			"ACCOUNT_NO": "Account No",
-			"ACCOUNT_TYPE": "Account Type",
-			"BALANCE": "Balance",
-			"CURRENCY": "Currency",
-			"STATUS": "Status",
-			"BRANCH": "Branch",
-			"CO": "CO",
-			"STAFF_NAME": "Staff Name",
-			"DAYS": "Days",
-			"REQUESTED": "Requested",
-			"APPROVED": "Approved",
-			"RETURNED": "Returned",
-			"REJECTED": "Rejected",
-			"TODAY": "Today",
-			"THIS_MONTH": "This Month",
-			"LAST_MONTH": "Last Month",
-			"THIS_YEAR": "This Year",
-			"LAST_YEAR": "Last Year",
-			"THIS_WEEK": "This Week",
-			"LAST_WEEK": "Last Week",
-			"THIS_DAY": "This Day",
-			"LAST_DAY": "Last Day"
-		},
-		"MESSAGE": {
-			"NO_DATA": "No data available"
-		},
-		"BM_ERROR": {
-			"TITLE": "A temporary error has occurred.",
-			"MESSAGE": "An unexpected error has occurred in certain services. We apologize for the inconvenience and ask that you try again shortly.",
-			"REPORT_BUG": "Report a bug",
-			"OKAY": "Okay"
-		},
-		"BM_DIALOG": {
-			"TITLE": "Notice",
-			"MESSAGE": "This is a message"
-		},
-		"BM_SELECT_MENU": {
-			"TITLE": "Dropdown Menu",
-			"MESSAGE": "Please select an option below:"
-		},
-		"BM_SELECT_BOX": {
-			"PLACEHOLDER": "Search or select",
-			"TITLE": "Select Menu",
-			"MESSAGE": "Please select an option below:",
-			"BUTTON_LABEL": "Select box",
-			"CLEAR": "Clear"
-		},
-		"BM_SELECT_ACCOUNT_LIST": {
-			"TITLE": "Select Account",
-			"CLOSE": "Close",
-			"END_DATE": "End Date",
-			"TOAST_ACCOUNT_COPIED": "Account number copied to clipboard",
-			"CURRENT_ACCOUNT": "Current Account",
-			"LOAN_AGAINST_DEPOSIT": "Loan Against Deposit",
-			"SAVING_ACCOUNT": "Saving Account",
-			"HOUSING_LOAN": "Housing Loan",
-			"AUTO_LOAN": "Auto Loan"
-		},
-		"BM_CONTENT": {
-			"OFFLINE_TITLE": "No Connection",
-			"OFFLINE_MESSAGE": "Please check your internet connection or switch to offline Mode.",
-			"CONNECTING_TITLE": "Connecting...",
-			"CONNECTING_MESSAGE": "Please wait while we connect to the internet.",
-			"CONNECTED_TITLE": "Connected",
-			"CONNECTED_MESSAGE": "You are connected to the internet.",
-			"SWITCH_TO_OFFLINE": "Switch To Offline"
-		},
-		"BM_DATE_PICKER": {
-			"FROM": "From",
-			"TO": "To",
-			"SUNDAY": "SUN",
-			"MONDAY": "MON",
-			"TUESDAY": "TUE",
-			"WEDNESDAY": "WED",
-			"THURSDAY": "THU",
-			"FRIDAY": "FRI",
-			"SATURDAY": "SAT"
-		},
-		"BM_TEXTAREA": {
-			"PLACEHOLDER_ENTER_DESCRIPTION": "Enter Description here..."
-		},
-		"BM_DATE_RANGE_SELECT": {
-			"SELECT_DATE_RANGE": "Select Date Range",
-			"CLEAR": "Clear",
-			"DATE_PICKER": "Date Picker"
-		},
-		"BM_FILTER_DATE": {
-			"FILTER_DATE": "Filter Date",
-			"DATE_RANGE": "Date Range",
-			"1_WEEK": "1 Week",
-			"1_MONTH": "1 Month",
-			"3_MONTHS": "3 Months",
-			"6_MONTHS": "6 Months"
-		}
-	},
-	"LOG1000000": {
-		"LABEL": {
-			"COMPANY_ID": "Company ID",
-			"USER_ID": "User ID",
-			"PASSWORD": "Password",
-			"LOGIN": "Login",
-			"REMEMBER_ID": "Remember ID"
-		},
-		"BUTTON": {
-			"FORGOT_PASSWORD": "Forgot Password?",
-			"FORGET_ID_OR_PASSWORD": "Forget ID or Password?",
-			"BIOMETRIC": "Biometric",
-			"LOGIN_WITH_FINGERPRINT": "Login with Fingerprint",
-			"TERMS_AND_CONDITIONS": "Terms and Conditions",
-			"PRIVACY_POLICY": "Privacy Policy",
-			"BY_LOGIN_YOU_ARE_AGREEING_OUR_TERM_AND_PRIVACY_POLICY": "By login you are agreeing our Term and Privacy Policy"
-		},
-		"MESSAGE": {
-			"LOGIN_ERROR": "Please provide user ID, password, and company ID.",
-			"LOGIN_SUCCESS": "Login successful",
-			"LOGIN_FAILED": "Login failed",
-			"LOGIN_WITH_BIOMETRIC": "Login with Biometric",
-			"LOGIN_WITH_FINGERPRINT": "Login with Fingerprint",
-			"LOGIN_WITH_FACE_ID": "Login with Face ID"
-		}
-	},
-	"LOG1100000": {
-		"TITLE": "OTP Verification",
-		"OPTION": {
-			"PIN": "PIN",
-			"EMAIL": "Email",
-			"SMS": "SMS"
-		},
-		"LABEL": {
-			"OTP_ENTER_DESC": "Enter the One-Time Password from your administrator to continue.",
-			"OTP_SENT_DESC": "Your OTP will be sent to {0} after you tap \"{1}\".",
-			"REQUEST_VERIFICATION_CODE": "Request Verification Code",
-			"INFO_PIN": "If you have not received your OTP, kindly contact your administrator for assistance.",
-			"ERROR_EXPIRED": "The OTP has expired.",
-			"OTP_EXPIRED_IN": "The OTP has expired in"
-		},
-		"BUTTON": {
-			"CONFIRM": "Confirm"
-		}
-	},
-	"LOG1200000": {
-		"TITLE": "Change Password",
-		"SECURITY_TITLE": "For your security!",
-		"SECURITY_SUBTITLE": "Please change your Password",
-		"LABEL": {
-			"CURRENT_PASSWORD": "Current Password",
-			"NEW_PASSWORD": "New Password",
-			"CONFIRM_PASSWORD": "Confirm Password"
-		},
-		"PLACEHOLDER": {
-			"ENTER_CURRENT_PASSWORD": "Enter Current Password",
-			"ENTER_NEW_PASSWORD": "Enter New Password",
-			"ENTER_CONFIRM_PASSWORD": "Enter Confirm Password"
-		},
-		"PASSWORD_RULE": "Please provide a password between 8 and 12 characters, containing both English letters and numbers.",
-		"BUTTON": {
-			"CONFIRM": "Confirm"
-		},
-		"ERROR": {
-			"SAME_AS_CURRENT": "New password cannot be same as current password",
-			"PASSWORDS_NOT_MATCH": "Passwords do not match"
-		},
-		"REQUIREMENT": {
-			"LENGTH": "Between {min} - {max} characters",
-			"NUMBER": "Contains at least one number",
-			"UPPERCASE": "Contains uppercase letter",
-			"LOWERCASE": "Contains lowercase letter",
-			"SPECIAL_CHARACTER": "Contains special character",
-			"NO_REPEATED": "No repeated characters",
-			"NO_SEQUENTIAL": "No sequential characters"
-		}
-	},
-	"NEW1000000": {
-		"TITLE": "News & Events",
-		"PLACEHOLDER": {
-			"SEARCH": "Search news & events"
-		},
-		"OPTION": {
-			"ALL": "All"
-		},
-		"MESSAGE": {
-			"NO_DETAIL": "Don't have news & event detail"
-		}
-	},
-	"NEW1100000": {
-		"TITLE": "News & Events Detail",
-		"PAGE_TITLE_FALLBACK": "News & Event Detail",
-		"PDF_PREVIEW_TITLE": "PDF Preview",
-		"BUTTON": {
-			"VIEW": "Preview",
-			"DOWNLOAD": "Download"
-		},
-		"MESSAGE": {
-			"DOWNLOAD_FAILED": "Failed to download the file.",
-			"PDF_SHARE_FINISHED": "Downloaded successfully {0}"
-		}
-	},
-	"PIO1000000": {
-		"TITLE": "Product Information",
-		"OPTION": {
-			"ALL": "All"
-		}
-	},
-	"PIO1100000": {
-		"TITLE": "Product Information Detail",
-		"SHARE_FILE_TITLE": "Attachment",
-		"BUTTON": {
-			"VIEW_MORE_DETAIL": "View More Detail",
-			"DOWNLOAD": "Download"
-		},
-		"MESSAGE": {
-			"DOWNLOAD_FAILED": "Failed to download the file."
-		}
-	},
-	"PRM1000000": {
-		"TITLE": "Promotion",
-		"PLACEHOLDER": {
-			"SEARCH": "Find your ideal promotion"
-		}
-	},
-	"PRM1100000": {
-		"TITLE": "Promotion Detail"
-	},
-	"DAS1000000": {
-		"TAB": {
-			"HOME": "Home",
-			"APPROVAL": "Approval",
-			"CAMERA": "Camera",
-			"DEBTOR": "Debtor",
-			"MENU": "Menu"
-		}
-	},
-	"DAS1100000": {
-		"LABEL": {
-			"WELCOME_TO_THE_APP": "Welcome to the app",
-			"GOOD_MORNING": "Good Morning",
-			"GOOD_AFTERNOON": "Good Afternoon",
-			"GOOD_EVENING": "Good Evening",
-			"ONLINE": "Online",
-			"OFFLINE": "Offline",
-			"APPROVAL_STATUS": "Approval Status",
-			"MY_TODO_LIST": "My Todo List",
-			"GOAL_OF_DEBTOR": "Goal of Debtor",
-			"VISITED_DEBTOR": "Visited Debtor",
-			"GOAL_OF_AMOUNT": "Goal of Amount",
-			"PAYMENT_PLAN_REPORT": "Payment Plan Report",
-			"TOTAL_PAYMENT_PLAN_REPORT": "Total Payment Plan Report",
-			"MY_TO_AUTH_LIST": "My To Authentication List",
-			"MY_TO_DO_AUTH_HISTORY": "My To Do Authorization History",
-			"NEED_MY_APPROVAL": "Need My Approval",
-			"MY_APPROVED": "My Approved",
-			"APPROVED": "Approved",
-			"WAITING": "Waiting",
-			"RETURNED": "Returned",
-			"REJECTED": "Rejected",
-			"TODAY": "Today",
-			"THIS_WEEK": "This Week",
-			"THIS_MONTH": "This Month",
-			"PEOPLE": "People",
-			"PAYMENT_PLAN_REPORT_COUNT": "Payment Plan Report Count",
-			"VIEW": "view"
-		},
-		"BUTTON": {
-			"ADD": "Add",
-			"NOTIFICATION": "Notification",
-			"CONFIRM": "Confirm"
-		},
-		"TEXT": {
-			"SECURITY_REACTIVATE": "Please Re-Activate Your Account Again",
-			"SECURITY_HEADER": "Security"
-		}
-	},
-	"DAS2100000": {
-		"TITLE": "All Menu",
-		"PLACEHOLDER": {
-			"FIND_INFO": "Find your information"
-		},
-		"BUTTON": {
-			"SEARCH": "search"
-		},
-		"MENU": {
-			"PERFORMANCE": "Performance",
-			"MY_KPI": "My KPI",
-			"TEAM_KPI": "Team KPI",
-			"TEAM_MONITORING": "Team Monitoring",
-			"COLLECTION": "Collection",
-			"CONTACT_HISTORY": "Contact History",
-			"PAYMENT_PLAN_REPORT": "Payment Plan Report",
-			"VISIT_REPORT": "Visit Report",
-			"LOAN_OVERDUE_FOLLOW_UP": "Loan Overdue Follow-Up List",
-			"LOAN_COLLECTION_LIST": "Loan Collection List",
-			"LOAN_FOLLOW_UP_LIST": "Loan Follow-Up List",
-			"LOAN_RESCHEDULE": "Loan Reschedule",
-			"LOAN_PAY_OFF": "Loan Pay Off",
-			"LOAN_WRITE_OFF": "Loan Write Off",
-			"LOAN_LIST": "Loan List",
-			"SALE": "Sale",
-			"CONSULTATION": "Consultation",
-			"LOAN_SIMULATION": "Loan Simulation",
-			"CUSTOMER_INQUIRY": "Customer Inquiry",
-			"LOAN_APPLICATION": "Loan Application",
-			"OPEN_DEPOSIT_ACCOUNT": "Open Deposit Account",
-			"CARD_REQUEST": "Card Request",
-			"HOUSE_CHECK_WITHDRAWAL": "House Check Withdrawal Request",
-			"BANCASSURANCE_REQUEST": "Bancasurance Request",
-			"SERVICE": "Service",
-			"SYNC_TRANSACTION": "Synchronize Transaction",
-			"PRODUCT_INFORMATION": "Product Information",
-			"PROMOTION": "Promotion",
-			"NEWS_AND_EVENTS": "News & Events",
-			"BRANCH_LOCATION": "Branch Location",
-			"FAQ": "FAQ",
-			"SETTINGS": "Settings",
-			"LOGOUT": "Logout"
-		},
-		"DIALOG": {
-			"LOGOUT": "Logout",
-			"LOGOUT_CONFIRM": "Are you sure you want to logout?"
-		}
-	},
-	"DAS3000000": {
-		"TITLE": "Notification",
-		"BUTTON": {
-			"SEE_MORE": "See More"
-		}
-	},
-	"DAS3100000": {
-		"LABEL": {
-			"NOTIFICATION_DETAIL": "Notification Detail"
-		}
-	},
-	"DAS4000000": {
-		"TITLE": "Your Profile",
-		"LABEL": {
-			"USER_ID": "User ID",
-			"ROLE": "Role",
-			"MOBILE_NUMBER": "Mobile Number",
-			"EMAIL_ADDRESS": "Email Address",
-			"BRANCH_CODE": "Branch Code",
-			"BRANCH_NAME": "Branch Name",
-			"TEAM": "Team",
-			"HOME_ADDRESS": "Home Address"
-		},
-		"BUTTON": {
-			"EDIT": "edit"
-		},
-		"TEXT": {
-			"NA": "N/A",
-			"PROFILE_UPDATED": "Profile was updated successfully"
-		}
-	},
-	"DAS4110000": {
-		"TITLE": "Select Option",
-		"OPTION": {
-			"TAKE_PHOTO": "Take a photo",
-			"UPLOAD_FROM_GALLERY": "Upload from gallery"
-		}
-	},
-	"DAS5000000": {
-		"TITLE": "Authentication",
-		"LABEL": {
-			"AUTH_CODE": "Authentication Code",
-			"EXPIRE_IN": "Expire in:"
-		},
-		"TEXT": {
-			"USE_CODE_DESC": "You can use below code to access web portal.",
-			"KEEP_SAFE": "Please keep this code safe and do not share it with anyone else."
-		}
-	},
-	"FAQ1000000": {
-		"TITLE": "FAQ",
-		"PLACEHOLDER": {
-			"SEARCH_FAQ": "Search FAQ"
-		},
-		"OPTION": {
-			"ALL": "All"
-		}
-	},
-	"FAQ1100000": {
-		"TITLE": "FAQ Detail",
-		"SHARE_FILE_TITLE": "Attachment",
-		"BUTTON": {
-			"DOWNLOAD": "Download"
-		},
-		"MESSAGE": {
-			"DOWNLOAD_FAILED": "Failed to download the file."
-		}
-	},
-	"FTR1000000": {
-		"TITLE": "Sync Transaction List",
-		"BUTTON": {
-			"SYNC_TRANSACTION": "Sync Transaction",
-			"SYNCING": "Syncing..."
-		},
-		"STATUS": {
-			"FAILED": "Failed",
-			"PROCESSING": "Processing",
-			"REGISTERED": "Registered"
-		}
-	},
-	"KPI1000000": {
-		"TITLE": "My KPI",
-		"OPTION": {
-			"COLLECTION_AMOUNT": "Collection Amount",
-			"COLLECTION_POINT": "Collection Point",
-			"PPR_AMOUNT": "PPR Amount",
-			"PPR_COUNT": "PPR Count",
-			"PPR_AMOUNT_USER": "PPR Amount"
-		},
-		"DURATION": {
-			"TODAY": "Today",
-			"WEEKLY": "Weekly",
-			"MONTHLY": "Monthly",
-			"QUARTER": "Quarter",
-			"SEMI_ANNUALLY": "Semi-Annually",
-			"ANNUALLY": "Annually"
-		}
-	},
-	"KPI2000000": {
-		"TITLE": "Team KPI",
-		"OPTION": {
-			"MEMBERS": "Members",
-			"TOTAL": "Total"
-		}
-	},
-	"SAL3000000": {
-		"TITLE": "Consultation",
-		"PLACEHOLDER": {
-			"SEARCH_TYPE": "Search Type",
-			"ENTER_KEYWORD": "Enter Keyword"
-		},
-		"BUTTON": {
-			"SEARCH": "Search",
-			"CALL": "Call ({0})"
-		},
-		"SEARCH_TYPE": {
-			"ALL": "All",
-			"CUSTOMER_NAME": "Customer Name",
-			"PHONE_NUMBER": "Phone Number"
-		},
-		"CONSULTATION_TYPE": {
-			"REQUEST_LOAN": "Request Loan",
-			"DEPOSIT": "Deposit",
-			"WITHDRAWAL": "Withdrawal"
-		},
-		"INTEREST": {
-			"INTERESTED": "Interested",
-			"NOT_INTERESTED": "Not Interested"
-		},
-		"STATUS": {
-			"REGISTERED": "Registered",
-			"COMPLETED": "Completed"
-		},
-		"PRIORITY": {
-			"HIGH": "High",
-			"MEDIUM": "Medium",
-			"LOW": "Low"
-		}
-	},
-	"SAL3100000": {
-		"TITLE": "Consultation Register",
-		"LABEL": {
-			"CONSULTATION_DETAIL": "Consultation Detail",
-			"CONSULTATION": "Consultation",
-			"PURPOSE": "Purpose",
-			"REQUEST_AMOUNT": "Request Amount",
-			"NEXT_ACTION": "Next Action",
-			"CONSULTATION_PURPOSE": "Consultation Purpose",
-			"ENTER_KEYWORD": "Enter Keyword",
-			"PHONE_NO": "Phone No",
-			"LAST_CONSULT_DATE": "Last Consult Date",
-			"NEXT_CONSULT_DATE": "Next Consult Date",
-			"CUSTOMER_ADDRESS": "Customer Address",
-			"NEXT_SCHEDULE_DATE": "Next Schedule Date",
-			"PRIORITY_CODE": "Priority Code",
-			"CUSTOMER_INFORMATION": "Customer Information",
-			"CONSULTATION_INFORMATION": "Consultation Information",
-			"CONTACT_AND_LOCATION": "Contact and Location",
-			"FIRST_NAME_EN": "First Name (English)",
-			"LAST_NAME_EN": "Last Name (English)",
-			"FIRST_NAME_KH": "First Name (Khmer)",
-			"LAST_NAME_KH": "Last Name (Khmer)",
-			"PREFERRED_CALLING_TITLE": "Preferred Calling Title",
-			"GENDER": "Gender",
-			"DATE_OF_BIRTH": "Date of Birth",
-			"MARITAL_STATUS": "Marital Status",
-			"CONSULT_DATE": "Consult Date",
-			"CONSULTATION_STATUS": "Consultation Status",
-			"CONSULTATION_TYPE": "Consultation Type",
-			"CURRENCY": "Currency",
-			"CUSTOMER_INTEREST": "Customer Interest",
-			"NEXT_CONSULT_DATE_LABEL": "Next Consult Date",
-			"REMARK": "Remark",
-			"PHONE_NUMBER": "Phone Number",
-			"CONSULTATION_ADDRESS": "Consultation Address",
-			"STREET": "Street",
-			"HOUSE_NO": "House No",
-			"ADDRESS_DETAIL_OPTIONAL": "Address Detail (Optional)",
-			"ATTACH_DOCUMENT": "Attach Document"
-		},
-		"INFO": {
-			"FIRST_NAME_EN": "Enter first name in English",
-			"LAST_NAME_EN": "Enter last name in English",
-			"FIRST_NAME_KH": "Enter first name in Khmer",
-			"LAST_NAME_KH": "Enter last name in Khmer",
-			"PREFERRED_CALLING_TITLE": "Select preferred calling title",
-			"GENDER": "Select gender",
-			"DATE_OF_BIRTH": "Select date of birth",
-			"MARITAL_STATUS": "Select marital status",
-			"CONSULT_DATE": "Select consult date",
-			"CONSULTATION_STATUS": "Select consultation status",
-			"CONSULTATION_TYPE": "Select consultation type",
-			"PURPOSE": "Select purpose",
-			"REQUEST_AMOUNT": "Enter request amount",
-			"PRIORITY_CODE": "Select priority code",
-			"NEXT_CONSULT_DATE": "Select next consult date",
-			"NEXT_ACTION": "Select next action",
-			"REMARK": "Enter remark",
-			"PHONE_NUMBER": "Enter phone number",
-			"STREET": "Enter street",
-			"HOUSE_NO": "Enter house no"
-		},
-		"OPTION": {
-			"USD": "USD",
-			"KHR": "KHR",
-			"YES": "Yes",
-			"NO": "No"
-		},
-		"BUTTON": {
-			"ADD_NEW_CONSULTATION": "Add New Consultation",
-			"START_NEW_CONSULTATION": "New Consultation Record",
-			"SUBMIT": "Submit",
-			"CANCEL": "Cancel"
-		}
-	},
-	"SAL3200000": {
-		"TITLE": "Consultation View Details",
-		"SECTION": {
-			"CLIENT_IDENTITY": "Client Identity",
-			"CONSULTATION_DETAILS": "Consultation Details",
-			"CONTACT_AND_LOCATION": "Contact and Location",
-			"SUPPORTING_MATERIAL": "Supporting Material"
-		},
-		"LABEL": {
-			"PREFERRED_TITLE": "Preferred Title",
-			"GENDER": "Gender",
-			"DATE_OF_BIRTH": "Date of Birth",
-			"MARITAL_STATUS": "Marital Status",
-			"CONSULT_DATE": "Consult Date",
-			"CONSULTATION_STATUS": "Consultation Status",
-			"CONSULTATION_TYPE": "Consultation Type",
-			"PURPOSE": "Purpose",
-			"REQUEST_AMOUNT": "Request Amount",
-			"PRIORITY_CODE": "Priority Code",
-			"CUSTOMER_INTEREST": "Customer Interest",
-			"NEXT_ACTION": "Next Action",
-			"NEXT_CONSULT_DATE": "Next Consult Date",
-			"REMARK": "Remark",
-			"PHONE_NUMBER": "Phone Number",
-			"CLIENT_ADDRESS": "Client Address"
-		},
-		"BUTTON": {
-			"MODIFY": "Modify"
-		}
-	},
-	"SAL5000000": {
-		"TITLE": "Loan Simulation",
-		"LABEL": {
-			"LOAN_CURRENCY": "Loan Currency",
-			"LOAN_AMOUNT": "Loan Amount",
-			"LOAN_TERM": "Loan Term",
-			"INTEREST_RATE_MONTHLY": "Interest Rate (Monthly) %",
-			"REPAYMENT_MODE": "Repayment Mode",
-			"MONTHLY_FEE_RATE": "Monthly Fee Rate %"
-		},
-		"INFO": {
-			"LOAN_AMOUNT": "Enter loan amount",
-			"LOAN_TERM": "Enter loan term",
-			"INTEREST_RATE_MONTHLY": "Enter interest rate (monthly) %",
-			"REPAYMENT_MODE": "Select repayment mode",
-			"MONTHLY_FEE_RATE": "Enter monthly fee rate %"
-		},
-		"OPTION": {
-			"USD": "USD",
-			"KHR": "KHR"
-		},
-		"BUTTON": {
-			"CALCULATE": "Calculate"
-		}
-	},
-	"SAL5100000": {
-		"TITLE": "Loan Simulation",
-		"SECTION": {
-			"LOAN_SUMMARY": "Loan Summary",
-			"LOAN_TERM": "Loan Term"
-		},
-		"LABEL": {
-			"LOAN_AMOUNT": "Loan Amount",
-			"PERIOD": "Period",
-			"MONTHS": "months",
-			"REPAYMENT_MODE": "Repayment Mode",
-			"MONTHLY_INTEREST_RATE": "Monthly Interest Rate",
-			"MONTHLY_FEE_RATE": "Monthly Fee Rate",
-			"TOTAL_INTEREST": "Total Interest",
-			"TOTAL_FEE": "Total Fee",
-			"PRINCIPAL": "Principal",
-			"INTEREST": "Interest",
-			"FEE": "Fee",
-			"TOTAL": "Total",
-			"MONTH": "Month"
-		},
-		"BUTTON": {
-			"DOWNLOAD_AS_EXCEL": "Download as Excel"
-		},
-		"MESSAGE": {
-			"SUCCESS": "Success",
-			"DOWNLOAD_SUCCESS": "Loan Simulation Report downloaded successfully {0}",
-			"ERROR": "Error",
-			"DOWNLOAD_FAILED": "Failed to download Loan Simulation Report {0}"
-		}
-	},
-	"SAL6000000": {
-		"TITLE": "Loan Application List",
-		"PLACEHOLDER": {
-			"PROGRESS_STATUS": "Loan Application Progress Status",
-			"PRODUCT_CODE": "Product Code",
-			"APPLICATION_NO": "Application No"
-		},
-		"BUTTON": {
-			"SEARCH": "Search",
-			"ADD_APPLICATION": "Add Application"
-		},
-		"LABEL": {
-			"CUSTOMER_NO": "Customer No",
-			"LOAN_TYPE": "Loan Type",
-			"LOAN_AMOUNT": "Loan Amount",
-			"LOAN_TERM": "Loan Term",
-			"MONTHS": "Months",
-			"LOAN_HOPE_DATE": "Loan Hope Date"
-		},
-		"MODAL": {
-			"SELECT_CUSTOMER": "Select Customer"
-		}
-	},
-	"SAL6100000": {
-		"TITLE_MODIFY": "Modify Loan Application",
-		"TITLE_REGISTER": "Register Loan Application",
-		"TITLE_SELECT_CUSTOMER": "Select Customer",
-		"STEP_APPLICATION_INFO": "Application Information",
-		"SECTION": {
-			"BASIC_INFO": "Basic Information",
-			"FEE_INFO": "Fee Information",
-			"COLLATERAL_INFO": "Collateral Information",
-			"CO_BORROWER_GUARANTOR": "Co-Borrower & Guarantor",
-			"RISK_EVALUATION": "Risk & Evaluation",
-			"REMARK": "Remark"
-		},
-		"LABEL": {
-			"CUSTOMER_NAME": "Customer Name",
-			"GENDER": "Gender",
-			"BIRTH_DATE": "Birth Date",
-			"ID_CARD": "ID Card",
-			"IDENTIFICATION_TYPE": "Identification Type",
-			"PHONE_NUMBER": "Phone Number",
-			"CREATED_DATE": "Created Date",
-			"APPLICATION_NO": "Application No",
-			"APPLICATION_PROGRESS_STATUS": "Application Progress Status",
-			"APPLICATION_TYPE": "Application Type",
-			"APPLICATION_KIND": "Application Kind",
-			"PRODUCT_NAME": "Product Name",
-			"APPLICATION_AMOUNT": "Application Amount",
-			"FIRST_DISBURSEMENT_AMOUNT": "First Disbursement Amount",
-			"PRINCIPAL_REPAY_METHOD": "Principal Repay Method",
-			"LOAN_TERM": "Loan Term",
-			"INTEREST_RATE": "Interest Rate (%)",
-			"TARGET_DISBURSEMENT_DATE": "Target Disbursement Date",
-			"UTILIZATION_CODE": "Utilization Code",
-			"LOAN_PURPOSE": "Loan Purpose",
-			"LOAN_PURPOSE_CODE": "Loan Purpose Code",
-			"LOAN_PURPOSE_AMOUNT": "Loan Purpose Amount",
-			"TOTAL_USAGE_AMOUNT": "Total Usage Amount",
-			"COMMITMENT_FEE": "Commitment fee (%)",
-			"PROCESSING_FEE": "Processing fee (%)",
-			"COLLATERAL": "Collateral",
-			"COLLATERAL_CATEGORY_TYPE": "Collateral Category Type",
-			"COLLATERAL_TYPE": "Collateral Type",
-			"COLLATERAL_DETAIL_TYPE": "Collateral Detail Type",
-			"AMOUNT": "Amount",
-			"SELECT_DEPOSIT_ACCOUNT": "Select Deposit Account",
-			"VEHICLE_PLATE_NO": "Vehicle Plate No",
-			"TOTAL_COLLATERAL_AMOUNT": "Total Collateral Amount",
-			"LTV": "LTV (%)",
-			"CRR_SCORE": "CRR Score",
-			"CBC_SCORE": "CBC Score",
-			"CBC_REFERENCE_NO": "CBC Reference No",
-			"DSCR": "DSCR",
-			"REMARK": "Remark",
-			"CUSTOMER_NO": "Customer No",
-			"CO_BORROWER": "Co-Borrower",
-			"GUARANTOR": "Guarantor",
-			"CUSTOMER_RELATION_TYPE": "Customer Relation Type"
-		},
-		"BUTTON": {
-			"REMOVE": "Remove",
-			"ADD_MORE_PURPOSE": "Add More Purpose",
-			"ADD_MORE_COLLATERAL": "Add More Collateral",
-			"ADD_MORE_CO_BORROWER_GUARANTOR": "Add More Co-Borrower & Guarantor",
-			"NEXT": "Next",
-			"GENERATE_LOAN_APPLICATION_NO": "Generate Application No"
-		},
-		"ALERT": {
-			"CUSTOMER_ALREADY_EXISTS": "Customer already exists",
-			"PRODUCT_VALIDATION_FAILED": "Product validation failed",
-			"COLLATERAL_ALLOW_YN": "Collateral allow YN",
-			"PARTIAL_DISBURSEMENT_ALLOW_YN": "Partial disbursement allow YN",
-			"CBC_LOAN_PRODUCT_GROUP": "CBC loan product group",
-			"CBC_PRODUCT_TYPE": "CBC product type",
-			"PRODUCT_REPAYMENTS_MODE_LIST": "Product repayments mode list",
-			"CURRENCY_CODE": "Currency code",
-			"PRODUCT_NOT_SELECTED": "Product not selected"
-		},
-		"MESSAGE": {
-			"APPLICATION_AMOUNT_START_END_RANGE": "Application amount must be between {0} and {1}",
-			"MIN_MAX_TERM_MONTH": "Loan term must be between {0} and {1} months",
-			"MIN_MAX_INTEREST_RATE": "Interest rate must be between {0} and {1} %",
-			"PARTIAL_DISBURSEMENT_MUST_BE_LESS_THAN_APPLICATION_AMOUNT": "Partial disbursement amount must be less than application amount",
-			"TOTAL_DEBT_PRINCIPAL_INTEREST_AMOUNT_RATIO_MUST_BE_LESS_THAN_2": "Total debt principal interest amount ratio must be less than or equal to 100"
-		}
-	},
-	"SAL6110000": {
-		"TITLE": "Register Loan Application",
-		"STEP_INCOME_INFO": "Income Information",
-		"SECTION": {
-			"EMPLOYMENT_DETAIL": "Employment Detail",
-			"COMPANY_BUSINESS_INFO": "Company/Business Info",
-			"INCOME_SOURCE": "Income & Source"
-		},
-		"LABEL": {
-			"EMPLOYEE_TYPE": "Employee Type",
-			"EMPLOYMENT_STATUS": "Employment Status",
-			"EMPLOYMENT_DATE": "Employment Date",
-			"OCCUPATION_TYPE": "Occupation Type",
-			"COMPANY_BUSINESS_NAME": "Company/Business Name",
-			"COMPANY_ADDRESS": "Company Address",
-			"STREET": "Street",
-			"HOUSE_NUMBER": "House Number",
-			"CURRENCY": "Currency",
-			"MONTHLY_SALARY_INCOME": "Monthly Salary/Income",
-			"OTHER_INCOME": "Other Income",
-			"TOTAL_MONTHLY_INCOME": "Total Monthly Income",
-			"OUTSTANDING_LOAN_OTHER_BANKS": "Outstanding Loan Amount with other Banks"
-		},
-		"BUTTON": {
-			"CANCEL": "Cancel",
-			"PREVIOUS": "Previous",
-			"NEXT": "Next"
-		}
-	},
-	"SAL6120000": {
-		"TITLE": "Register Loan Application",
-		"STEP_PREVIEW": "Application Preview",
-		"LABEL": {
-			"CUSTOMER_NAME": "Customer Name",
-			"GENDER": "Gender",
-			"BIRTH_DATE": "Birth Date",
-			"ID_CARD": "ID Card",
-			"IDENTIFICATION_TYPE": "Identification Type",
-			"PHONE_NUMBER": "Phone Number",
-			"CREATED_DATE": "Created Date",
-			"APPLICATION_TYPE": "Application Type",
-			"LOAN_PRODUCT": "Loan Product",
-			"CURRENCY_CODE": "Currency Code",
-			"LOAN_AMOUNT": "Loan Amount",
-			"REPAYMENT_METHOD": "Repayment Method",
-			"TENOR_MONTHS": "Tenor (Months)",
-			"MONTHS": "Months",
-			"MONTHLY_INTEREST_RATE": "Monthly Interest Rate",
-			"TARGET_DISBURSEMENT_DATE": "Target Disbursement Date",
-			"LOAN_PURPOSE": "Loan Purpose",
-			"LOAN_FUND_PURPOSE": "Loan Fund Purpose",
-			"MONTHLY_EXPENSE": "Monthly Expense",
-			"TOTAL_USAGE_AMOUNT": "Total Usage Amount",
-			"COMMITMENT_FEE": "Commitment fee (%)",
-			"PROCESSING_FEE": "Processing fee (%)",
-			"COLLATERAL_CATEGORY": "Collateral Category",
-			"COLLATERAL_TYPE": "Collateral Type",
-			"COLLATERAL_DETAIL": "Collateral Detail",
-			"AMOUNT": "Amount",
-			"TOTAL_COLLATERAL_AMOUNT": "Total Collateral Amount",
-			"LTV": "LTV (%)",
-			"CRR_SCORE": "CRR Score",
-			"CBC_REFERENCE_NO": "CBC Reference No",
-			"CBC_SCORE": "CBC Score",
-			"DSCR": "DSCR",
-			"REMARK": "Remark",
-			"EMPLOYMENT_STATUS": "Employment Status",
-			"EMPLOYEE_TYPE": "Employee Type",
-			"EMPLOYMENT_DATE": "Employment Date",
-			"OCCUPATION": "Occupation",
-			"OCCUPATION_TYPE": "Occupation Type",
-			"COMPANY_BUSINESS_NAME": "Company/Business Name",
-			"ADDRESS": "Address",
-			"STREET": "Street",
-			"HOUSE_NUMBER": "House Number",
-			"MONTHLY_SALARY_INCOME": "Monthly Salary/Income",
-			"OTHER_INCOME": "Other Income",
-			"TOTAL_MONTHLY_INCOME": "Total Monthly Income",
-			"OUTSTANDING_LOAN_OTHER_BANKS": "Outstanding Loan Amt. with other Banks"
-		},
-		"SECTION": {
-			"EMPLOYMENT_DETAILS": "Employment Details",
-			"COMPANY_BUSINESS_INFO": "Company/Business Information",
-			"INCOME_SOURCE": "Income & Source",
-			"APPLICATION_INFO": "Application Information",
-			"FEE_INFO": "Fee Information",
-			"COLLATERAL_INFO": "Collateral Information",
-			"RISK_EVALUATION": "Risk & Evaluation",
-			"REMARK": "Remark"
-		},
-		"BUTTON": {
-			"CANCEL": "Cancel",
-			"PREVIOUS": "Previous",
-			"SUBMIT": "Submit"
-		}
-	},
-	"SAL6200000": {
-		"TITLE": "Loan Application Detail",
-		"LABEL": {
-			"CUSTOMER_NAME": "Customer Name",
-			"CUSTOMER_NO": "Customer No",
-			"CUSTOMER_TYPE": "Customer Type",
-			"EMPLOYMENT_STATUS": "Employment Status",
-			"EMPLOYEE_TYPE": "Employee Type",
-			"EMPLOYMENT_DATE": "Employment Date",
-			"COMPANY_BUSINESS_NAME": "Company/Business Name",
-			"ADDRESS": "Address",
-			"CURRENCY_CODE": "Currency Code",
-			"MONTHLY_SALARY_INCOME": "Monthly Salary/Income",
-			"OTHER_INCOME": "Other Income",
-			"TOTAL_MONTHLY_INCOME": "Total Monthly Income",
-			"OUTSTANDING_LOAN_OTHER_BANKS": "Outstanding Loan Amt. with other Banks",
-			"APPLICATION_TYPE": "Application Type",
-			"APPLICATION_KIND": "Application Kind",
-			"APPLICATION_STATUS": "Application Status",
-			"LOAN_PRODUCT": "Loan Product",
-			"LOAN_AMOUNT": "Loan Amount",
-			"REPAYMENT_METHOD": "Repayment Method",
-			"TENOR_MONTHS": "Tenor (Months)",
-			"MONTHS": "Months",
-			"MONTHLY_INTEREST_RATE": "Monthly Interest Rate",
-			"TARGET_DISBURSEMENT_DATE": "Target Disbursement Date",
-			"LOAN_PURPOSE": "Loan Purpose",
-			"LOAN_FUND_PURPOSE": "Loan Fund Purpose",
-			"MONTHLY_EXPENSE": "Monthly Expense",
-			"TOTAL_USAGE_AMOUNT": "Total Usage Amount",
-			"COMMITMENT_FEE": "Commitment fee (%)",
-			"PROCESSING_FEE": "Processing fee (%)",
-			"COLLATERAL_NO": "Collateral No",
-			"CUSTOMER_RELATION_TYPE": "Customer Relation Type",
-			"COBORROWER_YN": "Co-Borrower YN",
-			"COLLATERAL_CATEGORY": "Collateral Category",
-			"CATEGORY_TYPE": "Category Type",
-			"DETAIL_TYPE": "Detail Type",
-			"AMOUNT": "Amount",
-			"TOTAL_COLLATERAL_AMOUNT": "Total Collateral Amount",
-			"LTV": "LTV (%)",
-			"CRR_SCORE": "CRR Score",
-			"CBC_SCORE": "CBC Score",
-			"DSCR": "DSCR",
-			"REMARK": "Remark"
-		},
-		"SECTION": {
-			"EMPLOYMENT_DETAILS": "Employment Details",
-			"COMPANY_BUSINESS_INFO": "Company/Business Information",
-			"INCOME_SOURCE": "Income & Source",
-			"APPLICATION_INFO": "Application Information",
-			"FEE_INFO": "Fee Information",
-			"COLLATERAL_INFO": "Collateral Information",
-			"RISK_EVALUATION": "Risk & Evaluation",
-			"REMARK": "Remark"
-		},
-		"BUTTON": {
-			"MODIFY": "Modify",
-			"REQUEST_PROCESSING": "Your request is being processing!",
-			"SETUP_APPROVAL": "Setup approval",
-			"CANCEL": "Cancel Application"
-		},
-		"MESSAGE": {
-			"WARNING": "Warning",
-			"ADD_COLLATERAL_BEFORE_APPROVAL": "Please add collateral information before setup approval",
-			"OK": "OK"
-		}
-	},
-	"SAL6210000": {
-		"TITLE": "Loan Application Setup Approval",
-		"LABEL": {
-			"APPROVAL_SETUP": "Approval Setup",
-			"APPROVER": "Approver"
-		},
-		"BUTTON": {
-			"SUBMIT": "Submit"
-		},
-		"MESSAGE": {
-			"SUBMIT_APPROVAL_HEADER": "Submit Approval List",
-			"SUBMIT_APPROVAL_CONFIRM": "Are you sure you want to submit the approval list?"
-		}
-	},
-	"SAL7100000": {
-		"TITLE": "Open Account",
-		"PRODUCT": {
-			"SAVING_ACCOUNT": "Saving Account",
-			"FIXED_DEPOSIT": "Fixed Deposit",
-			"SAVING_ACCOUNT_DESC": "Opening Savings Account with MCNC Bank is the most efficient way to save your money and easily earn more money with our highly provided interest rate 3%. You can conveniently withdraw or deposit cash through our ATMs and perform other transactions via CCU Mobile Banking App.",
-			"FIXED_DEPOSIT_DESC": "Opening Fixed Deposit with MCNC Bank is the most efficient way to save your money and easily earn more money with our highly provided interest rate. You can conveniently manage your fixed deposit via CCU Mobile Banking App."
-		}
-	},
-	"SAL7110000": {
-		"TITLE": "Product Detail",
-		"LABEL": {
-			"ACCOUNT": "Account",
-			"FEATURE": "Feature",
-			"SUITABILITY": "Suitability",
-			"CURRENCY": "Currency",
-			"INTEREST_RATE_PA": "Interest Rate (Per Annum)",
-			"MIN_OPENING_BALANCE": "Min. Opening Balance",
-			"ONGOING_BALANCE": "Ongoing Balance",
-			"ENTITLES": "Entitles"
-		},
-		"ALT_PRODUCT_BANNER": "Product Banner"
-	},
-	"SAL7120000": {
-		"TITLE": "Open Account",
-		"PLACEHOLDER": {
-			"SELECT_ID_TYPE": "Select Identify Type",
-			"ENTER_ID": "Enter ID",
-			"CUSTOMER_NAME": "Customer Name"
-		},
-		"BUTTON": {
-			"SEARCH": "Search"
-		},
-		"LABEL": {
-			"CUSTOMER_NO": "Customer No",
-			"CUSTOMER_NAME": "Customer Name",
-			"GENDER": "Gender",
-			"DATE_OF_BIRTH": "Date of Birth",
-			"ID_CARD": "ID Card",
-			"PHONE_NO": "Phone No"
-		}
-	},
-	"SAL7130000": {
-		"TITLE": "Open Account",
-		"SECTION": {
-			"CUSTOMER_INFO": "Customer Information"
-		},
-		"LABEL": {
-			"CUSTOMER_NO": "Customer No",
-			"CUSTOMER_NAME": "Customer Name",
-			"DATE_OF_BIRTH": "Date of Birth",
-			"PHONE_NO": "Phone No",
-			"CURRENCY": "Currency"
-		},
-		"BUTTON": {
-			"NEXT": "Next"
-		}
-	},
-	"SAL7140000": {
-		"TITLE": "Open Account",
-		"BUTTON": {
-			"CLOSE": "Close"
-		},
-		"MESSAGE": {
-			"CONFIRM_OPEN": "Do you want to open",
-			"CONFIRM_OPEN_QUESTION": "?"
-		},
-		"LABEL": {
-			"PRODUCT": "Product",
-			"CUSTOMER_NO": "Customer No",
-			"CUSTOMER_NAME": "Customer Name",
-			"CURRENCY_TYPE": "Currency Type",
-			"INTEREST_RATE": "Interest Rate",
-			"INTEREST_RATE_PA": "% P.A"
-		}
-	},
-	"SAL7150000": {
-		"TITLE": "Open Account Result",
-		"MESSAGE": {
-			"THANK_YOU_OPEN": "Thank you for Opening your"
-		},
-		"LABEL": {
-			"PRODUCT": "Product",
-			"CUSTOMER_NAME": "Customer Name",
-			"CUSTOMER_NO": "Customer No",
-			"CURRENCY_TYPE": "Currency Type",
-			"INTEREST_RATE": "Interest Rate",
-			"INTEREST_RATE_PA": "% P.A",
-			"ACCOUNT_NUMBER": "Account Number"
-		}
-	},
-	"SAL7160000": {
-		"TITLE": "Open Account",
-		"SECTION": {
-			"CUSTOMER_INFO": "Customer Information"
-		},
-		"LABEL": {
-			"CUSTOMER_NO": "Customer No",
-			"CUSTOMER_NAME": "Customer Name",
-			"DATE_OF_BIRTH": "Date of Birth",
-			"PHONE_NO": "Phone No",
-			"CURRENCY": "Currency",
-			"SELECT_INTEREST_OPTIONS": "Select Interest Options",
-			"CHOOSE_TENOR": "Choose Tenor",
-			"MONTH": "month",
-			"MONTHS": "Months",
-			"INTEREST_RATE": "Interest Rate",
-			"INTEREST_RATE_NOTE": "Your withdrawals have different interest rates compared to the end of date range",
-			"OPENING_AMOUNT": "Opening Amount",
-			"ESTIMATE_END_DATE_PAYMENT": "Estimate End Date Payment",
-			"WITHDRAWAL_ACCOUNT": "Withdrawal Account",
-			"SAVING_ACCOUNT": "Saving Account",
-			"DEPOSIT_ROLLOVER_DIVIDE": "Deposit Rollover Divide",
-			"NOMINATE_ACCOUNT": "Nominate Account"
-		},
-		"BUTTON": {
-			"NEXT": "Next"
-		},
-		"MESSAGE": {
-			"SELECT_WITHDRAWAL_ACCOUNT": "Please select a withdrawal account.",
-			"VALID_OPENING_AMOUNT": "Please enter a valid opening amount.",
-			"AMOUNT_OUT_OF_RANGE": "Amount Out of Range",
-			"AMOUNT_RANGE_BETWEEN": "Opening amount must be between {0} and {1}.",
-			"INSUFFICIENT_FUNDS": "Insufficient Funds",
-			"INSUFFICIENT_FUNDS_MSG": "The selected withdrawal account does not have enough balance for this opening amount.",
-			"SELECT_ROLLOVER_OPTION": "Please select a deposit rollover option.",
-			"SELECT_NOMINATE_ACCOUNT": "Please select a nominate account.",
-			"SELECT_VALID_TENOR": "Please select a valid tenor.",
-			"NO_DEPOSIT_ACCOUNT": "No Deposit Account",
-			"NO_DEPOSIT_ACCOUNT_MSG": "Can't open fix deposit account because this customer don't have any deposit account."
-		}
-	},
-	"SAL7161000": {
-		"BUTTON": {
-			"CLOSE": "Close",
-			"NO": "No",
-			"YES": "Yes"
-		},
-		"MESSAGE": {
-			"CONFIRM_OPEN": "Do you want to open",
-			"FIXED_DEPOSIT_ACCOUNT": "Fixed Deposit Account?"
-		},
-		"LABEL": {
-			"PRODUCT": "Product",
-			"FIXED_DEPOSIT": "Fixed Deposit",
-			"CUSTOMER_NO": "Customer No",
-			"ACCOUNT_NAME": "Account Name",
-			"CURRENCY_TYPE": "Currency Type",
-			"INTEREST_OPTION": "Interest Option",
-			"TENOR": "Tenor",
-			"MONTHS": "Months",
-			"OPENING_AMOUNT": "Opening Amount",
-			"WITHDRAWAL_ACCOUNT": "Withdrawal Account",
-			"RECEIVE_ACCOUNT": "Receive Account",
-			"END_DATE_PAYMENT": "End Date Payment"
-		},
-		"INTEREST_OPTION": {
-			"MATURITY": "Maturity Payment",
-			"MONTHLY": "Interest Payment (Monthly)"
-		}
-	},
-	"SAL7162000": {
-		"TITLE": "Open Account Result",
-		"MESSAGE": {
-			"THANK_YOU_OPEN": "Thank you for Opening your",
-			"FIXED_DEPOSIT": "Fixed Deposit"
-		},
-		"LABEL": {
-			"PRODUCT": "Product",
-			"CUSTOMER_NAME": "Customer Name",
-			"CUSTOMER_NO": "Customer No",
-			"CURRENCY_TYPE": "Currency Type",
-			"INTEREST_RATE": "Interest Rate",
-			"INTEREST_RATE_PA": "% P.A",
-			"ACCOUNT_NUMBER": "Account Number",
-			"COPY": "Copy"
-		},
-		"BUTTON": {
-			"OKAY": "Okay"
-		}
-	},
-	"SAL9000000": {
-		"TITLE": "House Check Withdrawal Request",
-		"BUTTON": {
-			"SEARCH": "Search",
-			"ADD_NEW_BANK_CHEQUE": "Add New Bank Cheque"
-		},
-		"LABEL": {
-			"REQUEST_DATE": "Request Date",
-			"CUSTOMER_NAME": "Customer Name",
-			"PHONE_NO": "Phone No",
-			"ACCOUNT_NO": "Account No",
-			"ISSUES_AMOUNT": "Issues Amount"
-		},
-		"STATUS_NA": "N/A"
-	},
-	"SAL9100000": {
-		"TITLE": "House Check Withdrawal Request Detail",
-		"LABEL": {
-			"CHEQUE_NO": "Cheque No",
-			"PHONE_NUMBER": "Phone Number",
-			"CUSTOMER_NAME": "Customer Name",
-			"CHEQUE_AMOUNT": "Cheque Amount",
-			"ACCOUNT_NO": "Account No",
-			"REQUEST_DATE": "Request Date",
-			"PURPOSE": "Purpose",
-			"ATTACHMENT": "Attachment",
-			"STATUS": "Status"
-		},
-		"STATUS_NA": "N/A"
-	},
-	"SAL9110000": {
-		"TITLE": "House Check Withdrawal Request",
-		"PLACEHOLDER": {
-			"ENTER_CHEQUE_NO": "Enter Cheque No",
-			"ENTER_ACCOUNT_NO": "Enter Account No",
-			"ENTER_PHONE_NUMBER": "Enter Phone Number",
-			"ENTER_PURPOSE": "Enter Purpose"
-		},
-		"LABEL": {
-			"CHEQUE_NO": "Cheque No",
-			"ACCOUNT_NO": "Account No",
-			"CUSTOMER_NAME": "Customer Name",
-			"PHONE_NO": "Phone No",
-			"CURRENCY": "Currency",
-			"CHEQUE_AMOUNT": "Cheque Amount",
-			"PURPOSE": "Purpose",
-			"ATTACHMENT": "Attachment"
-		},
-		"INFO": {
-			"CHEQUE_NO": "Cheque No",
-			"ACCOUNT_NO": "Account No",
-			"CUSTOMER_NAME": "Customer Name",
-			"PHONE_NO": "Phone No",
-			"CURRENCY": "Currency",
-			"CHEQUE_AMOUNT": "Cheque Amount",
-			"PURPOSE": "Purpose",
-			"ATTACHMENT": "Attachment"
-		},
-		"BUTTON": {
-			"NEXT": "Next"
-		}
-	},
-	"SAL9112000": {
-		"BUTTON": {
-			"CLOSE": "Close",
-			"NO": "No",
-			"YES": "Yes"
-		},
-		"MESSAGE": {
-			"CONFIRM_PROCESS": "Do you want to process",
-			"BANK_CHEQUE": "House Check Withdrawal Request?"
-		},
-		"LABEL": {
-			"CHEQUE_NO": "Cheque No",
-			"ACCOUNT_NO": "Account No",
-			"CUSTOMER_NAME": "Customer Name",
-			"REQUEST_DATE": "Request Date",
-			"ISSUE_AMOUNT": "Issue Amount",
-			"PURPOSE": "Purpose",
-			"ATTACHMENT": "Attachment"
-		}
-	}
-
+  "COMMON": {
+    "BM_MONTH_YEAR_PICKER": {
+      "MONTH": "Month",
+      "YEAR": "Year"
+    },
+    "BM_QUARTER_PICKER": {
+      "MONTH": "Month",
+      "YEAR": "Year",
+      "TITLE": "Select Quarter",
+      "QUARTER_1": "Quarter 1",
+      "QUARTER_2": "Quarter 2",
+      "QUARTER_3": "Quarter 3",
+      "QUARTER_4": "Quarter 4"
+    },
+    "BM_QUARTER_SELECT": {
+      "PLACEHOLDER": "Select quarter",
+      "TITLE": "Select Quarter",
+      "MESSAGE": "Please select an option below:",
+      "BUTTON_LABEL": "Select box"
+    },
+    "BM_SEMESTER_PICKER": {
+      "MONTH": "Month",
+      "YEAR": "Year",
+      "TITLE": "Select Semester",
+      "SEMESTER_1": "S 1",
+      "SEMESTER_2": "S 2"
+    },
+    "BM_TIME_PICKER": {
+      "HOUR": "Hour",
+      "MINUTE": "Minute"
+    },
+    "BM_YEAR_PICKER": {
+      "YEAR": "Year"
+    },
+    "BM_YEAR_SELECT": {
+      "PLACEHOLDER": "Search or select",
+      "TITLE": "Select Year",
+      "MESSAGE": "Please select an option below:",
+      "BUTTON_LABEL": "Select box"
+    },
+    "BM_WEEK_SELECT": {
+      "TITLE": "Select Week"
+    },
+    "BM_MONTHLY_SELECT": {
+      "TITLE": "Select Month",
+      "PLACEHOLDER": "Search or select",
+      "MESSAGE": "Please select an option below:",
+      "BUTTON_LABEL": "Select box",
+      "MONTH_01": "Jan",
+      "MONTH_02": "Feb",
+      "MONTH_03": "Mar",
+      "MONTH_04": "Apr",
+      "MONTH_05": "May",
+      "MONTH_06": "Jun",
+      "MONTH_07": "Jul",
+      "MONTH_08": "Aug",
+      "MONTH_09": "Sep",
+      "MONTH_10": "Oct",
+      "MONTH_11": "Nov",
+      "MONTH_12": "Dec"
+    },
+    "BM_SEMESTER_SELECT": {
+      "PLACEHOLDER": "Search or select",
+      "TITLE": "Select Semester",
+      "MESSAGE": "Please select an option below:",
+      "BUTTON_LABEL": "Select box"
+    },
+    "BM_UPLOAD_IMAGE": {
+      "REMOVE": "Remove",
+      "UPLOAD": "Upload"
+    },
+    "BM_ADDRESS_SELECT": {
+      "SELECT_ADDRESS": "Select Address",
+      "SELECT_ADDRESS_BUTTON": "Select Address"
+    },
+    "BM_ADDRESS_SELECTION_DETAIL": {
+      "SEARCH_ADDRESS": "Search Address",
+      "KINDLY_PROVIDE_YOUR_ADDRESS_INFORMATION": "Kindly provide your address information.",
+      "CITY_DISTRICT_OR_POSTAL_CODE": "City, District or Postal Code",
+      "TYPE_A_KEYWORD_TO_SEARCH_ADDRESS": "Type a keyword to search address",
+      "NO_RESULTS_FOUND": "No results found",
+      "CANCEL": "Cancel",
+      "CONFIRM": "Confirm"
+    },
+    "BM_PIN_ADDRESS": {
+      "PIN": "Pin"
+    },
+    "BUTTON": {
+      "CONFIRM": "Confirm",
+      "NEXT": "Next",
+      "CANCEL": "Cancel",
+      "SUBMIT": "Submit",
+      "SEARCH": "Search",
+      "VIEW_MORE": "View More",
+      "VIEW_DETAIL": "View Detail",
+      "DOWNLOAD": "Download",
+      "BACK": "Back",
+      "OK": "OK",
+      "YES": "Yes",
+      "RESET": "Reset",
+      "SELECT": "Select",
+      "MORE": "More",
+      "LESS": "Less",
+      "ALL": "All",
+      "NONE": "None",
+      "CLEAR": "Clear",
+      "CLOSE": "Close",
+      "OPEN": "Open",
+      "SAVE": "Save",
+      "DELETE": "Delete",
+      "NO": "No",
+      "APPLY": "Apply",
+      "REGISTER": "Register",
+      "MODIFY": "Modify",
+      "ADD_NEW": "Add New",
+      "CALL": "Call"
+    },
+    "LABEL": {
+      "FIRST_NAME": "First Name",
+      "LAST_NAME": "Last Name",
+      "GENDER": "Gender",
+      "DATE_OF_BIRTH": "Date of Birth",
+      "NATIONALITY": "Nationality",
+      "PASSPORT_NO": "Passport No",
+      "EXPIRY_DATE": "Expiry Date",
+      "PHONE": "Phone",
+      "ADDRESS": "Address",
+      "EMAIL": "Email",
+      "ACCOUNT_NO": "Account No",
+      "ACCOUNT_TYPE": "Account Type",
+      "BALANCE": "Balance",
+      "CURRENCY": "Currency",
+      "STATUS": "Status",
+      "BRANCH": "Branch",
+      "CO": "CO",
+      "STAFF_NAME": "Staff Name",
+      "DAYS": "Days",
+      "REQUESTED": "Requested",
+      "APPROVED": "Approved",
+      "RETURNED": "Returned",
+      "REJECTED": "Rejected",
+      "TODAY": "Today",
+      "THIS_MONTH": "This Month",
+      "LAST_MONTH": "Last Month",
+      "THIS_YEAR": "This Year",
+      "LAST_YEAR": "Last Year",
+      "THIS_WEEK": "This Week",
+      "LAST_WEEK": "Last Week",
+      "THIS_DAY": "This Day",
+      "LAST_DAY": "Last Day"
+    },
+    "MESSAGE": {
+      "NO_DATA": "No data available"
+    },
+    "BM_ERROR": {
+      "TITLE": "A temporary error has occurred.",
+      "MESSAGE": "An unexpected error has occurred in certain services. We apologize for the inconvenience and ask that you try again shortly.",
+      "REPORT_BUG": "Report a bug",
+      "OKAY": "Okay"
+    },
+    "BM_DIALOG": {
+      "TITLE": "Notice",
+      "MESSAGE": "This is a message"
+    },
+    "BM_SELECT_MENU": {
+      "TITLE": "Dropdown Menu",
+      "MESSAGE": "Please select an option below:"
+    },
+    "BM_SELECT_BOX": {
+      "PLACEHOLDER": "Search or select",
+      "TITLE": "Select Menu",
+      "MESSAGE": "Please select an option below:",
+      "BUTTON_LABEL": "Select box",
+      "CLEAR": "Clear"
+    },
+    "BM_SELECT_ACCOUNT_LIST": {
+      "TITLE": "Select Account",
+      "CLOSE": "Close",
+      "END_DATE": "End Date",
+      "TOAST_ACCOUNT_COPIED": "Account number copied to clipboard",
+      "CURRENT_ACCOUNT": "Current Account",
+      "LOAN_AGAINST_DEPOSIT": "Loan Against Deposit",
+      "SAVING_ACCOUNT": "Saving Account",
+      "HOUSING_LOAN": "Housing Loan",
+      "AUTO_LOAN": "Auto Loan"
+    },
+    "BM_CONTENT": {
+      "OFFLINE_TITLE": "No Connection",
+      "OFFLINE_MESSAGE": "Please check your internet connection or switch to offline Mode.",
+      "CONNECTING_TITLE": "Connecting...",
+      "CONNECTING_MESSAGE": "Please wait while we connect to the internet.",
+      "CONNECTED_TITLE": "Connected",
+      "CONNECTED_MESSAGE": "You are connected to the internet.",
+      "SWITCH_TO_OFFLINE": "Switch To Offline"
+    },
+    "BM_DATE_PICKER": {
+      "FROM": "From",
+      "TO": "To",
+      "SUNDAY": "SUN",
+      "MONDAY": "MON",
+      "TUESDAY": "TUE",
+      "WEDNESDAY": "WED",
+      "THURSDAY": "THU",
+      "FRIDAY": "FRI",
+      "SATURDAY": "SAT"
+    },
+    "BM_TEXTAREA": {
+      "PLACEHOLDER_ENTER_DESCRIPTION": "Enter Description here..."
+    },
+    "BM_DATE_RANGE_SELECT": {
+      "SELECT_DATE_RANGE": "Select Date Range",
+      "CLEAR": "Clear",
+      "DATE_PICKER": "Date Picker"
+    },
+    "BM_FILTER_DATE": {
+      "FILTER_DATE": "Filter Date",
+      "DATE_RANGE": "Date Range",
+      "1_WEEK": "1 Week",
+      "1_MONTH": "1 Month",
+      "3_MONTHS": "3 Months",
+      "6_MONTHS": "6 Months"
+    }
+  },
+  "LOG1000000": {
+    "LABEL": {
+      "COMPANY_ID": "Company ID",
+      "USER_ID": "User ID",
+      "PASSWORD": "Password",
+      "LOGIN": "Login",
+      "REMEMBER_ID": "Remember ID"
+    },
+    "BUTTON": {
+      "FORGOT_PASSWORD": "Forgot Password?",
+      "FORGET_ID_OR_PASSWORD": "Forget ID or Password?",
+      "BIOMETRIC": "Biometric",
+      "LOGIN_WITH_FINGERPRINT": "Login with Fingerprint",
+      "TERMS_AND_CONDITIONS": "Terms and Conditions",
+      "PRIVACY_POLICY": "Privacy Policy",
+      "BY_LOGIN_YOU_ARE_AGREEING_OUR_TERM_AND_PRIVACY_POLICY": "By login you are agreeing our Term and Privacy Policy"
+    },
+    "MESSAGE": {
+      "LOGIN_ERROR": "Please provide user ID, password, and company ID.",
+      "LOGIN_SUCCESS": "Login successful",
+      "LOGIN_FAILED": "Login failed",
+      "LOGIN_WITH_BIOMETRIC": "Login with Biometric",
+      "LOGIN_WITH_FINGERPRINT": "Login with Fingerprint",
+      "LOGIN_WITH_FACE_ID": "Login with Face ID"
+    }
+  },
+  "LOG1100000": {
+    "TITLE": "OTP Verification",
+    "OPTION": {
+      "PIN": "PIN",
+      "EMAIL": "Email",
+      "SMS": "SMS"
+    },
+    "LABEL": {
+      "OTP_ENTER_DESC": "Enter the One-Time Password from your administrator to continue.",
+      "OTP_SENT_DESC": "Your OTP will be sent to {0} after you tap \"{1}\".",
+      "REQUEST_VERIFICATION_CODE": "Request Verification Code",
+      "INFO_PIN": "If you have not received your OTP, kindly contact your administrator for assistance.",
+      "ERROR_EXPIRED": "The OTP has expired.",
+      "OTP_EXPIRED_IN": "The OTP has expired in"
+    },
+    "BUTTON": {
+      "CONFIRM": "Confirm"
+    }
+  },
+  "LOG1200000": {
+    "TITLE": "Change Password",
+    "SECURITY_TITLE": "For your security!",
+    "SECURITY_SUBTITLE": "Please change your Password",
+    "LABEL": {
+      "CURRENT_PASSWORD": "Current Password",
+      "NEW_PASSWORD": "New Password",
+      "CONFIRM_PASSWORD": "Confirm Password"
+    },
+    "PLACEHOLDER": {
+      "ENTER_CURRENT_PASSWORD": "Enter Current Password",
+      "ENTER_NEW_PASSWORD": "Enter New Password",
+      "ENTER_CONFIRM_PASSWORD": "Enter Confirm Password"
+    },
+    "PASSWORD_RULE": "Please provide a password between 8 and 12 characters, containing both English letters and numbers.",
+    "BUTTON": {
+      "CONFIRM": "Confirm"
+    },
+    "ERROR": {
+      "SAME_AS_CURRENT": "New password cannot be same as current password",
+      "PASSWORDS_NOT_MATCH": "Passwords do not match"
+    },
+    "REQUIREMENT": {
+      "LENGTH": "Between {min} - {max} characters",
+      "NUMBER": "Contains at least one number",
+      "UPPERCASE": "Contains uppercase letter",
+      "LOWERCASE": "Contains lowercase letter",
+      "SPECIAL_CHARACTER": "Contains special character",
+      "NO_REPEATED": "No repeated characters",
+      "NO_SEQUENTIAL": "No sequential characters"
+    }
+  },
+  "NEW1000000": {
+    "TITLE": "News & Events",
+    "PLACEHOLDER": {
+      "SEARCH": "Search news & events"
+    },
+    "OPTION": {
+      "ALL": "All"
+    },
+    "MESSAGE": {
+      "NO_DETAIL": "Don't have news & event detail"
+    }
+  },
+  "NEW1100000": {
+    "TITLE": "News & Events Detail",
+    "PAGE_TITLE_FALLBACK": "News & Event Detail",
+    "PDF_PREVIEW_TITLE": "PDF Preview",
+    "BUTTON": {
+      "VIEW": "Preview",
+      "DOWNLOAD": "Download"
+    },
+    "MESSAGE": {
+      "DOWNLOAD_FAILED": "Failed to download the file.",
+      "PDF_SHARE_FINISHED": "Downloaded successfully {0}"
+    }
+  },
+  "PIO1000000": {
+    "TITLE": "Product Information",
+    "OPTION": {
+      "ALL": "All"
+    }
+  },
+  "PIO1100000": {
+    "TITLE": "Product Information Detail",
+    "SHARE_FILE_TITLE": "Attachment",
+    "BUTTON": {
+      "VIEW_MORE_DETAIL": "View More Detail",
+      "DOWNLOAD": "Download"
+    },
+    "MESSAGE": {
+      "DOWNLOAD_FAILED": "Failed to download the file."
+    }
+  },
+  "PRM1000000": {
+    "TITLE": "Promotion",
+    "PLACEHOLDER": {
+      "SEARCH": "Find your ideal promotion"
+    }
+  },
+  "PRM1100000": {
+    "TITLE": "Promotion Detail"
+  },
+  "DAS1000000": {
+    "TAB": {
+      "HOME": "Home",
+      "APPROVAL": "Approval",
+      "CAMERA": "Camera",
+      "DEBTOR": "Debtor",
+      "MENU": "Menu"
+    }
+  },
+  "DAS1100000": {
+    "LABEL": {
+      "WELCOME_TO_THE_APP": "Welcome to the app",
+      "GOOD_MORNING": "Good Morning",
+      "GOOD_AFTERNOON": "Good Afternoon",
+      "GOOD_EVENING": "Good Evening",
+      "ONLINE": "Online",
+      "OFFLINE": "Offline",
+      "APPROVAL_STATUS": "Approval Status",
+      "MY_TODO_LIST": "My Todo List",
+      "GOAL_OF_DEBTOR": "Goal of Debtor",
+      "VISITED_DEBTOR": "Visited Debtor",
+      "GOAL_OF_AMOUNT": "Goal of Amount",
+      "PAYMENT_PLAN_REPORT": "Payment Plan Report",
+      "TOTAL_PAYMENT_PLAN_REPORT": "Total Payment Plan Report",
+      "MY_TO_AUTH_LIST": "My To Authentication List",
+      "MY_TO_DO_AUTH_HISTORY": "My To Do Authorization History",
+      "NEED_MY_APPROVAL": "Need My Approval",
+      "MY_APPROVED": "My Approved",
+      "APPROVED": "Approved",
+      "WAITING": "Waiting",
+      "RETURNED": "Returned",
+      "REJECTED": "Rejected",
+      "TODAY": "Today",
+      "THIS_WEEK": "This Week",
+      "THIS_MONTH": "This Month",
+      "PEOPLE": "People",
+      "PAYMENT_PLAN_REPORT_COUNT": "Payment Plan Report Count",
+      "VIEW": "view"
+    },
+    "BUTTON": {
+      "ADD": "Add",
+      "NOTIFICATION": "Notification",
+      "CONFIRM": "Confirm"
+    },
+    "TEXT": {
+      "SECURITY_REACTIVATE": "Please Re-Activate Your Account Again",
+      "SECURITY_HEADER": "Security"
+    }
+  },
+  "DAS2100000": {
+    "TITLE": "All Menu",
+    "PLACEHOLDER": {
+      "FIND_INFO": "Find your information"
+    },
+    "BUTTON": {
+      "SEARCH": "search"
+    },
+    "MENU": {
+      "PERFORMANCE": "Performance",
+      "MY_KPI": "My KPI",
+      "TEAM_KPI": "Team KPI",
+      "TEAM_MONITORING": "Team Monitoring",
+      "COLLECTION": "Collection",
+      "CONTACT_HISTORY": "Contact History",
+      "PAYMENT_PLAN_REPORT": "Payment Plan Report",
+      "VISIT_REPORT": "Visit Report",
+      "LOAN_OVERDUE_FOLLOW_UP": "Loan Overdue Follow-Up List",
+      "LOAN_COLLECTION_LIST": "Loan Collection List",
+      "LOAN_FOLLOW_UP_LIST": "Loan Follow-Up List",
+      "LOAN_RESCHEDULE": "Loan Reschedule",
+      "LOAN_PAY_OFF": "Loan Pay Off",
+      "LOAN_WRITE_OFF": "Loan Write Off",
+      "LOAN_LIST": "Loan List",
+      "SALE": "Sale",
+      "CONSULTATION": "Consultation",
+      "LOAN_SIMULATION": "Loan Simulation",
+      "CUSTOMER_INQUIRY": "Customer Inquiry",
+      "LOAN_APPLICATION": "Loan Application",
+      "OPEN_DEPOSIT_ACCOUNT": "Open Deposit Account",
+      "CARD_REQUEST": "Card Request",
+      "HOUSE_CHECK_WITHDRAWAL": "House Check Withdrawal Request",
+      "BANCASSURANCE_REQUEST": "Bancasurance Request",
+      "SERVICE": "Service",
+      "SYNC_TRANSACTION": "Synchronize Transaction",
+      "PRODUCT_INFORMATION": "Product Information",
+      "PROMOTION": "Promotion",
+      "NEWS_AND_EVENTS": "News & Events",
+      "BRANCH_LOCATION": "Branch Location",
+      "FAQ": "FAQ",
+      "SETTINGS": "Settings",
+      "LOGOUT": "Logout"
+    },
+    "DIALOG": {
+      "LOGOUT": "Logout",
+      "LOGOUT_CONFIRM": "Are you sure you want to logout?"
+    }
+  },
+  "DAS3000000": {
+    "TITLE": "Notification",
+    "BUTTON": {
+      "SEE_MORE": "See More"
+    }
+  },
+  "DAS3100000": {
+    "LABEL": {
+      "NOTIFICATION_DETAIL": "Notification Detail"
+    }
+  },
+  "DAS4000000": {
+    "TITLE": "Your Profile",
+    "LABEL": {
+      "USER_ID": "User ID",
+      "ROLE": "Role",
+      "MOBILE_NUMBER": "Mobile Number",
+      "EMAIL_ADDRESS": "Email Address",
+      "BRANCH_CODE": "Branch Code",
+      "BRANCH_NAME": "Branch Name",
+      "TEAM": "Team",
+      "HOME_ADDRESS": "Home Address"
+    },
+    "BUTTON": {
+      "EDIT": "edit"
+    },
+    "TEXT": {
+      "NA": "N/A",
+      "PROFILE_UPDATED": "Profile was updated successfully"
+    }
+  },
+  "DAS4110000": {
+    "TITLE": "Select Option",
+    "OPTION": {
+      "TAKE_PHOTO": "Take a photo",
+      "UPLOAD_FROM_GALLERY": "Upload from gallery"
+    }
+  },
+  "DAS5000000": {
+    "TITLE": "Authentication",
+    "LABEL": {
+      "AUTH_CODE": "Authentication Code",
+      "EXPIRE_IN": "Expire in:"
+    },
+    "TEXT": {
+      "USE_CODE_DESC": "You can use below code to access web portal.",
+      "KEEP_SAFE": "Please keep this code safe and do not share it with anyone else."
+    }
+  },
+  "FAQ1000000": {
+    "TITLE": "FAQ",
+    "PLACEHOLDER": {
+      "SEARCH_FAQ": "Search FAQ"
+    },
+    "OPTION": {
+      "ALL": "All"
+    }
+  },
+  "FAQ1100000": {
+    "TITLE": "FAQ Detail",
+    "SHARE_FILE_TITLE": "Attachment",
+    "BUTTON": {
+      "DOWNLOAD": "Download"
+    },
+    "MESSAGE": {
+      "DOWNLOAD_FAILED": "Failed to download the file."
+    }
+  },
+  "FTR1000000": {
+    "TITLE": "Sync Transaction List",
+    "BUTTON": {
+      "SYNC_TRANSACTION": "Sync Transaction",
+      "SYNCING": "Syncing..."
+    },
+    "STATUS": {
+      "FAILED": "Failed",
+      "PROCESSING": "Processing",
+      "REGISTERED": "Registered"
+    }
+  },
+  "KPI1000000": {
+    "TITLE": "My KPI",
+    "OPTION": {
+      "COLLECTION_AMOUNT": "Collection Amount",
+      "COLLECTION_POINT": "Collection Point",
+      "PPR_AMOUNT": "PPR Amount",
+      "PPR_COUNT": "PPR Count",
+      "PPR_AMOUNT_USER": "PPR Amount"
+    },
+    "DURATION": {
+      "TODAY": "Today",
+      "WEEKLY": "Weekly",
+      "MONTHLY": "Monthly",
+      "QUARTER": "Quarter",
+      "SEMI_ANNUALLY": "Semi-Annually",
+      "ANNUALLY": "Annually"
+    }
+  },
+  "KPI2000000": {
+    "TITLE": "Team KPI",
+    "OPTION": {
+      "MEMBERS": "Members",
+      "TOTAL": "Total"
+    }
+  },
+  "SAL3000000": {
+    "TITLE": "Consultation",
+    "PLACEHOLDER": {
+      "SEARCH_TYPE": "Search Type",
+      "ENTER_KEYWORD": "Enter Keyword"
+    },
+    "BUTTON": {
+      "SEARCH": "Search",
+      "CALL": "Call ({0})"
+    },
+    "SEARCH_TYPE": {
+      "ALL": "All",
+      "CUSTOMER_NAME": "Customer Name",
+      "PHONE_NUMBER": "Phone Number"
+    },
+    "CONSULTATION_TYPE": {
+      "REQUEST_LOAN": "Request Loan",
+      "DEPOSIT": "Deposit",
+      "WITHDRAWAL": "Withdrawal"
+    },
+    "INTEREST": {
+      "INTERESTED": "Interested",
+      "NOT_INTERESTED": "Not Interested"
+    },
+    "STATUS": {
+      "REGISTERED": "Registered",
+      "COMPLETED": "Completed"
+    },
+    "PRIORITY": {
+      "HIGH": "High",
+      "MEDIUM": "Medium",
+      "LOW": "Low"
+    }
+  },
+  "SAL3100000": {
+    "TITLE": "Consultation Register",
+    "LABEL": {
+      "CONSULTATION_DETAIL": "Consultation Detail",
+      "CONSULTATION": "Consultation",
+      "PURPOSE": "Purpose",
+      "REQUEST_AMOUNT": "Request Amount",
+      "NEXT_ACTION": "Next Action",
+      "CONSULTATION_PURPOSE": "Consultation Purpose",
+      "ENTER_KEYWORD": "Enter Keyword",
+      "PHONE_NO": "Phone No",
+      "LAST_CONSULT_DATE": "Last Consult Date",
+      "NEXT_CONSULT_DATE": "Next Consult Date",
+      "CUSTOMER_ADDRESS": "Customer Address",
+      "NEXT_SCHEDULE_DATE": "Next Schedule Date",
+      "PRIORITY_CODE": "Priority Code",
+      "CUSTOMER_INFORMATION": "Customer Information",
+      "CONSULTATION_INFORMATION": "Consultation Information",
+      "CONTACT_AND_LOCATION": "Contact and Location",
+      "FIRST_NAME_EN": "First Name (English)",
+      "LAST_NAME_EN": "Last Name (English)",
+      "FIRST_NAME_KH": "First Name (Khmer)",
+      "LAST_NAME_KH": "Last Name (Khmer)",
+      "PREFERRED_CALLING_TITLE": "Preferred Calling Title",
+      "GENDER": "Gender",
+      "DATE_OF_BIRTH": "Date of Birth",
+      "MARITAL_STATUS": "Marital Status",
+      "CONSULT_DATE": "Consult Date",
+      "CONSULTATION_STATUS": "Consultation Status",
+      "CONSULTATION_TYPE": "Consultation Type",
+      "CURRENCY": "Currency",
+      "CUSTOMER_INTEREST": "Customer Interest",
+      "NEXT_CONSULT_DATE_LABEL": "Next Consult Date",
+      "REMARK": "Remark",
+      "PHONE_NUMBER": "Phone Number",
+      "CONSULTATION_ADDRESS": "Consultation Address",
+      "STREET": "Street",
+      "HOUSE_NO": "House No",
+      "ADDRESS_DETAIL_OPTIONAL": "Address Detail (Optional)",
+      "ATTACH_DOCUMENT": "Attach Document"
+    },
+    "INFO": {
+      "FIRST_NAME_EN": "Enter first name in English",
+      "LAST_NAME_EN": "Enter last name in English",
+      "FIRST_NAME_KH": "Enter first name in Khmer",
+      "LAST_NAME_KH": "Enter last name in Khmer",
+      "PREFERRED_CALLING_TITLE": "Select preferred calling title",
+      "GENDER": "Select gender",
+      "DATE_OF_BIRTH": "Select date of birth",
+      "MARITAL_STATUS": "Select marital status",
+      "CONSULT_DATE": "Select consult date",
+      "CONSULTATION_STATUS": "Select consultation status",
+      "CONSULTATION_TYPE": "Select consultation type",
+      "PURPOSE": "Select purpose",
+      "REQUEST_AMOUNT": "Enter request amount",
+      "PRIORITY_CODE": "Select priority code",
+      "NEXT_CONSULT_DATE": "Select next consult date",
+      "NEXT_ACTION": "Select next action",
+      "REMARK": "Enter remark",
+      "PHONE_NUMBER": "Enter phone number",
+      "STREET": "Enter street",
+      "HOUSE_NO": "Enter house no"
+    },
+    "OPTION": {
+      "USD": "USD",
+      "KHR": "KHR",
+      "YES": "Yes",
+      "NO": "No"
+    },
+    "BUTTON": {
+      "ADD_NEW_CONSULTATION": "Add New Consultation",
+      "START_NEW_CONSULTATION": "New Consultation Record",
+      "SUBMIT": "Submit",
+      "CANCEL": "Cancel"
+    }
+  },
+  "SAL3200000": {
+    "TITLE": "Consultation View Details",
+    "SECTION": {
+      "CLIENT_IDENTITY": "Client Identity",
+      "CONSULTATION_DETAILS": "Consultation Details",
+      "CONTACT_AND_LOCATION": "Contact and Location",
+      "SUPPORTING_MATERIAL": "Supporting Material"
+    },
+    "LABEL": {
+      "PREFERRED_TITLE": "Preferred Title",
+      "GENDER": "Gender",
+      "DATE_OF_BIRTH": "Date of Birth",
+      "MARITAL_STATUS": "Marital Status",
+      "CONSULT_DATE": "Consult Date",
+      "CONSULTATION_STATUS": "Consultation Status",
+      "CONSULTATION_TYPE": "Consultation Type",
+      "PURPOSE": "Purpose",
+      "REQUEST_AMOUNT": "Request Amount",
+      "PRIORITY_CODE": "Priority Code",
+      "CUSTOMER_INTEREST": "Customer Interest",
+      "NEXT_ACTION": "Next Action",
+      "NEXT_CONSULT_DATE": "Next Consult Date",
+      "REMARK": "Remark",
+      "PHONE_NUMBER": "Phone Number",
+      "CLIENT_ADDRESS": "Client Address"
+    },
+    "BUTTON": {
+      "MODIFY": "Modify"
+    }
+  },
+  "SAL5000000": {
+    "TITLE": "Loan Simulation",
+    "LABEL": {
+      "LOAN_CURRENCY": "Loan Currency",
+      "LOAN_AMOUNT": "Loan Amount",
+      "LOAN_TERM": "Loan Term",
+      "INTEREST_RATE_MONTHLY": "Interest Rate (Monthly) %",
+      "REPAYMENT_MODE": "Repayment Mode",
+      "MONTHLY_FEE_RATE": "Monthly Fee Rate %"
+    },
+    "INFO": {
+      "LOAN_AMOUNT": "Enter loan amount",
+      "LOAN_TERM": "Enter loan term",
+      "INTEREST_RATE_MONTHLY": "Enter interest rate (monthly) %",
+      "REPAYMENT_MODE": "Select repayment mode",
+      "MONTHLY_FEE_RATE": "Enter monthly fee rate %"
+    },
+    "OPTION": {
+      "USD": "USD",
+      "KHR": "KHR"
+    },
+    "BUTTON": {
+      "CALCULATE": "Calculate"
+    }
+  },
+  "SAL5100000": {
+    "TITLE": "Loan Simulation",
+    "SECTION": {
+      "LOAN_SUMMARY": "Loan Summary",
+      "LOAN_TERM": "Loan Term"
+    },
+    "LABEL": {
+      "LOAN_AMOUNT": "Loan Amount",
+      "PERIOD": "Period",
+      "MONTHS": "months",
+      "REPAYMENT_MODE": "Repayment Mode",
+      "MONTHLY_INTEREST_RATE": "Monthly Interest Rate",
+      "MONTHLY_FEE_RATE": "Monthly Fee Rate",
+      "TOTAL_INTEREST": "Total Interest",
+      "TOTAL_FEE": "Total Fee",
+      "PRINCIPAL": "Principal",
+      "INTEREST": "Interest",
+      "FEE": "Fee",
+      "TOTAL": "Total",
+      "MONTH": "Month"
+    },
+    "BUTTON": {
+      "DOWNLOAD_AS_EXCEL": "Download as Excel"
+    },
+    "MESSAGE": {
+      "SUCCESS": "Success",
+      "DOWNLOAD_SUCCESS": "Loan Simulation Report downloaded successfully {0}",
+      "ERROR": "Error",
+      "DOWNLOAD_FAILED": "Failed to download Loan Simulation Report {0}"
+    }
+  },
+  "SAL6000000": {
+    "TITLE": "Loan Application List",
+    "PLACEHOLDER": {
+      "PROGRESS_STATUS": "Loan Application Progress Status",
+      "PRODUCT_CODE": "Product Code",
+      "APPLICATION_NO": "Application No"
+    },
+    "BUTTON": {
+      "SEARCH": "Search",
+      "ADD_APPLICATION": "Add Application"
+    },
+    "LABEL": {
+      "CUSTOMER_NO": "Customer No",
+      "LOAN_TYPE": "Loan Type",
+      "LOAN_AMOUNT": "Loan Amount",
+      "LOAN_TERM": "Loan Term",
+      "MONTHS": "Months",
+      "LOAN_HOPE_DATE": "Loan Hope Date"
+    },
+    "MODAL": {
+      "SELECT_CUSTOMER": "Select Customer"
+    }
+  },
+  "SAL6100000": {
+    "TITLE_MODIFY": "Modify Loan Application",
+    "TITLE_REGISTER": "Register Loan Application",
+    "TITLE_SELECT_CUSTOMER": "Select Customer",
+    "STEP_APPLICATION_INFO": "Application Information",
+    "SECTION": {
+      "BASIC_INFO": "Basic Information",
+      "FEE_INFO": "Fee Information",
+      "COLLATERAL_INFO": "Collateral Information",
+      "CO_BORROWER_GUARANTOR": "Co-Borrower & Guarantor",
+      "RISK_EVALUATION": "Risk & Evaluation",
+      "REMARK": "Remark"
+    },
+    "LABEL": {
+      "CUSTOMER_NAME": "Customer Name",
+      "GENDER": "Gender",
+      "BIRTH_DATE": "Birth Date",
+      "ID_CARD": "ID Card",
+      "IDENTIFICATION_TYPE": "Identification Type",
+      "PHONE_NUMBER": "Phone Number",
+      "CREATED_DATE": "Created Date",
+      "APPLICATION_NO": "Application No",
+      "APPLICATION_PROGRESS_STATUS": "Application Progress Status",
+      "APPLICATION_TYPE": "Application Type",
+      "APPLICATION_KIND": "Application Kind",
+      "PRODUCT_NAME": "Product Name",
+      "APPLICATION_AMOUNT": "Application Amount",
+      "FIRST_DISBURSEMENT_AMOUNT": "First Disbursement Amount",
+      "PRINCIPAL_REPAY_METHOD": "Principal Repay Method",
+      "LOAN_TERM": "Loan Term",
+      "INTEREST_RATE": "Interest Rate (%)",
+      "TARGET_DISBURSEMENT_DATE": "Target Disbursement Date",
+      "UTILIZATION_CODE": "Utilization Code",
+      "LOAN_PURPOSE": "Loan Purpose",
+      "LOAN_PURPOSE_CODE": "Loan Purpose Code",
+      "LOAN_PURPOSE_AMOUNT": "Loan Purpose Amount",
+      "TOTAL_USAGE_AMOUNT": "Total Usage Amount",
+      "COMMITMENT_FEE": "Commitment fee (%)",
+      "PROCESSING_FEE": "Processing fee (%)",
+      "COLLATERAL": "Collateral",
+      "COLLATERAL_CATEGORY_TYPE": "Collateral Category Type",
+      "COLLATERAL_TYPE": "Collateral Type",
+      "COLLATERAL_DETAIL_TYPE": "Collateral Detail Type",
+      "AMOUNT": "Amount",
+      "SELECT_DEPOSIT_ACCOUNT": "Select Deposit Account",
+      "VEHICLE_PLATE_NO": "Vehicle Plate No",
+      "TOTAL_COLLATERAL_AMOUNT": "Total Collateral Amount",
+      "LTV": "LTV (%)",
+      "CRR_SCORE": "CRR Score",
+      "CBC_SCORE": "CBC Score",
+      "CBC_REFERENCE_NO": "CBC Reference No",
+      "DSCR": "DSCR",
+      "REMARK": "Remark",
+      "CUSTOMER_NO": "Customer No",
+      "CO_BORROWER": "Co-Borrower",
+      "GUARANTOR": "Guarantor",
+      "CUSTOMER_RELATION_TYPE": "Customer Relation Type"
+    },
+    "BUTTON": {
+      "REMOVE": "Remove",
+      "ADD_MORE_PURPOSE": "Add More Purpose",
+      "ADD_MORE_COLLATERAL": "Add More Collateral",
+      "ADD_MORE_CO_BORROWER_GUARANTOR": "Add More Co-Borrower & Guarantor",
+      "NEXT": "Next",
+      "GENERATE_LOAN_APPLICATION_NO": "Generate Application No"
+    },
+    "ALERT": {
+      "CUSTOMER_ALREADY_EXISTS": "Customer already exists",
+      "PRODUCT_VALIDATION_FAILED": "Product validation failed",
+      "COLLATERAL_ALLOW_YN": "Collateral allow YN",
+      "PARTIAL_DISBURSEMENT_ALLOW_YN": "Partial disbursement allow YN",
+      "CBC_LOAN_PRODUCT_GROUP": "CBC loan product group",
+      "CBC_PRODUCT_TYPE": "CBC product type",
+      "PRODUCT_REPAYMENTS_MODE_LIST": "Product repayments mode list",
+      "CURRENCY_CODE": "Currency code",
+      "PRODUCT_NOT_SELECTED": "Product not selected"
+    },
+    "MESSAGE": {
+      "APPLICATION_AMOUNT_START_END_RANGE": "Application amount must be between {0} and {1}",
+      "MIN_MAX_TERM_MONTH": "Loan term must be between {0} and {1} months",
+      "MIN_MAX_INTEREST_RATE": "Interest rate must be between {0} and {1} %",
+      "PARTIAL_DISBURSEMENT_MUST_BE_LESS_THAN_APPLICATION_AMOUNT": "Partial disbursement amount must be less than application amount",
+      "TOTAL_DEBT_PRINCIPAL_INTEREST_AMOUNT_RATIO_MUST_BE_LESS_THAN_2": "Total debt principal interest amount ratio must be less than or equal to 100"
+    }
+  },
+  "SAL6110000": {
+    "TITLE": "Register Loan Application",
+    "STEP_INCOME_INFO": "Income Information",
+    "SECTION": {
+      "EMPLOYMENT_DETAIL": "Employment Detail",
+      "COMPANY_BUSINESS_INFO": "Company/Business Info",
+      "INCOME_SOURCE": "Income & Source"
+    },
+    "LABEL": {
+      "EMPLOYEE_TYPE": "Employee Type",
+      "EMPLOYMENT_STATUS": "Employment Status",
+      "EMPLOYMENT_DATE": "Employment Date",
+      "OCCUPATION_TYPE": "Occupation Type",
+      "COMPANY_BUSINESS_NAME": "Company/Business Name",
+      "COMPANY_ADDRESS": "Company Address",
+      "STREET": "Street",
+      "HOUSE_NUMBER": "House Number",
+      "CURRENCY": "Currency",
+      "MONTHLY_SALARY_INCOME": "Monthly Salary/Income",
+      "OTHER_INCOME": "Other Income",
+      "TOTAL_MONTHLY_INCOME": "Total Monthly Income",
+      "OUTSTANDING_LOAN_OTHER_BANKS": "Outstanding Loan Amount with other Banks"
+    },
+    "BUTTON": {
+      "CANCEL": "Cancel",
+      "PREVIOUS": "Previous",
+      "NEXT": "Next"
+    }
+  },
+  "SAL6120000": {
+    "TITLE": "Register Loan Application",
+    "STEP_PREVIEW": "Application Preview",
+    "LABEL": {
+      "CUSTOMER_NAME": "Customer Name",
+      "GENDER": "Gender",
+      "BIRTH_DATE": "Birth Date",
+      "ID_CARD": "ID Card",
+      "IDENTIFICATION_TYPE": "Identification Type",
+      "PHONE_NUMBER": "Phone Number",
+      "CREATED_DATE": "Created Date",
+      "APPLICATION_TYPE": "Application Type",
+      "LOAN_PRODUCT": "Loan Product",
+      "CURRENCY_CODE": "Currency Code",
+      "LOAN_AMOUNT": "Loan Amount",
+      "REPAYMENT_METHOD": "Repayment Method",
+      "TENOR_MONTHS": "Tenor (Months)",
+      "MONTHS": "Months",
+      "MONTHLY_INTEREST_RATE": "Monthly Interest Rate",
+      "TARGET_DISBURSEMENT_DATE": "Target Disbursement Date",
+      "LOAN_PURPOSE": "Loan Purpose",
+      "LOAN_FUND_PURPOSE": "Loan Fund Purpose",
+      "MONTHLY_EXPENSE": "Monthly Expense",
+      "TOTAL_USAGE_AMOUNT": "Total Usage Amount",
+      "COMMITMENT_FEE": "Commitment fee (%)",
+      "PROCESSING_FEE": "Processing fee (%)",
+      "COLLATERAL_CATEGORY": "Collateral Category",
+      "COLLATERAL_TYPE": "Collateral Type",
+      "COLLATERAL_DETAIL": "Collateral Detail",
+      "AMOUNT": "Amount",
+      "TOTAL_COLLATERAL_AMOUNT": "Total Collateral Amount",
+      "LTV": "LTV (%)",
+      "CRR_SCORE": "CRR Score",
+      "CBC_REFERENCE_NO": "CBC Reference No",
+      "CBC_SCORE": "CBC Score",
+      "DSCR": "DSCR",
+      "REMARK": "Remark",
+      "EMPLOYMENT_STATUS": "Employment Status",
+      "EMPLOYEE_TYPE": "Employee Type",
+      "EMPLOYMENT_DATE": "Employment Date",
+      "OCCUPATION": "Occupation",
+      "OCCUPATION_TYPE": "Occupation Type",
+      "COMPANY_BUSINESS_NAME": "Company/Business Name",
+      "ADDRESS": "Address",
+      "STREET": "Street",
+      "HOUSE_NUMBER": "House Number",
+      "MONTHLY_SALARY_INCOME": "Monthly Salary/Income",
+      "OTHER_INCOME": "Other Income",
+      "TOTAL_MONTHLY_INCOME": "Total Monthly Income",
+      "OUTSTANDING_LOAN_OTHER_BANKS": "Outstanding Loan Amt. with other Banks"
+    },
+    "SECTION": {
+      "EMPLOYMENT_DETAILS": "Employment Details",
+      "COMPANY_BUSINESS_INFO": "Company/Business Information",
+      "INCOME_SOURCE": "Income & Source",
+      "APPLICATION_INFO": "Application Information",
+      "FEE_INFO": "Fee Information",
+      "COLLATERAL_INFO": "Collateral Information",
+      "RISK_EVALUATION": "Risk & Evaluation",
+      "REMARK": "Remark"
+    },
+    "BUTTON": {
+      "CANCEL": "Cancel",
+      "PREVIOUS": "Previous",
+      "SUBMIT": "Submit"
+    }
+  },
+  "SAL6200000": {
+    "TITLE": "Loan Application Detail",
+    "LABEL": {
+      "CUSTOMER_NAME": "Customer Name",
+      "CUSTOMER_NO": "Customer No",
+      "CUSTOMER_TYPE": "Customer Type",
+      "EMPLOYMENT_STATUS": "Employment Status",
+      "EMPLOYEE_TYPE": "Employee Type",
+      "EMPLOYMENT_DATE": "Employment Date",
+      "COMPANY_BUSINESS_NAME": "Company/Business Name",
+      "ADDRESS": "Address",
+      "CURRENCY_CODE": "Currency Code",
+      "MONTHLY_SALARY_INCOME": "Monthly Salary/Income",
+      "OTHER_INCOME": "Other Income",
+      "TOTAL_MONTHLY_INCOME": "Total Monthly Income",
+      "OUTSTANDING_LOAN_OTHER_BANKS": "Outstanding Loan Amt. with other Banks",
+      "APPLICATION_TYPE": "Application Type",
+      "APPLICATION_KIND": "Application Kind",
+      "APPLICATION_STATUS": "Application Status",
+      "LOAN_PRODUCT": "Loan Product",
+      "LOAN_AMOUNT": "Loan Amount",
+      "REPAYMENT_METHOD": "Repayment Method",
+      "TENOR_MONTHS": "Tenor (Months)",
+      "MONTHS": "Months",
+      "MONTHLY_INTEREST_RATE": "Monthly Interest Rate",
+      "TARGET_DISBURSEMENT_DATE": "Target Disbursement Date",
+      "LOAN_PURPOSE": "Loan Purpose",
+      "LOAN_FUND_PURPOSE": "Loan Fund Purpose",
+      "MONTHLY_EXPENSE": "Monthly Expense",
+      "TOTAL_USAGE_AMOUNT": "Total Usage Amount",
+      "COMMITMENT_FEE": "Commitment fee (%)",
+      "PROCESSING_FEE": "Processing fee (%)",
+      "COLLATERAL_NO": "Collateral No",
+      "CUSTOMER_RELATION_TYPE": "Customer Relation Type",
+      "COBORROWER_YN": "Co-Borrower YN",
+      "COLLATERAL_CATEGORY": "Collateral Category",
+      "CATEGORY_TYPE": "Category Type",
+      "DETAIL_TYPE": "Detail Type",
+      "AMOUNT": "Amount",
+      "TOTAL_COLLATERAL_AMOUNT": "Total Collateral Amount",
+      "LTV": "LTV (%)",
+      "CRR_SCORE": "CRR Score",
+      "CBC_SCORE": "CBC Score",
+      "DSCR": "DSCR",
+      "REMARK": "Remark"
+    },
+    "SECTION": {
+      "EMPLOYMENT_DETAILS": "Employment Details",
+      "COMPANY_BUSINESS_INFO": "Company/Business Information",
+      "INCOME_SOURCE": "Income & Source",
+      "APPLICATION_INFO": "Application Information",
+      "FEE_INFO": "Fee Information",
+      "COLLATERAL_INFO": "Collateral Information",
+      "RISK_EVALUATION": "Risk & Evaluation",
+      "REMARK": "Remark"
+    },
+    "BUTTON": {
+      "MODIFY": "Modify",
+      "REQUEST_PROCESSING": "Your request is being processing!",
+      "SETUP_APPROVAL": "Setup approval",
+      "CANCEL": "Cancel Application"
+    },
+    "MESSAGE": {
+      "WARNING": "Warning",
+      "ADD_COLLATERAL_BEFORE_APPROVAL": "Please add collateral information before setup approval",
+      "OK": "OK"
+    }
+  },
+  "SAL6210000": {
+    "TITLE": "Loan Application Setup Approval",
+    "LABEL": {
+      "APPROVAL_SETUP": "Approval Setup",
+      "APPROVER": "Approver"
+    },
+    "BUTTON": {
+      "SUBMIT": "Submit"
+    },
+    "MESSAGE": {
+      "SUBMIT_APPROVAL_HEADER": "Submit Approval List",
+      "SUBMIT_APPROVAL_CONFIRM": "Are you sure you want to submit the approval list?"
+    }
+  },
+  "SAL7100000": {
+    "TITLE": "Open Account",
+    "PRODUCT": {
+      "SAVING_ACCOUNT": "Saving Account",
+      "FIXED_DEPOSIT": "Fixed Deposit",
+      "SAVING_ACCOUNT_DESC": "Opening Savings Account with MCNC Bank is the most efficient way to save your money and easily earn more money with our highly provided interest rate 3%. You can conveniently withdraw or deposit cash through our ATMs and perform other transactions via CCU Mobile Banking App.",
+      "FIXED_DEPOSIT_DESC": "Opening Fixed Deposit with MCNC Bank is the most efficient way to save your money and easily earn more money with our highly provided interest rate. You can conveniently manage your fixed deposit via CCU Mobile Banking App."
+    }
+  },
+  "SAL7110000": {
+    "TITLE": "Product Detail",
+    "LABEL": {
+      "ACCOUNT": "Account",
+      "FEATURE": "Feature",
+      "SUITABILITY": "Suitability",
+      "CURRENCY": "Currency",
+      "INTEREST_RATE_PA": "Interest Rate (Per Annum)",
+      "MIN_OPENING_BALANCE": "Min. Opening Balance",
+      "ONGOING_BALANCE": "Ongoing Balance",
+      "ENTITLES": "Entitles"
+    },
+    "ALT_PRODUCT_BANNER": "Product Banner"
+  },
+  "SAL7120000": {
+    "TITLE": "Open Account",
+    "PLACEHOLDER": {
+      "SELECT_ID_TYPE": "Select Identify Type",
+      "ENTER_ID": "Enter ID",
+      "CUSTOMER_NAME": "Customer Name"
+    },
+    "BUTTON": {
+      "SEARCH": "Search"
+    },
+    "LABEL": {
+      "CUSTOMER_NO": "Customer No",
+      "CUSTOMER_NAME": "Customer Name",
+      "GENDER": "Gender",
+      "DATE_OF_BIRTH": "Date of Birth",
+      "ID_CARD": "ID Card",
+      "PHONE_NO": "Phone No"
+    }
+  },
+  "SAL7130000": {
+    "TITLE": "Open Account",
+    "SECTION": {
+      "CUSTOMER_INFO": "Customer Information"
+    },
+    "LABEL": {
+      "CUSTOMER_NO": "Customer No",
+      "CUSTOMER_NAME": "Customer Name",
+      "DATE_OF_BIRTH": "Date of Birth",
+      "PHONE_NO": "Phone No",
+      "CURRENCY": "Currency"
+    },
+    "BUTTON": {
+      "NEXT": "Next"
+    }
+  },
+  "SAL7140000": {
+    "TITLE": "Open Account",
+    "BUTTON": {
+      "CLOSE": "Close"
+    },
+    "MESSAGE": {
+      "CONFIRM_OPEN": "Do you want to open",
+      "CONFIRM_OPEN_QUESTION": "?"
+    },
+    "LABEL": {
+      "PRODUCT": "Product",
+      "CUSTOMER_NO": "Customer No",
+      "CUSTOMER_NAME": "Customer Name",
+      "CURRENCY_TYPE": "Currency Type",
+      "INTEREST_RATE": "Interest Rate",
+      "INTEREST_RATE_PA": "% P.A"
+    }
+  },
+  "SAL7150000": {
+    "TITLE": "Open Account Result",
+    "MESSAGE": {
+      "THANK_YOU_OPEN": "Thank you for Opening your"
+    },
+    "LABEL": {
+      "PRODUCT": "Product",
+      "CUSTOMER_NAME": "Customer Name",
+      "CUSTOMER_NO": "Customer No",
+      "CURRENCY_TYPE": "Currency Type",
+      "INTEREST_RATE": "Interest Rate",
+      "INTEREST_RATE_PA": "% P.A",
+      "ACCOUNT_NUMBER": "Account Number"
+    }
+  },
+  "SAL7160000": {
+    "TITLE": "Open Account",
+    "SECTION": {
+      "CUSTOMER_INFO": "Customer Information"
+    },
+    "LABEL": {
+      "CUSTOMER_NO": "Customer No",
+      "CUSTOMER_NAME": "Customer Name",
+      "DATE_OF_BIRTH": "Date of Birth",
+      "PHONE_NO": "Phone No",
+      "CURRENCY": "Currency",
+      "SELECT_INTEREST_OPTIONS": "Select Interest Options",
+      "CHOOSE_TENOR": "Choose Tenor",
+      "MONTH": "month",
+      "MONTHS": "Months",
+      "INTEREST_RATE": "Interest Rate",
+      "INTEREST_RATE_NOTE": "Your withdrawals have different interest rates compared to the end of date range",
+      "OPENING_AMOUNT": "Opening Amount",
+      "ESTIMATE_END_DATE_PAYMENT": "Estimate End Date Payment",
+      "WITHDRAWAL_ACCOUNT": "Withdrawal Account",
+      "SAVING_ACCOUNT": "Saving Account",
+      "DEPOSIT_ROLLOVER_DIVIDE": "Deposit Rollover Divide",
+      "NOMINATE_ACCOUNT": "Nominate Account"
+    },
+    "BUTTON": {
+      "NEXT": "Next"
+    },
+    "MESSAGE": {
+      "SELECT_WITHDRAWAL_ACCOUNT": "Please select a withdrawal account.",
+      "VALID_OPENING_AMOUNT": "Please enter a valid opening amount.",
+      "AMOUNT_OUT_OF_RANGE": "Amount Out of Range",
+      "AMOUNT_RANGE_BETWEEN": "Opening amount must be between {0} and {1}.",
+      "INSUFFICIENT_FUNDS": "Insufficient Funds",
+      "INSUFFICIENT_FUNDS_MSG": "The selected withdrawal account does not have enough balance for this opening amount.",
+      "SELECT_ROLLOVER_OPTION": "Please select a deposit rollover option.",
+      "SELECT_NOMINATE_ACCOUNT": "Please select a nominate account.",
+      "SELECT_VALID_TENOR": "Please select a valid tenor.",
+      "NO_DEPOSIT_ACCOUNT": "No Deposit Account",
+      "NO_DEPOSIT_ACCOUNT_MSG": "Can't open fix deposit account because this customer don't have any deposit account."
+    }
+  },
+  "SAL7161000": {
+    "BUTTON": {
+      "CLOSE": "Close",
+      "NO": "No",
+      "YES": "Yes"
+    },
+    "MESSAGE": {
+      "CONFIRM_OPEN": "Do you want to open",
+      "FIXED_DEPOSIT_ACCOUNT": "Fixed Deposit Account?"
+    },
+    "LABEL": {
+      "PRODUCT": "Product",
+      "FIXED_DEPOSIT": "Fixed Deposit",
+      "CUSTOMER_NO": "Customer No",
+      "ACCOUNT_NAME": "Account Name",
+      "CURRENCY_TYPE": "Currency Type",
+      "INTEREST_OPTION": "Interest Option",
+      "TENOR": "Tenor",
+      "MONTHS": "Months",
+      "OPENING_AMOUNT": "Opening Amount",
+      "WITHDRAWAL_ACCOUNT": "Withdrawal Account",
+      "RECEIVE_ACCOUNT": "Receive Account",
+      "END_DATE_PAYMENT": "End Date Payment"
+    },
+    "INTEREST_OPTION": {
+      "MATURITY": "Maturity Payment",
+      "MONTHLY": "Interest Payment (Monthly)"
+    }
+  },
+  "SAL7162000": {
+    "TITLE": "Open Account Result",
+    "MESSAGE": {
+      "THANK_YOU_OPEN": "Thank you for Opening your",
+      "FIXED_DEPOSIT": "Fixed Deposit"
+    },
+    "LABEL": {
+      "PRODUCT": "Product",
+      "CUSTOMER_NAME": "Customer Name",
+      "CUSTOMER_NO": "Customer No",
+      "CURRENCY_TYPE": "Currency Type",
+      "INTEREST_RATE": "Interest Rate",
+      "INTEREST_RATE_PA": "% P.A",
+      "ACCOUNT_NUMBER": "Account Number",
+      "COPY": "Copy"
+    },
+    "BUTTON": {
+      "OKAY": "Okay"
+    }
+  },
+  "SAL9000000": {
+    "TITLE": "House Check Withdrawal Request",
+    "BUTTON": {
+      "SEARCH": "Search",
+      "ADD_NEW_BANK_CHEQUE": "Add New Bank Cheque"
+    },
+    "LABEL": {
+      "REQUEST_DATE": "Request Date",
+      "CUSTOMER_NAME": "Customer Name",
+      "PHONE_NO": "Phone No",
+      "ACCOUNT_NO": "Account No",
+      "ISSUES_AMOUNT": "Issues Amount"
+    },
+    "STATUS_NA": "N/A"
+  },
+  "SAL9100000": {
+    "TITLE": "House Check Withdrawal Request Detail",
+    "LABEL": {
+      "CHEQUE_NO": "Cheque No",
+      "PHONE_NUMBER": "Phone Number",
+      "CUSTOMER_NAME": "Customer Name",
+      "CHEQUE_AMOUNT": "Cheque Amount",
+      "ACCOUNT_NO": "Account No",
+      "REQUEST_DATE": "Request Date",
+      "PURPOSE": "Purpose",
+      "ATTACHMENT": "Attachment",
+      "STATUS": "Status"
+    },
+    "STATUS_NA": "N/A"
+  },
+  "SAL9110000": {
+    "TITLE": "House Check Withdrawal Request",
+    "PLACEHOLDER": {
+      "ENTER_CHEQUE_NO": "Enter Cheque No",
+      "ENTER_ACCOUNT_NO": "Enter Account No",
+      "ENTER_PHONE_NUMBER": "Enter Phone Number",
+      "ENTER_PURPOSE": "Enter Purpose"
+    },
+    "LABEL": {
+      "CHEQUE_NO": "Cheque No",
+      "ACCOUNT_NO": "Account No",
+      "CUSTOMER_NAME": "Customer Name",
+      "PHONE_NO": "Phone No",
+      "CURRENCY": "Currency",
+      "CHEQUE_AMOUNT": "Cheque Amount",
+      "PURPOSE": "Purpose",
+      "ATTACHMENT": "Attachment"
+    },
+    "INFO": {
+      "CHEQUE_NO": "Cheque No",
+      "ACCOUNT_NO": "Account No",
+      "CUSTOMER_NAME": "Customer Name",
+      "PHONE_NO": "Phone No",
+      "CURRENCY": "Currency",
+      "CHEQUE_AMOUNT": "Cheque Amount",
+      "PURPOSE": "Purpose",
+      "ATTACHMENT": "Attachment"
+    },
+    "BUTTON": {
+      "NEXT": "Next"
+    }
+  },
+  "SAL9112000": {
+    "BUTTON": {
+      "CLOSE": "Close",
+      "NO": "No",
+      "YES": "Yes"
+    },
+    "MESSAGE": {
+      "CONFIRM_PROCESS": "Do you want to process",
+      "BANK_CHEQUE": "House Check Withdrawal Request?"
+    },
+    "LABEL": {
+      "CHEQUE_NO": "Cheque No",
+      "ACCOUNT_NO": "Account No",
+      "CUSTOMER_NAME": "Customer Name",
+      "REQUEST_DATE": "Request Date",
+      "ISSUE_AMOUNT": "Issue Amount",
+      "PURPOSE": "Purpose",
+      "ATTACHMENT": "Attachment"
+    }
+  },
+  "POP": {
+    "OK": "OK",
+    "YES": "Yes",
+    "NO": "No",
+    "ALERT": "Alert",
+    "ERROR": "Error",
+    "CONNECTION_TITLE": "Connection Issue",
+    "CONNECTION_MSG": "Cannot reach the server. Check your connection and try again.",
+    "TIMEOUT_MSG": "The server took too long to respond. Please try again.",
+    "SERVER_MSG": "The server could not handle the request. Please try again later.",
+    "REQUIRED": "{field} is required.",
+    "CANCEL": "Cancel"
+  },
+  "AUT10000": {
+    "TITLE": "Login",
+    "LABEL": {
+      "WELCOME": "Welcome",
+      "COMPANY_ID": "Company ID",
+      "USERNAME": "Username",
+      "PASSWORD": "Password"
+    },
+    "BUTTON": {
+      "LOGIN": "Login"
+    },
+    "MESSAGE": {
+      "REQUIRED": "Please enter company ID, username and password.",
+      "LOGIN_FAILED": "Login Failed",
+      "COMPANY_NOT_FOUND": "Company ID not found. Check it and try again."
+    }
+  },
+  "MNU10000": {
+    "TITLE": "Menu",
+    "SEARCH": "Search screens",
+    "EMPTY": "No screens are available for your role.",
+    "LOGOUT": "Logout",
+    "LOGOUT_CONFIRM": "Do you want to log out?",
+    "NOT_AVAILABLE": "This screen is not available in the app yet."
+  },
+  "EDIT": {
+    "VARIANTS_ON_WEB": "Variants are managed on the web app for now."
+  },
+  "MISC": {
+    "EMPTY_STATE": {
+      "NO_DATA": "No data"
+    },
+    "ACCORDION": {
+      "INQUIRY_CONDITION": "Search conditions"
+    }
+  }
 }

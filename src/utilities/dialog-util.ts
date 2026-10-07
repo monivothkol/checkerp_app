@@ -172,42 +172,31 @@ export default class DialogUtil {
 		this.toastList = [];
 	}
 
-	static showLoading(options: Partial<{ message: string, onLoading?: () => void }> = {}): void {
-		const loading = async () => {
-			const { message, onLoading } = options;
+	/** Bumped by every show/close: a create() that resolves after a newer call is stale. */
+	private static loadGen = 0;
 
-			if (this.isLoadingOpen) {
+	static showLoading(options: Partial<{ message: string, onLoading?: () => void }> = {}): void {
+		if (this.isLoadingOpen) {
+			return;
+		}
+		this.isLoadingOpen = true;
+		const gen = ++this.loadGen;
+		void loadingController.create({ message: options.message }).then(async (loading) => {
+			// A close (or a newer show) happened while create() was pending: never present an orphan.
+			if (gen !== this.loadGen || !this.isLoadingOpen) {
 				return;
 			}
-
-			this.isLoadingOpen = true;
-
-			const loading = await loadingController.create({
-				message: message
-			});
-
 			this.loadingList.push(loading);
 			await loading.present();
-
-			if (onLoading) {
-				onLoading();
-			}
-		};
-
-		loading();
+			options.onLoading?.();
+		});
 	}
 
 	static closeLoading(): void {
-		const loading: any = this.loadingList.pop();
-		if (!loading) {
-			this.isLoadingOpen = false;
-			return;
-		}
-		loading.dismiss().then(() => {
-			this.isLoadingOpen = false;
-		}).catch(() => {
-			this.isLoadingOpen = false;
-		});
+		this.loadGen++;
+		this.isLoadingOpen = false;   // synchronous: a show right after this close presents a fresh loader
+		const loading = this.loadingList.pop();
+		void loading?.dismiss().catch(() => undefined);
 	}
 
 	static closeAllLoadings(): void {

@@ -1,4 +1,4 @@
-import AuthModule from "@/modules/aut-module";
+import HttpNetworkService from "@/services/http-network-service";
 import { BizCheckMobileLogger, BizCheckMobileProperties } from "@/shared/bizcheckmobile";
 import { clearToken, getTokenSync, hydrateTokenStore, TokenBlob } from "@/services/token-store";
 
@@ -8,7 +8,7 @@ import { clearToken, getTokenSync, hydrateTokenStore, TokenBlob } from "@/servic
  * The backend issues a short-lived JWT access token plus a sliding refresh
  * token (multi-device, revocable — user_sessions). This service is what makes
  * that usable across app launches: on boot it checks the stored access token's
- * exp and, if it has expired, silently rotates it via AUT12000 BEFORE the user
+ * exp and, if it has expired, silently rotates it via AUT10000I02 BEFORE the user
  * is ever sent back to the login screen.
  *
  * Pitfall this avoids: bouncing a still-valid (or refreshable) session straight
@@ -29,16 +29,9 @@ function jwtExpiryMs(accessToken: string): number {
 	}
 }
 
-/** Wrap the callback-based AuthModule.refresh in a promise. */
-function refreshToken(refresh: string): Promise<boolean> {
-	return new Promise((resolve) => {
-		AuthModule.getInstance().refresh({
-			body: { refreshToken: refresh },
-			enableLoading: false,
-			onSuccess: () => resolve(true),
-			onFailed: () => resolve(false)
-		});
-	});
+/** Rotate via AUT10000I02 (refresh token is the credential; the new pair is persisted). */
+function refreshToken(_refresh: string): Promise<boolean> {
+	return HttpNetworkService.getInstance().refresh();
 }
 
 /** Drop the local session (used when refresh is impossible/fails). */

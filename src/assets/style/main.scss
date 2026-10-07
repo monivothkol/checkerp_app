@@ -819,3 +819,14 @@ ion-segment-button { --border-width: 0 !important}
 	.swiper { padding-bottom: 24px !important;}
 	.swiper-slide { padding: 0 16px;}
 }
+
+/* POP.alert / POP.confirm: messages carry \n line breaks (ion-alert renders plain text) */
+.pop_alert .alert-message { white-space: pre-line; }
+
+/* Screen-id screens (ported from checkerp_web): padded list rows on top of the zeroed global ion-item. */
+.scr_list ion-item, ion-item.scr_item { --padding-start: 16px; --inner-padding-end: 16px; --min-height: 48px; }
+.scr_list ion-list-header { padding-inline-start: 16px; font-size: 14px; font-weight: 600; }
+
+/* POP.showPopup sheets: breakpoints set the visible part, so the sheet itself must be full height
+   (the legacy auto-height .modal-sheet rule collapses an ion-content body to the title bar). */
+ion-modal.modal-sheet.pop_sheet { --height: 100%; }

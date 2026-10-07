@@ -1,0 +1,22 @@
+import HttpNetworkService from "@/services/http-network-service";
+import type { IRequest, RequestOption } from "../api-request-option";
+import type { PayrollRunActionRequest, PayrollRunActionResponse } from "@/models/POS/PRM/PRM14000";
+
+/** PRM18000 — void a FINALIZED run: reverse the posted loan/advance repayments. */
+export default class VoidPayrollRun
+implements IRequest<PayrollRunActionRequest, PayrollRunActionResponse> {
+    private readonly networkService: HttpNetworkService;
+    private static instance: VoidPayrollRun;
+    private constructor() { this.networkService = HttpNetworkService.getInstance(); }
+    public static getInstance(): VoidPayrollRun {
+        if (!this.instance) { this.instance = new VoidPayrollRun(); }
+        return this.instance;
+    }
+    public request(option: RequestOption<PayrollRunActionRequest, PayrollRunActionResponse>) {
+        this.networkService.request({
+            trCode: "PRM14000I04", reqBody: option.dataBody, enableLoading: option.enableLoading,
+            stateProps: option.stateProps, loadingBtn: option.loadingBtn, headers: option.headers
+        }).then((r) => option.listener?.onSuccess(r as PayrollRunActionResponse))
+          .catch((e) => option.listener?.onFail?.(e));
+    }
+}

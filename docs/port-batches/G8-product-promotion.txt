@@ -1,0 +1,12 @@
+views/POS/PMM/PMM10000.vue
+views/POS/PMM/PMM20000.vue
+views/POS/PMM/PMM30000.vue
+views/POS/PMM/PMM40000.vue
+views/POS/PMM/PMM50000.vue
+views/POS/PRD/PRD10000.vue
+views/POS/PRD/PRD11000.vue
+views/POS/PRD/PRD13000.vue
+views/POS/PRD/PRD13100.vue
+views/POS/PRD/PRD14000.vue
+views/POS/PRD/PRD50000.vue
+views/POS/PRD/ProductVariantsTab.vue
