@@ -4,10 +4,7 @@
 			<template #bottom>
 				<ion-toolbar>
 					<div class="lvm_filters">
-						<ion-select v-model="store.staffId" :placeholder="tr('ALL_STAFF')" interface="alert" :interface-options="{ header: tr('ALL_STAFF') }" @ion-change="store.onStaffChange()">
-							<ion-select-option :value="undefined">{{ tr("ALL_STAFF") }}</ion-select-option>
-							<ion-select-option v-for="s in store.staffOptions" :key="s.id" :value="s.id">{{ s.name }}</ion-select-option>
-						</ion-select>
+						<PickField v-model="store.staffId" :options="store.staffOptions.map((s) => ({ value: s.id, label: s.name }))" :label="tr('ALL_STAFF')" :placeholder="tr('ALL_STAFF')" :none-label="tr('ALL_STAFF')" @change="store.onStaffChange()" />
 						<ion-select :value="store.year" interface="action-sheet" @ion-change="store.onYearChange(Number($event.detail.value))">
 							<ion-select-option v-for="y in years" :key="y" :value="y">{{ y }}</ion-select-option>
 						</ion-select>
@@ -48,6 +45,7 @@
 </template>
 
 <script setup lang="ts">
+import PickField from "@/core/components/PickField.vue";
 import { useI18n } from "vue-i18n";
 import { useViewEnter } from "@/core/modules/use-view-enter";
 import { LVM40000Store } from "@/store/POS/LVM/LVM40000Store";

@@ -13,8 +13,8 @@
                     <ion-select-option v-for="m in store.paymentMethods" :key="m.paymentMethodId" :value="m.paymentMethodId">{{ m.methodName }}</ion-select-option>
                 </ion-select>
             </ion-item>
-            <ion-item><ion-input v-model.number="amount" :label="`${tr('AMOUNT')} *`" label-placement="stacked" type="number" inputmode="decimal" min="0.01" step="0.01" /></ion-item>
-            <ion-item><ion-input v-model.number="receivedAmount" :label="tr('RECEIVED')" label-placement="stacked" type="number" inputmode="decimal" min="0" step="0.01" :placeholder="tr('RECEIVED_PH')" /></ion-item>
+            <ion-item><NumberInput v-model="amount" :label="`${tr('AMOUNT')} *`" label-placement="stacked" min="0.01" step="0.01" /></ion-item>
+            <ion-item><NumberInput v-model="receivedAmount" :label="tr('RECEIVED')" label-placement="stacked" min="0" step="0.01" :placeholder="tr('RECEIVED_PH')" /></ion-item>
             <ion-item>
                 <ion-checkbox :checked="payFull" @ion-change="amount = $event.detail.checked ? outstanding : null">{{ tr("PAY_FULL") }} ({{ money(outstanding) }})</ion-checkbox>
             </ion-item>
@@ -35,6 +35,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { computed, onMounted, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import UT from "@/core/utilities/ut";

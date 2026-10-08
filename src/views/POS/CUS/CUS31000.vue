@@ -14,7 +14,7 @@
 
 				<template v-if="store.isAmount">
 					<ion-item>
-						<ion-input v-model.number="store.amount" :label="`${tr('MIN_AMOUNT')} *`" label-placement="stacked" type="number" inputmode="decimal" min="0" step="0.01" />
+						<NumberInput v-model="store.amount" :label="`${tr('MIN_AMOUNT')} *`" label-placement="stacked" min="0" step="0.01" />
 					</ion-item>
 					<ion-item>
 						<ion-select v-model="store.currency" :label="tr('CURRENCY')" label-placement="stacked" interface="action-sheet">
@@ -37,7 +37,7 @@
 				</template>
 
 				<ion-item>
-					<ion-input v-model.number="store.form.pointReward" :label="`${tr('POINTS')} *`" label-placement="stacked" type="number" inputmode="decimal" min="0" step="0.1" :helper-text="tr('POINTS_HINT')" />
+					<NumberInput v-model="store.form.pointReward" :label="`${tr('POINTS')} *`" label-placement="stacked" min="0" step="0.1" :helper-text="tr('POINTS_HINT')" />
 				</ion-item>
 			</ion-list>
 		</ion-content>
@@ -51,6 +51,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { computed } from "vue";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";

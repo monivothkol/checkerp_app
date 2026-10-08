@@ -80,7 +80,7 @@ const route = useRoute();
 const router = useRouter();
 const store = AST20000Store();
 const num = (v?: string | null) => (v === "" || v == null ? undefined : Number(v));
-const int = (v?: string | null) => (v === "" || v == null ? undefined : Math.trunc(Number(v)));
+const int = (v?: string | null) => (v === "" || v == null ? undefined : Math.round(Number(v)));
 const detailRoute = (assetId: string) => `/AST30000?assetId=${encodeURIComponent(assetId)}`;
 
 useViewEnter(() => store.load(String(route.query.assetId ?? "")));
@@ -100,7 +100,7 @@ function onSubmit(): void {
 			router.replace(assetId ? detailRoute(assetId) : "/AST10000");
 		} else {
 			const e = error as { message?: string; code?: string } | undefined;
-			POP.alert({ status: "error", title: tr("SAVE_FAILED"), content: e?.message, errorCode: e?.code });
+			POP.apiError(e, tr("SAVE_FAILED"));
 		}
 	});
 }

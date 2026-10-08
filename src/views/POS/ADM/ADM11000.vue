@@ -44,9 +44,10 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref } from "vue";
+import { computed, ref } from "vue";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
+import { useViewEnter } from "@/core/modules/use-view-enter";
 import { ADM11000Store } from "@/store/POS/ADM/ADM11000Store";
 import { UserCreateSecret } from "@/core/modules/user-create-secret";
 
@@ -63,7 +64,12 @@ const confirmPassword = ref("");
 const mismatch = computed(() => !!confirmPassword.value && confirmPassword.value !== password.value);
 const canConfirm = computed(() => store.formValid && password.value.length >= 6 && password.value === confirmPassword.value);
 
-onMounted(() => {
+// Ionic reuses this page. ADM12000 $reset()s the store after a create: reload the lists and drop the old password;
+// plain "back" from ADM12000 keeps both.
+useViewEnter(() => {
+	if (store.roles.length) return;
+	password.value = "";
+	confirmPassword.value = "";
 	store.loadRoles();
 	store.loadStaff();
 });

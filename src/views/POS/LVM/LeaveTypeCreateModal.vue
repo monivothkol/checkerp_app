@@ -6,7 +6,7 @@
 			<ion-item>
 				<ion-input :value="store.form.code" :label="`${tr('M_CODE')} *`" label-placement="stacked" :placeholder="tr('M_CODE_PH')" :disabled="store.isEdit" @ion-input="store.setCode(String($event.detail.value ?? ''))" />
 			</ion-item>
-			<ion-item><ion-input v-model.number="store.form.defaultDaysPerYear" :label="`${tr('M_DAYS_YEAR')} *`" label-placement="stacked" type="number" inputmode="numeric" min="0" max="365" /></ion-item>
+			<ion-item><NumberInput v-model="store.form.defaultDaysPerYear" :label="`${tr('M_DAYS_YEAR')} *`" label-placement="stacked" :min="0" :max="365" integer /></ion-item>
 			<ion-item><ion-toggle v-model="store.form.isPaid">{{ tr("M_PAID") }}</ion-toggle></ion-item>
 			<ion-item><ion-toggle v-model="store.form.requiresAttachment">{{ tr("M_ATTACHMENT") }}</ion-toggle></ion-item>
 			<ion-item>
@@ -21,6 +21,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { onMounted, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import { LeaveTypeCreateModalStore } from "@/store/POS/LVM/LeaveTypeCreateModalStore";

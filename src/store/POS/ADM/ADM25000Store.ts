@@ -36,6 +36,9 @@ export const ADM25000Store = defineStore("ADM25000Store", {
     },
     actions: {
         loadAll(roleCode: string) {
+            // A fresh key per edit: the server replays a key's first result (companyId + trCode + key, no
+            // roleCode), so a key kept from an earlier edit would silently skip this save.
+            this.idempotencyKey = crypto.randomUUID();
             this.loading = true;
             // 1) role detail (current name/desc/perms), 2) grantable catalog.
             this.roleDetailApi.request({
@@ -109,6 +112,7 @@ export const ADM25000Store = defineStore("ADM25000Store", {
                 listener: {
                     onSuccess: () => {
                         this.saving = false;
+                        this.idempotencyKey = crypto.randomUUID(); // the next save is a new change
                         POP.alert({ title: savedTitle, status: "success", content: savedMsg });
                         this.redirectTo = `/ADM24000?roleCode=${roleCode}`;
                     },

@@ -93,7 +93,7 @@ function statusColor(s?: string): string {
 }
 function afterTransition(ok: boolean, err?: unknown): void {
 	if (ok) POP.openNotification({ type: "success", content: tr("STATUS_UPDATED") });
-	else POP.alert({ status: "error", content: (err as { message?: string } | undefined)?.message || tr("ACTION_FAILED") });
+	else POP.apiError(err as { code?: string; message?: string } | undefined, tr("ACTION_FAILED"));
 }
 function onSend(): void {
 	POP.confirm({ title: tr("SEND"), content: tr("SEND_CONFIRM"), okBtn: { btnText: tr("SEND"), onClick: () => store.send(poId.value, afterTransition) } });

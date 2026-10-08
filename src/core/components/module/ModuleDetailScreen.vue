@@ -30,6 +30,7 @@
 							<ion-badge v-if="typeof detail[field.key] === 'boolean'" :color="detail[field.key] ? 'success' : 'medium'">
 								{{ detail[field.key] ? tr("ACTIVE") : tr("INACTIVE") }}
 							</ion-badge>
+							<h3 v-else-if="field.valueLabelPrefix && detail[field.key]" class="mds_value">{{ tr(field.valueLabelPrefix + detail[field.key]) }}</h3>
 							<h3 v-else class="mds_value">{{ detail[field.key] ?? "—" }}</h3>
 						</ion-label>
 					</ion-item>

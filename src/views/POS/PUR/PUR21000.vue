@@ -46,10 +46,10 @@
 						<ion-button slot="end" fill="clear" color="danger" @click="store.removeLine(i)"><ion-icon slot="icon-only" :icon="closeOutline" /></ion-button>
 					</ion-item>
 					<div class="pur_grid">
-						<ion-input :value="l.quantity" type="number" inputmode="numeric" min="1" :label="tr('QTY')" label-placement="stacked" fill="outline" @ion-change="store.setQty(i, Number($event.detail.value))" />
-						<ion-input :value="l.unitCost" type="number" inputmode="decimal" min="0" step="0.01" :label="tr('UNIT_COST')" label-placement="stacked" fill="outline" @ion-change="store.setCost(i, Number($event.detail.value))" />
-						<ion-input :value="l.discountAmount" type="number" inputmode="decimal" min="0" step="0.01" :label="tr('DISCOUNT')" label-placement="stacked" fill="outline" @ion-change="store.setDiscount(i, Number($event.detail.value))" />
-						<ion-input :value="l.taxRate" type="number" inputmode="decimal" min="0" max="100" step="0.1" :label="tr('TAX_RATE')" label-placement="stacked" fill="outline" @ion-change="store.setTaxRate(i, Number($event.detail.value))" />
+						<NumberInput :model-value="l.quantity" integer min="1" :label="tr('QTY')" label-placement="stacked" fill="outline" @change="(v) => store.setQty(i, Number(v))" />
+						<NumberInput :model-value="l.unitCost" min="0" step="0.01" :label="tr('UNIT_COST')" label-placement="stacked" fill="outline" @change="(v) => store.setCost(i, Number(v))" />
+						<NumberInput :model-value="l.discountAmount" min="0" step="0.01" :label="tr('DISCOUNT')" label-placement="stacked" fill="outline" @change="(v) => store.setDiscount(i, Number(v))" />
+						<NumberInput :model-value="l.taxRate" min="0" max="100" step="0.1" :label="tr('TAX_RATE')" label-placement="stacked" fill="outline" @change="(v) => store.setTaxRate(i, Number(v))" />
 						<ion-input :value="l.expiryDate || ''" type="date" :label="tr('EXPIRY_DATE')" label-placement="stacked" fill="outline" @ion-change="store.setExpiry(i, String($event.detail.value ?? ''))" />
 						<ion-toggle :checked="l.taxRecoverable" label-placement="stacked" @ion-change="store.setRecoverable(i, $event.detail.checked)">{{ tr("TAX_RECOVERABLE") }}</ion-toggle>
 					</div>
@@ -81,9 +81,11 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import NumberInput from "@/core/components/NumberInput.vue";
+import { ref } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
+import { useViewEnter } from "@/core/modules/use-view-enter";
 import { closeOutline } from "ionicons/icons";
 import UT from "@/core/utilities/ut";
 import POP from "@/core/utilities/pop";
@@ -122,13 +124,18 @@ function confirm(): void {
 	if (store.buildAndSaveDraft()) router.push("/PUR22000");
 }
 
-onMounted(() => {
-	store.$reset(); // fresh form on every visit (no leftover from last time)
+// Ionic reuses this page: keep the draft only when coming back from the confirm step (same ?poId, still
+// confirmable); after PUR22000 $reset() the store, or on a new ?poId, start fresh and reload the lookups.
+let appliedPoId: string | null = null;
+useViewEnter(() => {
+	const poId = String(route.query.poId ?? "");
+	if (poId === appliedPoId && store.canConfirm) return;
+	appliedPoId = poId;
+	store.$reset();
 	store.loadSuppliers();
 	store.loadTaxDefaults();
 	store.loadInventories();
 	store.loadPos();
-	const poId = String(route.query.poId ?? "");
 	if (poId) store.loadFromPurchaseOrder(poId);
 });
 </script>

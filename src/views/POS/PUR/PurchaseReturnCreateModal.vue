@@ -26,8 +26,8 @@
 					<ion-button slot="end" fill="clear" color="danger" @click="lines.splice(i, 1)"><ion-icon slot="icon-only" :icon="trashOutline" /></ion-button>
 				</ion-item>
 				<div class="prc_grid">
-					<ion-input v-model.number="line.quantity" type="number" inputmode="decimal" min="0.001" :label="tr('QTY_PH')" label-placement="stacked" fill="outline" />
-					<ion-input v-model.number="line.unitCost" type="number" inputmode="decimal" min="0.01" step="0.01" :label="tr('COST_PH')" label-placement="stacked" fill="outline" />
+					<NumberInput v-model="line.quantity" min="0.001" :label="tr('QTY_PH')" label-placement="stacked" fill="outline" />
+					<NumberInput v-model="line.unitCost" min="0.01" step="0.01" :label="tr('COST_PH')" label-placement="stacked" fill="outline" />
 				</div>
 			</div>
 
@@ -48,6 +48,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { computed, onMounted, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import { trashOutline } from "ionicons/icons";
@@ -100,7 +101,7 @@ function onCreate(): void {
 		paidAmount: refundAmount.value, notes: notes.value || undefined, itemList: items
 	}, (ok, res, err) => {
 		if (ok) emit("ok", res);
-		else POP.alert({ status: "error", content: err?.message, errorCode: err?.code });
+		else POP.apiError(err, tr("CREATE"));
 	});
 }
 

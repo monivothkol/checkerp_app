@@ -53,6 +53,11 @@ interface PartyRow {
 	lastActivity?: string;
 	balance: number;
 }
+interface SubledgerResponse {
+	partyList?: PartyRow[];
+	totalBalance?: number | string;
+	partyCount?: number;
+}
 
 /** Shared AR/AP subledger screen — trCode + locale namespace differ per use. */
 defineOptions({ name: "SubledgerScreen" });
@@ -76,9 +81,9 @@ const filtered = computed(() => {
 
 function load(): Promise<void> {
 	loading.value = true;
-	return new Promise((resolve) => ModuleApi.request(props.trCode, { asOfDate: asOfDate.value ?? "" }, {
-		onSuccess: (p: Record<string, any>) => {
-			rows.value = (p.partyList ?? []) as PartyRow[];
+	return new Promise((resolve) => ModuleApi.request<SubledgerResponse>(props.trCode, { asOfDate: asOfDate.value ?? "" }, {
+		onSuccess: (p) => {
+			rows.value = p.partyList ?? [];
 			totalBalance.value = Number(p.totalBalance ?? 0);
 			partyCount.value = Number(p.partyCount ?? 0);
 			loading.value = false;

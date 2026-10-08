@@ -11,7 +11,7 @@
 				</ion-select>
 			</ion-item>
 			<ion-item>
-				<ion-input v-model.number="amount" type="number" inputmode="decimal" min="0.01" :max="outstanding" step="0.01" :label="`${tr('AMOUNT')} *`" label-placement="stacked" />
+				<NumberInput v-model="amount" min="0.01" :max="outstanding" step="0.01" :label="`${tr('AMOUNT')} *`" label-placement="stacked" />
 			</ion-item>
 			<ion-item>
 				<ion-input v-model="referenceNumber" :label="tr('REFERENCE')" label-placement="stacked" :placeholder="tr('REFERENCE_PH')" clear-input />
@@ -28,6 +28,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { computed, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import UT from "@/core/utilities/ut";
@@ -68,7 +69,7 @@ function submit(): void {
 			onSuccess: () => { submitting.value = false; emit("ok"); },
 			onFail: (err) => {
 				submitting.value = false;
-				POP.alert({ title: tr("PAY_FAILED"), status: "error", content: err?.message, errorCode: err?.code });
+				POP.apiError(err, tr("PAY_FAILED"));
 			}
 		}
 	});

@@ -98,7 +98,7 @@ function onReceive(): void {
 			onClick: () => store.receive(adjustmentId.value, (ok, err) => {
 				if (ok) return;
 				const e = err as { message?: string; code?: string } | undefined;
-				POP.alert({ title: tr("RECEIVE_FAILED"), status: "error", content: e?.message, errorCode: e?.code });
+				POP.apiError(e, tr("RECEIVE_FAILED"));
 			})
 		}
 	});

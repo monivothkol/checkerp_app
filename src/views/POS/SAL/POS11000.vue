@@ -75,7 +75,7 @@
                 <!-- Amount received — every method except KHQR (exact via QR) -->
                 <template v-if="!store.isKhqr">
                     <ion-item>
-                        <ion-input v-model.number="store.received" :label="t('RECEIVED')" label-placement="stacked" type="number" inputmode="decimal" min="0" :step="store.inSecondary ? '100' : '0.01'" />
+                        <NumberInput v-model="store.received" :label="t('RECEIVED')" label-placement="stacked" min="0" :step="store.inSecondary ? '100' : '0.01'" />
                     </ion-item>
                     <div v-if="Number(store.received) >= store.displayTotal" class="ck_change">{{ t("CHANGE") }}: <strong>{{ fmt(store.change, store.payCurrency) }}</strong></div>
                 </template>
@@ -115,6 +115,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { computed, onMounted, ref, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import { alertCircleOutline } from "ionicons/icons";

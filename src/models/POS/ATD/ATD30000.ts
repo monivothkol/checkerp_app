@@ -44,11 +44,18 @@ export interface ATD34000Request {
     scheduleId: string;
 }
 
+/** A department whose staff (without their own schedule) follow this schedule. */
+export interface ScheduleDepartment {
+    departmentId: string;
+    departmentName?: string;
+}
+
 /** Schedule may come nested under `schedule` or flat; assignments under either key. */
 export interface ATD34000Response extends ScheduleRow {
     schedule?: ScheduleRow;
     assignments?: ScheduleAssignment[];
     assignmentList?: ScheduleAssignment[];
+    departments?: ScheduleDepartment[];
 }
 
 export interface ATD31000Request {
@@ -61,6 +68,11 @@ export interface ATD31000Request {
     breakStart?: string;
     breakEnd?: string;
     workingDays: string;
+}
+
+/** ATD31000I02 — edit mode of the same form. */
+export interface ATD31000UpdateRequest extends ATD31000Request {
+    scheduleId: string;
 }
 
 export interface ATD31000Response {
@@ -91,8 +103,16 @@ export interface ScheduleResult {
     name: string;
 }
 
+/** ATD34000I02 — make the schedule a department's default. */
+export interface ATD34000DefaultRequest {
+    scheduleId: string;
+    departmentId: string;
+}
+
 export interface ATD35000Request {
     staffId?: string;
+    /** Several staff at once; wins over staffId. */
+    staffIds?: string[];
     scheduleId: string;
     effectiveFrom?: string;
     effectiveTo?: string;

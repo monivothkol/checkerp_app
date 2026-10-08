@@ -12,7 +12,7 @@
 				</ion-select>
 			</ion-item>
 			<ion-item>
-				<ion-input v-model.number="store.amount" :label="`${tr('AMOUNT')} *`" label-placement="stacked" type="number" inputmode="decimal" min="0.01" step="1" :placeholder="tr('AMOUNT_PH')" />
+				<NumberInput v-model="store.amount" :label="`${tr('AMOUNT')} *`" label-placement="stacked" min="0.01" step="1" :placeholder="tr('AMOUNT_PH')" />
 			</ion-item>
 			<ion-item>
 				<ion-input v-model="store.referenceNo" :label="tr('REFERENCE')" label-placement="stacked" :placeholder="tr('REFERENCE_PH')" :clear-input="true" />
@@ -32,6 +32,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { computed, onMounted } from "vue";
 import { useI18n } from "vue-i18n";
 import POP from "@/core/utilities/pop";

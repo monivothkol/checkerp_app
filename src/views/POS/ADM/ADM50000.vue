@@ -21,7 +21,7 @@
 							<ion-select-option value="USD">USD</ion-select-option><ion-select-option value="KHR">KHR</ion-select-option>
 						</ion-select>
 					</ion-item>
-					<ion-item><ion-input v-model.number="store.form.exchangeRate" :label="tr('EXCHANGE_RATE')" label-placement="stacked" type="number" inputmode="decimal" min="0" step="0.0001" /></ion-item>
+					<ion-item><NumberInput v-model="store.form.exchangeRate" :label="tr('EXCHANGE_RATE')" label-placement="stacked" min="0" step="0.0001" /></ion-item>
 				</ion-list>
 
 				<ion-list class="scr_list" lines="full">
@@ -94,6 +94,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { useI18n } from "vue-i18n";
 import { add } from "ionicons/icons";
 import POP from "@/core/utilities/pop";

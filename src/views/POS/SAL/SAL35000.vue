@@ -59,9 +59,10 @@
 
 <script setup lang="ts">
 import NATIVE from "@/core/utilities/native-bridge";
-import { computed, nextTick, onBeforeUnmount, onMounted, ref } from "vue";
+import { computed, nextTick, onBeforeUnmount, ref } from "vue";
 import { useRoute } from "vue-router";
 import { useI18n } from "vue-i18n";
+import { useViewEnter } from "@/core/modules/use-view-enter";
 import { onIonViewWillLeave } from "@ionic/vue";
 import { cameraOutline, checkmarkCircle, stopCircleOutline } from "ionicons/icons";
 import POP from "@/core/utilities/pop";
@@ -95,8 +96,11 @@ function statusLabel(s?: string): string {
 }
 const focusScan = () => void scanInput.value?.$el.setFocus();
 
-onMounted(() => {
-	store.load(String(route.query.packagingId ?? ""), tr("FAILED"));
+// Ionic reuses this page: reload only when ?packagingId changed (keeps scan progress otherwise).
+let appliedId: string | null = null;
+useViewEnter(() => {
+	const id = String(route.query.packagingId ?? "");
+	if (id !== appliedId) { appliedId = id; store.load(id, tr("FAILED")); }
 	void nextTick(focusScan);
 });
 onIonViewWillLeave(stopCamera);

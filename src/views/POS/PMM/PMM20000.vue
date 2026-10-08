@@ -19,7 +19,7 @@
 					<ion-input :value="store.dateRange[0] ?? ''" type="date" :label="`${tr('PERIOD')} ▸`" label-placement="stacked" @ion-input="setDate(0, $event.detail.value)" />
 				</ion-item>
 				<ion-item>
-					<ion-input :value="store.dateRange[1] ?? ''" type="date" :label="`${tr('PERIOD')} ◂`" label-placement="stacked" @ion-input="setDate(1, $event.detail.value)" />
+					<ion-input :value="store.dateRange[1] ?? ''" type="date" :min="store.dateRange[0] || undefined" :label="`${tr('PERIOD')} ◂`" label-placement="stacked" @ion-input="setDate(1, $event.detail.value)" />
 				</ion-item>
 				<ion-item>
 					<ion-input :value="store.form.maxUse ?? ''" type="number" inputmode="numeric" min="0" :label="tr('MAX_USE')" label-placement="stacked" :placeholder="tr('UNLIMITED')" @ion-input="setNum('maxUse', $event.detail.value, 0)" />
@@ -107,8 +107,8 @@
 							<ion-button slot="end" fill="clear" color="danger" @click="store.removeBundle(i)"><ion-icon slot="icon-only" :icon="closeOutline" /></ion-button>
 						</ion-item>
 						<div class="pmm_line_inputs">
-							<ion-input :value="b.quantity" type="number" inputmode="numeric" min="1" :label="tr('QTY')" label-placement="stacked" fill="outline" @ion-change="store.setBundleQty(i, Number($event.detail.value))" />
-							<ion-input :value="b.bundlePrice" type="number" inputmode="decimal" min="0" step="0.01" :label="tr('BUNDLE_PRICE')" label-placement="stacked" fill="outline" @ion-change="store.setBundlePrice(i, Number($event.detail.value))" />
+							<NumberInput :model-value="b.quantity" integer min="1" :label="tr('QTY')" label-placement="stacked" fill="outline" @change="(v) => store.setBundleQty(i, Number(v))" />
+							<NumberInput :model-value="b.bundlePrice" min="0" step="0.01" :label="tr('BUNDLE_PRICE')" label-placement="stacked" fill="outline" @change="(v) => store.setBundlePrice(i, Number(v))" />
 						</div>
 					</div>
 					<ion-item v-if="!store.bundleItems.length"><ion-note>{{ tr("NO_BUNDLE") }}</ion-note></ion-item>
@@ -134,9 +134,11 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted, ref } from "vue";
+import NumberInput from "@/core/components/NumberInput.vue";
+import { computed, ref } from "vue";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
+import { useViewEnter } from "@/core/modules/use-view-enter";
 import { add, closeCircle, closeOutline } from "ionicons/icons";
 import UT from "@/core/utilities/ut";
 import POP from "@/core/utilities/pop";
@@ -159,9 +161,10 @@ const bundleKw = ref("");
 /** Remounts the category/brand select so it clears after each pick. */
 const pickKey = ref(0);
 
-onMounted(() => {
-	store.loadCategories();
-	store.loadBrands();
+// Ionic reuses this page and PMM30000 $reset()s the store: reload the pickers once they are gone.
+useViewEnter(() => {
+	if (!store.categories.length) store.loadCategories();
+	if (!store.brands.length) store.loadBrands();
 });
 
 /** Empty → unset; otherwise clamped like the web's number inputs. */
@@ -223,6 +226,11 @@ function onPickBundle(productId: string): void {
 }
 
 function confirm(): void {
+	const [from, to] = store.dateRange;
+	if (from && to && to < from) {
+		POP.alert({ status: "error", title: tr("PERIOD"), content: tr("END_BEFORE_START") });
+		return;
+	}
 	const saved = store.buildAndSaveDraft({ type: typeLabel.value, reward: rewardSummary.value, scope: scopeSummary.value, period: periodLabel.value });
 	if (saved) router.push("/PMM30000");
 }

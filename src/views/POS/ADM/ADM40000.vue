@@ -4,11 +4,11 @@
 		<ion-content>
 			<ion-progress-bar v-if="store.loading" type="indeterminate" />
 			<ion-list v-else class="scr_list" lines="full">
-				<ion-item><ion-input v-model.number="store.form.totalFloors" :label="tr('TOTAL_FLOORS')" label-placement="stacked" type="number" inputmode="numeric" min="1" /></ion-item>
+				<ion-item><NumberInput v-model="store.form.totalFloors" :label="tr('TOTAL_FLOORS')" label-placement="stacked" integer min="1" /></ion-item>
 				<ion-item><ion-toggle v-model="store.form.hasTableNumber">{{ tr("HAS_TABLE") }}</ion-toggle></ion-item>
-				<ion-item v-if="store.form.hasTableNumber"><ion-input v-model.number="store.form.totalTables" :label="tr('TOTAL_TABLES')" label-placement="stacked" type="number" inputmode="numeric" min="0" /></ion-item>
+				<ion-item v-if="store.form.hasTableNumber"><NumberInput v-model="store.form.totalTables" :label="tr('TOTAL_TABLES')" label-placement="stacked" integer min="0" /></ion-item>
 				<ion-item><ion-toggle v-model="store.form.enableSequenceOrdering">{{ tr("SEQUENCE") }}</ion-toggle></ion-item>
-				<ion-item v-if="store.form.enableSequenceOrdering"><ion-input v-model.number="store.form.sequenceNumber" :label="tr('SEQUENCE_NO')" label-placement="stacked" type="number" inputmode="numeric" min="0" /></ion-item>
+				<ion-item v-if="store.form.enableSequenceOrdering"><NumberInput v-model="store.form.sequenceNumber" :label="tr('SEQUENCE_NO')" label-placement="stacked" integer min="0" /></ion-item>
 				<ion-item><ion-toggle v-model="store.form.enablePrinting">{{ tr("PRINTING") }}</ion-toggle></ion-item>
 				<ion-item><ion-textarea v-model="store.form.notes" :label="tr('NOTES')" label-placement="stacked" :rows="3" :auto-grow="true" /></ion-item>
 			</ion-list>
@@ -24,6 +24,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { useI18n } from "vue-i18n";
 import { useViewEnter } from "@/core/modules/use-view-enter";
 import { ADM40000Store } from "@/store/POS/ADM/ADM40000Store";

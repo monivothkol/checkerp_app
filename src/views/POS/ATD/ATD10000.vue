@@ -29,6 +29,9 @@
 
 			<ion-list v-if="rows.length" class="scr_list">
 				<ion-item v-for="r in rows" :key="r.attendanceId" button :detail="true" @click="openDetail(r.attendanceId)">
+					<!-- Not scanned days can be ticked and recorded as leave. -->
+					<ion-checkbox v-if="r.status === 'NOT_SCANNED'" slot="start" :checked="store.selectedIds.includes(r.attendanceId)"
+						@click.stop @ion-change="toggle(r.attendanceId)" />
 					<ion-label>
 						<p class="atd_code">{{ String(r.date ?? "").slice(0, 10) }} · {{ r.staffCode }}</p>
 						<h2>{{ r.staffName }}</h2>
@@ -41,6 +44,11 @@
 			<bm-empty-state v-else-if="!loading" />
 			<ion-infinite-scroll :disabled="!hasMore" @ion-infinite="onMore($event)"><ion-infinite-scroll-content /></ion-infinite-scroll>
 		</ion-content>
+		<ion-footer v-if="store.selectedIds.length">
+			<ion-toolbar>
+				<ion-button expand="block" :disabled="store.recording" @click="onRecordLeave">{{ tr("RECORD_LEAVE") }} ({{ store.selectedIds.length }})</ion-button>
+			</ion-toolbar>
+		</ion-footer>
 	</ion-page>
 </template>
 
@@ -56,7 +64,8 @@ import { EXPORT_CONFIGS } from "@/core/modules/export-config";
 import { useViewEnter } from "@/core/modules/use-view-enter";
 import { requestAsync, usePagedList } from "@/core/modules/use-paged-list";
 import { ATD10000Store } from "@/store/POS/ATD/ATD10000Store";
-import type { AttendanceRow, ATD10000Response, ATD15000Response } from "@/models/POS/ATD/ATD10000";
+import RecordLeaveModal from "./RecordLeaveModal.vue";
+import type { AttendanceRow, ATD10000Response, ATD15000Response, RecordLeaveChoice } from "@/models/POS/ATD/ATD10000";
 
 /** Attendance list: date range (default today) + status filters, per-status summary chips. */
 defineOptions({ name: "ATD10000" });
@@ -83,6 +92,7 @@ function loadSummary(): void {
 	});
 }
 function onFilter(): void {
+	store.selectedIds = [];
 	void paged.reload();
 	loadSummary();
 }
@@ -108,10 +118,26 @@ function fmtMinutes(v: unknown): string {
 }
 function statusColor(s: string): string {
 	if (s === "PRESENT") return "success";
+	if (s === "DAY_OFF") return "tertiary"; // a rest day: neutral, never a penalty
+	if (s === "NOT_SCANNED" || s === "ABSENT") return "danger";
 	return s === "LATE" ? "warning" : "medium";
 }
 function openDetail(id: string): void {
 	router.push(`/ATD14000?attendanceId=${encodeURIComponent(id)}`);
+}
+function toggle(id: string): void {
+	store.selectedIds = store.selectedIds.includes(id) ? store.selectedIds.filter((x) => x !== id) : [...store.selectedIds, id];
+}
+function onRecordLeave(): void {
+	const picked = rows.value.filter((r) => store.selectedIds.includes(r.attendanceId));
+	store.loadLeaveOptions(picked).then((options) => POP.showPopup<RecordLeaveChoice>(RecordLeaveModal, {
+		title: tr("RECORD_LEAVE"),
+		props: { options, count: picked.length }
+	}).promise)
+		.then((r) => {
+			if (r?.data) store.recordLeave(r.data.leaveTypeId, tr("RECORD_FAILED"), onFilter);
+		})
+		.catch(() => { /* dismissed */ });
 }
 function onExport(): void {
 	const cfg = EXPORT_CONFIGS.ATD;

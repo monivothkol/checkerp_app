@@ -1,6 +1,6 @@
 import { defineStore } from "pinia";
 import RetrieveScheduleDetail from "@/services/api/ATD/retrieveScheduleDetail";
-import type { ScheduleRow, ScheduleAssignment } from "@/models/POS/ATD/ATD30000";
+import type { ScheduleRow, ScheduleAssignment, ScheduleDepartment } from "@/models/POS/ATD/ATD30000";
 
 /** ATD34000 schedule-detail store: schedule + assignment load by scheduleId. */
 export const ATD34000Store = defineStore("ATD34000Store", {
@@ -8,6 +8,7 @@ export const ATD34000Store = defineStore("ATD34000Store", {
         loading: true,
         schedule: null as ScheduleRow | null,
         assignments: [] as ScheduleAssignment[],
+        departments: [] as ScheduleDepartment[],
         detailApi: RetrieveScheduleDetail.getInstance()
     }),
     actions: {
@@ -21,9 +22,10 @@ export const ATD34000Store = defineStore("ATD34000Store", {
                         // Schedule may come nested (p.schedule) or flat alongside assignments.
                         this.schedule = p.schedule ?? p;
                         this.assignments = p.assignments ?? p.assignmentList ?? [];
+                        this.departments = p.departments ?? [];
                         this.loading = false;
                     },
-                    onFail: () => { this.schedule = null; this.assignments = []; this.loading = false; }
+                    onFail: () => { this.schedule = null; this.assignments = []; this.departments = []; this.loading = false; }
                 }
             });
         }

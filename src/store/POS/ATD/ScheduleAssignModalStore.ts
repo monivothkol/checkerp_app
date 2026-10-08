@@ -9,14 +9,15 @@ function today(): string {
     return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 }
 
-/** Store for the schedule-assign modal (ATD35000): staff lookup + assignment save. */
+/** Store for the schedule-assign modal (ATD35000): staff lookup + assignment save (one or many staff). */
 export const ScheduleAssignModalStore = defineStore("ScheduleAssignModalStore", {
     state: () => ({
         saving: false,
         loadingStaff: false,
         saved: false,
         staff: [] as StaffLookup[],
-        staffId: undefined as string | undefined,
+        /** Several staff can be assigned in one go. */
+        staffIds: [] as string[],
         effectiveFrom: today() as string | undefined,
         effectiveTo: undefined as string | undefined,
         staffApi: RetrieveStaffList.getInstance(),
@@ -30,7 +31,7 @@ export const ScheduleAssignModalStore = defineStore("ScheduleAssignModalStore", 
             }));
         },
         canSave(state): boolean {
-            return !!state.staffId && !!state.effectiveFrom;
+            return state.staffIds.length > 0 && !!state.effectiveFrom;
         }
     },
     actions: {
@@ -38,7 +39,7 @@ export const ScheduleAssignModalStore = defineStore("ScheduleAssignModalStore", 
         init() {
             this.saving = false;
             this.saved = false;
-            this.staffId = undefined;
+            this.staffIds = [];
             this.effectiveFrom = today();
             this.effectiveTo = undefined;
             this.loadStaff();
@@ -59,7 +60,7 @@ export const ScheduleAssignModalStore = defineStore("ScheduleAssignModalStore", 
             this.saving = true;
             this.assignApi.request({
                 dataBody: {
-                    staffId: this.staffId,
+                    staffIds: this.staffIds,
                     scheduleId,
                     effectiveFrom: this.effectiveFrom,
                     effectiveTo: this.effectiveTo || undefined

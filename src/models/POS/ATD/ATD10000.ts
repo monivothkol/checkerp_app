@@ -3,6 +3,7 @@
 export interface AttendanceRow {
     attendanceId: string;
     date?: string;
+    staffId?: string;
     staffCode?: string;
     staffName?: string;
     checkIn?: string;
@@ -19,6 +20,7 @@ export interface AttendanceRow {
 /** Detail view adds an optional remark on top of the list row shape. */
 export interface AttendanceDetail extends AttendanceRow {
     remark?: string;
+    scheduleName?: string;
 }
 
 /** Date-range + status filter shared by the list and summary calls. */
@@ -56,4 +58,27 @@ export interface ATD14000Request {
 /** Record may come nested under `attendance` or flat on the payload. */
 export interface ATD14000Response extends AttendanceDetail {
     attendance?: AttendanceDetail;
+}
+
+/** ATD10000I04: record Not scanned days as approved leave of one type. */
+export interface RecordLeaveRequest {
+    attendanceIds: string[];
+    leaveTypeId: string;
+}
+
+export interface RecordLeaveResponse {
+    recorded: number;
+}
+
+/** What the leave-type picker returns. */
+export interface RecordLeaveChoice {
+    leaveTypeId: string;
+}
+
+/** One choice in the Record-as-leave picker; remainingDays only when one staff is picked. */
+export interface LeaveOption {
+    leaveTypeId: string;
+    name: string;
+    isPaid: boolean;
+    remainingDays?: number;
 }

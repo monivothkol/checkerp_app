@@ -54,8 +54,8 @@
 					<span slot="end" class="act_amt act_bold">{{ money(store.equityDelta) }}</span>
 				</ion-item>
 				<ion-item>
-					<ion-input :value="store.countedCash" type="number" inputmode="decimal" min="0" step="0.01" :label="tr('COUNTED_CASH')" label-placement="stacked"
-						:placeholder="tr('COUNTED_CASH_PLACEHOLDER')" :debounce="400" @ion-input="onCountedCash($event.detail.value)" />
+					<NumberInput :model-value="store.countedCash" min="0" step="0.01" :label="tr('COUNTED_CASH')" label-placement="stacked"
+						:placeholder="tr('COUNTED_CASH_PLACEHOLDER')" @update:model-value="onCountedCash" />
 				</ion-item>
 			</ion-list>
 			<ion-note class="act_hint">{{ tr("CASH_HINT") }}</ion-note>
@@ -73,6 +73,7 @@ import { onBeforeUnmount } from "vue";
 import { useI18n } from "vue-i18n";
 import { onIonViewDidLeave, onIonViewWillEnter, type RefresherCustomEvent } from "@ionic/vue";
 import POP from "@/core/utilities/pop";
+import NumberInput from "@/core/components/NumberInput.vue";
 import UT from "@/core/utilities/ut";
 import { ACT44000Store } from "@/store/ACT/ACT44000Store";
 
@@ -97,15 +98,18 @@ onIonViewWillEnter(() => {
 });
 // Leaving stops the polling only; the job keeps running on the server and is resumed on return.
 onIonViewDidLeave(() => store.dispose());
-onBeforeUnmount(() => store.dispose());
+onBeforeUnmount(() => { clearTimeout(openingTimer); store.dispose(); });
 
 async function onRefresh(ev: RefresherCustomEvent): Promise<void> {
 	store.load();
 	await ev.target.complete();
 }
-function onCountedCash(v?: string | null): void {
-	store.countedCash = v === "" || v == null ? null : Number(v);
-	store.loadOpening();
+// The amount is set at once (Post must never use a stale value); only the preview reload is debounced.
+let openingTimer: ReturnType<typeof setTimeout> | undefined;
+function onCountedCash(v: number | null): void {
+	store.countedCash = v;
+	clearTimeout(openingTimer);
+	openingTimer = setTimeout(() => store.loadOpening(), 400);
 }
 // Both steps write journal entries — ask first, never on a single tap.
 function onSync(): void {

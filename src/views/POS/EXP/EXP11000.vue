@@ -17,8 +17,7 @@
 					</ion-select>
 				</ion-item>
 				<ion-item>
-					<ion-input v-model.number="store.amount" :label="`${tr('AMOUNT')} *`" label-placement="stacked" :placeholder="tr('AMOUNT_PH')"
-						type="number" inputmode="decimal" min="0.01" step="1" />
+					<NumberInput v-model="store.amount" :label="`${tr('AMOUNT')} *`" label-placement="stacked" :placeholder="tr('AMOUNT_PH')" min="0.01" step="1" />
 				</ion-item>
 				<ion-item>
 					<ion-select v-model="store.currency" :label="tr('CURRENCY')" label-placement="stacked" interface="action-sheet">
@@ -52,6 +51,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { computed } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";

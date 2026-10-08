@@ -92,7 +92,8 @@ export interface ModuleScreenConfig {
     /** Optional dropdown filters shown next to the keyword search. */
     listFilters?: ModuleListFilter[];
     fields: ModuleField[];
-    detailFields: { key: string; label: string; labelKey?: string }[];
+    /** valueLabelPrefix: show the value as a label, tr(prefix + value), e.g. "SOURCE_" + "DEPARTMENT". */
+    detailFields: { key: string; label: string; labelKey?: string; valueLabelPrefix?: string }[];
     /** Optional list sections under the detail dl (e.g. a customer's saved addresses). */
     detailLists?: {
         key: string;                                     // array property on the detail response
@@ -801,6 +802,8 @@ export const MODULE_CONFIGS: Record<string, ModuleScreenConfig> = {
             { key: "address", labelKey: "FIELD_ADDRESS", label: "Address" },
             { key: "remark", labelKey: "FIELD_REMARK", label: "Remark" },
             { key: "assignedInventoryNames", labelKey: "FIELD_ASSIGNED_INVENTORIES", label: "Assigned Inventories" },
+            { key: "scheduleName", labelKey: "FIELD_SCHEDULE", label: "Work Schedule" },
+            { key: "scheduleSource", labelKey: "FIELD_SCHEDULE_SOURCE", label: "Schedule From", valueLabelPrefix: "SOURCE_" },
             { key: "isActive", label: "Active" }
         ]
     },

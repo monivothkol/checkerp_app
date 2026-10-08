@@ -12,7 +12,7 @@
 						</ion-select>
 					</ion-item>
 					<ion-item>
-						<ion-input v-model.number="store.form.exchangeRate" :label="tr('EXCHANGE_RATE')" label-placement="stacked" type="number" inputmode="decimal" min="0" step="1" />
+						<NumberInput v-model="store.form.exchangeRate" :label="tr('EXCHANGE_RATE')" label-placement="stacked" min="0" step="1" />
 					</ion-item>
 				</ion-list>
 				<p class="prm_hint">{{ tr("RULES_MOVED") }}</p>
@@ -27,6 +27,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { useI18n } from "vue-i18n";
 import { useViewEnter } from "@/core/modules/use-view-enter";
 import { PRM30000Store } from "@/store/POS/PRM/PRM30000Store";

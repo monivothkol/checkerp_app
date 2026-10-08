@@ -65,7 +65,7 @@ function onDecide(approve: boolean): void {
 		okBtn: {
 			onClick: () => store.decide(props.adjustmentId, approve, (ok, _res, err) => {
 				if (ok) emit("ok", { status: approve ? "APPROVED" : "REJECTED" });
-				else POP.alert({ status: "error", content: err?.message, errorCode: err?.code });
+				else POP.apiError(err, approve ? tr("APPROVE") : tr("REJECT"));
 			})
 		}
 	});

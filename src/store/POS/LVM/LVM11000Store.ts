@@ -1,12 +1,13 @@
 import { defineStore } from "pinia";
 import RetrieveStaffList from "@/services/api/STM/retrieveStaffList";
 import RetrieveLeaveTypeList from "@/services/api/LVM/retrieveLeaveTypeList";
+import RetrieveLeaveDaysPreview from "@/services/api/LVM/retrieveLeaveDaysPreview";
 import { ModuleFlowStore } from "@/core/modules/module-screen-config";
 import type { StaffLookup } from "@/models/POS/COMMON/lookups";
 import type { LeaveType } from "@/models/POS/LVM/LVM20000";
 
 interface Approver {
-    value: string; // staffId or the sentinel "DEPT_HEAD"
+    value: string; // staffId
     name: string;
 }
 
@@ -25,6 +26,9 @@ export const LVM11000Store = defineStore("LVM11000Store", {
         approvers: [] as Approver[],
         approverPick: undefined as string | undefined,
         followerStaffIds: [] as string[],
+        /** Days the server counts for this staff + range (their fixed days off excluded); null until known. */
+        serverDays: null as number | null,
+        daysSeq: 0,
         staffApi: RetrieveStaffList.getInstance(),
         typeApi: RetrieveLeaveTypeList.getInstance()
     }),
@@ -41,7 +45,9 @@ export const LVM11000Store = defineStore("LVM11000Store", {
         endDate(state): string {
             return state.dateRange?.[1] ?? "";
         },
+        /** Server count when known (fixed days off excluded), else the calendar count while it loads. */
         totalDays(state): number {
+            if (state.serverDays != null) return state.serverDays;
             const start = state.dateRange?.[0] ?? "";
             const end = state.dateRange?.[1] ?? "";
             if (!start || !end) return 0;
@@ -81,20 +87,30 @@ export const LVM11000Store = defineStore("LVM11000Store", {
         },
         onDatesChange() {
             if (this.isHalfDay && this.startDate) this.dateRange = [this.startDate, this.startDate];
+            this.refreshDays();
         },
         onHalfDayToggle(checked: boolean) {
             this.isHalfDay = checked;
             if (checked && this.startDate) this.dateRange = [this.startDate, this.startDate];
+            this.refreshDays();
+        },
+        /** Ask the server how many days the request takes (it skips the staff's fixed days off). Latest call wins. */
+        refreshDays() {
+            this.serverDays = null;
+            if (!this.startDate || !this.endDate) return;
+            const seq = ++this.daysSeq;
+            RetrieveLeaveDaysPreview.getInstance().request({
+                dataBody: { staffId: this.staffId, startDate: this.startDate, endDate: this.endDate, isHalfDay: this.isHalfDay },
+                listener: {
+                    onSuccess: (p) => { if (seq === this.daysSeq) this.serverDays = Number(p.totalDays ?? 0); },
+                    onFail: () => { /* keep the calendar estimate; the server still counts on submit */ }
+                }
+            });
         },
         onPickApprover(staffId: string) {
             this.approverPick = undefined;
             if (!staffId || this.approvers.some((a) => a.value === staffId)) return;
             this.approvers.push({ value: staffId, name: this.staffName(staffId) });
-        },
-        /** Append the department-head sentinel; `deptHeadLabel` is the already-translated name (i18n stays in the screen). */
-        addDeptHead(deptHeadLabel: string) {
-            if (this.approvers.some((a) => a.value === "DEPT_HEAD")) return;
-            this.approvers.push({ value: "DEPT_HEAD", name: deptHeadLabel });
         },
         removeApprover(i: number) {
             this.approvers.splice(i, 1);

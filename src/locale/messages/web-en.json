@@ -655,7 +655,13 @@
     "FIELD_CONTRACT": "Contract Type",
     "FIELD_ADDRESS": "Address",
     "FIELD_REMARK": "Remark",
-    "FIELD_ASSIGNED_INVENTORIES": "Assigned Inventories"
+    "FIELD_ASSIGNED_INVENTORIES": "Assigned Inventories",
+    "FIELD_SCHEDULE": "Work Schedule",
+    "FIELD_SCHEDULE_SOURCE": "Schedule From",
+    "SOURCE_ASSIGNED": "Assigned to this staff",
+    "SOURCE_STAFF": "Staff record",
+    "SOURCE_DEPARTMENT": "Department default",
+    "SOURCE_COMPANY": "Company default"
   },
   "POS10000": {
     "EYEBROW": "POS · Sell",
@@ -2040,7 +2046,7 @@
     "NOT_FOUND": "Payslip not found",
     "BACK": "Back",
     "EDIT": "Edit",
-    "EDIT_TITLE": "Edit Recovery Amount",
+    "EDIT_TITLE": "Edit Amount",
     "ADD_LINE": "Add Line",
     "ADD_TITLE": "Add Payroll Line",
     "REMOVE": "Remove",
@@ -2186,7 +2192,16 @@
     "COL_STATUS": "Status",
     "COL_SOURCE": "Source",
     "COL_ACTION": "Action",
-    "VIEW": "View"
+    "VIEW": "View",
+    "STATUS_DAY_OFF": "Day off",
+    "STATUS_NOT_SCANNED": "Not scanned",
+    "RECORD_LEAVE": "Record as leave",
+    "RECORD_HINT": "Record {n} Not scanned day(s) as leave. The leave balance is deducted and the request is approved at once. Days left unrecorded are paid as unpaid leave.",
+    "UNPAID": "Unpaid",
+    "DAYS_LEFT": "{n} day(s) left",
+    "NO_LEAVE_TYPES": "No leave types",
+    "CANCEL": "Cancel",
+    "RECORD_FAILED": "Could not record leave"
   },
   "ATD14000": {
     "EYEBROW": "Attendance",
@@ -2209,7 +2224,10 @@
     "SOURCE": "Source",
     "REMARK": "Remark",
     "NOT_FOUND": "Attendance record not found",
-    "BACK": "Back"
+    "BACK": "Back",
+    "STATUS_DAY_OFF": "Day off",
+    "STATUS_NOT_SCANNED": "Not scanned",
+    "SCHEDULE": "Schedule"
   },
   "ATD30000": {
     "EYEBROW": "Attendance",
@@ -2267,7 +2285,11 @@
     "DAY_6": "Sat",
     "DAY_7": "Sun",
     "CANCEL": "Cancel",
-    "NEXT": "Next"
+    "NEXT": "Next",
+    "EDIT_TITLE": "Edit Work Schedule",
+    "SAVE": "Save",
+    "SAVED": "Schedule saved",
+    "SAVE_FAILED": "Could not save the schedule"
   },
   "ATD32000": {
     "EYEBROW": "Attendance",
@@ -2327,7 +2349,14 @@
     "ASSIGN_TO_PH": "Optional — leave empty for open-ended",
     "ASSIGN_CANCEL": "Cancel",
     "ASSIGN_SAVE": "Assign",
-    "ASSIGN_FAILED": "Could not assign"
+    "ASSIGN_FAILED": "Could not assign",
+    "EDIT": "Edit",
+    "DEPARTMENTS": "Department default for",
+    "NO_DEPARTMENTS": "No department uses this schedule as its default",
+    "SET_DEPT_DEFAULT": "Set as department default",
+    "DEPT_DEFAULT_HINT": "Staff of this department without their own schedule will follow this one.",
+    "DEPARTMENT": "Department",
+    "DEPARTMENT_PH": "Choose a department"
   },
   "ATD20000": {
     "EYEBROW": "Attendance",
@@ -2597,10 +2626,8 @@
     "REASON": "Reason",
     "REASON_PH": "Why are you taking leave?",
     "APPROVAL_LINE": "Approval Line",
-    "DEPT_HEAD": "Department head",
     "NO_APPROVERS": "No approvers added — add them in approval order.",
     "ADD_APPROVER_PH": "Add approver…",
-    "ADD_DEPT_HEAD": "Department head",
     "FOLLOWERS": "Followers (CC)",
     "FOLLOWERS_PH": "Staff to notify",
     "CANCEL": "Cancel",
@@ -5349,7 +5376,9 @@
     "SAVE": "Save Settings",
     "SAVED": "Settings Saved",
     "FAILED": "Could not save",
-    "SAVED_MSG": "Attendance rules were updated."
+    "SAVED_MSG": "Attendance rules were updated.",
+    "AUTO_MARK": "Mark missing days automatically",
+    "AUTO_MARK_HINT": "Every night, a day with no scan becomes Day off (flexible schedules, within the weekly allowance), On leave, or Not scanned (deducted in payroll). Turn on once staff scan in this system."
   },
   "PRD13000": {
     "PAGE_TITLE": "Custom Fields",
@@ -5379,5 +5408,19 @@
   "PRD14000": {
     "PAGE_TITLE": "Edit Product",
     "SAVED": "Product updated"
+  },
+  "ATD60000": {
+    "PAGE_TITLE": "Day Off Calendar",
+    "HINT": "Click a date and tick who is off. A day with no mark is a working day.",
+    "ALL_DEPARTMENTS": "All departments",
+    "EDIT_TITLE": "Day off",
+    "SEARCH_STAFF": "Search staff",
+    "NO_STAFF": "No staff",
+    "REPEAT": "Also repeat for the next",
+    "REPEAT_WEEKS": "week(s), same weekday",
+    "CANCEL": "Cancel",
+    "SAVE": "Save",
+    "SAVE_FAILED": "Could not save the days off",
+    "DEPARTMENT": "Department"
   }
 }

@@ -22,7 +22,9 @@ export const ATD50000Store = defineStore("ATD50000Store", {
             missingMorningDeductionDays: undefined as number | undefined,
             missingAfternoonDeductionDays: undefined as number | undefined,
             missingFulldayDeductionDays: undefined as number | undefined,
-            unpaidLeaveDeductionPerDay: undefined as number | undefined
+            unpaidLeaveDeductionPerDay: undefined as number | undefined,
+            /** Nightly marking of no-scan days (Day off / Not scanned / On leave); off by default. */
+            autoMarkDays: false
         },
         lateRules: [] as AttendanceLateRule[],
         loadApi: RetrieveAttendanceRules.getInstance(),
@@ -41,6 +43,7 @@ export const ATD50000Store = defineStore("ATD50000Store", {
                         this.form.missingAfternoonDeductionDays = p.missingAfternoonDeductionDays;
                         this.form.missingFulldayDeductionDays = p.missingFulldayDeductionDays;
                         this.form.unpaidLeaveDeductionPerDay = p.unpaidLeaveDeductionPerDay;
+                        this.form.autoMarkDays = !!p.autoMarkDays;
                         this.lateRules = p.lateRules ?? [];
                         this.loading = false;
                     },

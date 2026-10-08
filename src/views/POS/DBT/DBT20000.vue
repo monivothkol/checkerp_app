@@ -10,16 +10,16 @@
 					</ion-select>
 				</ion-item>
 				<ion-item>
-					<ion-input :value="store.principal" type="number" inputmode="decimal" min="0.01" step="0.01" :label="`${tr('PRINCIPAL')} *`" label-placement="stacked"
-						:placeholder="tr('AMOUNT_PH')" @ion-input="store.principal = num($event.detail.value); store.onTermsChange()" />
+					<NumberInput :model-value="store.principal" min="0.01" step="0.01" :precision="2" :label="`${tr('PRINCIPAL')} *`" label-placement="stacked"
+						:placeholder="tr('AMOUNT_PH')" @update:model-value="(v) => { store.principal = v ?? undefined; store.onTermsChange(); }" />
 				</ion-item>
 				<ion-item>
-					<ion-input :value="store.interestRate" type="number" inputmode="decimal" min="0" max="100" step="0.01" :label="`${tr('RATE')} (%)`" label-placement="stacked"
-						@ion-input="store.interestRate = num($event.detail.value); store.onTermsChange()" />
+					<NumberInput :model-value="store.interestRate" min="0" max="100" step="0.01" :precision="2" :label="`${tr('RATE')} (%)`" label-placement="stacked"
+						@update:model-value="(v) => { store.interestRate = v ?? undefined; store.onTermsChange(); }" />
 				</ion-item>
 				<ion-item>
-					<ion-input :value="store.termMonths" type="number" inputmode="numeric" min="1" max="600" step="1" :label="`${tr('TERM')} *`" label-placement="stacked"
-						@ion-input="store.termMonths = int($event.detail.value); store.onTermsChange()" />
+					<NumberInput :model-value="store.termMonths" min="1" max="600" step="1" integer :label="`${tr('TERM')} *`" label-placement="stacked"
+						@update:model-value="(v) => { store.termMonths = v ?? undefined; store.onTermsChange(); }" />
 				</ion-item>
 				<ion-item>
 					<ion-input :value="store.startDate" type="date" :label="`${tr('START_DATE')} *`" label-placement="stacked"
@@ -62,6 +62,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { onMounted } from "vue";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
@@ -79,8 +80,6 @@ const tr = (k: string) => t(`DBT20000.${k}`);
 const router = useRouter();
 const store = DBT20000Store();
 const money = (v: unknown) => "$ " + UT.currency(Number(v ?? 0), "USD");
-const num = (v?: string | null) => (v === "" || v == null ? undefined : Number(v));
-const int = (v?: string | null) => (v === "" || v == null ? undefined : Math.trunc(Number(v)));
 
 onMounted(() => store.reset());
 
@@ -95,7 +94,7 @@ function onSubmit(): void {
 			router.replace(res?.loanId ? `/DBT30000?loanId=${encodeURIComponent(res.loanId)}` : "/DBT10000");
 		} else {
 			const e = error as { message?: string; code?: string } | undefined;
-			POP.alert({ status: "error", title: tr("SAVE_FAILED"), content: e?.message, errorCode: e?.code });
+			POP.apiError(e, tr("SAVE_FAILED"));
 		}
 	});
 }

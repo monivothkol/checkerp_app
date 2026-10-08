@@ -128,7 +128,8 @@ function money(v: unknown): string {
 /** Balance left on the loan/advance after this payslip's recovery. */
 const remaining = (l: PayslipLine) => Number(l.accountBalance ?? 0) - Number(l.amount ?? 0);
 // A recovery line can be edited only while its run is still a draft.
-const canEdit = (l: PayslipLine) => l.source === "FINANCIAL" && !!l.editable && isDraft.value;
+// Recovery and attendance-penalty lines, draft runs only.
+const canEdit = (l: PayslipLine) => ((l.source === "FINANCIAL" && !!l.editable) || l.source === "ATTENDANCE") && isDraft.value;
 // Only hand-added lines (manual adjustment / applied commission) can be removed, on a draft.
 const canRemove = (l: PayslipLine) => (l.source === "MANUAL" || l.source === "COMMISSION") && isDraft.value;
 

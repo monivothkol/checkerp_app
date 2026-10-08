@@ -45,9 +45,9 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
+import { useViewEnter } from "@/core/modules/use-view-enter";
 import SearchPickField from "@/views/POS/SAL/SearchPickField.vue";
 import PackagingFormFields from "@/views/POS/SAL/PackagingFormFields.vue";
 import { SAL31000Store } from "@/store/POS/SAL/SAL31000Store";
@@ -61,11 +61,15 @@ const route = useRoute();
 const router = useRouter();
 const store = SAL31000Store();
 
-// Fresh page = fresh form (coming back from the confirm step keeps it).
-onMounted(() => {
+// Ionic reuses this page: keep the draft only when coming back from the confirm step (same ?saleCode, still
+// confirmable); after a confirm step $reset() the store, or on a new ?saleCode, start fresh and reload packers.
+let appliedCode: string | null = null;
+useViewEnter(() => {
+	const code = String(route.query.saleCode ?? "");
+	if (code === appliedCode && store.canConfirm) return;
+	appliedCode = code;
 	store.$reset();
 	store.loadPackers();
-	const code = String(route.query.saleCode ?? "");
 	if (code) store.preselectSale(code);
 });
 function confirm(): void {

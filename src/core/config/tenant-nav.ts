@@ -21,6 +21,8 @@ export interface TenantContext {
 
 export interface SubdomainInfo {
 	isValid: boolean;
+	/** Real tenant subdomain; differs from the input when the user typed the company code. */
+	subdomain?: string;
 	companyId?: string;
 	companyCode?: string;
 	companyName?: string;

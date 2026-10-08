@@ -47,10 +47,10 @@
 						<ion-button slot="end" fill="clear" color="danger" @click="store.removeLine(i)"><ion-icon slot="icon-only" :icon="closeOutline" /></ion-button>
 					</ion-item>
 					<div class="pur_grid">
-						<ion-input :value="l.orderedQuantity" type="number" inputmode="numeric" min="1" :label="tr('QTY')" label-placement="stacked" fill="outline" @ion-change="store.setQty(i, Number($event.detail.value))" />
-						<ion-input :value="l.unitCost" type="number" inputmode="decimal" min="0" step="0.01" :label="tr('UNIT_COST')" label-placement="stacked" fill="outline" @ion-change="store.setCost(i, Number($event.detail.value))" />
-						<ion-input :value="l.discountAmount" type="number" inputmode="decimal" min="0" step="0.01" :label="tr('DISCOUNT')" label-placement="stacked" fill="outline" @ion-change="store.setDiscount(i, Number($event.detail.value))" />
-						<ion-input :value="l.taxRate" type="number" inputmode="decimal" min="0" max="100" step="0.1" :label="tr('TAX_RATE')" label-placement="stacked" fill="outline" @ion-change="store.setTaxRate(i, Number($event.detail.value))" />
+						<NumberInput :model-value="l.orderedQuantity" integer min="1" :label="tr('QTY')" label-placement="stacked" fill="outline" @change="(v) => store.setQty(i, Number(v))" />
+						<NumberInput :model-value="l.unitCost" min="0" step="0.01" :label="tr('UNIT_COST')" label-placement="stacked" fill="outline" @change="(v) => store.setCost(i, Number(v))" />
+						<NumberInput :model-value="l.discountAmount" min="0" step="0.01" :label="tr('DISCOUNT')" label-placement="stacked" fill="outline" @change="(v) => store.setDiscount(i, Number(v))" />
+						<NumberInput :model-value="l.taxRate" min="0" max="100" step="0.1" :label="tr('TAX_RATE')" label-placement="stacked" fill="outline" @change="(v) => store.setTaxRate(i, Number(v))" />
 					</div>
 					<p class="pur_line_sum">{{ tr("TAX_AMOUNT") }} {{ money(store.lineTax(l)) }} · {{ tr("AMOUNT") }} <b>{{ money(store.lineTotal(l)) }}</b></p>
 				</div>
@@ -79,9 +79,11 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import NumberInput from "@/core/components/NumberInput.vue";
+import { ref } from "vue";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
+import { useViewEnter } from "@/core/modules/use-view-enter";
 import { closeOutline } from "ionicons/icons";
 import UT from "@/core/utilities/ut";
 import POP from "@/core/utilities/pop";
@@ -119,10 +121,11 @@ function confirm(): void {
 	if (store.buildAndSaveDraft()) router.push("/PUR12000");
 }
 
-onMounted(() => {
-	store.loadSuppliers();
-	store.loadTaxDefaults();
-	store.loadInventories();
+// Ionic reuses this page and PUR12000 $reset()s the store: reload whatever the reset emptied.
+useViewEnter(() => {
+	if (!store.suppliers.length) store.loadSuppliers();
+	if (!store.inventories.length) store.loadInventories();
+	store.loadTaxDefaults(); // cached reference data; restores the default rate a reset zeroed
 });
 </script>
 

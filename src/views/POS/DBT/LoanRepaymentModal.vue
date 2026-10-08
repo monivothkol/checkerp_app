@@ -57,7 +57,7 @@ function onSubmit(): void {
 			emit("ok");
 		} else {
 			const e = error as { message?: string; code?: string } | undefined;
-			POP.alert({ status: "error", title: tr("REPAY_FAILED"), content: e?.message, errorCode: e?.code });
+			POP.apiError(e, tr("REPAY_FAILED"));
 		}
 	});
 }

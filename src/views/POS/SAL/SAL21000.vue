@@ -31,9 +31,9 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
+import { useViewEnter } from "@/core/modules/use-view-enter";
 import ReturnLinesFields from "@/views/POS/SAL/ReturnLinesFields.vue";
 import { SAL21000Store } from "@/store/POS/SAL/SAL21000Store";
 
@@ -47,10 +47,14 @@ const router = useRouter();
 const store = SAL21000Store();
 
 const loadSale = () => store.loadSale(tr("LOAD_FAILED"));
-// Fresh page = fresh form (coming back from the confirm step keeps it); ?saleCode= deep-links a sale.
-onMounted(() => {
-	store.$reset();
+// Ionic reuses this page: keep the draft only when coming back from the confirm step (same ?saleCode, still
+// confirmable); otherwise start fresh and re-apply the ?saleCode deep link.
+let appliedCode: string | null = null;
+useViewEnter(() => {
 	const code = String(route.query.saleCode ?? "");
+	if (code === appliedCode && store.canConfirm) return;
+	appliedCode = code;
+	store.$reset();
 	if (code) { store.saleCode = code; loadSale(); }
 });
 function confirm(): void {

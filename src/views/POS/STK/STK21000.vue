@@ -32,8 +32,8 @@
 						<h3>{{ l.productName }}<template v-if="l.variantName"> — {{ l.variantName }}</template></h3>
 						<p>{{ l.productCode }} · {{ tr("AVAIL") }} {{ num(l.available) }}</p>
 					</ion-label>
-					<ion-input slot="end" class="stk_qty" :value="l.quantity" type="number" inputmode="numeric" min="1" :max="l.available" fill="outline" :aria-label="tr('QTY')"
-						@ion-change="store.setQty(i, Number($event.detail.value))" />
+					<NumberInput slot="end" class="stk_qty" :model-value="l.quantity" integer min="1" :max="l.available" fill="outline" :aria-label="tr('QTY')"
+						@change="(v) => store.setQty(i, Number(v))" />
 					<ion-button slot="end" fill="clear" color="danger" @click="store.removeLine(i)"><ion-icon slot="icon-only" :icon="closeOutline" /></ion-button>
 				</ion-item>
 				<ion-item v-if="!store.lines.length"><ion-note>{{ tr("NO_LINES") }}</ion-note></ion-item>
@@ -60,9 +60,11 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import NumberInput from "@/core/components/NumberInput.vue";
+import { ref } from "vue";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
+import { useViewEnter } from "@/core/modules/use-view-enter";
 import { closeOutline } from "ionicons/icons";
 import { STK21000Store } from "@/store/POS/STK/STK21000Store";
 import type { StockRow } from "@/models/POS/STK/STK10000";
@@ -88,7 +90,8 @@ function confirm(): void {
 	if (store.buildAndSaveDraft()) router.push("/STK22000");
 }
 
-onMounted(() => store.loadInventories());
+// Ionic reuses this page and the confirm step $reset()s the store: reload once the list is gone.
+useViewEnter(() => { if (!store.inventories.length) store.loadInventories(); });
 </script>
 
 <style scoped>

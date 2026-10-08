@@ -4,7 +4,7 @@
 		<p v-if="balance != null" class="prm_balance">{{ tr("BALANCE") }} $ {{ balance.toFixed(2) }}</p>
 		<ion-list class="scr_list" lines="full">
 			<ion-item>
-				<ion-input v-model.number="amount" :label="`${tr('AMOUNT')} *`" label-placement="stacked" type="number" inputmode="decimal" min="0" :max="balance" step="1" />
+				<NumberInput v-model="amount" :label="`${tr('AMOUNT')} *`" label-placement="stacked" min="0" :max="balance" step="1" />
 			</ion-item>
 		</ion-list>
 		<div class="prm_btns">
@@ -15,6 +15,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { ref } from "vue";
 import { useI18n } from "vue-i18n";
 import POP from "@/core/utilities/pop";

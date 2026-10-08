@@ -5,20 +5,24 @@
 			<ion-progress-bar v-if="store.loading" type="indeterminate" />
 			<ion-list v-else class="scr_list" lines="full">
 				<ion-item>
-					<ion-input v-model.number="store.form.workingDaysPerMonth" :label="`${tr('WORKING_DAYS')} *`" label-placement="stacked" type="number" inputmode="numeric" min="1" max="31" step="1" />
+					<ion-toggle v-model="store.form.autoMarkDays" justify="space-between">{{ tr("AUTO_MARK") }}</ion-toggle>
+				</ion-item>
+				<ion-item lines="none"><ion-note class="atd_hint">{{ tr("AUTO_MARK_HINT") }}</ion-note></ion-item>
+				<ion-item>
+					<NumberInput v-model="store.form.workingDaysPerMonth" :label="`${tr('WORKING_DAYS')} *`" label-placement="stacked" :min="1" :max="31" integer />
 				</ion-item>
 
 				<ion-list-header>{{ tr("DEDUCTION_RULES") }}</ion-list-header>
 				<ion-item lines="none"><ion-note class="atd_hint">{{ tr("DAYS_NOTE") }}</ion-note></ion-item>
 				<ion-item v-for="f in dayFields" :key="f.key">
-					<ion-input v-model.number="store.form[f.key]" :label="tr(f.label)" label-placement="stacked" type="number" inputmode="decimal" min="0" step="0.1" />
+					<NumberInput v-model="store.form[f.key]" :label="tr(f.label)" label-placement="stacked" :min="0" :step="0.1" :precision="2" />
 				</ion-item>
 
 				<ion-list-header>{{ tr("LATE_RULES") }}</ion-list-header>
 				<ion-item lines="none"><ion-note class="atd_hint">{{ tr("LATE_RULES_NOTE") }}</ion-note></ion-item>
 				<ion-item v-for="(rule, i) in store.lateRules" :key="i">
-					<ion-input v-model.number="rule.thresholdCount" :label="tr('LATE_COUNT')" label-placement="stacked" type="number" inputmode="numeric" min="1" step="1" />
-					<ion-input v-model.number="rule.deductionDays" :label="tr('LATE_DAYS')" label-placement="stacked" type="number" inputmode="decimal" min="0" step="0.25" />
+					<NumberInput v-model="rule.thresholdCount" :label="tr('LATE_COUNT')" label-placement="stacked" :min="1" integer />
+					<NumberInput v-model="rule.deductionDays" :label="tr('LATE_DAYS')" label-placement="stacked" :min="0" :step="0.25" :precision="2" />
 					<ion-button slot="end" fill="clear" color="danger" @click="store.removeLateRule(i)">{{ tr("LATE_REMOVE") }}</ion-button>
 				</ion-item>
 				<ion-item button :detail="false" @click="store.addLateRule()"><ion-label color="primary">+ {{ tr("LATE_ADD") }}</ion-label></ion-item>
@@ -35,6 +39,7 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
 import { useViewEnter } from "@/core/modules/use-view-enter";
+import NumberInput from "@/core/components/NumberInput.vue";
 import { ATD50000Store } from "@/store/POS/ATD/ATD50000Store";
 
 /** Attendance rules: working days/month, day deductions and late tiers. */

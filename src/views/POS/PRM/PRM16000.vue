@@ -7,7 +7,7 @@
 				</ion-select>
 			</ion-item>
 			<ion-item>
-				<ion-input v-model.number="amount" :label="`${tr('AMOUNT')} ($) *`" label-placement="stacked" type="number" inputmode="decimal" min="0" step="1" />
+				<NumberInput v-model="amount" :label="`${tr('AMOUNT')} ($) *`" label-placement="stacked" min="0" step="1" />
 			</ion-item>
 			<ion-item>
 				<ion-textarea v-model="remark" :label="tr('REMARK')" label-placement="stacked" :placeholder="tr('REMARK_PH')" :rows="2" auto-grow />
@@ -21,6 +21,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { computed, onMounted, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import POP from "@/core/utilities/pop";

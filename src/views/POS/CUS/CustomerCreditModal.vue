@@ -12,13 +12,13 @@
 			</ion-item>
 			<ion-item lines="none"><ion-note class="cc_hint">{{ tr("POLICY_HINT") }}</ion-note></ion-item>
 			<ion-item>
-				<ion-input v-model.number="form.creditLimitOverride" :label="tr('LIMIT_OVERRIDE')" label-placement="stacked" type="number" inputmode="decimal" min="0" :placeholder="tr('USE_POLICY')" />
+				<NumberInput v-model="form.creditLimitOverride" :label="tr('LIMIT_OVERRIDE')" label-placement="stacked" min="0" :placeholder="tr('USE_POLICY')" />
 			</ion-item>
 			<ion-item>
-				<ion-input v-model.number="form.creditTermOverride" :label="tr('TERM_OVERRIDE')" label-placement="stacked" type="number" inputmode="numeric" min="0" :placeholder="tr('USE_POLICY')" />
+				<NumberInput v-model="form.creditTermOverride" :label="tr('TERM_OVERRIDE')" label-placement="stacked" integer min="0" :placeholder="tr('USE_POLICY')" />
 			</ion-item>
 			<ion-item>
-				<ion-input v-model.number="form.maxOverdueOverride" :label="tr('MAX_OVERDUE_OVERRIDE')" label-placement="stacked" type="number" inputmode="decimal" min="0" :placeholder="tr('USE_POLICY')" />
+				<NumberInput v-model="form.maxOverdueOverride" :label="tr('MAX_OVERDUE_OVERRIDE')" label-placement="stacked" min="0" :placeholder="tr('USE_POLICY')" />
 			</ion-item>
 		</ion-list>
 		<div class="cc_btns">
@@ -29,6 +29,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { onMounted, reactive, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import POP from "@/core/utilities/pop";

@@ -1,6 +1,10 @@
 <template>
 	<ion-page>
-		<bm-header :title="tr('PAGE_TITLE')" default-href="/ATD30000" />
+		<bm-header :title="tr('PAGE_TITLE')" default-href="/ATD30000">
+			<template v-if="store.schedule" #end>
+				<ion-button @click="router.push(`/ATD31000?scheduleId=${encodeURIComponent(scheduleId)}`)">{{ tr("EDIT") }}</ion-button>
+			</template>
+		</bm-header>
 		<ion-content>
 			<ion-progress-bar v-if="store.loading" type="indeterminate" />
 			<template v-else-if="store.schedule">
@@ -20,6 +24,15 @@
 						<ion-label><p>{{ tr("STATUS") }}</p></ion-label>
 						<ion-badge slot="end" :color="store.schedule.isActive ? 'success' : 'medium'">{{ store.schedule.isActive ? tr("ACTIVE") : tr("INACTIVE") }}</ion-badge>
 					</ion-item>
+				</ion-list>
+
+				<ion-list class="scr_list" lines="full">
+					<ion-list-header>
+						<ion-label>{{ tr("DEPARTMENTS") }}</ion-label>
+						<ion-button @click="openDepartmentDefault">{{ tr("SET_DEPT_DEFAULT") }}</ion-button>
+					</ion-list-header>
+					<ion-item v-for="d in store.departments" :key="d.departmentId"><ion-label>{{ d.departmentName }}</ion-label></ion-item>
+					<ion-item v-if="!store.departments.length"><ion-note class="ion-text-wrap">{{ tr("NO_DEPARTMENTS") }}</ion-note></ion-item>
 				</ion-list>
 
 				<ion-list class="scr_list" lines="full">
@@ -44,12 +57,13 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import { useRoute } from "vue-router";
+import { useRoute, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
 import POP from "@/core/utilities/pop";
 import { useViewEnter } from "@/core/modules/use-view-enter";
 import { ATD34000Store } from "@/store/POS/ATD/ATD34000Store";
 import ScheduleAssignModal from "@/views/POS/ATD/ScheduleAssignModal.vue";
+import ScheduleDepartmentModal from "@/views/POS/ATD/ScheduleDepartmentModal.vue";
 import type { ScheduleRow } from "@/models/POS/ATD/ATD30000";
 
 /** Work schedule detail + staff assignments (assign via ScheduleAssignModal). */
@@ -57,6 +71,7 @@ defineOptions({ name: "ATD34000" });
 
 const { t } = useI18n();
 const route = useRoute();
+const router = useRouter();
 const tr = (k: string) => t(`ATD34000.${k}`);
 const store = ATD34000Store();
 const scheduleId = computed(() => String(route.query.scheduleId ?? ""));
@@ -72,6 +87,11 @@ function daysText(v: unknown): string {
 	try { days = JSON.parse(String(v ?? "[]")); } catch { days = []; }
 	if (!Array.isArray(days) || !days.length) return "—";
 	return days.map((d) => tr("DAY_" + d)).join(", ");
+}
+function openDepartmentDefault(): void {
+	POP.showPopup(ScheduleDepartmentModal, { title: tr("SET_DEPT_DEFAULT"), props: { scheduleId: scheduleId.value } }).promise
+		.then(() => store.load(scheduleId.value))
+		.catch(() => undefined);
 }
 function openAssign(): void {
 	POP.showPopup(ScheduleAssignModal, { title: tr("ASSIGN_TITLE"), props: { scheduleId: scheduleId.value } }).promise

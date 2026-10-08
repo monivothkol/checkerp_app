@@ -4,17 +4,16 @@
 		<ion-content>
 			<ion-list class="scr_list" lines="full">
 				<ion-item>
-					<ion-select v-model="store.staffId" :label="`${tr('STAFF')} *`" label-placement="stacked" :placeholder="tr('STAFF_PH')" interface="alert" :interface-options="{ header: tr('STAFF') }">
-						<ion-select-option v-for="s in store.staffOptions" :key="s.id" :value="s.id">{{ s.name }}</ion-select-option>
-					</ion-select>
+					<ion-label><p>{{ tr("STAFF") }} *</p><h3>{{ store.staffOptions.find((o) => o.id === store.staffId)?.name || tr("STAFF_PH") }}</h3></ion-label>
 				</ion-item>
+				<SearchPickField :options="staffMatches" :placeholder="tr('STAFF_PH')" @search="(v) => (staffKw = v)" @pick="(v) => { store.staffId = v; staffKw = ''; }" />
 				<ion-item>
 					<ion-select v-model="store.typeId" :label="`${tr('TYPE')} *`" label-placement="stacked" :placeholder="tr('TYPE_PH')" interface="action-sheet" @ion-change="store.onPickType">
 						<ion-select-option v-for="o in store.typeOptions" :key="o.id" :value="o.id">{{ o.name }} — {{ tr("CAT_" + o.category) }}</ion-select-option>
 					</ion-select>
 				</ion-item>
 				<ion-item>
-					<ion-input v-model.number="store.amount" :label="`${tr('AMOUNT')} ($) *`" label-placement="stacked" type="number" inputmode="decimal" min="0" step="0.01" />
+					<NumberInput v-model="store.amount" :label="`${tr('AMOUNT')} ($) *`" label-placement="stacked" min="0" step="0.01" />
 				</ion-item>
 				<ion-item>
 					<ion-input v-model="store.effectiveMonth" :label="`${tr('MONTH')} *`" label-placement="stacked" type="month" />
@@ -36,6 +35,9 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
+import SearchPickField from "@/views/POS/SAL/SearchPickField.vue";
+import { computed, ref } from "vue";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
 import { useViewEnter } from "@/core/modules/use-view-enter";
@@ -50,6 +52,13 @@ const tr = (k: string) => t(`PRM21000.${k}`);
 const store = PRM21000Store();
 
 useViewEnter(() => { store.loadStaff(); store.loadTypes(); });
+
+// Searchable staff picker (web: a-select show-search).
+const staffKw = ref("");
+const staffMatches = computed(() => {
+	const q = staffKw.value.trim().toLowerCase();
+	return q ? store.staffOptions.filter((o) => o.name.toLowerCase().includes(q)).map((o) => ({ value: o.id, label: o.name })) : [];
+});
 
 function confirm(): void {
 	if (store.buildAndSaveDraft()) router.push("/PRM22000");

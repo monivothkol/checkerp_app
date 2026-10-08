@@ -33,7 +33,7 @@
                 <ion-item><ion-textarea v-model="store.note" :label="tr('NOTE')" label-placement="stacked" auto-grow :rows="2" /></ion-item>
                 <div class="siv_sum"><span>{{ tr("SUBTOTAL") }}</span><span>{{ money(store.subtotal) }}</span></div>
                 <div class="siv_sum"><span>{{ tr("LINE_DISCOUNT") }}</span><span>-{{ money(store.lineDiscountTotal) }}</span></div>
-                <ion-item><ion-input v-model.number="store.invoiceDiscount" :label="tr('INVOICE_DISCOUNT')" label-placement="stacked" type="number" inputmode="decimal" min="0" step="0.01" /></ion-item>
+                <ion-item><NumberInput v-model="store.invoiceDiscount" :label="tr('INVOICE_DISCOUNT')" label-placement="stacked" min="0" step="0.01" /></ion-item>
                 <div class="siv_sum total"><span>{{ tr("TOTAL") }}</span><strong>{{ money(store.total) }}</strong></div>
                 <ion-item>
                     <ion-select v-model="store.paymentMethodId" :label="tr('PAYMENT_METHOD')" label-placement="stacked" interface="action-sheet" :placeholder="tr('SELECT')">
@@ -41,7 +41,7 @@
                         <ion-select-option v-for="m in store.paymentMethods" :key="m.paymentMethodId" :value="m.paymentMethodId">{{ m.methodName }}</ion-select-option>
                     </ion-select>
                 </ion-item>
-                <ion-item><ion-input v-model.number="store.paidAmount" :label="tr('PAID_AMOUNT')" label-placement="stacked" type="number" inputmode="decimal" min="0" step="0.01" /></ion-item>
+                <ion-item><NumberInput v-model="store.paidAmount" :label="tr('PAID_AMOUNT')" label-placement="stacked" min="0" step="0.01" /></ion-item>
                 <div class="siv_sum"><span>{{ tr("BALANCE") }}</span><span>{{ money(store.balance) }}</span></div>
             </ion-list>
         </ion-content>
@@ -57,11 +57,12 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
 import UT from "@/core/utilities/ut";
 import POP from "@/core/utilities/pop";
+import NumberInput from "@/core/components/NumberInput.vue";
+import { useViewEnter } from "@/core/modules/use-view-enter";
 import VariantPickerModal from "@/views/POS/SAL/VariantPickerModal.vue";
 import InvoiceLinesEditor from "@/views/POS/SIV/InvoiceLinesEditor.vue";
 import { SIV11000Store } from "@/store/POS/SIV/SIV11000Store";
@@ -77,10 +78,11 @@ const router = useRouter();
 const store = SIV11000Store();
 const money = (v: unknown) => "$ " + UT.currency((v as string | number) ?? 0, "USD");
 
-onMounted(() => {
-    store.loadLookups();
+// Ionic reuses this page: reload lookups only after a confirm step $reset() the store; re-prefill on a new ?quotationNo.
+useViewEnter(() => {
+    if (!store.inventories.length) store.loadLookups();
     const quotationNo = String(route.query.quotationNo ?? "");
-    if (quotationNo) store.prefillFromQuotation(quotationNo);
+    if (quotationNo && quotationNo !== store.sourceQuotationNo) store.prefillFromQuotation(quotationNo);
 });
 
 /** A product with variants asks which one before the line is added. */
@@ -95,6 +97,11 @@ function onPickProduct(productId: string): void {
 }
 
 function confirm(): void {
+    // A paid amount without a method would silently save the invoice unpaid.
+    if (Number(store.paidAmount || 0) > 0 && !store.paymentMethodId) {
+        POP.alert({ status: "error", title: tr("PAYMENT_METHOD"), content: tr("PAYMENT_METHOD_REQUIRED") });
+        return;
+    }
     if (store.buildAndSaveDraft(tr("WALK_IN"))) router.push("/SIV12000");
 }
 </script>

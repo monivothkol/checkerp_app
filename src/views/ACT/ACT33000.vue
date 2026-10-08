@@ -5,12 +5,14 @@
 			<ion-refresher slot="fixed" @ion-refresh="onRefresh($event)"><ion-refresher-content /></ion-refresher>
 			<ion-progress-bar v-if="store.loading" type="indeterminate" />
 			<ion-list class="scr_list" lines="full">
-				<ion-item>
-					<ion-select v-model="store.accountCodes" :multiple="true" interface="alert" :label="tr('ALL_ACCOUNTS')" label-placement="stacked"
-						:placeholder="tr('ALL_ACCOUNTS')" @ion-change="store.load">
-						<ion-select-option v-for="a in store.accountOptions" :key="a.value" :value="a.value">{{ a.label }}</ion-select-option>
-					</ion-select>
-				</ion-item>
+				<SearchPickField :options="matchAccounts(accountKw)" :placeholder="tr('ALL_ACCOUNTS')"
+					@search="(v) => (accountKw = v)" @pick="addAccount" />
+				<div v-if="store.accountCodes.length" class="gl_chips">
+					<ion-chip v-for="c in store.accountCodes" :key="c" @click="removeAccount(c)">
+						<ion-label>{{ store.accountOptions.find((a) => a.value === c)?.label ?? c }}</ion-label>
+						<ion-icon :icon="closeCircle" />
+					</ion-chip>
+				</div>
 				<ActDateRange v-model="dateRange" :required="true" @change="store.load" />
 			</ion-list>
 
@@ -70,13 +72,15 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from "vue";
+import { computed, ref } from "vue";
+import { closeCircle } from "ionicons/icons";
 import { useI18n } from "vue-i18n";
 import type { RefresherCustomEvent } from "@ionic/vue";
 import UT from "@/core/utilities/ut";
 import { useViewEnter } from "@/core/modules/use-view-enter";
 import { ACT33000Store } from "@/store/ACT/ACT33000Store";
 import ActDateRange from "@/views/ACT/ActDateRange.vue";
+import SearchPickField from "@/views/POS/SAL/SearchPickField.vue";
 
 /** General ledger: per-account sections (opening, lines, running balance, closing) for a required period. */
 defineOptions({ name: "ACT33000" });
@@ -84,6 +88,22 @@ defineOptions({ name: "ACT33000" });
 const { t } = useI18n();
 const tr = (k: string) => t(`ACT33000.${k}`);
 const store = ACT33000Store();
+
+// Searchable multi-account filter (web: a-select mode=multiple show-search); empty = all accounts.
+const accountKw = ref("");
+function matchAccounts(kw: string): { value: string; label: string }[] {
+	const q = kw.trim().toLowerCase();
+	return q ? store.accountOptions.filter((a) => !store.accountCodes.includes(a.value) && a.label.toLowerCase().includes(q)) : [];
+}
+function addAccount(code: string): void {
+	accountKw.value = "";
+	store.accountCodes = [...store.accountCodes, code];
+	store.load();
+}
+function removeAccount(code: string): void {
+	store.accountCodes = store.accountCodes.filter((c) => c !== code);
+	store.load();
+}
 const money = (v: unknown) => "$ " + UT.currency((v as string | number) ?? 0, "USD");
 
 // The report is range-bound: the picker never clears it (web allow-clear=false).
@@ -112,6 +132,7 @@ async function onRefresh(ev: RefresherCustomEvent): Promise<void> {
 
 <style scoped src="./act-report.css"></style>
 <style scoped>
+.gl_chips { display: flex; flex-wrap: wrap; gap: 4px; padding: 0 12px 8px; }
 .gl_head { --padding-start: 16px; }
 .gl_toolbar { display: flex; justify-content: flex-end; padding: 8px 16px 0; }
 .gl_end { display: flex; flex-direction: column; align-items: flex-end;

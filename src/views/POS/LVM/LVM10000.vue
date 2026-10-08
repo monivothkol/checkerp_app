@@ -14,10 +14,7 @@
 				</ion-toolbar>
 				<ion-toolbar v-if="store.mode === 'all'">
 					<div class="lvm_filters">
-						<ion-select v-model="store.staffId" :label="tr('COL_STAFF')" label-placement="stacked" :placeholder="tr('ALL_STAFF')" interface="alert" :interface-options="{ header: tr('COL_STAFF') }" @ion-change="onFilter">
-							<ion-select-option :value="undefined">{{ tr("ALL_STAFF") }}</ion-select-option>
-							<ion-select-option v-for="s in store.staffOptions" :key="s.id" :value="s.id">{{ s.name }}</ion-select-option>
-						</ion-select>
+						<PickField v-model="store.staffId" :options="store.staffOptions.map((s) => ({ value: s.id, label: s.name }))" :label="tr('COL_STAFF')" :placeholder="tr('ALL_STAFF')" :none-label="tr('ALL_STAFF')" @change="onFilter" />
 						<ion-select v-model="store.status" :label="tr('COL_STATUS')" label-placement="stacked" :placeholder="tr('ALL_STATUS')" interface="action-sheet" @ion-change="onFilter">
 							<ion-select-option :value="undefined">{{ tr("ALL_STATUS") }}</ion-select-option>
 							<ion-select-option v-for="s in store.statuses" :key="s" :value="s">{{ tr("STATUS_" + s) }}</ion-select-option>
@@ -52,6 +49,7 @@
 </template>
 
 <script setup lang="ts">
+import PickField from "@/core/components/PickField.vue";
 import { useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";
 import type { InfiniteScrollCustomEvent, RefresherCustomEvent } from "@ionic/vue";

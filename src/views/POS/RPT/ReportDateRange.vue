@@ -1,15 +1,17 @@
 <template>
 	<ion-toolbar class="rdr">
 		<div class="rdr_row">
-			<ion-input :value="modelValue?.[0] ?? ''" type="date" :aria-label="`${$t('EXPORT.DATE')} ▸`" @ion-change="set(0, $event.detail.value)" />
+			<ion-input :value="from" type="date" :aria-label="`${$t('EXPORT.DATE')} ▸`" @ion-change="set(0, $event.detail.value)" />
 			<span>→</span>
-			<ion-input :value="modelValue?.[1] ?? ''" type="date" :aria-label="`${$t('EXPORT.DATE')} ◂`" @ion-change="set(1, $event.detail.value)" />
-			<ion-button v-if="clearable && (modelValue?.[0] || modelValue?.[1])" fill="clear" size="small" @click="emitRange(undefined)">✕</ion-button>
+			<ion-input :value="to" type="date" :aria-label="`${$t('EXPORT.DATE')} ◂`" @ion-change="set(1, $event.detail.value)" />
+			<ion-button v-if="clearable && (from || to)" fill="clear" size="small" @click="from = ''; to = ''; emitRange(undefined)">✕</ion-button>
 		</div>
 	</ion-toolbar>
 </template>
 
 <script setup lang="ts">
+import { ref, watch } from "vue";
+
 /** From/to date pair for report headers (the web's a-range-picker); emits only complete ranges or a clear. */
 defineOptions({ name: "ReportDateRange" });
 
@@ -20,13 +22,16 @@ function emitRange(v: [string, string] | undefined): void {
 	emit("update:modelValue", v);
 	emit("change");
 }
+// A half range stays local (never reaches the model), so screens never send an empty dateFrom/dateTo.
+const from = ref(props.modelValue?.[0] ?? "");
+const to = ref(props.modelValue?.[1] ?? "");
+watch(() => props.modelValue, (v) => { from.value = v?.[0] ?? ""; to.value = v?.[1] ?? ""; });
+
 function set(i: 0 | 1, v?: string | null): void {
-	const next: [string, string] = [props.modelValue?.[0] ?? "", props.modelValue?.[1] ?? ""];
-	next[i] = v ?? "";
-	// a-range-picker only commits both ends; a half range waits for the other date.
-	if (next[0] && next[1]) emitRange(next);
-	else if (!next[0] && !next[1] && props.clearable) emitRange(undefined);
-	else emit("update:modelValue", next);
+	if (i === 0) from.value = v ?? "";
+	else to.value = v ?? "";
+	if (from.value && to.value) emitRange([from.value, to.value]);
+	else if (!from.value && !to.value && props.clearable) emitRange(undefined);
 }
 </script>
 

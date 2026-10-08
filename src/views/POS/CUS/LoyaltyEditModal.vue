@@ -5,7 +5,7 @@
 				<ion-input v-model="store.form.conditionName" :label="`${tr('NAME')} *`" label-placement="stacked" />
 			</ion-item>
 			<ion-item>
-				<ion-input v-model.number="store.form.pointReward" :label="`${tr('POINTS')} *`" label-placement="stacked" type="number" inputmode="decimal" min="0.1" step="0.1" />
+				<NumberInput v-model="store.form.pointReward" :label="`${tr('POINTS')} *`" label-placement="stacked" min="0.1" step="0.1" />
 			</ion-item>
 			<ion-item>
 				<ion-toggle v-model="store.form.isActive" justify="space-between">{{ $t("EDIT.ACTIVE") }}</ion-toggle>
@@ -20,6 +20,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { onMounted, watch } from "vue";
 import { useI18n } from "vue-i18n";
 import { LoyaltyEditModalStore } from "@/store/POS/CUS/LoyaltyEditModalStore";

@@ -81,7 +81,7 @@ function onPost(): void {
 					POP.alert({ status: "success", title: tr("POSTED"), content: tr("POSTED_MSG", { count: res?.posted ?? 0 }) });
 				} else {
 					const e = error as { message?: string; code?: string } | undefined;
-					POP.alert({ status: "error", title: tr("POST_FAILED"), content: e?.message, errorCode: e?.code });
+					POP.apiError(e, tr("POST_FAILED"));
 				}
 			})
 		}

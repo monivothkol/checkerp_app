@@ -14,8 +14,7 @@
 				</ion-select>
 			</ion-item>
 			<ion-item>
-				<ion-input v-model.number="form.inputValue" :label="`${form.inputType === 'PERCENTAGE' ? tr('PERCENT') : tr('AMOUNT_LABEL')} *`" label-placement="stacked"
-					type="number" inputmode="decimal" min="0" step="1" />
+				<NumberInput v-model="form.inputValue" :label="`${form.inputType === 'PERCENTAGE' ? tr('PERCENT') : tr('AMOUNT_LABEL')} *`" label-placement="stacked" min="0" step="1" :precision="2" />
 			</ion-item>
 			<ion-item>
 				<ion-select v-model="form.applyToType" :label="`${tr('APPLY_TO')} *`" label-placement="stacked" interface="action-sheet">
@@ -66,6 +65,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { onMounted, reactive, ref } from "vue";
 import { useI18n } from "vue-i18n";
 import POP from "@/core/utilities/pop";

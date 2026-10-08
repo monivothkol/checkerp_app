@@ -13,6 +13,8 @@ export interface AttendanceRules {
     missingAfternoonDeductionDays?: number;
     missingFulldayDeductionDays?: number;
     unpaidLeaveDeductionPerDay?: number;
+    /** Nightly: mark no-scan days as Day off / Not scanned / On leave (off until the company scans in this system). */
+    autoMarkDays?: boolean;
     lateRules?: AttendanceLateRule[];
 }
 

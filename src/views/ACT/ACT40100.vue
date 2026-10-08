@@ -36,7 +36,7 @@
 <script setup lang="ts">
 import { computed, reactive, ref } from "vue";
 import { useI18n } from "vue-i18n";
-import ModuleApi from "@/services/api/COMMON/module-api";
+import ModuleApi, { type ModuleApiError } from "@/services/api/COMMON/module-api";
 import POP from "@/core/utilities/pop";
 import type { ActAccount } from "@/models/ACT/ACT40000";
 
@@ -82,7 +82,7 @@ function save(): void {
 			POP.openNotification({ type: "success", content: tr("SAVED") });
 			emit("ok", { accountCode: form.accountCode });
 		},
-		onFail: (e: Record<string, any>) => {
+		onFail: (e: ModuleApiError) => {
 			saving.value = false;
 			POP.openNotification({ type: "error", content: e?.message ?? tr("SAVE_FAILED") });
 		}

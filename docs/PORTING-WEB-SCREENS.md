@@ -45,7 +45,12 @@ re-rendered with Ionic for a phone. Web repo: `../checkerp_web`.
 11. **Printing/documents** (InvoiceDocument etc.): render the document in a `POP.showPopup` body (viewing works everywhere).
     Show the Print button only when `!isNativeContainer()` (from `@/shared/bizcheckmobile`) and have it call `window.print()`;
     in the native shell `window.print()` is a no-op and the backend has no per-document PDF, so native printing is a known gap (flagged to the user).
-12. **Done = `npx vue-tsc --noEmit` shows no errors in your files** (other batches run in parallel — ignore errors in files you did not touch).
+12. **Forms load lookups/prefills in `useViewEnter` guarded by "lists empty / query changed"**, never only in `onMounted`
+    (Ionic reuses stacked pages, and confirm steps `$reset()` the form store). E.g. `if (!store.inventories.length) store.loadLookups();`
+    `if (q && q !== store.sourceQuotationNo) store.prefillFromQuotation(q);`
+13. **Number fields use `core/components/NumberInput.vue`, never `v-model.number`** (empty → `null` like a-input-number;
+    `min`/`max`/`precision`/`integer` applied on commit; re-shows a store-clamped value). Setter stores: `:model-value` + `@change`.
+14. **Done = `npx vue-tsc --noEmit` shows no errors in your files** (other batches run in parallel — ignore errors in files you did not touch).
     Comments 1–2 lines, purpose only.
 
 ## Shared pieces already ported (import them, don't copy)

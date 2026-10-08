@@ -139,7 +139,7 @@ function onCancel(): void {
         okBtn: {
             onClick: () => store.cancel(code.value, (ok, err) => {
                 if (ok) POP.openNotification({ type: "success", content: tr("CANCELLED_MSG") });
-                else POP.alert({ status: "error", content: (err as { message?: string } | undefined)?.message || tr("CANCEL_FAILED") });
+                else POP.apiError(err as { code?: string; message?: string } | undefined, tr("CANCEL_FAILED"));
             })
         }
     });

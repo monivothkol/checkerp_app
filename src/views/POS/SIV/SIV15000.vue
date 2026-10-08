@@ -29,7 +29,7 @@
                     <ion-item><ion-textarea v-model="store.note" :label="tr('NOTE')" label-placement="stacked" auto-grow :rows="2" /></ion-item>
                     <div class="siv_sum"><span>{{ tr("SUBTOTAL") }}</span><span>{{ money(store.subtotal) }}</span></div>
                     <div class="siv_sum"><span>{{ tr("LINE_DISCOUNT") }}</span><span>-{{ money(store.lineDiscountTotal) }}</span></div>
-                    <ion-item><ion-input v-model.number="store.invoiceDiscount" :label="tr('INVOICE_DISCOUNT')" label-placement="stacked" type="number" inputmode="decimal" min="0" step="0.01" /></ion-item>
+                    <ion-item><NumberInput v-model="store.invoiceDiscount" :label="tr('INVOICE_DISCOUNT')" label-placement="stacked" min="0" step="0.01" /></ion-item>
                     <div class="siv_sum total"><span>{{ tr("NEW_TOTAL") }}</span><strong>{{ money(store.total) }}</strong></div>
                     <div class="siv_sum"><span>{{ tr("ALREADY_PAID") }}</span><span>{{ money(store.settled) }}</span></div>
                     <div class="siv_sum"><span>{{ tr("BALANCE") }}</span><span>{{ money(store.balance) }}</span></div>
@@ -52,6 +52,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { onMounted, watch } from "vue";
 import { useRoute, useRouter } from "vue-router";
 import { useI18n } from "vue-i18n";

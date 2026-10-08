@@ -17,6 +17,7 @@
 				<ion-item><ion-label><p>{{ tr("BREAK_TIME") }}</p><h3>{{ fmtMinutes(store.detail.breakMinutes) }}</h3></ion-label></ion-item>
 				<ion-item><ion-label><p>{{ tr("LATE") }}</p><h3>{{ Number(store.detail.lateMinutes ?? 0) > 0 ? fmtMinutes(store.detail.lateMinutes) : "—" }}</h3></ion-label></ion-item>
 				<ion-item><ion-label><p>{{ tr("SOURCE") }}</p><h3>{{ store.detail.source || "—" }}</h3></ion-label></ion-item>
+				<ion-item v-if="store.detail.scheduleName"><ion-label><p>{{ tr("SCHEDULE") }}</p><h3>{{ store.detail.scheduleName }}</h3></ion-label></ion-item>
 				<ion-item v-if="store.detail.remark"><ion-label class="ion-text-wrap"><p>{{ tr("REMARK") }}</p><h3>{{ store.detail.remark }}</h3></ion-label></ion-item>
 			</ion-list>
 			<bm-empty-state v-else description="ATD14000.NOT_FOUND" />
@@ -51,6 +52,8 @@ function fmtMinutes(v: unknown): string {
 }
 function statusColor(s: string): string {
 	if (s === "PRESENT") return "success";
+	if (s === "DAY_OFF") return "tertiary"; // a rest day: neutral, never a penalty
+	if (s === "NOT_SCANNED" || s === "ABSENT") return "danger";
 	return s === "LATE" ? "warning" : "medium";
 }
 </script>

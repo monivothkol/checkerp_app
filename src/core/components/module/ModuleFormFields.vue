@@ -10,7 +10,7 @@
 			</ion-item>
 
 			<ion-item v-else-if="field.type === 'number'">
-				<ion-input v-model.number="form[field.key]" :label="label(field)" label-placement="stacked" type="number" inputmode="decimal" :placeholder="field.placeholder" />
+				<NumberInput v-model="form[field.key]" :label="label(field)" label-placement="stacked" :placeholder="field.placeholder" />
 			</ion-item>
 
 			<ion-item v-else-if="field.type === 'date'">
@@ -92,6 +92,7 @@
 </template>
 
 <script setup lang="ts">
+import NumberInput from "@/core/components/NumberInput.vue";
 import { ref } from "vue";
 import { useI18n } from "vue-i18n";
 import POP from "@/core/utilities/pop";

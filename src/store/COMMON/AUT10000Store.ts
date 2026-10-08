@@ -48,9 +48,10 @@ export const AUT10000Store = defineStore("AUT10000Store", {
 		},
 
 		async doLogin(): Promise<LoginResult> {
-			const subdomain = this.subdomain.trim().toLowerCase();
-			const company = await validateSubdomain(subdomain);
+			// Field accepts subdomain or company code; CMM01000I01 resolves either to the real subdomain.
+			const company = await validateSubdomain(this.subdomain.trim().toLowerCase());
 			if (!company.isValid) return { ok: false, message: "COMPANY_NOT_FOUND" };
+			const subdomain = (company.subdomain || this.subdomain).trim().toLowerCase();
 			setSubdomain(subdomain);
 
 			const res = await new Promise<AUT10000I01Response | { message: string; code?: string }>((resolve) =>
